@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+import { HOME, FEATURES, ROUTES } from '../data/site.js';
+
+const lang = 'it';
+const t = FEATURES[lang];
+const h = HOME[lang];
+---
+<Layout
+  lang={lang}
+  title={t.title}
+  description={t.metaDesc}
+  active="features"
+  altUrl={ROUTES.features.en}
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.eyebrow}</span>
+        <h2>{t.h1}</h2>
+        <p class="section__lead">{t.lead}</p>
+      </div>
+      <FeatureGrid feats={h.feats} />
+    </div>
+  </section>
+
+  <section class="section section--tint" id="adozioni">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{h.adoptEyebrow}</span>
+        <h2>{h.adoptTitle}</h2>
+        <p class="section__lead">{h.adoptText}</p>
+      </div>
+      <ul class="adopt__points adopt__points--inline">
+        {h.adoptPoints.map((p) => (
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{lang === 'it' ? 'Privacy by design' : 'Privacy by design'}</span>
+        <h2>{t.privacyTitle}</h2>
+        <p class="section__lead">{t.privacyText}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>{h.downloadTitle}</h2>
+        <p>{h.downloadSub}</p>
+        <StoreButtons lang={lang} android={h.btnAndroid} ios={h.btnIos} variant="dark" />
+      </div>
+    </div>
+  </section>
+</Layout>

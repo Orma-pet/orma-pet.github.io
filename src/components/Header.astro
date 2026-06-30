@@ -1,0 +1,55 @@
+---
+import Paw from './Paw.astro';
+import { ROUTES, NAV, UI } from '../data/site.js';
+
+// props:
+//  lang: 'it' | 'en'
+//  active: chiave di ROUTES della pagina corrente (per aria-current)
+//  altUrl: URL della stessa pagina nell'altra lingua (per il selettore)
+const { lang = 'it', active = 'home', altUrl } = Astro.props;
+const ui = UI[lang];
+const nav = NAV[lang];
+const homeUrl = ROUTES.home[lang];
+
+const itUrl = lang === 'it' ? (Astro.url.pathname || ROUTES[active]?.it) : altUrl;
+const enUrl = lang === 'en' ? (Astro.url.pathname || ROUTES[active]?.en) : altUrl;
+
+const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
+---
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href={homeUrl} aria-label="Orma — home">
+      <Paw size={36} variant="tile" />
+      <span class="grad-text">Orma</span>
+    </a>
+
+    <!-- Toggle hamburger (CSS-only, controllato via checkbox nascosta) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+
+    <nav class="nav" aria-label={lang === 'it' ? 'Navigazione principale' : 'Main navigation'}>
+      <ul class="nav__links">
+        {nav.map((item) => (
+          <li>
+            <a
+              href={ROUTES[item.key][lang]}
+              aria-current={active === item.key ? 'page' : undefined}
+            >{item.label}</a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="nav__right">
+        <div class="lang-switch" role="group" aria-label={ui.langGroupLabel}>
+          <a href={itUrl} aria-current={lang === 'it' ? 'true' : 'false'} hreflang="it" lang="it">IT</a>
+          <a href={enUrl} aria-current={lang === 'en' ? 'true' : 'false'} hreflang="en" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--small nav__cta" href={ROUTES.home[lang] + '#scarica'}>{ui.navCta}</a>
+      </div>
+    </nav>
+
+    <!-- Bottone hamburger: visibile solo su mobile, comanda la checkbox -->
+    <label for="nav-toggle" class="nav-burger" role="button" tabindex="0" aria-label={menuLabel}>
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>

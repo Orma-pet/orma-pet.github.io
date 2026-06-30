@@ -1,0 +1,140 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Paw from '../../components/Paw.astro';
+import Steps from '../../components/Steps.astro';
+import FeatureGrid from '../../components/FeatureGrid.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import SpeciesIcon from '../../components/SpeciesIcon.astro';
+import { HOME, ROUTES, UI } from '../../data/site.js';
+
+const lang = 'en';
+const t = HOME[lang];
+const ui = UI[lang];
+---
+<Layout
+  lang={lang}
+  title={t.title}
+  description={t.metaDesc}
+  active="home"
+  altUrl={ROUTES.home.it}
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div>
+        <span class="eyebrow">{t.heroEyebrow}</span>
+        <h1 class="grad-text">{t.heroTitle}</h1>
+        <p class="hero__sub">{t.heroSub}</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#scarica">{t.heroCta1}</a>
+          <a class="btn btn--ghost" href={ROUTES.howItWorks[lang]}>{t.heroCta2}</a>
+        </div>
+        <p class="hero__proof"><Paw size={18} variant="solid" /> {t.heroProof}</p>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <Paw size={520} variant="white" />
+        <span class="hero__chip hero__chip--a"><span class="dot" style="background:#2A6BA8"></span> Lost · Milan</span>
+        <span class="hero__chip hero__chip--b"><span class="dot" style="background:#1AB8A0"></span> Spotted · 350 m</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section section--trust">
+    <div class="wrap">
+      <ul class="trust-row">
+        {t.trust.map((item) => (
+          <li class="trust-item">
+            <svg class="trust-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ANIMALS -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">For everyone</span>
+        <h2>{t.animalsTitle}</h2>
+        <p class="section__lead">{t.animalsSub}</p>
+      </div>
+      <ul class="animal-chips">
+        {t.animals.map((a) => (
+          <li class="animal-chip">
+            <SpeciesIcon species={a.key} size={20} />
+            <span>{a.label}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="come-funziona">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.stepsEyebrow}</span>
+        <h2>{t.stepsTitle}</h2>
+      </div>
+      <Steps steps={t.steps} />
+      <p style="margin-top:1.6rem;">
+        <a class="btn btn--ghost" href={ROUTES.howItWorks[lang]}>{t.stepsCta} →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section--tint" id="funzionalita">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.featEyebrow}</span>
+        <h2>{t.featTitle}</h2>
+        <p class="section__lead">{t.featLead}</p>
+      </div>
+      <FeatureGrid feats={t.feats} />
+      <p style="margin-top:1.6rem;">
+        <a class="btn btn--ghost" href={ROUTES.features[lang]}>{t.featsCta} →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ADOPTIONS -->
+  <section class="section" id="adozioni">
+    <div class="wrap">
+      <div class="adopt">
+        <div class="adopt__body">
+          <span class="eyebrow">{t.adoptEyebrow}</span>
+          <h2>{t.adoptTitle}</h2>
+          <p class="section__lead">{t.adoptText}</p>
+          <ul class="adopt__points">
+            {t.adoptPoints.map((p) => (
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          <a class="btn btn--primary" href={ROUTES.features[lang] + '#adozioni'}>{t.adoptCta}</a>
+        </div>
+        <div class="adopt__art" aria-hidden="true">
+          <Paw size={150} variant="white" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD / CTA -->
+  <section class="section" id="scarica">
+    <div class="wrap">
+      <div class="cta">
+        <h2>{t.downloadTitle}</h2>
+        <p>{t.downloadSub}</p>
+        <StoreButtons lang={lang} android={t.btnAndroid} ios={t.btnIos} variant="dark" />
+      </div>
+    </div>
+  </section>
+</Layout>

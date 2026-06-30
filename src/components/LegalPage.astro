@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { UI } from '../data/site.js';
+
+// Pagina legale generica (privacy, termini, cancellazione).
+// props: lang, title (titolo pagina+H1), description, html (HTML reale del corpo),
+//        active, altUrl, homeUrl
+const { lang = 'it', title, description = '', html, active, altUrl, homeUrl } = Astro.props;
+const ui = UI[lang];
+---
+<Layout
+  lang={lang}
+  title={`Orma — ${title}`}
+  description={description}
+  active={active}
+  altUrl={altUrl}
+>
+  <section class="legal">
+    <div class="wrap">
+      <div class="legal__head">
+        <a class="legal__back" href={homeUrl}>← {ui.backHome}</a>
+        <h1>{title}</h1>
+      </div>
+      <div class="prose" set:html={html} />
+    </div>
+  </section>
+</Layout>

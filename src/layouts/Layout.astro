@@ -1,0 +1,48 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { UI } from '../data/site.js';
+import '../styles/global.css';
+
+// props:
+//  lang: 'it' | 'en' — pilota <html lang>
+//  title, description — meta
+//  active — chiave pagina per evidenziare il menu
+//  altUrl — URL dell'equivalente nell'altra lingua (selettore lingua)
+//  noindex — booleano (per /pet)
+const {
+  lang = 'it',
+  title,
+  description = '',
+  active = 'home',
+  altUrl = '/',
+  noindex = false,
+} = Astro.props;
+
+const ui = UI[lang];
+---
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{ui.skipToContent}</a>
+    <Header lang={lang} active={active} altUrl={altUrl} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

@@ -1,0 +1,17 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { LEGAL } from '../data/legal.js';
+import { ROUTES } from '../data/site.js';
+
+const lang = 'it';
+const doc = LEGAL.privacy;
+---
+<LegalPage
+  lang={lang}
+  title={doc.title_it}
+  description="Come Orma raccoglie e tratta i tuoi dati personali: finalità, basi giuridiche, fornitori, conservazione e diritti GDPR."
+  html={doc.it}
+  active="privacy"
+  altUrl={ROUTES.privacy.en}
+  homeUrl={ROUTES.home[lang]}
+/>

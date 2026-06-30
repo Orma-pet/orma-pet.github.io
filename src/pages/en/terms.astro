@@ -1,0 +1,17 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { LEGAL } from '../../data/legal.js';
+import { ROUTES } from '../../data/site.js';
+
+const lang = 'en';
+const doc = LEGAL.termini;
+---
+<LegalPage
+  lang={lang}
+  title={doc.title_en}
+  description="The terms governing your use of the Orma app: accounts, acceptable use, content, verified facilities and liability."
+  html={doc.en}
+  active="terms"
+  altUrl={ROUTES.terms.it}
+  homeUrl={ROUTES.home[lang]}
+/>

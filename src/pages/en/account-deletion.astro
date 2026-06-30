@@ -1,0 +1,17 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { LEGAL } from '../../data/legal.js';
+import { ROUTES } from '../../data/site.js';
+
+const lang = 'en';
+const doc = LEGAL.cancellazione;
+---
+<LegalPage
+  lang={lang}
+  title={doc.title_en}
+  description="How to delete your Orma account and linked data: from the app or by email, what gets deleted or anonymised, and how long it takes."
+  html={doc.en}
+  active="deletion"
+  altUrl={ROUTES.deletion.it}
+  homeUrl={ROUTES.home[lang]}
+/>

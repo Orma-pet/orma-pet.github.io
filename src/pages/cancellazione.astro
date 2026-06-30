@@ -1,0 +1,17 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { LEGAL } from '../data/legal.js';
+import { ROUTES } from '../data/site.js';
+
+const lang = 'it';
+const doc = LEGAL.cancellazione;
+---
+<LegalPage
+  lang={lang}
+  title={doc.title_it}
+  description="Come eliminare il tuo account Orma e i dati associati: dall'app o via email, cosa viene cancellato o anonimizzato e in quanto tempo."
+  html={doc.it}
+  active="deletion"
+  altUrl={ROUTES.deletion.en}
+  homeUrl={ROUTES.home[lang]}
+/>

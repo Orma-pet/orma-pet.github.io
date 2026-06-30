@@ -1,0 +1,30 @@
+---
+import Paw from './Paw.astro';
+import { ROUTES, UI, BRAND } from '../data/site.js';
+
+const { lang = 'it' } = Astro.props;
+const ui = UI[lang];
+const year = 2026;
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__inner">
+      <a class="brand" href={ROUTES.home[lang]} aria-label="Orma — home">
+        <Paw size={32} variant="tile" />
+        <span>Orma</span>
+      </a>
+
+      <ul class="footer-links">
+        <li><a href={ROUTES.privacy[lang]}>{ui.footerLinks.privacy}</a></li>
+        <li><a href={ROUTES.terms[lang]}>{ui.footerLinks.terms}</a></li>
+        <li><a href={ROUTES.deletion[lang]}>{ui.footerLinks.deletion}</a></li>
+        <li><a href={`mailto:${BRAND.email}`}>{ui.footerLinks.contact}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>{ui.footerTagline}</span>
+      <span>© {year} Orma · {ui.footerColophon}</span>
+    </div>
+  </div>
+</footer>
