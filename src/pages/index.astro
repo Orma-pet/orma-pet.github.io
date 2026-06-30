@@ -21,7 +21,7 @@ const ui = UI[lang];
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero__inner">
-      <div>
+      <div class="hero__text">
         <span class="eyebrow">{t.heroEyebrow}</span>
         <h1 class="grad-text">{t.heroTitle}</h1>
         <p class="hero__sub">{t.heroSub}</p>
@@ -31,11 +31,10 @@ const ui = UI[lang];
         </div>
         <p class="hero__proof"><Paw size={18} variant="solid" /> {t.heroProof}</p>
       </div>
-
-      <div class="hero__art" aria-hidden="true">
-        <Paw size={520} variant="white" />
-        <span class="hero__chip hero__chip--a"><span class="dot" style="background:#2A6BA8"></span> Smarrito · Milano</span>
-        <span class="hero__chip hero__chip--b"><span class="dot" style="background:#1AB8A0"></span> Avvistato · 350 m</span>
+      <div class="hero__photo">
+        <img src="/animali.jpg" width="1280" height="853"
+             alt="Tanti animali domestici insieme: cane, gatto, cavallo, pappagallo, coniglio e altri" />
+        <span class="hero__photo-fade"></span>
       </div>
     </div>
   </section>
