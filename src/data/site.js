@@ -7,6 +7,7 @@
 export const BRAND = {
   name: 'Orma',
   email: 'info@orma.pet',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=pet.orma.app',
   gradient: 'linear-gradient(90deg,#2A6BA8,#1AB8A0)',
 };
 
