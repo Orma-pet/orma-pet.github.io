@@ -1,0 +1,290 @@
+---
+import Layout from '../layouts/Layout.astro';
+// Pagina di scansione del TAG QR del collare. Il QR punta a
+// https://orma.pet/t?tk=<token>. Leggiamo il token, chiamiamo la RPC pubblica
+// public_pet_by_tag (nessun dato del proprietario) e permettiamo a chi ha
+// trovato l'animale di avvisare il proprietario via notify_pet_found — senza
+// mai vederne i contatti. Pagina bilingue lato client (IT/EN da navigator.language).
+const title = 'Ho trovato questo animale · Orma';
+---
+<Layout lang="it" title={title} active="tag" altUrl="/t" noindex={true}>
+  <section class="pet">
+    <div class="wrap pet__inner" id="tag-root">
+
+      <!-- CARICAMENTO -->
+      <div id="state-loading" class="pet-state">
+        <div class="spinner" aria-hidden="true"></div>
+        <p data-i="loading">Un attimo…</p>
+      </div>
+
+      <!-- NESSUN TOKEN -->
+      <div id="state-notoken" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">🏷️</div>
+        <h2 data-i="notokenTitle">Targhetta non valida</h2>
+        <p data-i="notokenText">Questo QR non contiene un codice valido.</p>
+        <a class="btn btn--primary" href="/" data-i="home">Vai a Orma</a>
+      </div>
+
+      <!-- NON TROVATO -->
+      <div id="state-notfound" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">🐾</div>
+        <h2 data-i="notfoundTitle">Targhetta non riconosciuta</h2>
+        <p data-i="notfoundText">Questa targhetta non è (o non è più) collegata a un animale.</p>
+        <a class="btn btn--primary" href="/" data-i="home">Vai a Orma</a>
+      </div>
+
+      <!-- ERRORE -->
+      <div id="state-error" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">📡</div>
+        <h2 data-i="errorTitle">Qualcosa è andato storto</h2>
+        <p data-i="errorText">Controlla la connessione e riprova.</p>
+        <button class="btn btn--primary" type="button" onclick="location.reload()" data-i="retry">Riprova</button>
+      </div>
+
+      <!-- TROVATO -->
+      <article id="state-found" class="pet-card" hidden>
+        <div id="tag-photo-slot"></div>
+        <div class="pet-card-body">
+          <div id="tag-lost-banner" class="tag-lost" hidden>
+            <span aria-hidden="true">🔴</span>
+            <span data-i="lostBanner">Questo animale risulta <strong>SMARRITO</strong>: il proprietario lo sta cercando!</span>
+          </div>
+          <h1 id="tag-title"></h1>
+          <div id="tag-meta" class="pet-meta"></div>
+
+          <div class="tag-form">
+            <h3 data-i="formTitle">Avvisa il proprietario</h3>
+            <p class="tag-form__intro" data-i="formIntro">
+              Il proprietario riceverà subito una notifica. I tuoi dati restano privati:
+              non li vedrà, a meno che tu non lasci un recapito qui sotto.
+            </p>
+            <label class="tag-lbl" for="tag-msg" data-i="msgLabel">Messaggio (dove/come l'hai trovato)</label>
+            <textarea id="tag-msg" rows="3" maxlength="500"
+              data-ph="Es. L'ho trovato in via Roma, sta bene ed è con me."></textarea>
+
+            <label class="tag-lbl" for="tag-contact" data-i="contactLabel">Un tuo recapito, se vuoi essere ricontattato (facoltativo)</label>
+            <input id="tag-contact" type="text" maxlength="60"
+              data-ph="Telefono o email" />
+
+            <button id="tag-loc" class="btn tag-loc" type="button">
+              <span aria-hidden="true">📍</span> <span data-i="locBtn">Allega la mia posizione</span>
+            </button>
+
+            <button id="tag-send" class="btn btn--primary tag-send" type="button" data-i="sendBtn">
+              Avvisa il proprietario
+            </button>
+            <p id="tag-send-err" class="tag-err" hidden data-i="sendErr">Invio non riuscito. Riprova.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- INVIATO -->
+      <div id="state-sent" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">❤️</div>
+        <h2 data-i="sentTitle">Grazie!</h2>
+        <p data-i="sentText">Il proprietario è stato avvisato. Sei stato di grande aiuto.</p>
+        <a class="btn btn--primary" href="/" data-i="discover">Scopri Orma</a>
+      </div>
+
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tag-lost {
+    display: flex; gap: 8px; align-items: flex-start;
+    background: #FDECEC; color: #B42318; border: 1px solid #F5C6C6;
+    border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; font-weight: 600;
+  }
+  .tag-form { margin-top: 22px; border-top: 1px solid #eee; padding-top: 18px; }
+  .tag-form h3 { margin: 0 0 6px; }
+  .tag-form__intro { font-size: 14px; color: #555; margin: 0 0 14px; }
+  .tag-lbl { display: block; font-size: 13px; font-weight: 700; margin: 12px 0 5px; }
+  .tag-form textarea, .tag-form input {
+    width: 100%; box-sizing: border-box; font: inherit;
+    border: 1px solid #d5d9e0; border-radius: 10px; padding: 10px 12px; resize: vertical;
+  }
+  .tag-form textarea:focus, .tag-form input:focus { outline: 2px solid #2A6BA8; border-color: transparent; }
+  .tag-loc { margin-top: 12px; background: #EEF3F8; color: #2A6BA8; width: 100%; }
+  .tag-loc.on { background: #E4F5EE; color: #1D9E75; }
+  .tag-send { margin-top: 12px; width: 100%; }
+  .tag-send[disabled] { opacity: .6; }
+  .tag-err { color: #B42318; font-size: 13px; margin-top: 8px; }
+</style>
+
+<script is:inline>
+  /* ========================================================================
+     /t — scansione del TAG QR del collare Orma.  QR: https://orma.pet/t?tk=<token>
+     Chiama public_pet_by_tag (nessun dato proprietario) e notify_pet_found.
+     ======================================================================== */
+  (function () {
+    'use strict';
+
+    var SUPABASE_URL = 'https://lztuncwbyjeesmfwvkof.supabase.co';
+    var SUPABASE_KEY = 'sb_publishable_1Qfs6LvH3-F-1DTu0yYphg_e5XnoefZ';
+    var PHOTO_BASE = SUPABASE_URL + '/storage/v1/object/public/report-photos/';
+
+    var LANG = (navigator.language || 'it').toLowerCase().indexOf('it') === 0 ? 'it' : 'en';
+
+    var T = {
+      it: {
+        loading: 'Un attimo…',
+        notokenTitle: 'Targhetta non valida', notokenText: 'Questo QR non contiene un codice valido.',
+        notfoundTitle: 'Targhetta non riconosciuta', notfoundText: 'Questa targhetta non è (o non è più) collegata a un animale.',
+        errorTitle: 'Qualcosa è andato storto', errorText: 'Controlla la connessione e riprova.', retry: 'Riprova',
+        home: 'Vai a Orma', discover: 'Scopri Orma',
+        lostBannerHtml: 'Questo animale risulta <strong>SMARRITO</strong>: il proprietario lo sta cercando!',
+        foundTitle: 'Hai trovato {name}',
+        formTitle: 'Avvisa il proprietario',
+        formIntro: 'Il proprietario riceverà subito una notifica. I tuoi dati restano privati: non li vedrà, a meno che tu non lasci un recapito qui sotto.',
+        msgLabel: "Messaggio (dove/come l'hai trovato)", msgPh: "Es. L'ho trovato in via Roma, sta bene ed è con me.",
+        contactLabel: 'Un tuo recapito, se vuoi essere ricontattato (facoltativo)', contactPh: 'Telefono o email',
+        locBtn: 'Allega la mia posizione', locOn: 'Posizione allegata', locErr: 'Posizione non disponibile',
+        sendBtn: 'Avvisa il proprietario', sending: 'Invio…', sendErr: 'Invio non riuscito. Riprova.',
+        sentTitle: 'Grazie!', sentText: 'Il proprietario è stato avvisato. Sei stato di grande aiuto.',
+        species: 'Specie', breed: 'Razza', color: 'Colore',
+        sp: { dog:'Cane', cat:'Gatto', bird:'Uccello', rabbit:'Coniglio', reptile:'Rettile', rodent:'Roditore', horse:'Cavallo', other:'Altro' }
+      },
+      en: {
+        loading: 'One moment…',
+        notokenTitle: 'Invalid tag', notokenText: "This QR code doesn't contain a valid code.",
+        notfoundTitle: 'Tag not recognised', notfoundText: 'This tag is not (or no longer) linked to a pet.',
+        errorTitle: 'Something went wrong', errorText: 'Check your connection and try again.', retry: 'Retry',
+        home: 'Go to Orma', discover: 'Discover Orma',
+        lostBannerHtml: 'This pet is reported <strong>LOST</strong>: the owner is looking for them!',
+        foundTitle: 'You found {name}',
+        formTitle: 'Notify the owner',
+        formIntro: "The owner gets an instant notification. Your details stay private: they won't see them unless you leave a contact below.",
+        msgLabel: 'Message (where/how you found them)', msgPh: 'E.g. Found on Main St, safe and with me now.',
+        contactLabel: 'Your contact, if you want to be reached back (optional)', contactPh: 'Phone or email',
+        locBtn: 'Attach my location', locOn: 'Location attached', locErr: 'Location unavailable',
+        sendBtn: 'Notify the owner', sending: 'Sending…', sendErr: "Couldn't send. Try again.",
+        sentTitle: 'Thank you!', sentText: 'The owner has been notified. You were a great help.',
+        species: 'Species', breed: 'Breed', color: 'Colour',
+        sp: { dog:'Dog', cat:'Cat', bird:'Bird', rabbit:'Rabbit', reptile:'Reptile', rodent:'Rodent', horse:'Horse', other:'Other' }
+      }
+    };
+    var L = T[LANG];
+
+    var lat = null, lng = null;
+
+    function $(id) { return document.getElementById(id); }
+    function esc(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function showState(id) {
+      ['state-loading','state-notoken','state-notfound','state-error','state-found','state-sent']
+        .forEach(function (s) { var el = $(s); if (el) el.hidden = (s !== id); });
+    }
+    function photoUrl(v) {
+      if (!v) return null;
+      return /^https?:\/\//.test(v) ? v : PHOTO_BASE + v;
+    }
+
+    // Applica le traduzioni statiche (data-i / data-ph) all'HTML già presente.
+    function applyStatic() {
+      document.querySelectorAll('[data-i]').forEach(function (el) {
+        var k = el.getAttribute('data-i');
+        if (k === 'lostBanner') { el.innerHTML = L.lostBannerHtml; return; }
+        if (L[k] != null) el.textContent = L[k];
+      });
+      document.querySelectorAll('[data-ph]').forEach(function (el) {
+        var map = { 'tag-msg': L.msgPh, 'tag-contact': L.contactPh };
+        if (map[el.id]) el.setAttribute('placeholder', map[el.id]);
+      });
+    }
+
+    function getToken() {
+      var qs = new URLSearchParams(location.search);
+      var tk = qs.get('tk') || qs.get('token');
+      if (tk) return tk.trim();
+      var m = location.pathname.match(/\/t\/([^\/?#]+)/);
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+
+    function rpc(name, body) {
+      return fetch(SUPABASE_URL + '/rest/v1/rpc/' + name, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + SUPABASE_KEY },
+        body: JSON.stringify(body)
+      }).then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); });
+    }
+
+    function renderPet(p) {
+      var name = (p.pet_name && p.pet_name.trim()) ? p.pet_name.trim()
+                 : (p.species && L.sp[p.species] ? L.sp[p.species] : (LANG === 'it' ? "l'animale" : 'the pet'));
+      $('tag-title').textContent = L.foundTitle.replace('{name}', name);
+
+      // Foto
+      var slot = $('tag-photo-slot');
+      var url = photoUrl(p.photo_url);
+      if (url) {
+        slot.innerHTML = '<img class="pet-photo" alt="" src="' + esc(url) + '" ' +
+          'onerror="this.style.display=\'none\'">';
+      }
+
+      // Meta specie/razza/colore
+      var meta = $('tag-meta'); meta.innerHTML = '';
+      function addMeta(label, value) {
+        if (value == null || value === '') return;
+        var item = document.createElement('div');
+        item.className = 'pet-meta-item';
+        item.innerHTML = '<div class="label">' + esc(label) + '</div><div class="value">' + esc(value) + '</div>';
+        meta.appendChild(item);
+      }
+      addMeta(L.species, p.species && L.sp[p.species] ? L.sp[p.species] : null);
+      addMeta(L.breed, p.breed);
+      addMeta(L.color, p.color);
+
+      $('tag-lost-banner').hidden = !p.is_lost;
+      showState('state-found');
+    }
+
+    // Geolocalizzazione facoltativa
+    function attachLocation() {
+      var btn = $('tag-loc'), lbl = btn.querySelector('[data-i="locBtn"]');
+      if (!navigator.geolocation) { lbl.textContent = L.locErr; return; }
+      lbl.textContent = '…';
+      navigator.geolocation.getCurrentPosition(function (pos) {
+        lat = pos.coords.latitude; lng = pos.coords.longitude;
+        btn.classList.add('on'); lbl.textContent = L.locOn + ' ✓';
+      }, function () { lbl.textContent = L.locErr; }, { enableHighAccuracy: true, timeout: 8000 });
+    }
+
+    function send(token) {
+      var btn = $('tag-send'); btn.disabled = true; btn.textContent = L.sending;
+      $('tag-send-err').hidden = true;
+      var msg = ($('tag-msg').value || '').trim();
+      var contact = ($('tag-contact').value || '').trim();
+      rpc('notify_pet_found', {
+        in_token: token,
+        in_message: msg || null,
+        in_lat: lat, in_lng: lng,
+        in_contact: contact || null
+      }).then(function () {
+        showState('state-sent');
+      }).catch(function (err) {
+        console.error('[Orma] notify_pet_found error:', err);
+        btn.disabled = false; btn.textContent = L.sendBtn;
+        $('tag-send-err').hidden = false;
+      });
+    }
+
+    // ---- Avvio ----
+    applyStatic();
+    var token = getToken();
+    if (!token) { showState('state-notoken'); return; }
+    showState('state-loading');
+    rpc('public_pet_by_tag', { in_token: token }).then(function (data) {
+      var row = Array.isArray(data) ? data[0] : data;
+      if (!row) { showState('state-notfound'); return; }
+      renderPet(row);
+      $('tag-loc').addEventListener('click', attachLocation);
+      $('tag-send').addEventListener('click', function () { send(token); });
+    }).catch(function (err) {
+      console.error('[Orma] public_pet_by_tag error:', err);
+      showState('state-error');
+    });
+  })();
+</script>
