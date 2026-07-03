@@ -119,7 +119,7 @@ export const HOME = {
     reunitedTitle: 'Ogni ritorno a casa è una storia',
     reunitedText: 'Quando un animale ritrova la sua famiglia, su Orma diventa una storia a lieto fine da festeggiare insieme. Sono loro il motivo per cui esiste tutto questo.',
     vetsEyebrow: 'Per veterinari e strutture',
-    vetsTitle: 'Sei un veterinario o un canile? Fatti trovare.',
+    vetsTitle: 'Sei un veterinario o hai un canile? Fatti trovare.',
     vetsText: "Orma ti mostra sulla mappa a chi cerca aiuto: chi trova un animale te lo porta, chi ha un'emergenza ti trova subito. Attivarti è gratis e richiede cinque minuti.",
     vetsPoints: ['Visibilità gratuita sulla mappa', "Richieste di appuntamento dall'app", 'Punto di consegna o emergenza h24'],
     vetsCta: 'Scrivici',
