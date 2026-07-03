@@ -5,7 +5,7 @@ import Steps from '../components/Steps.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
 import StoreButtons from '../components/StoreButtons.astro';
 import SpeciesIcon from '../components/SpeciesIcon.astro';
-import { HOME, ROUTES, UI } from '../data/site.js';
+import { HOME, ROUTES, UI, BRAND } from '../data/site.js';
 
 const lang = 'it';
 const t = HOME[lang];
@@ -118,6 +118,42 @@ const ui = UI[lang];
             ))}
           </ul>
           <a class="btn btn--primary" href={ROUTES.features[lang] + '#adozioni'}>{t.adoptCta}</a>
+        </div>
+        <div class="adopt__art" aria-hidden="true">
+          <Paw size={150} variant="white" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RICONGIUNTI / LIETI FINI -->
+  <section class="section section--tint" id="ricongiunti">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.reunitedEyebrow}</span>
+        <h2>{t.reunitedTitle}</h2>
+        <p class="section__lead">{t.reunitedText}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PER VETERINARI E STRUTTURE (B2B) -->
+  <section class="section" id="strutture">
+    <div class="wrap">
+      <div class="adopt">
+        <div class="adopt__body">
+          <span class="eyebrow">{t.vetsEyebrow}</span>
+          <h2>{t.vetsTitle}</h2>
+          <p class="section__lead">{t.vetsText}</p>
+          <ul class="adopt__points">
+            {t.vetsPoints.map((p) => (
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          <a class="btn btn--primary" href={`mailto:${BRAND.email}`}>{t.vetsCta}</a>
         </div>
         <div class="adopt__art" aria-hidden="true">
           <Paw size={150} variant="white" />
