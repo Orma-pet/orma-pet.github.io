@@ -64,14 +64,14 @@ export const UI = {
 export const HOME = {
   it: {
     title: 'Orma — Ritrova il tuo amico',
-    metaDesc: 'Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Gratis, senza pubblicità.',
+    metaDesc: 'Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Gratis, con la privacy al primo posto.',
     heroEyebrow: 'App per animali smarriti, trovati e da adottare',
     heroTitle: 'Ritrova il tuo amico',
-    heroSub: "Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Segnali in pochi tap, ricevi avvisi quando qualcosa si muove vicino a te e tieni i contatti al sicuro nella chat dell'app. Gratis, senza pubblicità.",
+    heroSub: "Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Segnali in pochi tap, ricevi avvisi quando qualcosa si muove vicino a te e tieni i contatti al sicuro nella chat dell'app. Gratis.",
     heroCta1: 'Scarica Orma',
     heroCta2: 'Scopri come funziona',
     heroProof: 'Una community che si dà una zampa, città per città.',
-    trust: ['Gratuita', 'Zero pubblicità', 'Privacy by design', 'Made in Italy'],
+    trust: ['Gratuita', 'Dati in Europa', 'Privacy by design', 'Made in Italy'],
     animalsTitle: 'Orma è per ogni animale',
     animalsSub: 'Cani e gatti, certo, ma anche conigli, uccelli, roditori e tutti gli altri. Se qualcuno gli vuole bene, qui ha un posto: smarrito, trovato, abbandonato o in cerca di una famiglia.',
     animals: [
@@ -130,14 +130,14 @@ export const HOME = {
   },
   en: {
     title: 'Orma — Find your friend',
-    metaDesc: "Orma connects people who've lost a pet with people who've spotted or found one. Free, with no ads.",
+    metaDesc: "Orma connects people who've lost a pet with people who've spotted or found one. Free, with privacy first.",
     heroEyebrow: 'For lost pets, found animals and adoptions',
     heroTitle: 'Find your friend',
-    heroSub: "Orma connects people who've lost a pet with people who've spotted or found one. Post in a few taps, get alerts when something happens near you, and keep contact safe in the in-app chat. Free, with no ads.",
+    heroSub: "Orma connects people who've lost a pet with people who've spotted or found one. Post in a few taps, get alerts when something happens near you, and keep contact safe in the in-app chat. Free.",
     heroCta1: 'Get Orma',
     heroCta2: 'See how it works',
     heroProof: 'A community that lends a paw, town by town.',
-    trust: ['Free', 'No ads', 'Privacy by design', 'Made in Italy'],
+    trust: ['Free', 'Data in the EU', 'Privacy by design', 'Made in Italy'],
     animalsTitle: 'Orma is for every animal',
     animalsSub: 'Dogs and cats, of course — but also rabbits, birds, rodents and everyone else. If someone loves them, they belong here: lost, found, abandoned or looking for a family.',
     animals: [
@@ -229,7 +229,7 @@ export const FEATURES = {
     h1: 'Tutto quello che serve, niente di superfluo',
     lead: "Abbiamo tagliato tutto ciò che non serviva. Quello che resta sono strumenti essenziali, ognuno pensato per un momento preciso della ricerca — e ognuno con la privacy come impostazione predefinita, non come ripensamento.",
     privacyTitle: 'La privacy non è una funzione: è il punto di partenza',
-    privacyText: 'Niente pubblicità, niente tracciamento, niente analytics di terze parti. La posizione sulla mappa pubblica è sempre offuscata di circa 150 metri. I server dei dati sono in Unione Europea, a Francoforte.',
+    privacyText: 'Niente tracciamento e niente analytics di terze parti: i tuoi dati non vengono venduti. La posizione sulla mappa pubblica è sempre offuscata di circa 150 metri. I server dei dati sono in Unione Europea, a Francoforte.',
   },
   en: {
     title: 'Orma features',
@@ -238,7 +238,7 @@ export const FEATURES = {
     h1: "Everything you need, nothing you don't",
     lead: 'We cut everything that did not belong. What remains are essential tools, each made for a precise moment in the search — and each with privacy as the default, not an afterthought.',
     privacyTitle: 'Privacy is not a feature: it is the starting point',
-    privacyText: 'No ads, no tracking, no third-party analytics. The location on the public map is always blurred by about 150 metres. Data servers are in the European Union, in Frankfurt.',
+    privacyText: 'No tracking and no third-party analytics: your data is never sold. The location on the public map is always blurred by about 150 metres. Data servers are in the European Union, in Frankfurt.',
   },
 };
 
