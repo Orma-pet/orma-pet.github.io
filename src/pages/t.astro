@@ -46,8 +46,8 @@ const title = 'Ho trovato questo animale · Orma';
         <div id="tag-photo-slot"></div>
         <div class="pet-card-body">
           <div id="tag-lost-banner" class="tag-lost" hidden>
-            <span aria-hidden="true">🔴</span>
-            <span data-i="lostBanner">Questo animale risulta <strong>SMARRITO</strong>: il proprietario lo sta cercando!</span>
+            <span aria-hidden="true">🔎</span>
+            <span data-i="lostBanner"><strong>Questo animale</strong> è segnalato come smarrito. Se lo trovi, avvisa subito il proprietario!</span>
           </div>
           <h1 id="tag-title"></h1>
           <div id="tag-meta" class="pet-meta"></div>
@@ -133,7 +133,7 @@ const title = 'Ho trovato questo animale · Orma';
         notfoundTitle: 'Targhetta non riconosciuta', notfoundText: 'Questa targhetta non è (o non è più) collegata a un animale.',
         errorTitle: 'Qualcosa è andato storto', errorText: 'Controlla la connessione e riprova.', retry: 'Riprova',
         home: 'Vai a Orma', discover: 'Scopri Orma',
-        lostBannerHtml: 'Questo animale risulta <strong>SMARRITO</strong>: il proprietario lo sta cercando!',
+        lostBannerHtml: '<strong>{name}</strong> è segnalato come smarrito. Se lo trovi, avvisa subito il proprietario!',
         foundTitle: 'Hai trovato {name}',
         formTitle: 'Avvisa il proprietario',
         formIntro: 'Il proprietario riceverà subito una notifica. I tuoi dati restano privati: non li vedrà, a meno che tu non lasci un recapito qui sotto.',
@@ -151,7 +151,7 @@ const title = 'Ho trovato questo animale · Orma';
         notfoundTitle: 'Tag not recognised', notfoundText: 'This tag is not (or no longer) linked to a pet.',
         errorTitle: 'Something went wrong', errorText: 'Check your connection and try again.', retry: 'Retry',
         home: 'Go to Orma', discover: 'Discover Orma',
-        lostBannerHtml: 'This pet is reported <strong>LOST</strong>: the owner is looking for them!',
+        lostBannerHtml: '<strong>{name}</strong> is reported lost. If you found them, notify the owner now!',
         foundTitle: 'You found {name}',
         formTitle: 'Notify the owner',
         formIntro: "The owner gets an instant notification. Your details stay private: they won't see them unless you leave a contact below.",
@@ -237,7 +237,12 @@ const title = 'Ho trovato questo animale · Orma';
       addMeta(L.breed, p.breed);
       addMeta(L.color, p.color);
 
-      $('tag-lost-banner').hidden = !p.is_lost;
+      var lostEl = $('tag-lost-banner');
+      lostEl.hidden = !p.is_lost;
+      if (p.is_lost) {
+        var lostSpan = lostEl.querySelector('[data-i="lostBanner"]');
+        if (lostSpan) lostSpan.innerHTML = L.lostBannerHtml.replace('{name}', esc(name));
+      }
       showState('state-found');
     }
 
