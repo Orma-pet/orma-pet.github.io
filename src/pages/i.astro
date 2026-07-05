@@ -18,16 +18,15 @@ const title = 'Sei stato invitato · Orma';
       </p>
 
       <div class="invite__code" id="codeBox" hidden>
-        <span class="invite__code-label">Il tuo codice invito</span>
+        <span class="invite__code-label">Codice invito · si applica da solo</span>
         <strong id="code">—</strong>
-        <button id="copyBtn" class="invite__copy" type="button">Copia codice</button>
       </div>
 
       <StoreButtons lang="it" android="Google Play" ios="App Store" variant="light" />
 
       <ol class="invite__steps">
-        <li>Scarica Orma e crea il tuo account.</li>
-        <li>Inserisci il codice invito qui sopra durante l'iscrizione.</li>
+        <li>Tocca "Scarica" e installa Orma.</li>
+        <li>Apri l'app e crea il tuo account: il codice si applica da solo.</li>
         <li>Usa l'app: chi ti ha invitato guadagna punti!</li>
       </ol>
     </div>
@@ -43,7 +42,6 @@ const title = 'Sei stato invitato · Orma';
     .invite__code { margin: 24px auto; padding: 14px 20px; border-radius: 14px; background: linear-gradient(90deg,#2A6BA8,#1AB8A0); color: #fff; display: inline-flex; flex-direction: column; gap: 4px; }
     .invite__code-label { font-size: 12px; opacity: .9; }
     .invite__code strong { font-size: 26px; letter-spacing: 3px; }
-    .invite__copy { margin-top: 6px; background: rgba(255,255,255,0.18); color: #fff; border: 1px solid rgba(255,255,255,0.55); border-radius: 8px; padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
     .invite__steps { text-align: left; max-width: 400px; margin: 28px auto 0; color: #34434F; line-height: 1.7; }
     .invite :global(.stores) { justify-content: center; margin-top: 8px; }
   </style>
@@ -54,18 +52,15 @@ const title = 'Sei stato invitato · Orma';
     if (c) {
       document.getElementById('code').textContent = c;
       document.getElementById('codeBox').hidden = false;
-      const btn = document.getElementById('copyBtn');
-      btn.addEventListener('click', async () => {
-        try { await navigator.clipboard.writeText(c); btn.textContent = 'Copiato ✓'; }
-        catch (e) { btn.textContent = c; }
-        setTimeout(() => { btn.textContent = 'Copia codice'; }, 2000);
-      });
-      // Al tap su "Scarica" copiamo il codice TAGGATO: all'avvio l'app lo legge
-      // dalla clipboard e precompila l'iscrizione (auto su Android; su iOS quando
-      // l'app sarà sull'App Store).
+      // Al tap su "Scarica" copiamo il codice TAGGATO negli appunti PRIMA di
+      // aprire lo store: all'avvio l'app lo legge e precompila da solo
+      // l'iscrizione (auto su Android; su iOS quando l'app sarà sull'App Store).
       document.querySelectorAll('.stores a.store-btn').forEach((a) => {
-        a.addEventListener('click', () => {
-          try { navigator.clipboard.writeText('orma-ref:' + c); } catch (e) {}
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          const go = () => { window.location.href = a.href; };
+          try { navigator.clipboard.writeText('orma-ref:' + c).then(go, go); }
+          catch (err) { go(); }
         });
       });
     }
