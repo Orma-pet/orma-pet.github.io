@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StoreButtons from '../components/StoreButtons.astro';
+// Pagina di atterraggio INVITO AMICI (referral). Il link è
+// https://orma.pet/i?c=<codice>. Mostriamo il codice (client-side) e i pulsanti
+// store; l'utente installa, si iscrive e inserisce il codice all'iscrizione.
+const title = 'Sei stato invitato · Orma';
+---
+<Layout lang="it" title={title} active="home" altUrl="/i" noindex={true}>
+  <section class="invite">
+    <div class="invite__box">
+      <div class="invite__icon" aria-hidden="true">🎁</div>
+      <h1>Ti hanno invitato su Orma</h1>
+      <p class="invite__sub">
+        Orma è l'app per ritrovare gli animali smarriti, il libretto sanitario,
+        le adozioni e i veterinari vicino a te.
+        <br /><span class="invite__en">You've been invited to Orma — the app for lost pets &amp; more.</span>
+      </p>
+
+      <div class="invite__code" id="codeBox" hidden>
+        <span class="invite__code-label">Il tuo codice invito</span>
+        <strong id="code">—</strong>
+      </div>
+
+      <StoreButtons lang="it" android="Google Play" ios="App Store" variant="dark" />
+
+      <ol class="invite__steps">
+        <li>Scarica Orma e crea il tuo account.</li>
+        <li>Inserisci il codice invito qui sopra durante l'iscrizione.</li>
+        <li>Usa l'app: chi ti ha invitato guadagna punti!</li>
+      </ol>
+    </div>
+  </section>
+
+  <style>
+    .invite { max-width: 560px; margin: 0 auto; padding: 48px 20px; text-align: center; }
+    .invite__box { background: #fff; border: 1px solid #E3E8EE; border-radius: 20px; padding: 34px 24px; }
+    .invite__icon { font-size: 52px; }
+    .invite h1 { font-size: 28px; margin: 12px 0 8px; color: #0D2D4A; }
+    .invite__sub { color: #5B6B7A; line-height: 1.65; }
+    .invite__en { color: #93A0AE; font-size: 0.92em; }
+    .invite__code { margin: 24px auto; padding: 14px 20px; border-radius: 14px; background: linear-gradient(90deg,#2A6BA8,#1AB8A0); color: #fff; display: inline-flex; flex-direction: column; gap: 4px; }
+    .invite__code-label { font-size: 12px; opacity: .9; }
+    .invite__code strong { font-size: 26px; letter-spacing: 3px; }
+    .invite__steps { text-align: left; max-width: 400px; margin: 28px auto 0; color: #34434F; line-height: 1.7; }
+    .invite :global(.stores) { justify-content: center; margin-top: 8px; }
+  </style>
+
+  <script is:inline>
+    const q = new URLSearchParams(location.search);
+    const c = (q.get('c') || q.get('code') || '').trim().toUpperCase();
+    if (c) {
+      document.getElementById('code').textContent = c;
+      document.getElementById('codeBox').hidden = false;
+    }
+  </script>
+</Layout>
