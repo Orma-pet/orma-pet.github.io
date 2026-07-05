@@ -60,6 +60,14 @@ const title = 'Sei stato invitato · Orma';
         catch (e) { btn.textContent = c; }
         setTimeout(() => { btn.textContent = 'Copia codice'; }, 2000);
       });
+      // Al tap su "Scarica" copiamo il codice TAGGATO: all'avvio l'app lo legge
+      // dalla clipboard e precompila l'iscrizione (auto su Android; su iOS quando
+      // l'app sarà sull'App Store).
+      document.querySelectorAll('.stores a.store-btn').forEach((a) => {
+        a.addEventListener('click', () => {
+          try { navigator.clipboard.writeText('orma-ref:' + c); } catch (e) {}
+        });
+      });
     }
   </script>
 </Layout>
