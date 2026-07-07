@@ -135,6 +135,7 @@ const title = 'Ho trovato questo animale · Orma';
         home: 'Vai a Orma', discover: 'Scopri Orma',
         lostBannerHtml: '<strong>{name}</strong> è segnalato come smarrito. Se lo trovi, avvisa subito il proprietario!',
         foundTitle: 'Hai trovato {name}',
+        homeTitle: 'Questo è {name}',
         formTitle: 'Avvisa il proprietario',
         formIntro: 'Il proprietario riceverà subito una notifica. I tuoi dati restano privati: non li vedrà, a meno che tu non lasci un recapito qui sotto.',
         msgLabel: "Messaggio (dove/come l'hai trovato)", msgPh: "Es. L'ho trovato in via Roma, sta bene ed è con me.",
@@ -153,6 +154,7 @@ const title = 'Ho trovato questo animale · Orma';
         home: 'Go to Orma', discover: 'Discover Orma',
         lostBannerHtml: '<strong>{name}</strong> is reported lost. If you found them, notify the owner now!',
         foundTitle: 'You found {name}',
+        homeTitle: 'This is {name}',
         formTitle: 'Notify the owner',
         formIntro: "The owner gets an instant notification. Your details stay private: they won't see them unless you leave a contact below.",
         msgLabel: 'Message (where/how you found them)', msgPh: 'E.g. Found on Main St, safe and with me now.',
@@ -214,7 +216,12 @@ const title = 'Ho trovato questo animale · Orma';
     function renderPet(p) {
       var name = (p.pet_name && p.pet_name.trim()) ? p.pet_name.trim()
                  : (p.species && L.sp[p.species] ? L.sp[p.species] : (LANG === 'it' ? "l'animale" : 'the pet'));
-      $('tag-title').textContent = L.foundTitle.replace('{name}', name);
+      // Titolo condizionale: "Hai trovato {name}" SOLO se è davvero segnalato
+      // smarrito; altrimenti neutro "Questo è {name}" (non allarmare chi scansiona
+      // il QR di un animale che sta benissimo a casa).
+      var heading = (p.is_lost ? L.foundTitle : L.homeTitle).replace('{name}', name);
+      $('tag-title').textContent = heading;
+      document.title = heading + ' · Orma';
 
       // Foto
       var slot = $('tag-photo-slot');
