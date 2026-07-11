@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://orma.pet/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/come-funziona/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/come-funziona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/come-funziona/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/how-it-works/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/come-funziona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/how-it-works/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/come-funziona/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/funzionalita/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/funzionalita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/funzionalita/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/features/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/funzionalita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/funzionalita/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/privacy/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/privacy/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/termini/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/termini/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/termini/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/termini/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/cancellazione/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/cancellazione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/account-deletion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/cancellazione/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/account-deletion/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/cancellazione/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/account-deletion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/cancellazione/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>

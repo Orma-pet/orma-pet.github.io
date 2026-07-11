@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pet
+
+Sitemap: https://orma.pet/sitemap.xml

@@ -7,8 +7,14 @@
 export const BRAND = {
   name: 'Orma',
   email: 'info@orma.pet',
+  owner: 'Nicholas Iacoviello',
+  siteUrl: 'https://orma.pet',
+  ogImage: '/og.jpg', // anteprima social 1200x630
   playStoreUrl: 'https://play.google.com/store/apps/details?id=pet.orma.app',
   gradient: 'linear-gradient(90deg,#2A6BA8,#1AB8A0)',
+  // Token di Cloudflare Web Analytics (senza cookie). Vuoto = beacon non
+  // inserito. Da incollare quando attivato sul pannello Cloudflare.
+  cfAnalyticsToken: '',
 };
 
 // Mappa delle pagine: per ogni "chiave" l'URL IT e quello EN.

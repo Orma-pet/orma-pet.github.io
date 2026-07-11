@@ -1,14 +1,20 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { UI } from '../data/site.js';
+import { UI, BRAND } from '../data/site.js';
 import '../styles/global.css';
+// Font self-hostati (niente richiesta a Google → nessun cookie di terze parti).
+import '@fontsource/nunito/400.css';
+import '@fontsource/nunito/600.css';
+import '@fontsource/nunito/700.css';
+import '@fontsource/nunito/800.css';
+import '@fontsource/nunito/900.css';
 
 // props:
 //  lang: 'it' | 'en' — pilota <html lang>
 //  title, description — meta
 //  active — chiave pagina per evidenziare il menu
-//  altUrl — URL dell'equivalente nell'altra lingua (selettore lingua)
+//  altUrl — URL dell'equivalente nell'altra lingua (selettore lingua + hreflang)
 //  noindex — booleano (per /pet)
 const {
   lang = 'it',
@@ -20,6 +26,38 @@ const {
 } = Astro.props;
 
 const ui = UI[lang];
+
+// SEO: URL assoluti per canonical / hreflang / social.
+const siteUrl = BRAND.siteUrl;
+const canonical = new URL(Astro.url.pathname, siteUrl).href;
+const itHref = new URL(lang === 'it' ? Astro.url.pathname : altUrl, siteUrl).href;
+const enHref = new URL(lang === 'en' ? Astro.url.pathname : altUrl, siteUrl).href;
+const ogImage = new URL(BRAND.ogImage, siteUrl).href;
+const ogLocale = lang === 'it' ? 'it_IT' : 'en_US';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#org`,
+      name: 'Orma',
+      url: siteUrl,
+      email: BRAND.email,
+      logo: new URL('/favicon.svg', siteUrl).href,
+      founder: { '@type': 'Person', name: BRAND.owner },
+      areaServed: 'IT',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: 'Orma',
+      url: siteUrl,
+      inLanguage: lang === 'it' ? 'it-IT' : 'en-US',
+      publisher: { '@id': `${siteUrl}/#org` },
+    },
+  ],
+};
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -30,12 +68,36 @@ const ui = UI[lang];
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+
+    {!noindex && <link rel="canonical" href={canonical} />}
+    {!noindex && <link rel="alternate" hreflang="it" href={itHref} />}
+    {!noindex && <link rel="alternate" hreflang="en" href={enHref} />}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={itHref} />}
+
+    {/* Open Graph + Twitter: anteprima quando si condivide il link */}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Orma" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    {BRAND.cfAnalyticsToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token": "${BRAND.cfAnalyticsToken}"}`}
+      ></script>
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main">{ui.skipToContent}</a>
