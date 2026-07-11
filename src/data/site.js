@@ -14,7 +14,7 @@ export const BRAND = {
   gradient: 'linear-gradient(90deg,#2A6BA8,#1AB8A0)',
   // Token di Cloudflare Web Analytics (senza cookie). Vuoto = beacon non
   // inserito. Da incollare quando attivato sul pannello Cloudflare.
-  cfAnalyticsToken: '',
+  cfAnalyticsToken: '1095aec9468649adb0b0596e09af24f6',
 };
 
 // Mappa delle pagine: per ogni "chiave" l'URL IT e quello EN.
