@@ -11,6 +11,19 @@ const h = HOME[lang];
 const d = guide[lang];
 const base = ROUTES.guides[lang];
 const others = GUIDES.filter((g) => g.slug[lang] !== guide.slug[lang]).slice(0, 4);
+
+const faqList = (guide.faq && guide.faq[lang]) || [];
+const faqLd = faqList.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqList.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
 ---
 <Layout
   lang={lang}
@@ -27,6 +40,18 @@ const others = GUIDES.filter((g) => g.slug[lang] !== guide.slug[lang]).slice(0, 
       </div>
 
       <div class="prose" set:html={d.html} />
+
+      {faqList.length > 0 && (
+        <div class="faq">
+          <h2>{ui.faqTitle}</h2>
+          {faqList.map((f) => (
+            <div class="faq__item">
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div class="cta" style="margin-top:2.6rem;">
         <h2>{ui.guideCtaTitle}</h2>
@@ -46,4 +71,6 @@ const others = GUIDES.filter((g) => g.slug[lang] !== guide.slug[lang]).slice(0, 
       </nav>
     </div>
   </section>
+
+  {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
 </Layout>

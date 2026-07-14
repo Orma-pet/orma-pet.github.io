@@ -6,6 +6,7 @@ import FeatureGrid from '../../components/FeatureGrid.astro';
 import StoreButtons from '../../components/StoreButtons.astro';
 import SpeciesIcon from '../../components/SpeciesIcon.astro';
 import { HOME, ROUTES, UI, BRAND } from '../../data/site.js';
+import { GUIDES } from '../../data/guides.js';
 
 const lang = 'en';
 const t = HOME[lang];
@@ -95,6 +96,30 @@ const ui = UI[lang];
         <p class="section__lead">{t.featLead}</p>
       </div>
       <FeatureGrid feats={t.feats} />
+    </div>
+  </section>
+
+  <!-- HELPFUL GUIDES (internal SEO links) -->
+  <section class="section" id="guides">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">Guides</span>
+        <h2>{ui.homeGuidesTitle}</h2>
+        <p class="section__lead">{ui.homeGuidesLead}</p>
+      </div>
+      <ul class="guide-list">
+        {GUIDES.slice(0, 4).map((g) => (
+          <li>
+            <a href={ROUTES.guides[lang] + g.slug[lang] + '/'}>
+              <strong>{g[lang].title}</strong>
+              <span>{g[lang].metaDesc}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p style="margin-top:1.4rem;">
+        <a class="btn btn--ghost" href={ROUTES.guides[lang]}>{ui.allGuides} →</a>
+      </p>
     </div>
   </section>
 

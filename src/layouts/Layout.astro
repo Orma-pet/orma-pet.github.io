@@ -64,6 +64,21 @@ const jsonLd = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script define:vars={{ altUrl, lang }}>
+      // Prima visita: se la lingua del browser non combacia con la pagina,
+      // reindirizza UNA volta sola alla versione giusta. Dopo, rispetta la
+      // scelta manuale dell'utente (il flag resta impostato).
+      (function () {
+        try {
+          if (!altUrl) return;
+          if (localStorage.getItem('orma_lang_done')) return;
+          localStorage.setItem('orma_lang_done', '1');
+          var b = (navigator.language || navigator.userLanguage || '').toLowerCase();
+          var want = b.indexOf('it') === 0 ? 'it' : 'en';
+          if (want !== lang) location.replace(altUrl);
+        } catch (e) {}
+      })();
+    </script>
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex" />}

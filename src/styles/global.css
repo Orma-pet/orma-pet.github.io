@@ -773,3 +773,10 @@ img { max-width: 100%; display: block; }
 .guide-more li { margin: .35rem 0; }
 .guide-more a { color: var(--blu); font-weight: 700; text-decoration: none; }
 .guide-more a:hover { text-decoration: underline; }
+
+/* --- FAQ (guide) --- */
+.faq { margin-top: 2.6rem; }
+.faq > h2 { font-size: 1.3rem; font-weight: 800; margin: 0 0 1rem; }
+.faq__item { padding: 1rem 0; border-top: 1px solid #e6e9ee; }
+.faq__item h3 { font-size: 1.05rem; font-weight: 800; margin: 0 0 .35rem; color: #1a2430; }
+.faq__item p { margin: 0; color: #2c3e50; line-height: 1.55; }

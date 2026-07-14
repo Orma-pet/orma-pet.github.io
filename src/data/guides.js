@@ -1,5 +1,4 @@
-// Guide SEO del sito Orma (contenuto bilingue it/en). Corpo articolo in HTML (.prose).
-// Ordine = ordine di visualizzazione. Editabile a mano.
+// Guide SEO del sito Orma (contenuto bilingue it/en + FAQ). Ordine = visualizzazione.
 export const GUIDES = [
   {
     "slug": {
@@ -15,6 +14,44 @@ export const GUIDES = [
       "title": "Lost Dog: What to Do Right Now to Find Them",
       "metaDesc": "Lost your dog? Here's how to find a lost dog step by step: search nearby, alert shelters and vets, check the microchip, and post an alert on Orma.",
       "html": "<p>If your dog has just gone missing, your heart is probably racing, so take a breath: the first few hours really matter, and staying calm makes a difference. A <strong>lost dog</strong> often stays close to where it wandered off, so every minute you use well improves your chances of a happy reunion. This guide walks you through what to do right now, step by step, so you know exactly <strong>how to find a lost dog</strong> without wasting precious time.</p><h2>Act right away: the first hours matter most</h2><p>The moment you realise your dog is gone, don't wait. Many dogs are found in the first few hours, close to where they slipped away. Before you head out, grab a few things that can help.</p><ul><li>A recent, clear photo of your dog showing coat, size and any distinctive markings.</li><li>The lead, some treats and maybe a favourite toy or a blanket with your dog's scent.</li><li>The microchip number, if you have it, and your vet's contact details.</li></ul><h2>Search nearby and call in a calm voice</h2><p>Go back to the spot where you last saw your dog and widen the search on foot. Call your dog gently, not in a panicked shout: an anxious tone can frighten a scared dog and make it hide even more.</p><ul><li>Check hedges, bushes, gardens, open garages and shady corners where a frightened dog might take shelter.</li><li>Search especially at dawn and dusk, when there is less noise and traffic.</li><li>Ask everyone you meet (passers-by, shopkeepers, other dog walkers) if they've seen your dog, and leave your number.</li></ul><h2>Alert shelters, vets and local authorities</h2><p>People who find a dog often take it to the nearest vet or report it to a shelter. Making yourself easy to reach across these channels is key to getting your dog back.</p><ul><li>Contact your local animal shelters and pounds, leaving a description and your contact details.</li><li>Notify nearby veterinary practices: if someone brings in a found dog, they can link it to your report.</li><li>In Italy, if the dog is in danger (on a road, injured), you can call <strong>112</strong> or the Forestry Carabinieri on <strong>1515</strong>.</li></ul><h2>Check the microchip and your registered details</h2><p>A microchip is the most reliable way for anyone to trace a found dog back to you, but only if your details are current. Now is the moment to make sure they are.</p><ul><li>Ask your vet to confirm the microchip is registered with the correct, up-to-date contact number.</li><li>If you've changed your phone number or address, update them straight away: outdated details make the chip useless.</li><li>Anyone who finds your dog and takes it to a vet or shelter can scan the chip and reach you.</li></ul><h2>Flyers, social media and local groups</h2><p>The more people who know you're searching, the more eyes are looking for you. A clear flyer and the right channels multiply your chances.</p><ul><li>Make a simple flyer with a big photo, the area where your dog went missing, your phone number and a note saying \"don't chase, please call me\".</li><li>Put it up near the spot, in shops, at vets and on neighbourhood boards.</li><li>Post in local lost-and-found pet groups on Facebook and ask people to share.</li></ul><h2>Post an alert on Orma to reach nearby neighbours</h2><p>Orma is a free community app for missing pets, built for exactly this moment when the search needs to be fast and reach everyone around you. You can <a href=\"/en/\">create a report in a few taps</a> and instantly let the people nearby know you're searching.</p><ul><li>People <strong>near you</strong> get an automatic alert when something moves, so many extra eyes join the search right away.</li><li>If someone spots your dog, they can add a photo and location, so you recognise your dog at a glance and know where to focus.</li><li>If a found dog shares your dog's microchip, the <strong>match happens automatically</strong>; chat stays inside the app so your contact details stay private, and pet locations on the map are blurred for safety.</li></ul><p>I know this is a hard moment, but you're not alone and it's far from hopeless: a great many dogs are found, often within hours or a few days of going missing. Keep searching calmly, keep every channel open, and let the network of people around you help. There's a real chance you'll be holding your friend again soon.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Ho perso il cane da poche ore: cosa devo fare per prima cosa?",
+          "a": "Torna nell'ultimo punto in cui l'hai visto e chiamalo con voce calma: spesso i cani spaventati restano nascosti lì vicino. Segnala subito lo smarrito su Orma con foto e luogo, così le persone della zona ricevono un avviso e possono aiutarti a cercare."
+        },
+        {
+          "q": "Un cane smarrito torna a casa da solo?",
+          "a": "Può succedere, soprattutto vicino a casa e nelle prime ore. Non contarci però: lascia fuori la sua cuccia o una tua maglietta col tuo odore, tieni aperto un accesso se puoi e nel frattempo continua a cercare e a diffondere l'avviso."
+        },
+        {
+          "q": "A chi devo segnalare che ho perso il cane in Italia?",
+          "a": "Avvisa il canile del tuo Comune e il servizio veterinario della ASL, perché è lì che vengono portati gli animali ritrovati. Se il cane è microchippato, l'anagrafe degli animali d'affezione permette di risalire a te quando qualcuno lo fa leggere da un veterinario."
+        },
+        {
+          "q": "Come faccio a far sapere in fretta a tutta la zona che ho perso il cane?",
+          "a": "Con Orma pubblichi lo smarrito in pochi tap e le persone vicine ricevono un avviso; se qualcuno lo avvista può segnalartelo con foto e luogo. Dall'app generi anche un volantino PDF con QR da stampare o condividere nei gruppi del quartiere."
+        }
+      ],
+      "en": [
+        {
+          "q": "My dog went missing a few hours ago: what should I do first?",
+          "a": "Go back to the last place you saw your dog and call out calmly: frightened dogs often stay hidden nearby. Report the loss right away on Orma with a photo and location, so people in the area get an alert and can help you look."
+        },
+        {
+          "q": "Do lost dogs find their way back home on their own?",
+          "a": "It can happen, especially close to home and in the first few hours. Don't count on it, though: leave their bed or a worn piece of your clothing outside so your scent is there, keep an entrance open if you can, and keep searching and spreading the word in the meantime."
+        },
+        {
+          "q": "Who should I notify when my dog is lost?",
+          "a": "Contact your local shelter and, in Italy, the veterinary service of the ASL, since that's where found animals are usually taken. If your dog has a microchip, the pet registry lets people trace the dog back to you when a vet scans it."
+        },
+        {
+          "q": "How can I quickly let my whole neighborhood know my dog is lost?",
+          "a": "With Orma you post the missing report in a few taps and nearby people get an alert; if someone spots your dog they can send you a photo and location. The app also creates a PDF flyer with a QR code you can print or share in local groups."
+        }
+      ]
     }
   },
   {
@@ -31,6 +68,44 @@ export const GUIDES = [
       "title": "Lost Cat: How to Find a Lost Cat and Bring It Home",
       "metaDesc": "Lost your cat? Here's a calm, practical guide on how to find a lost cat: where and when to search, scent lures, microchips and who to alert nearby.",
       "html": "<p>If you've just realised your cat is gone, take a breath: the reassuring truth is that a <strong>lost cat</strong> usually doesn't go far. Unlike dogs, frightened cats tend to hide silently very close to home, sometimes just a few metres away, staying still for hours or days. This guide walks you through <strong>how to find a lost cat</strong>, calmly and step by step: where to look, when, which lures actually work, and who to tell.</p><h2>Why a lost cat hides close to home</h2><p>Understanding how cats behave helps you search in the right places. A cat that is scared or disorientated goes into survival mode: it tucks itself into a quiet hiding spot and stays put, often without answering when you call. It isn't ignoring you, it's simply frightened. That's why walking around calling loudly often fails: your cat is closer than you think, but keeping quiet.</p><ul><li>Indoor cats rarely stray beyond a few gardens, so focus your search within the first 50-100 metres.</li><li>Cats used to going outside may roam wider, but they usually stick to familiar routes.</li><li>In the first 24-48 hours they tend to stay frozen in place, so patience matters more than distance.</li></ul><h2>Search at night and at dawn, when it's quiet</h2><p>The best time to look for a lost cat is late at night or in the early hours of dawn, when there's little noise and traffic. Your cat feels safer moving around, and you can hear it more easily.</p><ul><li>Move slowly and quietly, stopping often to listen for a faint meow or rustle.</li><li>Use a torch and sweep it slowly under cars, hedges and dark corners: <strong>a cat's eyes reflect light</strong>, so you'll see them shine in the dark.</li><li>Call in your normal, calm voice, then stay silent and listen for a full minute before moving on.</li></ul><h2>Check every hiding spot, one by one</h2><p>A frightened cat looks for tight, dark, sheltered places. Patiently check every possible hiding spot, even the ones that seem unlikely.</p><ul><li>Under cars, in stairwells, garages, cellars and storage rooms.</li><li>Under thick hedges, wood piles, stacked materials and large plant pots.</li><li>Politely ask neighbours to check sheds, garages and outbuildings: a cat can easily get shut inside by mistake.</li><li>Look up too: cats sometimes climb trees or roofs and can't get back down.</li></ul><h2>Use scents your cat recognises</h2><p>A cat's sense of smell is extraordinary, so use it to guide them home. Familiar scents are a far stronger lure than any food.</p><ul><li>Place your cat's <strong>used litter tray</strong> outside the door: its own scent helps it find the way back.</li><li>Leave a bowl of its usual food or something strong-smelling, along with its blanket or bed.</li><li>If you can, keep a low window or door open at night, as many cats slip back in once everything is calm.</li><li>Avoid leaving lots of food out overnight so you don't attract other animals: small amounts in the right spots are enough.</li></ul><h2>Alert neighbours, vets and shelters</h2><p>The more people looking, the sooner you'll find your cat. Spread the word locally in a simple, organised way.</p><ul><li>Tell neighbours in person or in local groups, sharing a clear, recent photo.</li><li>Call nearby <strong>vets</strong> and clinics: whoever finds a cat often takes it there to scan for a microchip.</li><li>Contact your local shelter and municipal animal services, as stray or found animals usually pass through them.</li><li>If your cat has a <strong>microchip</strong>, make sure your contact details on the pet registry are up to date; a vet can check this for you.</li><li>If you see any animal injured or in danger, contact your local emergency or animal welfare services.</li></ul><h2>Report it on Orma and get help from people nearby</h2><p>While you search, report your lost cat on <a href=\"/en/\">Orma</a>, the free app for missing pets. In just a few taps you automatically alert people <strong>near you</strong>, so many local eyes start looking at the same moment. Anyone who spots a similar cat can post a sighting with a photo and location, and you'll recognise your cat straight away. If someone finds a cat with a microchip, the <a href=\"/en/\">automatic matching</a> can link it to your report, and the chat stays inside the app so your contact details remain protected while you coordinate.</p><p>Finding a cat often takes patience: many come back after several days, once the fear fades. Keep searching during the quiet hours, leave familiar scents near your home, and keep your reports up to date. You're not alone in this search, and every small step brings the moment your friend returns a little closer.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Dopo quanti giorni un gatto smarrito torna a casa?",
+          "a": "Molti gatti tornano da soli entro pochi giorni, spesso di notte quando c'è silenzio. I gatti domestici tendono a nascondersi vicino a casa, di solito entro un raggio di poche centinaia di metri, quindi vale la pena cercare a lungo nelle vicinanze."
+        },
+        {
+          "q": "Dove si nasconde un gatto quando scappa di casa?",
+          "a": "Di solito resta molto vicino: sotto auto, in cantine, garage, siepi, tettoie o spazi stretti dove si sente al sicuro. Controlla questi punti al mattino presto e dopo il tramonto, quando esce più volentieri, e chiamalo con voce calma."
+        },
+        {
+          "q": "Come faccio a far tornare il mio gatto smarrito?",
+          "a": "Metti fuori la sua lettiera, una coperta o i tuoi vestiti: gli odori familiari lo aiutano a orientarsi. Lascia una ciotola di cibo, esci nelle ore tranquille chiamandolo piano e, se puoi, avvisa i vicini di controllare garage e cantine."
+        },
+        {
+          "q": "Cosa devo fare se ho perso il gatto con il microchip?",
+          "a": "Segnala subito lo smarrimento alla ASL veterinaria e verifica che i tuoi recapiti in anagrafe siano aggiornati: se qualcuno lo porta da un veterinario o al canile, potrà risalire a te. Con Orma puoi anche pubblicare l'annuncio e il microchip aiuta la corrispondenza automatica se qualcuno lo ritrova."
+        }
+      ],
+      "en": [
+        {
+          "q": "How many days does it take for a lost cat to come home?",
+          "a": "Many cats come back on their own within a few days, often at night when things are quiet. House cats usually hide close to home, typically within a few hundred metres, so it's worth searching nearby for a good while."
+        },
+        {
+          "q": "Where does a cat hide when it runs away from home?",
+          "a": "Usually very close by: under cars, in cellars, garages, hedges, sheds or tight spaces where it feels safe. Check these spots early in the morning and after sunset, when cats move around more, and call your cat in a calm voice."
+        },
+        {
+          "q": "How can I get my lost cat to come back?",
+          "a": "Put its litter box, a blanket or your worn clothes outside: familiar smells help it find its way. Leave out a bowl of food, go out during quiet hours calling softly, and if you can, ask neighbours to check their garages and cellars."
+        },
+        {
+          "q": "What should I do if my microchipped cat is lost?",
+          "a": "Report the loss to your local veterinary health authority and make sure your contact details in the pet registry are up to date, so anyone who takes your cat to a vet or shelter can trace you. With Orma you can also post the report, and the microchip enables an automatic match if someone finds your cat."
+        }
+      ]
     }
   },
   {
@@ -47,6 +122,44 @@ export const GUIDES = [
       "title": "I Found an Animal: What to Do, Step by Step",
       "metaDesc": "Found a dog or a cat and not sure what to do? A calm, practical guide to keeping the animal safe, checking the microchip and finding the owner.",
       "html": "<p>If you've just <strong>found an animal</strong> and don't know what to do, take a breath: you've already done the most important thing by stopping to help. Whether you've <strong>found a dog</strong> wandering near a road or a frightened cat in your garden, the steps are simple and they all point to one goal: getting them back to whoever is looking for them. Here's what to do, in the right order, without rushing and without forcing anything.</p>\n\n<h2>Keep the animal you found safe, without forcing it</h2>\n<p>A lost animal is often scared and can react unpredictably, even if it's usually gentle. When you've <strong>found an animal</strong>, the first rule is to approach calmly, without chasing it or backing it into a corner.</p>\n<ul>\n<li>Speak in a low, steady voice and move slowly.</li>\n<li>If it's a dog, try offering water and, if you have one, a lead or a piece of rope to keep it away from traffic.</li>\n<li>If it's a cat, don't force contact: let it come to you. An open carrier or box helps.</li>\n<li>Don't handle an animal that looks aggressive or is in real panic: wait, or ask for help.</li>\n</ul>\n\n<h2>If it's injured or in danger, get help right away</h2>\n<p>The animal's health comes first. If you find it hurt, hit by a car or clearly in distress, don't wait.</p>\n<ul>\n<li>Contact a <strong>vet</strong> or your local public veterinary service as soon as possible.</li>\n<li>For an animal in serious danger, in Italy you can call <strong>112</strong> or the <strong>1515</strong> line of the Carabinieri Forestali (environmental police).</li>\n<li>Only move the animal if you have to, and do it gently so you don't make any injuries worse.</li>\n</ul>\n\n<h2>Get the microchip scanned: the fastest route to the owner</h2>\n<p>Nearly all dogs (and many cats) have a <strong>microchip</strong>, a tiny device under the skin linked to a national pet registry that traces back to the owner. It's the most direct way to solve the whole thing in a few hours.</p>\n<ul>\n<li>Take the animal (or have it scanned) at a <strong>vet</strong>, the local public veterinary service or a municipal shelter: reading the microchip is free and painless.</li>\n<li>The chip number lets the registry identify the registered owner and get in touch.</li>\n<li>No microchip? Don't lose heart: the next steps cover other ways to reunite them.</li>\n</ul>\n\n<h2>Notify the local shelter: in Italy it's the law</h2>\n<p>In Italy, whoever finds a stray animal is legally required to report it. This isn't pointless paperwork: it's often exactly how the owner gets their animal back.</p>\n<ul>\n<li>Report the find to the municipal <strong>shelter</strong> or the local public veterinary service.</li>\n<li>An official report starts the proper checks and keeps you on the right side of the rules.</li>\n<li><strong>Don't keep the animal secretly</strong>: beyond being against the rules, it cuts off the owner's chance to find it through official channels.</li>\n</ul>\n\n<h2>Post a \"found\" report on Orma, with a photo and location</h2>\n<p>Official reports matter, but it's often the local grapevine that makes the difference. On <a href=\"/en/\">Orma</a> you can post a <strong>found</strong> or simply <strong>sighted</strong> animal in a few taps, so whoever lost it recognises it at a glance from the photo and the place.</p>\n<ul>\n<li>Add a clear photo and mark where you saw it: it takes just a few seconds.</li>\n<li>People who are <strong>near you</strong> get an automatic alert when you post, so the news reaches the right area straight away.</li>\n<li>If the owner had already reported the animal with its microchip number, Orma can <strong>automatically match</strong> the lost and found reports.</li>\n<li>You get in touch through the <strong>secure in-app chat</strong>: your contact details stay protected, and the animal's location on the map is deliberately <strong>blurred by about 150 metres</strong> to keep everyone safe.</li>\n</ul>\n\n<h2>In the meantime: what to do (and what not to)</h2>\n<p>While you wait for someone to come forward, there's still plenty you can do, always with common sense.</p>\n<ul>\n<li>Ask around the neighbourhood and in nearby shops: the owner often lives just steps away.</li>\n<li>Keep the animal warm, with water and a little suitable food, without overdoing it.</li>\n<li>Don't promise or accept money: stay focused on getting it home.</li>\n<li>If you can't keep it, the municipal shelter and public veterinary service are the right places to turn to.</li>\n</ul>\n\n<p>Finding the way home is almost always a matter of a few hours and a few people passing the word along. You've done the hardest part by stopping to help: follow these steps calmly and you'll give that animal the best chance of getting back to its family. Thank you for being there.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Ho trovato un cane senza padrone, chi devo chiamare?",
+          "a": "Se il cane è in buona salute, puoi contattare il Comune o la Polizia Locale, che attivano il recupero tramite il canile o l'ASL veterinaria di zona. Se è ferito o in pericolo, chiama il 112. Con Orma puoi anche segnalarlo come trovato o avvistato in pochi tap, così l'avviso arriva alle persone vicine."
+        },
+        {
+          "q": "Come faccio a sapere se un animale trovato ha il microchip?",
+          "a": "Il microchip si legge con un apposito lettore: lo hanno i veterinari, le ASL veterinarie e i canili. Portando lì l'animale possono risalire al proprietario tramite l'anagrafe degli animali. Su Orma, se segnali il trovato, la corrispondenza automatica per microchip può aiutare a collegarlo a una segnalazione di smarrimento."
+        },
+        {
+          "q": "Posso tenere un gatto o un cane che ho trovato?",
+          "a": "No, non subito: l'animale potrebbe avere un proprietario che lo sta cercando. Va segnalato alle autorità (Comune, ASL veterinaria o canile) e fatto controllare il microchip. Se dopo il periodo previsto dalla legge nessuno lo reclama, si può valutare l'affido o l'adozione."
+        },
+        {
+          "q": "Ho trovato un animale ferito, cosa faccio subito?",
+          "a": "Se è in pericolo o ferito, chiama il 112, oppure il 1515 dei Carabinieri Forestali per la fauna selvatica. Evita di manipolarlo se rischi di farti male o di aggravarlo, e cerca di portarlo o farlo recuperare da un veterinario. Puoi intanto segnalarlo su Orma per avvisare chi è nelle vicinanze."
+        }
+      ],
+      "en": [
+        {
+          "q": "I found a dog with no owner, who should I call?",
+          "a": "If the dog seems healthy, contact your local council or municipal police, who arrange recovery through the local shelter or veterinary health service. If it's injured or in danger, call the emergency number (112 in Italy). With Orma you can also report it as found or sighted in a few taps, so nearby people get the alert."
+        },
+        {
+          "q": "How can I tell if a found animal has a microchip?",
+          "a": "A microchip is read with a special scanner, available at vets, veterinary health services, and shelters. Bringing the animal there lets them trace the owner through the pet registry. On Orma, reporting a found animal can trigger an automatic microchip match with a lost-pet report."
+        },
+        {
+          "q": "Can I keep a cat or dog I found?",
+          "a": "Not right away: the animal may have an owner searching for it. Report it to the authorities (council, veterinary health service, or shelter) and have the microchip checked. If no one claims it after the period set by law, fostering or adoption can be considered."
+        },
+        {
+          "q": "I found an injured animal, what should I do first?",
+          "a": "If it's in danger or hurt, call the emergency number (112 in Italy), or the forest rangers for wildlife. Avoid handling it if you might get hurt or make things worse, and try to get it to a vet. Meanwhile you can report it on Orma to alert people nearby."
+        }
+      ]
     }
   },
   {
@@ -63,6 +176,44 @@ export const GUIDES = [
       "title": "Pet Microchip: Why It's Decisive for Reuniting You With a Lost Pet",
       "metaDesc": "A pet microchip is the safest way to be reunited with a lost pet. Learn how the registry works, how to keep your details current, and how Orma helps.",
       "html": "<p>When a pet goes missing, the first hours feel endless and the mind races. In moments like these, a <strong>pet microchip</strong> makes a real difference: it's a tiny device that links your dog or cat to your name and contact details. A vet or shelter that finds your animal can read the chip and trace it back to you. That's why the microchip is, today, the most reliable tool for bringing a friend home. This guide explains in plain language what it is, how the animal registry works, and what to do to keep everything in order so a <strong>microchip lost pet</strong> can actually find its way back.</p>\n\n<h2>What a Microchip Is and How the Registry Works</h2>\n<p>A microchip is a small glass cylinder about the size of a grain of rice, placed under the skin at the side of the neck. It has no battery and sends out no signal: it simply holds a unique identification number. That number is stored in an <strong>official animal registry</strong> a database that links the code to you as the owner.</p>\n<p>The key thing to understand is this: the chip on its own doesn't say who you are. It works because the code is connected to an up-to-date record with your contact details. If your details are correct, whoever reads the chip can reach you. If they're outdated, the code stays just a number.</p>\n\n<h2>Legally Required for Dogs, Strongly Advised for Cats</h2>\n<p>In Italy, microchipping is <strong>legally required for all dogs</strong>: the chip must be implanted and registered, usually within the first months of life and before any transfer or adoption. It isn't a mere formality it's the foundation for identifying an animal and fighting abandonment.</p>\n<p>For <strong>cats</strong>, the requirement varies by region, but a microchip is <strong>strongly recommended</strong> everywhere. Cats wander easily, often without a collar, and without a chip they're nearly impossible to return to their owner. If your cat goes outside or could simply slip out of a window a microchip is your most important safety net.</p>\n\n<h2>How a Microchip Is Read: Who Can Do It</h2>\n<p>Reading a microchip is quick and free. It takes a dedicated scanner, which is normally available at:</p>\n<ul>\n<li>any <strong>veterinary practice</strong> or clinic;</li>\n<li><strong>shelters</strong> and municipal pounds;</li>\n<li>the <strong>local public veterinary service</strong> (in Italy, the ASL);</li>\n<li>often animal welfare associations and some authorities too.</li>\n</ul>\n<p>If you find an animal, the most helpful thing you can do is take it or report it to one of these points so they can scan the chip. If you believe an animal is in danger or being mistreated, in Italy you can call <strong>112</strong> or the forestry police on <strong>1515</strong>.</p>\n\n<h2>How to Keep Your Registry Details Current</h2>\n<p>A microchip only truly helps if the linked details are current. It's the step almost everyone forgets. Here's a checklist to run through:</p>\n<ul>\n<li><strong>Phone number and address</strong>: update them whenever you move or change your number.</li>\n<li><strong>Change of ownership</strong>: if you adopt or rehome an animal, the transfer must be recorded in the registry a private agreement isn't enough.</li>\n<li><strong>Yearly check</strong>: once a year, ask your vet to scan the chip and confirm your details are correct.</li>\n<li><strong>Where to update</strong>: registrations and changes are handled through the local public veterinary service or an authorized vet in your region.</li>\n</ul>\n<p>It takes five minutes and spares you the worst outcome: a found animal that no one can connect back to you.</p>\n\n<h2>How Orma Uses the Microchip for Automatic Matching</h2>\n<p>Even with a perfectly registered chip, there are still hours when your animal is out there and no one has yet brought it to a vet. This is where <a href=\"/en/\">Orma</a> comes in, the free community app for lost pets. When you report your animal as missing and enter its microchip number, the app automatically compares it with reports of found animals: if someone reports an animal with that code, <strong>automatic microchip matching</strong> connects you right away.</p>\n<p>Around this, Orma automatically alerts people near where your pet went missing, gathers sightings with photos and location, and protects your contacts with a secure in-app chat. Animals' positions on the map are blurred by around 150 metres to protect privacy. You can <a href=\"/en/\">get started here</a> and keep your pets' profiles ready before you ever need them.</p>\n\n<p>A microchip isn't a magic guarantee, but it's the most solid way we have today to reunite an animal with its owner. If your dog or cat is already registered, take a moment to check that your details are current. If it isn't yet, talk to your vet: it's a small step that, in the hardest moment, can make all the difference.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Il microchip ha un GPS per localizzare il cane?",
+          "a": "No, il microchip non ha GPS e non traccia la posizione. È un piccolo transponder passivo che, letto con un apposito lettore, mostra un codice collegato ai tuoi dati nell'Anagrafe degli Animali d'Affezione: serve a identificare l'animale e risalire a te, non a seguirlo su una mappa."
+        },
+        {
+          "q": "Chi legge il microchip di un cane o gatto trovato?",
+          "a": "Il microchip può essere letto gratuitamente da veterinari, canili e servizi veterinari della ASL, che dispongono del lettore. Se trovi un animale, portalo o segnalalo a una di queste strutture: dal codice risalgono al proprietario tramite l'anagrafe."
+        },
+        {
+          "q": "Cosa fare se ho cambiato numero di telefono o indirizzo?",
+          "a": "Aggiorna subito i tuoi recapiti nell'Anagrafe degli Animali d'Affezione, di solito tramite il veterinario o il servizio veterinario della ASL della tua regione. Un microchip collegato a un numero vecchio rende difficile che chi trova l'animale riesca a contattarti."
+        },
+        {
+          "q": "Il microchip è obbligatorio anche per i gatti?",
+          "a": "In Italia il microchip è obbligatorio per i cani; per i gatti l'obbligo dipende dalla regione e sta diventando sempre più diffuso. In ogni caso è fortemente consigliato per tutti: è il modo più affidabile per ricongiungere un animale smarrito al suo proprietario."
+        }
+      ],
+      "en": [
+        {
+          "q": "Does a pet microchip have GPS to locate a lost dog?",
+          "a": "No, a microchip has no GPS and does not track location. It's a small passive transponder that, when scanned with a reader, shows a code linked to your details in the national pet registry: it identifies the animal and points back to you, it doesn't follow it on a map."
+        },
+        {
+          "q": "Who can scan the microchip of a found dog or cat?",
+          "a": "Vets, shelters and public veterinary services have the scanner and can read a microchip for free. If you find an animal, take it or report it to one of these places: from the code they can trace the owner through the registry."
+        },
+        {
+          "q": "What should I do if I changed my phone number or address?",
+          "a": "Update your contact details in the pet registry right away, usually through your vet or the local public veterinary service. A microchip linked to an old number makes it hard for whoever finds your pet to reach you."
+        },
+        {
+          "q": "Is a microchip mandatory for cats too?",
+          "a": "In Italy the microchip is mandatory for dogs; for cats it depends on the region and is becoming increasingly common. Either way it's strongly recommended for every pet: it's the most reliable way to reunite a lost animal with its owner."
+        }
+      ]
     }
   },
   {
@@ -79,6 +230,206 @@ export const GUIDES = [
       "title": "How to Adopt a Dog or Cat from a Shelter: A Simple Guide",
       "metaDesc": "Thinking of adopting a dog or a cat from a shelter? A calm, practical guide to shelter adoption: how it works, what to consider, and how to find rescues near you.",
       "html": "<p>Choosing to adopt a dog or adopt a cat from a shelter means giving a home to an animal who doesn't have one, instead of buying. It's a wonderful decision, but one to make calmly and thoughtfully: a pet becomes part of the family for many years. This guide walks you through how shelter adoption works, what to weigh up before you say yes, and how to spot the listings you should stay away from.</p>\n\n<h2>Why adopt from a shelter instead of buying</h2>\n<p>Shelters and rescues are full of dogs and cats waiting for a family. When you adopt a dog or adopt a cat from a shelter, you don't just help one animal: you free up a space so another one can be taken in. In practice, you save two lives at once.</p>\n<ul>\n<li>You give a second chance to an animal who has often already lived through being abandoned.</li>\n<li>You don't fuel puppy mills or irregular breeding.</li>\n<li>Many shelter animals are already adults, so you know their character and size from the start.</li>\n<li>Adoptions are usually free or ask for a small contribution, and the animal typically comes already vet-checked, vaccinated and microchipped.</li>\n</ul>\n\n<h2>How shelter adoption works, step by step</h2>\n<p>Adopting a dog or a cat from a shelter is straightforward, but it always involves getting to know each other first: you don't take an animal home at first sight. Here are the most common steps.</p>\n<ul>\n<li><strong>Visit the shelter or rescue.</strong> Book a time, look around without rushing, and ask the staff or volunteers about the animals' stories.</li>\n<li><strong>Get to know the animal.</strong> Meet more than once: watch how they react to you, to your family and to other animals. Ask about temperament, habits and any health needs.</li>\n<li><strong>Fill in the adoption application.</strong> The shelter may ask about your home and routine. That's normal, it helps them find the right match.</li>\n<li><strong>Sign the adoption agreement.</strong> You'll receive a form committing you to care for the animal, and the microchip is registered in your name in the official pet database.</li>\n<li><strong>Prepare for the homecoming.</strong> Many rescues do a follow-up in the weeks after, even just a phone call, to check that everything is going well.</li>\n</ul>\n\n<h2>What to consider before you adopt</h2>\n<p>Before you adopt from a shelter, pause and ask yourself honestly whether it's the right time. It's kinder to say no now than to return an animal after a few weeks.</p>\n<ul>\n<li><strong>Time.</strong> Dogs need daily walks and company; cats need attention too. Who will be with them during the day?</li>\n<li><strong>Space and lifestyle.</strong> Small flat, garden, working hours, travel: choose a size and character that fit your real life, not an idealised one.</li>\n<li><strong>Costs.</strong> Budget for food, vet visits, yearly vaccinations, parasite treatments and the occasional surprise. A pet is an ongoing expense.</li>\n<li><strong>Family.</strong> Children, other pets, possible allergies: talk it through with everyone first, because the choice should be shared.</li>\n<li><strong>The long haul.</strong> A dog or cat can live 15 years or more. It's a long commitment, not a spur-of-the-moment decision.</li>\n</ul>\n\n<h2>Watch out for suspicious listings</h2>\n<p>Alongside genuine adoptions, there are scams and unclear rehoming offers, especially online. A few warning signs worth knowing.</p>\n<ul>\n<li>They ask for money upfront for \"transport\" or \"paperwork\" before you've even seen the animal.</li>\n<li>They give away purebred puppies \"urgently\", with no microchip or health records.</li>\n<li>They won't let you visit where the animal lives, or avoid meeting in person.</li>\n<li>They sign nothing and disappear after handing the animal over.</li>\n</ul>\n<p>Always prefer recognised shelters, rescues and associations. Ask to see the microchip and documents, and have your new companion checked by a trusted vet after adoption. If you suspect animal cruelty or trafficking, in Italy you can alert the environmental police (Carabinieri Forestali) on <strong>1515</strong> or call 112.</p>\n\n<h2>How Orma helps you find adoptions near you</h2>\n<p>Finding the right shelter isn't always easy. With <a href=\"/en/\">Orma</a> you can see adoptions from shelters and rescues near you, with photos and a description of each animal, so you can get a sense of them before you even visit.</p>\n<ul>\n<li>Browse the dogs and cats looking for a home calmly, with no pressure.</li>\n<li>Contact the shelter safely from the app, with your details kept private.</li>\n<li>Arrive at your appointment already informed, with a clearer idea of who you might meet.</li>\n</ul>\n\n<p>Adopting changes a life, and often yours too. Take the time you need, ask the right questions, and choose with your heart but also with your head: when the moment comes, you'll know the right animal for you.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Quanto costa adottare un cane o un gatto dal canile?",
+          "a": "L'adozione da un canile o rifugio pubblico è di solito gratuita o con un piccolo contributo. Molte strutture consegnano l'animale già con microchip, vaccinazioni e sterilizzazione: informati sui costi eventuali prima di andare."
+        },
+        {
+          "q": "Cosa serve per adottare un cane dal canile?",
+          "a": "In genere bastano un documento d'identità e la firma di un modulo di affido. Alcune strutture fanno un colloquio o un controllo della casa per capire se l'ambiente è adatto all'animale."
+        },
+        {
+          "q": "Posso adottare un cane se lavoro tutto il giorno?",
+          "a": "Dipende dal cane: alcuni tollerano bene le ore da soli, altri soffrono. Parlane con gli operatori del canile, che conoscono il carattere di ogni animale e possono indirizzarti verso quello più adatto ai tuoi ritmi."
+        },
+        {
+          "q": "Meglio adottare un cucciolo o un cane adulto dal canile?",
+          "a": "Un cucciolo richiede più tempo per educazione e socializzazione; un adulto ha spesso un carattere già formato e più prevedibile. Non esiste una scelta giusta in assoluto: valuta il tempo e l'esperienza che hai."
+        }
+      ],
+      "en": [
+        {
+          "q": "How much does it cost to adopt a dog or cat from a shelter?",
+          "a": "Adopting from a public shelter is usually free or requires a small contribution. Many shelters hand over the animal already microchipped, vaccinated and neutered, so ask about any fees before you go."
+        },
+        {
+          "q": "What do I need to adopt a dog from a shelter?",
+          "a": "Usually an ID document and a signed adoption form are enough. Some shelters also hold a short interview or a home check to make sure the environment suits the animal."
+        },
+        {
+          "q": "Can I adopt a dog if I work all day?",
+          "a": "It depends on the dog: some cope well with hours alone, others struggle. Talk to the shelter staff, who know each animal's temperament and can point you to one that fits your routine."
+        },
+        {
+          "q": "Is it better to adopt a puppy or an adult dog from a shelter?",
+          "a": "A puppy needs more time for training and socialisation, while an adult often has a settled, more predictable character. There's no single right choice: weigh the time and experience you have."
+        }
+      ]
+    }
+  },
+  {
+    "slug": {
+      "it": "cane-scappato-botti-capodanno-cosa-fare",
+      "en": "dog-ran-away-fireworks-what-to-do"
+    },
+    "it": {
+      "title": "Cane scappato per i botti di Capodanno: cosa fare",
+      "metaDesc": "Il tuo cane e scappato per i botti di Capodanno? Ecco cosa fare subito, dove cercare un cane spaventato dai fuochi d'artificio e come ritrovarlo con calma.",
+      "html": "<p>Se il tuo <strong>cane e scappato per i botti</strong> di Capodanno, respira: quello che provi adesso lo hanno vissuto tantissime persone, e moltissimi cani tornano a casa. Un <strong>cane spaventato dai fuochi d'artificio</strong> non fugge perche vuole allontanarsi da te, ma perche il rumore lo terrorizza e il suo istinto gli dice solo di correre lontano dal pericolo. In questa guida trovi passi concreti e calmi da seguire subito, senza farti prendere dal panico.</p><h2>Perche i cani scappano per paura del rumore</h2><p>I botti sono improvvisi, fortissimi e imprevedibili. Per un cane sono come esplosioni senza spiegazione: il corpo entra in allarme e parte la fuga. Un <strong>cane fuggito a Capodanno</strong> spesso rompe il guinzaglio, salta recinzioni o scappa da una porta aperta, e in quei minuti non risponde piu al richiamo. Non e disobbedienza: e paura pura. Capirlo ti aiuta a cercarlo nel modo giusto, senza rincorrerlo urlando, cosa che lo spaventerebbe ancora di piu.</p><h2>Agire subito, nonostante il caos</h2><p>Anche se e notte e c'e confusione, i primi minuti contano. Muoviti con calma ma senza aspettare.</p><ul><li>Chiama il suo nome con voce tranquilla, non gridata: un tono sereno lo rassicura.</li><li>Non inseguirlo di corsa. Se lo vedi, abbassati, evita movimenti bruschi e offrigli un premio o la sua ciotola.</li><li>Avvisa subito familiari, vicini e amici della zona, cosi in tanti tengono gli occhi aperti.</li><li>Prepara una foto recente e nota eventuali segni particolari: ti serviranno per la segnalazione.</li></ul><h2>Dove cercano i cani spaventati</h2><p>Un cane in preda alla paura tende ad andare <strong>lontano</strong>, molto piu di quanto immagini, e a nascondersi in posti silenziosi. Puo percorrere chilometri prima di fermarsi, disorientato.</p><ul><li>Controlla zone tranquille e riparate: cespugli, garage, cortili, sottoscala, campi ai margini dell'abitato.</li><li>Cerca lungo le direzioni di fuga naturali, lontano dal rumore dei botti.</li><li>Porta con te qualcosa che profuma di casa e la sua pettorina.</li><li>Chiedi alle persone che incontri se hanno visto un cane spaventato passare di corsa.</li></ul><h2>Lascia che sia lui a tornare da te</h2><p>Molti cani, quando il panico si placa, ripercorrono la strada verso casa. Aiutalo a ritrovarti con l'olfatto.</p><ul><li>Lascia aperto il cancello o la porta, se puoi farlo in sicurezza.</li><li>Metti fuori una <strong>coperta col suo odore</strong>, la sua cuccia e la ciotola dell'acqua e del cibo.</li><li>Non lavare subito la sua copertina: l'odore familiare e un richiamo potente.</li><li>Lascia acceso una piccola luce e resta reperibile, cosi se qualcuno lo trova puo contattarti.</li></ul><h2>Cerca quando i botti finiscono</h2><p>Il momento migliore per le ricerche e quando torna il silenzio, di solito a <strong>tarda notte o all'alba</strong>. Con la calma, molti cani escono dai nascondigli e si lasciano avvicinare.</p><ul><li>Esci nelle ore tranquille, muoviti piano e parla a bassa voce.</li><li>Il giorno dopo avvisa i <strong>canili</strong>, i <strong>rifugi</strong> e i <strong>veterinari</strong> della zona: spesso un cane trovato viene portato li.</li><li>Contatta il servizio veterinario della <strong>ASL</strong>: se il cane ha il microchip, la lettura permette di risalire a te tramite l'anagrafe canina.</li><li>Se il cane e in pericolo (in strada trafficata, ferito o irraggiungibile) puoi chiamare il <strong>112</strong> o il <strong>1515</strong> dei Carabinieri Forestali.</li></ul><h2>Segnala su Orma e attiva i vicini</h2><p>Nei momenti di paura, tante persone che cercano insieme fanno la differenza. Con <a href=\"/\">Orma</a> puoi segnalare il tuo cane smarrito in pochi tap e avvisare chi si trova nelle vicinanze. Chi lo avvista puo inviarti una foto e il luogo, e se qualcuno lo porta dal veterinario la corrispondenza automatica via <strong>microchip</strong> aiuta a ricongiungervi. Puoi anche generare un <a href=\"/\">volantino con QR</a> da stampare e appendere in zona. La mappa mostra la posizione in modo approssimativo per proteggere la tua privacy.</p><h2>Prevenire per l'anno prossimo</h2><p>Quando tutto sara passato, qualche accortezza puo evitare un nuovo spavento il prossimo Capodanno.</p><ul><li>Non lasciare il cane da solo durante i botti: la tua presenza lo tranquillizza.</li><li>Preparagli un <strong>rifugio tranquillo</strong> in casa, con la sua cuccia e rumori di fondo che coprano gli scoppi.</li><li>Tieni sempre aggiornato il microchip e la tua reperibilita nell'anagrafe.</li><li>Se e molto sensibile al rumore, parlane per tempo con il tuo veterinario.</li></ul><p>Cercare un cane scappato di notte fa paura, lo sappiamo. Ma vai avanti con calma: molti amici a quattro zampe tornano a casa nelle ore successive, appena il rumore finisce. Continua a cercare, tieni aperti i canali giusti e lascia che il suo istinto lo riporti da te.</p>"
+    },
+    "en": {
+      "title": "Dog ran away from fireworks: what to do",
+      "metaDesc": "Your dog ran away from the fireworks on New Year's Eve? Here's what to do right away, where a scared dog hides and how to bring him home calmly.",
+      "html": "<p>If your <strong>dog ran away because of the fireworks</strong> on New Year's Eve, take a breath: what you feel right now, so many people have felt too, and most dogs do come home. A <strong>scared dog runs from fireworks</strong> not because he wants to leave you, but because the noise terrifies him and his instinct tells him only one thing: run far from the danger. This guide gives you calm, concrete steps to follow right away, without letting panic take over.</p><h2>Why dogs run away from loud noise</h2><p>Fireworks are sudden, very loud and impossible to predict. To a dog they feel like explosions with no explanation: the body goes into alarm and the flight instinct kicks in. A frightened dog often snaps the leash, jumps a fence or bolts through an open door, and in those minutes he no longer responds to your call. It isn't disobedience, it's pure fear. Understanding this helps you search the right way, without chasing and shouting, which would only scare him more.</p><h2>Act right away, despite the chaos</h2><p>Even if it's night and everything is confusing, the first minutes matter. Move calmly, but don't wait.</p><ul><li>Call his name in a soft, steady voice, not a shout: a calm tone reassures him.</li><li>Don't chase him at a run. If you see him, crouch down, avoid sudden moves and offer a treat or his food bowl.</li><li>Alert family, neighbours and friends nearby, so many eyes are looking at once.</li><li>Get a recent photo ready and note any distinctive marks: you'll need them for the report.</li></ul><h2>Where scared dogs hide</h2><p>A dog gripped by fear tends to go <strong>far away</strong>, much farther than you'd expect, and to hide in quiet places. He may cover several kilometres before stopping, disoriented and lost.</p><ul><li>Check quiet, sheltered spots: bushes, garages, courtyards, under stairs, fields at the edge of town.</li><li>Search along natural escape routes, away from the noise of the fireworks.</li><li>Bring something that smells of home and his harness.</li><li>Ask everyone you meet whether they saw a frightened dog run past.</li></ul><h2>Let him find his way back to you</h2><p>Many dogs, once the panic fades, retrace their steps toward home. Help him find you through his sense of smell.</p><ul><li>Leave the gate or door open, if you can do so safely.</li><li>Put out a <strong>blanket with his scent</strong>, his bed, and bowls of water and food.</li><li>Don't wash his blanket right away: the familiar smell is a powerful call.</li><li>Leave a small light on and stay reachable, so anyone who finds him can contact you.</li></ul><h2>Search when the fireworks stop</h2><p>The best time to search is when silence returns, usually <strong>late at night or at dawn</strong>. In the quiet, many dogs come out of hiding and let you get close.</p><ul><li>Go out in the calm hours, move slowly and speak in a low voice.</li><li>The next day, alert local <strong>shelters</strong>, <strong>rescue centres</strong> and <strong>vets</strong>: a found dog is often taken there.</li><li>Contact the local veterinary health service (in Italy, the ASL): if the dog has a microchip, scanning it traces him back to you through the pet registry.</li><li>If the dog is in danger (on a busy road, injured or unreachable) you can call the emergency services (in Italy, <strong>112</strong>, or <strong>1515</strong> for the Forestry Carabinieri).</li></ul><h2>Report it on Orma and alert your neighbours</h2><p>In frightening moments, many people searching together make the difference. With <a href=\"/en/\">Orma</a> you can report your lost dog in a few taps and alert people nearby. Anyone who spots him can send you a photo and the location, and if someone takes him to a vet, automatic <strong>microchip</strong> matching helps reunite you. You can also generate a <a href=\"/en/\">flyer with a QR code</a> to print and put up around your area. The map shows the location approximately to protect your privacy.</p><h2>Preventing it next year</h2><p>Once it's all over, a few simple habits can spare you another scare next New Year's Eve.</p><ul><li>Don't leave your dog alone during fireworks: your presence calms him.</li><li>Set up a <strong>quiet refuge</strong> at home, with his bed and background sound to soften the bangs.</li><li>Keep his microchip and your contact details up to date in the registry.</li><li>If he's very sensitive to noise, talk to your vet well in advance.</li></ul><p>Searching for a runaway dog at night is frightening, we know. But keep going gently: many four-legged friends come home in the hours that follow, as soon as the noise stops. Keep looking, keep the right channels open, and let his instinct guide him back to you.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Il mio cane e scappato per i botti, tornera a casa da solo?",
+          "a": "Molti cani tornano da soli quando il panico si calma, spesso a tarda notte o all'alba. Lascia aperto il cancello e metti fuori una coperta col suo odore e la ciotola per aiutarlo a ritrovare la strada."
+        },
+        {
+          "q": "Quanto lontano puo arrivare un cane spaventato dai fuochi d'artificio?",
+          "a": "Un cane terrorizzato puo correre per diversi chilometri prima di fermarsi, disorientato. Estendi le ricerche oltre il quartiere e controlla i luoghi tranquilli e riparati."
+        },
+        {
+          "q": "Cosa faccio se non trovo il cane la notte di Capodanno?",
+          "a": "Riprova nelle ore di silenzio, poi il giorno dopo avvisa canili, rifugi e veterinari della zona e il servizio veterinario ASL. Segnala lo smarrimento su Orma per attivare le persone vicine."
+        },
+        {
+          "q": "Il microchip aiuta a ritrovare un cane scappato?",
+          "a": "Si. Se qualcuno porta il cane da un veterinario o in canile, la lettura del microchip permette di risalire a te tramite l'anagrafe canina, a patto che i tuoi dati siano aggiornati."
+        }
+      ],
+      "en": [
+        {
+          "q": "My dog ran away from the fireworks, will he come home on his own?",
+          "a": "Many dogs return on their own once the panic settles, often late at night or at dawn. Leave the gate open and put out a blanket with his scent and his bowl to help him find his way back."
+        },
+        {
+          "q": "How far can a dog scared by fireworks travel?",
+          "a": "A terrified dog can run for several kilometres before stopping, disoriented. Extend your search beyond the neighbourhood and check quiet, sheltered places."
+        },
+        {
+          "q": "What should I do if I can't find my dog on New Year's Eve?",
+          "a": "Try again during the quiet hours, then the next day alert local shelters, rescue centres and vets, and the veterinary health service. Report the loss on Orma to alert people nearby."
+        },
+        {
+          "q": "Does a microchip help find a runaway dog?",
+          "a": "Yes. If someone takes the dog to a vet or shelter, scanning the microchip traces him back to you through the pet registry, as long as your details are up to date."
+        }
+      ]
+    }
+  },
+  {
+    "slug": {
+      "it": "volantino-animale-smarrito-che-funziona",
+      "en": "lost-pet-poster-that-works"
+    },
+    "it": {
+      "title": "Come fare un volantino per un animale smarrito che funziona",
+      "metaDesc": "Guida pratica al volantino cane smarrito: cosa scrivere, la foto giusta, dove affiggerlo e gli errori da evitare. Con volantino PDF pronto e QR da Orma.",
+      "html": "<p>Quando un animale sparisce, ogni minuto sembra lunghissimo e la mente va in mille direzioni. Un buon volantino cane smarrito è uno degli strumenti più semplici e potenti che hai: parla alle persone del quartiere anche mentre tu sei altrove. Non serve saper usare programmi complicati. Serve chiarezza. In questa guida vediamo con calma come fare un volantino animale smarrito che funziona davvero, cosa deve contenere, dove affiggerlo e quali errori evitare.</p><h2>Cosa deve avere un volantino animale smarrito</h2><p>Un manifesto animale smarrito viene letto in pochi secondi, spesso da lontano o da chi passa in auto. Per questo deve dire l'essenziale, subito. Ecco cosa non può mancare:</p><ul><li><strong>Una sola foto, grande e nitida</strong>: si deve vedere bene il muso e il manto. Meglio una foto sola che occupa metà pagina che tante piccole.</li><li><strong>La parola SMARRITO o PERSO ben visibile</strong>: grande, in alto, così chi guarda capisce al volo di cosa si tratta.</li><li><strong>Zona e data della scomparsa</strong>: il quartiere o la via e il giorno in cui è successo aiutano chi legge a collegare un avvistamento.</li><li><strong>Un recapito semplice</strong>: un numero di telefono grande e leggibile. Uno solo, quello sempre raggiungibile.</li><li><strong>La frase \"Non inseguirlo, chiamami\"</strong>: un animale spaventato scappa se rincorso. Chiedere di non inseguire e di avvisarti aumenta le possibilità di ritrovarlo.</li></ul><h2>La foto giusta fa la differenza</h2><p>La foto è la parte che ferma lo sguardo. Scegline una in cui l'animale si riconosce facilmente: alla luce del giorno, a fuoco, con i colori reali. Se ha un segno particolare (una macchia, il collare, un orecchio piegato) va benissimo una foto che lo mostri. Evita immagini scure, sfocate o di spalle.</p><h2>Dove affiggere il volantino</h2><p>Un volantino perfetto ma appeso nel posto sbagliato serve a poco. Concentrati sui luoghi dove passa gente del posto:</p><ul><li><strong>Il punto esatto della scomparsa</strong> e le strade intorno: è lì che qualcuno potrebbe averlo visto.</li><li><strong>Veterinari, cliniche e negozi per animali</strong>: chi lavora con gli animali è la persona più attenta a un avvistamento.</li><li><strong>Bar, panetterie, edicole e piccoli negozi</strong>: chiedi con gentilezza di esporlo alla cassa.</li><li><strong>Scuole, parchi e bacheche di quartiere</strong>: passano tante persone diverse ogni giorno.</li></ul><p>Se puoi, plastifica i fogli o mettili in una bustina trasparente: reggono meglio alla pioggia.</p><h2>Gli errori da evitare</h2><p>Molti volantini non funzionano per pochi dettagli. I più comuni:</p><ul><li><strong>Troppo testo</strong>: paragrafi lunghi non si leggono. Poche parole grandi valgono di più.</li><li><strong>Foto piccola o poco chiara</strong>: se non si riconosce l'animale, il volantino perde forza.</li><li><strong>Nessun recapito o numero minuscolo</strong>: senza un modo semplice per chiamarti, chi lo trova non sa cosa fare.</li><li><strong>Solo bianco e nero sbiadito</strong>: se puoi, stampa la foto a colori.</li></ul><h2>Il volantino pronto in un tap con Orma</h2><p>Preparare tutto a mano, con foto e QR, può sembrare complicato in un momento già difficile. Per questo <a href=\"/\">Orma</a> genera un <strong>volantino PDF già pronto</strong> a partire dalla tua segnalazione: foto grande, dati principali e un <strong>codice QR</strong> che chi lo inquadra usa per vedere la scheda aggiornata e contattarti. Lo scarichi, lo stampi e lo affiggi in pochi minuti. Sulla stessa <a href=\"/\">app gratuita Orma</a> puoi anche avvisare le persone vicine e ricevere avvistamenti con foto e luogo, mentre la mappa mostra la posizione in modo approssimato (circa 150 metri) per tutelare la tua privacy.</p><p>Fai un respiro. Un volantino chiaro, appeso nei punti giusti, mette al lavoro tante persone accanto a te. Nel frattempo avvisa il canile e la ASL veterinaria della tua zona e verifica che il microchip sia registrato all'anagrafe: sono passi semplici che spesso fanno la differenza. Molti animali tornano a casa proprio grazie a un vicino che ha visto il volantino giusto al momento giusto.</p>"
+    },
+    "en": {
+      "title": "How to Make a Lost Pet Poster That Actually Works",
+      "metaDesc": "A calm, practical guide to a lost dog flyer: what to write, the right photo, where to post it, and mistakes to avoid. Plus a ready PDF poster with QR from Orma.",
+      "html": "<p>When a pet goes missing, every minute feels endless and your mind races in every direction. A good lost pet poster is one of the simplest and most powerful tools you have: it speaks to your neighbourhood even while you're somewhere else. You don't need any design skills. You need clarity. In this guide we'll calmly go through how to make a lost dog flyer that truly works, what it should include, where to post it, and which mistakes to avoid.</p><h2>What a lost pet poster must include</h2><p>A lost pet poster is read in just a few seconds, often from a distance or from a passing car. So it has to say the essentials right away. Here's what it can't miss:</p><ul><li><strong>One large, sharp photo</strong>: the face and coat should be clearly visible. One photo filling half the page beats many small ones.</li><li><strong>The word LOST or MISSING, big and clear</strong>: large, near the top, so anyone glancing at it instantly understands.</li><li><strong>Area and date</strong>: the neighbourhood or street and the day it happened help people connect a sighting.</li><li><strong>A simple contact</strong>: one large, easy-to-read phone number. Just one, the one you'll always answer.</li><li><strong>The line \"Please don't chase, call me\"</strong>: a frightened pet runs if chased. Asking people not to chase and to call you instead raises your chances of getting them back.</li></ul><h2>The right photo makes the difference</h2><p>The photo is what stops the eye. Choose one where your pet is easy to recognise: in daylight, in focus, with true colours. If they have a distinctive mark (a patch, a collar, a folded ear), a photo that shows it is ideal. Avoid dark, blurry, or from-behind shots.</p><h2>Where to post the flyer</h2><p>A perfect flyer in the wrong spot does little. Focus on places where local people pass by:</p><ul><li><strong>The exact spot where your pet vanished</strong> and the surrounding streets: that's where someone may have seen them.</li><li><strong>Vets, clinics and pet shops</strong>: people who work with animals are the most likely to notice a sighting.</li><li><strong>Cafés, bakeries, newsstands and small shops</strong>: kindly ask to display it near the till.</li><li><strong>Schools, parks and community boards</strong>: lots of different people pass through every day.</li></ul><p>If you can, laminate the sheets or slip them into a clear plastic sleeve so they survive the rain.</p><h2>Mistakes to avoid</h2><p>Many flyers fail over small details. The most common ones:</p><ul><li><strong>Too much text</strong>: long paragraphs go unread. A few big words work better.</li><li><strong>A small or unclear photo</strong>: if your pet isn't recognisable, the flyer loses its power.</li><li><strong>No contact, or a tiny number</strong>: without an easy way to reach you, whoever finds them won't know what to do.</li><li><strong>Faded black and white</strong>: print the photo in colour if you can.</li></ul><h2>A ready poster in one tap with Orma</h2><p>Putting it all together by hand, with photo and QR code, can feel like a lot in an already hard moment. That's why <a href=\"/en/\">Orma</a> generates a <strong>ready-made PDF poster</strong> straight from your report: a large photo, the key details, and a <strong>QR code</strong> that anyone can scan to see the up-to-date listing and contact you. Download it, print it, post it, all in minutes. In the same <a href=\"/en/\">free Orma app</a> you can also alert nearby people and receive sightings with photo and location, while the map shows an approximate position (about 150 metres) to protect your privacy.</p><p>Take a breath. A clear flyer, posted in the right places, puts many people to work alongside you. In the meantime, notify your local shelter and vet services and check that your pet's microchip is properly registered: small steps that often make the difference. Many pets find their way home thanks to a neighbour who spotted the right flyer at the right moment.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Quali informazioni scrivere su un volantino cane smarrito?",
+          "a": "La parola SMARRITO ben visibile, una foto grande e nitida, la zona e la data della scomparsa, un numero di telefono grande e la frase \"non inseguirlo, chiamami\". Poche parole, chiare."
+        },
+        {
+          "q": "Dove posso affiggere il volantino di un animale smarrito?",
+          "a": "Nel punto della scomparsa e nelle vie vicine, da veterinari e negozi per animali, in bar, edicole e piccoli negozi, su bacheche di quartiere, parchi e scuole. Meglio se plastificato per la pioggia."
+        },
+        {
+          "q": "Come creo un volantino se non so usare i programmi di grafica?",
+          "a": "L'app gratuita Orma genera un volantino PDF già pronto dalla tua segnalazione, con foto grande e QR. Lo scarichi, lo stampi e lo affiggi in pochi minuti."
+        },
+        {
+          "q": "Cosa devo fare oltre al volantino se ho perso il mio animale?",
+          "a": "Avvisa il canile e la ASL veterinaria della tua zona, verifica che il microchip sia registrato all'anagrafe e segnala lo smarrimento su Orma per avvertire le persone vicine. Per un animale in pericolo chiama 112 o il 1515 dei Carabinieri Forestali."
+        }
+      ],
+      "en": [
+        {
+          "q": "What information should a lost dog flyer include?",
+          "a": "The word LOST clearly visible, one large sharp photo, the area and date your pet went missing, a big phone number, and the line \"please don't chase, call me.\" Keep it short and clear."
+        },
+        {
+          "q": "Where should I put up a lost pet poster?",
+          "a": "At the spot where your pet vanished and nearby streets, at vets and pet shops, in cafés, newsstands and small shops, and on community boards, in parks and near schools. Laminate it to survive the rain."
+        },
+        {
+          "q": "How can I make a flyer if I can't use design software?",
+          "a": "The free Orma app generates a ready-made PDF poster from your report, with a large photo and a QR code. You just download it, print it, and post it in minutes."
+        },
+        {
+          "q": "What else should I do besides the flyer if my pet is lost?",
+          "a": "Notify your local shelter and vet services, check that the microchip is properly registered, and report the loss on Orma to alert nearby people. If an animal is in danger in Italy, call 112 or the Forestry Carabinieri on 1515."
+        }
+      ]
+    }
+  },
+  {
+    "slug": {
+      "it": "animali-smarriti-oltre-cani-gatti-conigli-uccelli-roditori-furetti",
+      "en": "lost-pets-beyond-cats-dogs-rabbits-birds-rodents-ferrets"
+    },
+    "it": {
+      "title": "Animali smarriti oltre cani e gatti: come cercare conigli, uccelli, roditori e furetti",
+      "metaDesc": "Coniglio smarrito, pappagallo scappato o furetto perso? Guida calma e pratica per cercare ogni specie nel modo giusto. Anche loro hanno bisogno di te.",
+      "html": "<p>Quando scappa un coniglio, un pappagallo, un roditore o un furetto, il vuoto che si sente in casa è lo stesso di quando si perde un cane o un gatto. Eppure spesso ci si ferma, perché non si sa da dove cominciare: questi animali si muovono e si nascondono in modi molto diversi. La buona notizia è che, conoscendo le loro abitudini, le probabilità di ritrovarli aumentano parecchio. E ricorda: <a href=\"/\">Orma</a> è pensata per ogni animale, non solo per cani e gatti. Respira, procediamo insieme un passo alla volta.</p><h2>Uccelli e pappagalli: cerca in alto e resta in zona</h2><p>Un pappagallo scappato di casa o un uccello domestico raramente vola lontano subito. Nei primi giorni tende a restare nella stessa zona, spesso posato in alto tra i rami degli alberi o sui tetti. Alza sempre lo sguardo: molte persone cercano a terra e non lo vedono.</p><ul><li>Esci all'alba, quando gli uccelli sono più attivi e vocali, e ascolta il suo verso tra gli alberi.</li><li>Metti la sua gabbia aperta all'aperto, sul balcone o in giardino, con cibo e acqua: il richiamo del \"posto sicuro\" funziona spesso.</li><li>Se hai un altro uccello compagno, portalo vicino: il suo verso può attirare quello scappato.</li><li>Fai sentire suoni familiari, come la tua voce o un fischio che conosce, muovendoti con calma.</li></ul><h2>Conigli e roditori: si nascondono vicino, in posti bui e stretti</h2><p>Un coniglio smarrito o un piccolo roditore fuggito quasi mai si allontana molto. Sono animali crepuscolari e prede per natura: il loro istinto è nascondersi, non correre. Cerca vicino a casa, negli anfratti bui e stretti.</p><ul><li>Controlla sotto siepi, cataste di legna, auto parcheggiate, tubi, scale e ripostigli: cerca gli spazi più angusti.</li><li>Esci all'alba e al tramonto, i momenti in cui sono più propensi a muoversi per mangiare.</li><li>Usa il cibo come richiamo: verdure fresche, un po' di fieno o il suo snack preferito lasciati in un punto tranquillo.</li><li>Muoviti in silenzio e senza gesti bruschi: la fretta e il rumore li spingono a immobilizzarsi ancora di più.</li></ul><h2>Furetti: cerca in basso, nei buchi e nei tubi</h2><p>Un furetto smarrito segue la sua natura: si infila ovunque ci sia un pertugio. Difficilmente sale in alto, quasi sempre resta basso e vicino al punto in cui è sparito.</p><ul><li>Ispeziona tubi, grondaie, buchi nel terreno, intercapedini, garage e cantine.</li><li>Cerca al livello del suolo, muovendoti lentamente e guardando in ogni fessura.</li><li>Chiedi ai vicini di controllare box, ripostigli e scantinati: un furetto può entrare da fessure sorprendentemente piccole.</li></ul><h2>Avvisa i vicini e i veterinari, anche esotici</h2><p>Per tutte queste specie, il passaparola locale è potentissimo. Chi lo trova spesso non sa a chi rivolgersi.</p><ul><li>Parla con i vicini e i negozi della zona: molti avvistamenti arrivano proprio da loro.</li><li>Avvisa i veterinari vicini, compresi quelli specializzati in animali esotici, dove qualcuno potrebbe portare l'animale trovato.</li><li>Contatta il canile o rifugio della tua zona e la ASL veterinaria: anche i piccoli animali possono finire lì.</li><li>Con <a href=\"/\">Orma</a> puoi segnalare lo smarrito in pochi tap e avvisare le persone vicine, che ricevono la tua segnalazione con foto e luogo.</li></ul><h2>Come Orma ti aiuta con ogni animale</h2><p>Orma non fa distinzioni di specie: la community c'è per il tuo coniglio, il tuo pappagallo, il tuo furetto come per un cane o un gatto.</p><ul><li>Segnali lo smarrito e chi è nei paraggi riceve un avviso: più occhi che cercano per te.</li><li>Chi vede il tuo animale può inviarti un avvistamento con foto e posizione, tramite la chat sicura dentro l'app.</li><li>La mappa mostra la posizione offuscata di circa 150 metri, così proteggi la tua privacy.</li><li>Puoi creare un volantino PDF con QR direttamente dall'app, da stampare e appendere in quartiere.</li></ul><p>Cercare un animale diverso dal solito richiede pazienza e un po' di strategia, ma tantissime famiglie ritrovano il loro coniglio, il loro uccellino o il loro furetto proprio così. Conosci le sue abitudini, coinvolgi il vicinato e lascia lavorare la community. Ogni animale conta, e anche il tuo merita di tornare a casa.</p>"
+    },
+    "en": {
+      "title": "Lost pets beyond cats and dogs: how to find rabbits, birds, rodents and ferrets",
+      "metaDesc": "Lost rabbit, escaped parrot or missing ferret? A calm, practical guide to searching each species the right way. They need you just as much.",
+      "html": "<p>When a rabbit, a parrot, a small rodent or a ferret goes missing, the empty feeling at home is exactly the same as losing a cat or a dog. Yet people often freeze, unsure where to start, because these animals move and hide in very different ways. The good news is that once you understand their habits, your chances of finding them go up a lot. And remember: <a href=\"/en/\">Orma</a> is made for every animal, not just cats and dogs. Take a breath, and let's go one step at a time.</p><h2>Birds and parrots: look up and stay local</h2><p>An escaped parrot or a lost pet bird rarely flies far right away. In the first days it tends to stay in the same area, often perched high in trees or on rooftops. Always look up: many people search the ground and miss it completely.</p><ul><li>Go out at dawn, when birds are most active and vocal, and listen for its call among the trees.</li><li>Place its open cage outside, on the balcony or in the garden, with food and water: the pull of the \"safe place\" often works.</li><li>If you have another bird companion, bring it close; its calls can draw the escaped one back.</li><li>Play familiar sounds, like your voice or a whistle it knows, moving calmly and slowly.</li></ul><h2>Rabbits and rodents: they hide nearby, in dark, tight spots</h2><p>A lost rabbit or a small escaped rodent almost never travels far. They are crepuscular animals and prey by nature: their instinct is to hide, not to run. Search close to home, in dark and narrow gaps.</p><ul><li>Check under hedges, wood piles, parked cars, pipes, stairs and sheds: look for the tightest spaces.</li><li>Search at dawn and dusk, the times they are most likely to move around to eat.</li><li>Use food as a lure: fresh vegetables, a little hay or its favourite treat left in a quiet spot.</li><li>Move quietly and avoid sudden gestures: rushing and noise make them freeze even more.</li></ul><h2>Ferrets: search low, in holes and pipes</h2><p>A lost ferret follows its nature: it slips into any gap it can find. It rarely climbs high and almost always stays low and close to where it disappeared.</p><ul><li>Inspect pipes, drains, holes in the ground, wall cavities, garages and cellars.</li><li>Search at ground level, moving slowly and checking every crack.</li><li>Ask neighbours to check garages, sheds and basements: a ferret can enter through surprisingly small gaps.</li></ul><h2>Alert neighbours and vets, including exotics</h2><p>For all these species, local word of mouth is incredibly powerful. Whoever finds them often doesn't know who to turn to.</p><ul><li>Talk to neighbours and nearby shops: many sightings come straight from them.</li><li>Notify nearby vets, including those specialised in exotic animals, where someone might bring the animal they found.</li><li>Contact your local shelter or rescue and the veterinary services: small animals can end up there too.</li><li>With <a href=\"/en/\">Orma</a> you can report a lost pet in a few taps and alert people nearby, who receive your report with photo and location.</li></ul><h2>How Orma helps with every animal</h2><p>Orma makes no distinction by species: the community is here for your rabbit, your parrot or your ferret just as much as for a dog or a cat.</p><ul><li>You report the lost pet and people nearby get an alert: more eyes searching for you.</li><li>Anyone who spots your animal can send you a sighting with photo and location, through the secure in-app chat.</li><li>The map shows a blurred location of about 150 metres, so your privacy stays protected.</li><li>You can create a PDF flyer with a QR code straight from the app, to print and put up around the neighbourhood.</li></ul><p>Searching for a less common pet takes patience and a bit of strategy, but so many families find their rabbit, their little bird or their ferret exactly this way. Learn its habits, involve your neighbours and let the community do its part. Every animal matters, and yours deserves to come home too.</p>"
+    },
+    "faq": {
+      "it": [
+        {
+          "q": "Ho un coniglio smarrito, dove cerco per primo?",
+          "a": "Cerca vicino a casa, in posti bui e stretti come siepi, cataste di legna e sotto le auto. I conigli si nascondono invece di scappare, ed escono più volentieri all'alba e al tramonto."
+        },
+        {
+          "q": "Il mio pappagallo è scappato di casa, tornerà da solo?",
+          "a": "Spesso resta in zona nei primi giorni, posato in alto sugli alberi. Metti la sua gabbia aperta all'aperto con cibo e cerca all'alba, quando è più attivo e vocale."
+        },
+        {
+          "q": "Come si cerca un furetto smarrito?",
+          "a": "Guarda in basso e vicino: i furetti si infilano in buchi, tubi, garage e cantine. Chiedi ai vicini di controllare gli spazi stretti dove potrebbe essersi nascosto."
+        },
+        {
+          "q": "Posso usare Orma anche per animali diversi da cani e gatti?",
+          "a": "Sì. Orma è pensata per ogni animale: puoi segnalare uno smarrito, ricevere avvistamenti con foto e luogo e avvisare le persone vicine, qualunque sia la specie."
+        }
+      ],
+      "en": [
+        {
+          "q": "My rabbit is lost, where should I look first?",
+          "a": "Search close to home, in dark and tight spots like hedges, wood piles and under cars. Rabbits hide rather than run, and come out more readily at dawn and dusk."
+        },
+        {
+          "q": "My parrot escaped from home, will it come back on its own?",
+          "a": "It often stays in the area for the first few days, perched high in trees. Put its open cage outside with food and search at dawn, when it is most active and vocal."
+        },
+        {
+          "q": "How do I search for a lost ferret?",
+          "a": "Look low and nearby: ferrets slip into holes, pipes, garages and cellars. Ask neighbours to check the tight spaces where it might be hiding."
+        },
+        {
+          "q": "Can I use Orma for pets other than cats and dogs?",
+          "a": "Yes. Orma is made for every animal: you can report a lost pet, receive sightings with photo and location, and alert people nearby, whatever the species."
+        }
+      ]
     }
   }
 ];
