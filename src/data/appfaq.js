@@ -2,10 +2,6 @@
 export const APP_FAQ = {
   "it": [
     {
-      "q": "Orma è gratis?",
-      "a": "Sì, Orma è completamente gratuita. Non ci sono abbonamenti né costi nascosti: segnalare un animale smarrito, ricevere avvisi e usare tutte le funzioni non costa nulla."
-    },
-    {
       "q": "Come funziona la privacy? La posizione sulla mappa è precisa?",
       "a": "La tua privacy viene prima di tutto. Sulla mappa pubblica la posizione dell'animale viene mostrata offuscata di circa 150 metri, così nessuno può risalire alla tua casa esatta. La posizione precisa resta protetta e serve solo alla corrispondenza tra smarrimenti e ritrovamenti."
     },
@@ -36,17 +32,9 @@ export const APP_FAQ = {
     {
       "q": "Dove sono conservati i miei dati?",
       "a": "I tuoi dati sono conservati su server nell'Unione Europea (a Francoforte, in Germania) e trattati nel rispetto delle regole europee sulla privacy. Non vengono venduti a terzi."
-    },
-    {
-      "q": "Ci sono pubblicità in Orma?",
-      "a": "No. Orma non ha pubblicità e non traccia i tuoi comportamenti per profilarti. È pensata per aiutarti a ritrovare il tuo amico, non per venderti qualcosa."
     }
   ],
   "en": [
-    {
-      "q": "Is Orma free?",
-      "a": "Yes, Orma is completely free. There are no subscriptions or hidden costs: reporting a lost pet, receiving alerts and using every feature costs nothing."
-    },
     {
       "q": "How does privacy work? Is the location on the map exact?",
       "a": "Your privacy comes first. On the public map the pet's location is shown blurred by about 150 metres, so no one can trace it back to your exact home. The precise location stays protected and is only used to match lost reports with found ones."
@@ -78,10 +66,6 @@ export const APP_FAQ = {
     {
       "q": "Where is my data stored?",
       "a": "Your data is stored on servers in the European Union (in Frankfurt, Germany) and handled in line with European privacy rules. It is never sold to third parties."
-    },
-    {
-      "q": "Are there ads in Orma?",
-      "a": "No. Orma has no advertising and does not track your behaviour to profile you. It's built to help you find your friend, not to sell you anything."
     }
   ]
 };
