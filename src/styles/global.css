@@ -278,11 +278,17 @@ img { max-width: 100%; display: block; }
   position: relative;
   align-self: stretch;
   min-height: 380px;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 22px 30px 60px -34px rgba(13, 45, 74, 0.45);
 }
-.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.hero__photo img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;
+  border-radius: 28px;
+  /* Sfuma il lato sinistro nel TRASPARENTE: si fonde con qualsiasi sfondo,
+     niente striscia di colore fisso. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+  /* Ombra che segue solo le parti opache (nessuna ombra sul lato sfumato). */
+  filter: drop-shadow(16px 22px 40px rgba(13, 45, 74, 0.28));
+}
 @media (max-width: 900px) {
   .hero__inner { min-height: 0; }
   .hero__photo { min-height: 0; height: 260px; }
