@@ -65,12 +65,44 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://orma.pet/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/faq/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/faq/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/faq/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/per-strutture/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/per-strutture/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/for-organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/per-strutture/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/for-organizations/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/per-strutture/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/for-organizations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/per-strutture/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://orma.pet/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/privacy/"/>
     <lastmod>2026-07-11</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://orma.pet/en/privacy/</loc>
@@ -78,7 +110,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/privacy/"/>
     <lastmod>2026-07-11</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://orma.pet/termini/</loc>
@@ -86,7 +118,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/termini/"/>
     <lastmod>2026-07-11</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://orma.pet/en/terms/</loc>
@@ -94,7 +126,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/termini/"/>
     <lastmod>2026-07-11</lastmod>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://orma.pet/cancellazione/</loc>
@@ -237,6 +269,70 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/animali-smarriti-oltre-cani-gatti-conigli-uccelli-roditori-furetti/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/lost-pets-beyond-cats-dogs-rabbits-birds-rodents-ferrets/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/animali-smarriti-oltre-cani-gatti-conigli-uccelli-roditori-furetti/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/guida/come-catturare-gatto-smarrito-trappola/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/come-catturare-gatto-smarrito-trappola/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/how-to-trap-a-lost-cat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/come-catturare-gatto-smarrito-trappola/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/guides/how-to-trap-a-lost-cat/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/come-catturare-gatto-smarrito-trappola/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/how-to-trap-a-lost-cat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/come-catturare-gatto-smarrito-trappola/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/guida/cane-scomparso-da-giorni-cosa-fare/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/cane-scomparso-da-giorni-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/dog-missing-for-days-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/cane-scomparso-da-giorni-cosa-fare/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/guides/dog-missing-for-days-what-to-do/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/cane-scomparso-da-giorni-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/dog-missing-for-days-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/cane-scomparso-da-giorni-cosa-fare/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/guida/animali-smarriti-in-vacanza-estate-cosa-fare/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/animali-smarriti-in-vacanza-estate-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/pet-lost-on-holiday-summer-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/animali-smarriti-in-vacanza-estate-cosa-fare/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/guides/pet-lost-on-holiday-summer-what-to-do/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/animali-smarriti-in-vacanza-estate-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/pet-lost-on-holiday-summer-what-to-do/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/animali-smarriti-in-vacanza-estate-cosa-fare/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/guida/microchip-non-aggiornato-cosa-fare/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/microchip-non-aggiornato-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/update-pet-microchip-details/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/microchip-non-aggiornato-cosa-fare/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/guides/update-pet-microchip-details/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/microchip-non-aggiornato-cosa-fare/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/update-pet-microchip-details/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/guida/microchip-non-aggiornato-cosa-fare/"/>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
   </url>

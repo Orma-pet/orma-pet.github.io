@@ -780,3 +780,6 @@ img { max-width: 100%; display: block; }
 .faq__item { padding: 1rem 0; border-top: 1px solid #e6e9ee; }
 .faq__item h3 { font-size: 1.05rem; font-weight: 800; margin: 0 0 .35rem; color: #1a2430; }
 .faq__item p { margin: 0; color: #2c3e50; line-height: 1.55; }
+
+/* --- Blocco codice (badge embed) --- */
+.embed-code { background: #0f2233; color: #cfe3ee; border-radius: 12px; padding: 1rem 1.1rem; overflow-x: auto; font-size: .82rem; line-height: 1.55; white-space: pre; }

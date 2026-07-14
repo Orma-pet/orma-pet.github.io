@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { ROUTES, BRAND } from '../../data/site.js';
+
+const lang = 'en';
+const embed = `<a href="https://orma.pet/en/?utm_source=partner" target="_blank" rel="noopener">
+  <img src="https://orma.pet/badge-orma-en.png" alt="Find lost pets on Orma" width="300" height="92">
+</a>`;
+---
+<Layout
+  lang={lang}
+  title="Orma — For vets, shelters and rescues"
+  description="Are you a vet, a shelter or a rescue? Help your clients find lost pets: add Orma to your website and get found by the community near you."
+  active="forOrgs"
+  altUrl={ROUTES.forOrgs.it}
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">For vets, shelters and rescues</span>
+        <h1>Help people who lost a pet, right from your site</h1>
+        <p class="section__lead">Orma is the free community app for lost pets. If you're a vet, a shelter or a rescue, you can give your clients one more tool to find their animals — and get found by people looking for help near you.</p>
+      </div>
+
+      <div class="prose">
+        <h2>Why add Orma to your website</h2>
+        <ul>
+          <li><strong>Real help for your clients</strong>: anyone who loses or finds an animal has a place to report it and receive sightings from people nearby.</li>
+          <li><strong>Fewer dead-end calls</strong>: whoever finds an animal can have its microchip scanned by you and matched to a report.</li>
+          <li><strong>Visibility</strong>: shelters, rescues and vets can appear on the Orma map and receive requests from the community.</li>
+        </ul>
+
+        <h2>Add the Orma badge to your website</h2>
+        <p>Copy this code and paste it anywhere (footer, contact page, "useful links" section): it shows a button that sends your visitors to Orma.</p>
+      </div>
+
+      <p style="margin:1.2rem 0;"><img src="/badge-orma-en.png" alt="Orma badge preview" width="300" height="92" /></p>
+      <pre class="embed-code"><code>{embed}</code></pre>
+
+      <div class="prose">
+        <h2>Want to appear among the facilities?</h2>
+        <p>If you run a shelter, a rescue or a veterinary clinic and want to be listed (and verified) on the Orma map, write to us: we'll help you set everything up.</p>
+      </div>
+      <p><a class="btn btn--primary" href={`mailto:${BRAND.email}?subject=Facility%20on%20Orma`}>Contact us</a></p>
+
+      <div class="prose" style="margin-top:2.6rem;border-top:1px solid #e6e9ee;padding-top:1.6rem;">
+        <h2>For the press</h2>
+        <p>Orma is a free Italian community app to find lost, found or abandoned animals and support adoptions from shelters and rescues. Built privacy-first: no advertising, no tracking, data on European servers.</p>
+        <ul>
+          <li><strong>Name</strong>: Orma — "Find your friend"</li>
+          <li><strong>Where</strong>: Italy · <a href="https://orma.pet/en/">orma.pet</a></li>
+          <li><strong>Platforms</strong>: Android and iPhone</li>
+          <li><strong>Contact</strong>: <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></li>
+          <li><strong>Logo</strong>: <a href="/favicon.svg">download</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>
