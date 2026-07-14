@@ -31,7 +31,7 @@ export const APP_FAQ = {
     },
     {
       "q": "Dove sono conservati i miei dati?",
-      "a": "I tuoi dati sono conservati su server nell'Unione Europea (a Francoforte, in Germania) e trattati nel rispetto delle regole europee sulla privacy. Non vengono venduti a terzi."
+      "a": "I tuoi dati sono conservati su server nell'Unione Europea (a Stoccolma, in Svezia) e trattati nel rispetto delle regole europee sulla privacy. Non vengono venduti a terzi."
     }
   ],
   "en": [
@@ -65,7 +65,7 @@ export const APP_FAQ = {
     },
     {
       "q": "Where is my data stored?",
-      "a": "Your data is stored on servers in the European Union (in Frankfurt, Germany) and handled in line with European privacy rules. It is never sold to third parties."
+      "a": "Your data is stored on servers in the European Union (in Stockholm, Sweden) and handled in line with European privacy rules. It is never sold to third parties."
     }
   ]
 };

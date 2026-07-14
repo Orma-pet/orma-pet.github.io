@@ -259,7 +259,7 @@ export const FEATURES = {
     h1: 'Tutto quello che serve, niente di superfluo',
     lead: "Abbiamo tagliato tutto ciò che non serviva. Quello che resta sono strumenti essenziali, ognuno pensato per un momento preciso della ricerca — e ognuno con la privacy come impostazione predefinita, non come ripensamento.",
     privacyTitle: 'La privacy non è una funzione: è il punto di partenza',
-    privacyText: 'I tuoi dati non vengono venduti. La posizione sulla mappa pubblica è sempre offuscata di circa 150 metri. I server dei dati sono in Unione Europea, a Francoforte.',
+    privacyText: 'I tuoi dati non vengono venduti. La posizione sulla mappa pubblica è sempre offuscata di circa 150 metri. I server dei dati sono in Unione Europea, a Stoccolma.',
   },
   en: {
     title: 'App to report lost & found pets — Orma features',
@@ -268,7 +268,7 @@ export const FEATURES = {
     h1: "Everything you need, nothing you don't",
     lead: 'We cut everything that did not belong. What remains are essential tools, each made for a precise moment in the search — and each with privacy as the default, not an afterthought.',
     privacyTitle: 'Privacy is not a feature: it is the starting point',
-    privacyText: 'Your data is never sold. The location on the public map is always blurred by about 150 metres. Data servers are in the European Union, in Frankfurt.',
+    privacyText: 'Your data is never sold. The location on the public map is always blurred by about 150 metres. Data servers are in the European Union, in Stockholm.',
   },
 };
 
