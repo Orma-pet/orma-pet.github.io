@@ -783,7 +783,16 @@ img { max-width: 100%; display: block; }
 .faq__item p { margin: 0; color: #2c3e50; line-height: 1.55; }
 
 /* --- Blocco codice (badge embed) --- */
-.embed-code { background: #0f2233; color: #cfe3ee; border-radius: 12px; padding: 1rem 1.1rem; overflow-x: auto; font-size: .82rem; line-height: 1.55; white-space: pre; }
+/* Riquadro "copia codice" per il badge partner */
+.embed { max-width: 640px; margin: 1.4rem 0 0; border: 1px solid #e6e9ee; border-radius: 16px; overflow: hidden; background: #fff; }
+.embed__preview { display: flex; justify-content: center; padding: 1.5rem; background: #f4f6f8; }
+.embed__preview img { width: 300px; height: 92px; }
+.embed__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .5rem .5rem .5rem 1rem; border-top: 1px solid #eef1f5; }
+.embed__label { font-size: .8rem; font-weight: 700; color: #5a6b7b; }
+.embed__copy { border: 0; background: none; font: inherit; font-weight: 800; font-size: .82rem; color: #2A6BA8; cursor: pointer; padding: .35rem .7rem; border-radius: 8px; transition: color .15s ease, background .15s ease; }
+.embed__copy:hover { background: #eef4fa; }
+.embed__copy.copied { color: #0f8a6c; }
+.embed__code { margin: 0; background: #0f2233; color: #cfe3ee; padding: 1rem 1.1rem; overflow-x: auto; font-size: .8rem; line-height: 1.55; white-space: pre; }
 
 /* --- Mappa web --- */
 .map-wrap { position: relative; }
