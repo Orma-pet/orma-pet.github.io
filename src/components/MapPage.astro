@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StoreButtons from './StoreButtons.astro';
+import { HOME } from '../data/site.js';
+
+// Mappa web (sola visualizzazione) delle segnalazioni vicine. props: lang, altUrl.
+const { lang = 'it', altUrl } = Astro.props;
+const h = HOME[lang];
+
+const STR = {
+  it: {
+    eyebrow: 'Mappa',
+    title: 'Animali smarriti vicino a te',
+    lead: 'Guarda sulla mappa le segnalazioni di animali smarriti, trovati o avvistati intorno a te. La posizione è approssimata per proteggere la privacy di chi segnala.',
+    showBtn: 'Mostra gli animali vicino a te',
+    privacy: 'Attivando la mappa consenti la geolocalizzazione del browser e il caricamento delle mappe da OpenStreetMap (OpenFreeMap). Nessun dato viene condiviso con altri.',
+    locating: 'Cerco la tua posizione…',
+    loadingReports: 'Carico le segnalazioni…',
+    denied: 'Non riesco a leggere la tua posizione. Attiva la geolocalizzazione nel browser e riprova.',
+    loadError: 'Qualcosa è andato storto. Riprova tra poco.',
+    empty: "Nessuna segnalazione qui intorno adesso — ed è una buona notizia. Con l'app Orma ricevi un avviso appena qualcosa si muove vicino a te.",
+    found: '{n} segnalazioni vicino a te',
+    about: 'a circa',
+    openApp: 'Apri la scheda',
+    youHere: 'Sei qui',
+    types: { lost: 'Smarrito', found: 'Trovato', sighting: 'Avvistato', abandoned: 'Abbandonato', poison: 'Esca avvelenata' },
+    ctaTitle: 'Vuoi segnalare o ricevere avvisi?',
+    ctaText: "Sul sito vedi la mappa; per segnalare un animale, scrivere nella chat sicura e ricevere avvisi quando qualcosa si muove vicino a te, scarica l'app gratuita Orma.",
+  },
+  en: {
+    eyebrow: 'Map',
+    title: 'Lost pets near you',
+    lead: 'See on the map the reports of lost, found or sighted animals around you. Positions are approximate to protect the privacy of whoever reports.',
+    showBtn: 'Show pets near you',
+    privacy: 'By opening the map you allow browser geolocation and loading maps from OpenStreetMap (OpenFreeMap). No data is shared with anyone.',
+    locating: 'Finding your location…',
+    loadingReports: 'Loading reports…',
+    denied: "I can't read your location. Turn on geolocation in your browser and try again.",
+    loadError: 'Something went wrong. Please try again shortly.',
+    empty: 'No reports around here right now — which is good news. With the Orma app you get an alert as soon as something happens near you.',
+    found: '{n} reports near you',
+    about: 'about',
+    openApp: 'Open the report',
+    youHere: 'You are here',
+    types: { lost: 'Lost', found: 'Found', sighting: 'Sighted', abandoned: 'Abandoned', poison: 'Poisoned bait' },
+    ctaTitle: 'Want to report or get alerts?',
+    ctaText: 'On the website you can see the map; to report an animal, chat safely and get alerts when something happens near you, download the free Orma app.',
+  },
+};
+
+const t = STR[lang];
+const cfg = {
+  style: 'https://tiles.openfreemap.org/styles/positron',
+  supabaseUrl: 'https://lztuncwbyjeesmfwvkof.supabase.co',
+  supabaseKey: 'sb_publishable_1Qfs6LvH3-F-1DTu0yYphg_e5XnoefZ',
+  colors: { lost: '#E24B4A', found: '#1D9E75', sighting: '#2A6BA8', abandoned: '#BA7517', poison: '#6B4FA0' },
+  strings: t,
+};
+---
+<Layout lang={lang} title={`Orma — ${t.title}`} description={t.lead} active="map" altUrl={altUrl}>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.eyebrow}</span>
+        <h1>{t.title}</h1>
+        <p class="section__lead">{t.lead}</p>
+      </div>
+
+      <div class="map-wrap">
+        <div id="orma-map-ph" class="map-placeholder">
+          <button id="orma-load-map" class="btn btn--primary" type="button">{t.showBtn}</button>
+          <p class="map-privacy">{t.privacy}</p>
+        </div>
+        <div id="orma-map" class="map" style="display:none;"></div>
+        <p id="orma-map-status" class="map-status" aria-live="polite"></p>
+      </div>
+
+      <div class="cta" style="margin-top:2.4rem;">
+        <h2>{t.ctaTitle}</h2>
+        <p>{t.ctaText}</p>
+        <StoreButtons lang={lang} android={h.btnAndroid} ios={h.btnIos} variant="dark" />
+      </div>
+    </div>
+  </section>
+
+  <script type="application/json" id="orma-map-cfg" set:html={JSON.stringify(cfg)}></script>
+  <script>
+    import maplibregl from 'maplibre-gl';
+    import 'maplibre-gl/dist/maplibre-gl.css';
+
+    const cfg = JSON.parse(document.getElementById('orma-map-cfg').textContent);
+    const S = cfg.strings;
+    const btn = document.getElementById('orma-load-map');
+    const statusEl = document.getElementById('orma-map-status');
+    const mapEl = document.getElementById('orma-map');
+    const ph = document.getElementById('orma-map-ph');
+    let started = false;
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, (c) =>
+        ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    function typeInfo(r) {
+      const t = r.report_type;
+      if (t === 'lost') return { label: S.types.lost, color: cfg.colors.lost };
+      if (t === 'found') return r.is_sighting
+        ? { label: S.types.sighting, color: cfg.colors.sighting }
+        : { label: S.types.found, color: cfg.colors.found };
+      if (t === 'abandoned') return { label: S.types.abandoned, color: cfg.colors.abandoned };
+      if (t === 'poison') return { label: S.types.poison, color: cfg.colors.poison };
+      return { label: t, color: cfg.colors.found };
+    }
+
+    btn && btn.addEventListener('click', () => {
+      if (started) return;
+      statusEl.textContent = S.locating;
+      if (!navigator.geolocation) { statusEl.textContent = S.denied; return; }
+      navigator.geolocation.getCurrentPosition(onPos, () => { statusEl.textContent = S.denied; },
+        { enableHighAccuracy: false, timeout: 12000, maximumAge: 600000 });
+    });
+
+    async function onPos(pos) {
+      started = true;
+      const lat = pos.coords.latitude, lng = pos.coords.longitude;
+      ph.style.display = 'none';
+      mapEl.style.display = 'block';
+      const map = new maplibregl.Map({ container: 'orma-map', style: cfg.style, center: [lng, lat], zoom: 11 });
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+      new maplibregl.Marker({ color: '#111827' })
+        .setLngLat([lng, lat])
+        .setPopup(new maplibregl.Popup({ offset: 16 }).setText(S.youHere))
+        .addTo(map);
+      statusEl.textContent = S.loadingReports;
+      try {
+        const res = await fetch(cfg.supabaseUrl + '/rest/v1/rpc/nearby_reports', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', apikey: cfg.supabaseKey, Authorization: 'Bearer ' + cfg.supabaseKey },
+          body: JSON.stringify({ in_lat: lat, in_lng: lng, in_radius_m: 25000 }),
+        });
+        if (!res.ok) throw new Error('http ' + res.status);
+        const rows = await res.json();
+        if (!Array.isArray(rows) || rows.length === 0) { statusEl.textContent = S.empty; return; }
+        const bounds = new maplibregl.LngLatBounds([lng, lat], [lng, lat]);
+        rows.forEach((r) => {
+          if (r.lng == null || r.lat == null) return;
+          const ti = typeInfo(r);
+          const km = (r.distance_m / 1000).toFixed(1);
+          const photo = r.photo_path
+            ? '<img src="' + cfg.supabaseUrl + '/storage/v1/object/public/report-photos/' + encodeURI(r.photo_path) + '" alt="" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px;">'
+            : '';
+          const link = 'https://orma.pet/pet?id=' + encodeURIComponent(r.id);
+          const html = photo
+            + '<strong style="color:' + ti.color + '">' + esc(ti.label) + '</strong><br>'
+            + '<span style="color:#5a6b7b;font-size:.9em">' + esc(S.about) + ' ' + km + ' km</span><br>'
+            + '<a href="' + link + '" style="display:inline-block;margin-top:8px;font-weight:700;color:#2A6BA8;text-decoration:none">' + esc(S.openApp) + ' →</a>';
+          new maplibregl.Marker({ color: ti.color })
+            .setLngLat([r.lng, r.lat])
+            .setPopup(new maplibregl.Popup({ offset: 16, maxWidth: '240px' }).setHTML(html))
+            .addTo(map);
+          bounds.extend([r.lng, r.lat]);
+        });
+        map.fitBounds(bounds, { padding: 60, maxZoom: 13, duration: 600 });
+        statusEl.textContent = S.found.replace('{n}', rows.length);
+      } catch (e) {
+        statusEl.textContent = S.loadError;
+      }
+    }
+  </script>
+</Layout>

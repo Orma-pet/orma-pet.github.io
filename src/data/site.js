@@ -27,6 +27,7 @@ export const ROUTES = {
   terms:         { it: '/termini/',        en: '/en/terms/' },
   deletion:      { it: '/cancellazione/',  en: '/en/account-deletion/' },
   guides:        { it: '/guida/',          en: '/en/guides/' },
+  map:           { it: '/mappa/',          en: '/en/map/' },
   faq:           { it: '/faq/',            en: '/en/faq/' },
   forOrgs:       { it: '/per-strutture/',  en: '/en/for-organizations/' },
   pet:           { it: '/pet/',            en: '/en/pet/' },
@@ -37,11 +38,13 @@ export const NAV = {
   it: [
     { key: 'howItWorks', label: 'Come funziona' },
     { key: 'features',   label: 'Funzionalità' },
+    { key: 'map',        label: 'Mappa' },
     { key: 'guides',     label: 'Guide' },
   ],
   en: [
     { key: 'howItWorks', label: 'How it works' },
     { key: 'features',   label: 'Features' },
+    { key: 'map',        label: 'Map' },
     { key: 'guides',     label: 'Guides' },
   ],
 };

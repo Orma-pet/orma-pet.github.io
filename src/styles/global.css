@@ -778,3 +778,11 @@ img { max-width: 100%; display: block; }
 
 /* --- Blocco codice (badge embed) --- */
 .embed-code { background: #0f2233; color: #cfe3ee; border-radius: 12px; padding: 1rem 1.1rem; overflow-x: auto; font-size: .82rem; line-height: 1.55; white-space: pre; }
+
+/* --- Mappa web --- */
+.map-wrap { position: relative; }
+.map-placeholder { border: 1px solid #e6e9ee; border-radius: 18px; background: var(--ghiaccio); min-height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; text-align: center; padding: 2rem; }
+.map-privacy { font-size: .85rem; color: #5a6b7b; max-width: 46ch; margin: 0; }
+.map { width: 100%; height: 480px; border-radius: 18px; overflow: hidden; border: 1px solid #e6e9ee; }
+.map-status { margin-top: .8rem; color: #5a6b7b; font-size: .92rem; text-align: center; }
+.maplibregl-popup-content { border-radius: 12px; padding: 12px; font-family: inherit; }

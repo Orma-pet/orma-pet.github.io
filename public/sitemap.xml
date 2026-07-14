@@ -49,6 +49,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://orma.pet/mappa/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/mappa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/map/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/mappa/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/map/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/mappa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/map/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/mappa/"/>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://orma.pet/guida/</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/guida/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/guides/"/>
