@@ -283,11 +283,6 @@ img { max-width: 100%; display: block; }
   box-shadow: 22px 30px 60px -34px rgba(13, 45, 74, 0.45);
 }
 .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
-.hero__photo-fade {
-  position: absolute; inset: 0;
-  background: linear-gradient(to right, var(--ghiaccio) 0%, rgba(244, 249, 252, 0) 38%);
-  pointer-events: none;
-}
 @media (max-width: 900px) {
   .hero__inner { min-height: 0; }
   .hero__photo { min-height: 0; height: 260px; }
