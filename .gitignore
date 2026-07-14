@@ -4,3 +4,6 @@ dist/
 .DS_Store
 *.log
 .env
+
+# Config locale anteprima (Claude Preview)
+.claude/
