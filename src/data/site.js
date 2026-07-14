@@ -26,6 +26,7 @@ export const ROUTES = {
   privacy:       { it: '/privacy/',        en: '/en/privacy/' },
   terms:         { it: '/termini/',        en: '/en/terms/' },
   deletion:      { it: '/cancellazione/',  en: '/en/account-deletion/' },
+  guides:        { it: '/guida/',          en: '/en/guides/' },
   pet:           { it: '/pet/',            en: '/en/pet/' },
 };
 
@@ -34,10 +35,12 @@ export const NAV = {
   it: [
     { key: 'howItWorks', label: 'Come funziona' },
     { key: 'features',   label: 'Funzionalità' },
+    { key: 'guides',     label: 'Guide' },
   ],
   en: [
     { key: 'howItWorks', label: 'How it works' },
     { key: 'features',   label: 'Features' },
+    { key: 'guides',     label: 'Guides' },
   ],
 };
 
@@ -51,6 +54,11 @@ export const UI = {
     footerColophon: 'Versione editoriale del sito · 2026',
     storeSoon: 'Presto su',
     backHome: 'Torna alla home',
+    allGuides: 'Tutte le guide',
+    guidesHubTitle: 'Guide per animali smarriti e trovati',
+    guidesHubLead: 'Consigli pratici per i momenti che contano: cosa fare se hai perso o trovato un animale, il microchip, le adozioni.',
+    guideCtaTitle: 'Segnala su Orma, gratis',
+    guideCtaText: 'Con Orma avvisi le persone vicine, ricevi avvistamenti con foto e ritrovi il tuo amico più in fretta.',
   },
   en: {
     skipToContent: 'Skip to content',
@@ -61,6 +69,11 @@ export const UI = {
     footerColophon: 'Editorial edition of the website · 2026',
     storeSoon: 'Coming soon to',
     backHome: 'Back to home',
+    allGuides: 'All guides',
+    guidesHubTitle: 'Guides for lost & found pets',
+    guidesHubLead: "Practical advice for the moments that matter: what to do if you've lost or found a pet, microchips, adoptions.",
+    guideCtaTitle: 'Post on Orma, for free',
+    guideCtaText: 'With Orma you alert people nearby, get sightings with photos and find your friend faster.',
   },
 };
 
@@ -69,8 +82,8 @@ export const UI = {
 // ----------------------------------------------------------------------------
 export const HOME = {
   it: {
-    title: 'Orma — Ritrova il tuo amico',
-    metaDesc: 'Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Gratis, con la privacy al primo posto.',
+    title: 'Orma — App per animali smarriti | Ritrova il tuo amico',
+    metaDesc: 'App gratuita per segnalare e ritrovare cani e gatti smarriti: avvisi alle persone vicine, avvistamenti con foto, corrispondenza microchip. Privacy al primo posto.',
     heroEyebrow: 'App per animali smarriti, trovati e da adottare',
     heroTitle: 'Ritrova il tuo amico',
     heroSub: "Orma collega chi ha perso un animale con chi lo ha avvistato o trovato. Segnali in pochi tap, ricevi avvisi quando qualcosa si muove vicino a te e tieni i contatti al sicuro nella chat dell'app. Gratis.",
@@ -135,8 +148,8 @@ export const HOME = {
     btnIos: 'Presto su App Store',
   },
   en: {
-    title: 'Orma — Find your friend',
-    metaDesc: "Orma connects people who've lost a pet with people who've spotted or found one. Free, with privacy first.",
+    title: 'Orma — Lost & found pets app | Find your friend',
+    metaDesc: "Free app to report and find lost dogs and cats: alerts to people nearby, sightings with photos, microchip matching. Privacy first.",
     heroEyebrow: 'For lost pets, found animals and adoptions',
     heroTitle: 'Find your friend',
     heroSub: "Orma connects people who've lost a pet with people who've spotted or found one. Post in a few taps, get alerts when something happens near you, and keep contact safe in the in-app chat. Free.",
@@ -208,8 +221,8 @@ export const HOME = {
 // ----------------------------------------------------------------------------
 export const HOWITWORKS = {
   it: {
-    title: 'Come funziona Orma',
-    metaDesc: 'Dal primo allarme al ritorno a casa: i tre passi di Orma spiegati con calma.',
+    title: 'Come ritrovare un animale smarrito — Come funziona Orma',
+    metaDesc: 'Come ritrovare un cane o un gatto smarrito: dal primo avviso al ritorno a casa, i tre passi di Orma spiegati con calma.',
     eyebrow: 'Guida',
     h1: 'Come funziona',
     lead: "Orma non promette miracoli: è uno strumento. Ma è uno strumento costruito intorno ai minuti che contano, quando un animale si allontana e ogni occhio in più può cambiare il finale. Ecco come si muove la community, passo dopo passo.",
@@ -217,8 +230,8 @@ export const HOWITWORKS = {
     closingText: 'Orma aiuta, non garantisce: nessuna app può assicurare un ritrovamento. Quello che possiamo fare è mettere in contatto le persone giuste, in fretta e nel rispetto della privacy. Il resto lo fa una community che si dà una zampa.',
   },
   en: {
-    title: 'How Orma works',
-    metaDesc: 'From the first alert to the way home: the three steps of Orma, explained calmly.',
+    title: 'How to find a lost pet — How Orma works',
+    metaDesc: 'How to find a lost dog or cat: from the first alert to the way home, the three steps of Orma explained calmly.',
     eyebrow: 'Guide',
     h1: 'How it works',
     lead: 'Orma promises no miracles: it is a tool. But it is a tool built around the minutes that matter, when an animal wanders off and every extra pair of eyes can change the ending. Here is how the community moves, step by step.',
@@ -229,8 +242,8 @@ export const HOWITWORKS = {
 
 export const FEATURES = {
   it: {
-    title: 'Funzionalità di Orma',
-    metaDesc: 'Mappa con privacy, avvisi vicino a te, chat sicura, corrispondenze microchip e adozioni verificate.',
+    title: 'App per segnalare animali smarriti e trovati — Funzioni di Orma',
+    metaDesc: 'App per animali smarriti: mappa con privacy, avvisi vicino a te, chat sicura, corrispondenza microchip e adozioni verificate.',
     eyebrow: 'Funzionalità',
     h1: 'Tutto quello che serve, niente di superfluo',
     lead: "Abbiamo tagliato tutto ciò che non serviva. Quello che resta sono strumenti essenziali, ognuno pensato per un momento preciso della ricerca — e ognuno con la privacy come impostazione predefinita, non come ripensamento.",
@@ -238,8 +251,8 @@ export const FEATURES = {
     privacyText: 'Niente tracciamento e niente analytics di terze parti: i tuoi dati non vengono venduti. La posizione sulla mappa pubblica è sempre offuscata di circa 150 metri. I server dei dati sono in Unione Europea, a Francoforte.',
   },
   en: {
-    title: 'Orma features',
-    metaDesc: 'Privacy-first map, alerts near you, secure chat, microchip matches and verified adoptions.',
+    title: 'App to report lost & found pets — Orma features',
+    metaDesc: 'Lost pet app: privacy-first map, alerts near you, secure chat, microchip matches and verified adoptions.',
     eyebrow: 'Features',
     h1: "Everything you need, nothing you don't",
     lead: 'We cut everything that did not belong. What remains are essential tools, each made for a precise moment in the search — and each with privacy as the default, not an afterthought.',
