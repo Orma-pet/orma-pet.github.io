@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ROUTES, BRAND } from '../data/site.js';
+
+const lang = 'it';
+---
+<Layout
+  lang={lang}
+  title="Orma — Standard di sicurezza dei minori"
+  description="Gli standard di Orma contro l'abuso e lo sfruttamento sessuale dei minori (CSAE): tolleranza zero, moderazione, segnalazione in-app e collaborazione con le autorità."
+  active="childSafety"
+  altUrl={ROUTES.childSafety.en}
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">Sicurezza dei minori</span>
+        <h1>Standard di sicurezza dei minori</h1>
+        <p class="section__lead">Orma tutela i minori con tolleranza zero verso qualsiasi forma di abuso o sfruttamento sessuale di minori (CSAE). Questa pagina descrive i nostri standard e come segnalare.</p>
+      </div>
+
+      <div class="prose">
+        <h2>A chi è rivolta Orma</h2>
+        <p>Orma è un'app di community per animali smarriti <strong>riservata ai maggiori di 16 anni</strong>. Non è destinata ai bambini e non raccoglie intenzionalmente dati di minori di 16 anni.</p>
+
+        <h2>Tolleranza zero verso i contenuti CSAE</h2>
+        <p>È severamente vietato caricare, richiedere, condividere o promuovere materiale di abuso o sfruttamento sessuale di minori (CSAE) o qualsiasi contenuto che metta a rischio un minore. Questi contenuti e comportamenti non sono tollerati in nessuna forma.</p>
+
+        <h2>I nostri impegni</h2>
+        <ul>
+          <li><strong>Moderazione</strong>: i contenuti segnalati vengono esaminati e quelli illeciti rimossi.</li>
+          <li><strong>Segnalazione in-app</strong>: ogni contenuto e ogni chat hanno un tasto <strong>Segnala</strong>, con una categoria dedicata all'abuso sui minori.</li>
+          <li><strong>Blocco utente</strong>: puoi bloccare un altro utente dalla chat in qualsiasi momento.</li>
+          <li><strong>Sospensione e chiusura</strong>: gli account coinvolti in contenuti CSAE vengono sospesi o chiusi.</li>
+          <li><strong>Collaborazione con le autorità</strong>: collaboriamo con le forze dell'ordine e conserviamo le informazioni necessarie nei casi che lo richiedono.</li>
+        </ul>
+
+        <h2>Come segnalare un contenuto che riguarda un minore</h2>
+        <ul>
+          <li><strong>Nell'app</strong>: usa il tasto <strong>Segnala</strong> sul contenuto o nella chat e scegli la voce relativa all'abuso o allo sfruttamento di minori.</li>
+          <li><strong>Via email</strong>: scrivi al nostro punto di contatto <strong><a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></strong>.</li>
+          <li><strong>Alle autorità</strong>: in caso di pericolo immediato chiama il <strong>112</strong>; in Italia puoi segnalare alla <strong>Polizia Postale</strong> (commissariatodips.it).</li>
+        </ul>
+
+        <h2>Punto di contatto</h2>
+        <p>Per qualsiasi segnalazione o domanda sulla sicurezza dei minori puoi scrivere a <strong><a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></strong>.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

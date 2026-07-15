@@ -352,4 +352,20 @@
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://orma.pet/sicurezza-minori/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/sicurezza-minori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/child-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/sicurezza-minori/"/>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://orma.pet/en/child-safety/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://orma.pet/sicurezza-minori/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orma.pet/en/child-safety/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://orma.pet/sicurezza-minori/"/>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>

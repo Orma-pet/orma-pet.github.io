@@ -30,6 +30,7 @@ export const ROUTES = {
   map:           { it: '/mappa/',          en: '/en/map/' },
   faq:           { it: '/faq/',            en: '/en/faq/' },
   forOrgs:       { it: '/per-strutture/',  en: '/en/for-organizations/' },
+  childSafety:   { it: '/sicurezza-minori/', en: '/en/child-safety/' },
   pet:           { it: '/pet/',            en: '/en/pet/' },
 };
 
@@ -54,7 +55,7 @@ export const UI = {
     skipToContent: 'Vai al contenuto',
     langGroupLabel: 'Lingua',
     navCta: "Scarica l'app",
-    footerLinks: { faq: 'FAQ', forOrgs: 'Per veterinari e canili', privacy: 'Privacy', terms: 'Termini', deletion: 'Cancellazione account', contact: 'Contatti' },
+    footerLinks: { faq: 'FAQ', forOrgs: 'Per veterinari e canili', childSafety: 'Sicurezza dei minori', privacy: 'Privacy', terms: 'Termini', deletion: 'Cancellazione account', contact: 'Contatti' },
     footerTagline: 'Orma — Ritrova il tuo amico. Fatto con cura, in Italia.',
     footerColophon: 'Versione editoriale del sito · 2026',
     storeSoon: 'Presto su',
@@ -72,7 +73,7 @@ export const UI = {
     skipToContent: 'Skip to content',
     langGroupLabel: 'Language',
     navCta: 'Get the app',
-    footerLinks: { faq: 'FAQ', forOrgs: 'For vets & shelters', privacy: 'Privacy', terms: 'Terms', deletion: 'Account deletion', contact: 'Contact' },
+    footerLinks: { faq: 'FAQ', forOrgs: 'For vets & shelters', childSafety: 'Child safety', privacy: 'Privacy', terms: 'Terms', deletion: 'Account deletion', contact: 'Contact' },
     footerTagline: 'Orma — Find your friend. Made with care, in Italy.',
     footerColophon: 'Editorial edition of the website · 2026',
     storeSoon: 'Coming soon to',
