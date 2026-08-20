@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { UI, BRAND } from '../data/site.js';
+import { UI, BRAND, LANGS_PRONTE, urlPagina } from '../data/site.js';
 import '../styles/global.css';
 // Font self-hostati (niente richiesta a Google → nessun cookie di terze parti).
 import '@fontsource/nunito/400.css';
@@ -14,14 +14,12 @@ import '@fontsource/nunito/900.css';
 //  lang: 'it' | 'en' — pilota <html lang>
 //  title, description — meta
 //  active — chiave pagina per evidenziare il menu
-//  altUrl — URL dell'equivalente nell'altra lingua (selettore lingua + hreflang)
 //  noindex — booleano (per /pet)
 const {
   lang = 'it',
   title,
   description = '',
   active = 'home',
-  altUrl = '/',
   noindex = false,
 } = Astro.props;
 
@@ -30,8 +28,17 @@ const ui = UI[lang];
 // SEO: URL assoluti per canonical / hreflang / social.
 const siteUrl = BRAND.siteUrl;
 const canonical = new URL(Astro.url.pathname, siteUrl).href;
-const itHref = new URL(lang === 'it' ? Astro.url.pathname : altUrl, siteUrl).href;
-const enHref = new URL(lang === 'en' ? Astro.url.pathname : altUrl, siteUrl).href;
+// hreflang per TUTTE le lingue pubblicate, non solo "l'altra". `active` e'
+// gia' la chiave di ROUTES che ogni pagina passa, quindi l'elenco si costruisce
+// da solo: aggiungere una lingua a LANGS non richiede di toccare le pagine.
+const alternative = LANGS_PRONTE.map((l) => ({
+  code: l.code,
+  href: new URL(urlPagina(active, l.code), siteUrl).href,
+}));
+// Dove mandare chi arriva con il browser in una lingua diversa da questa.
+const perLingua = Object.fromEntries(
+  LANGS_PRONTE.map((l) => [l.code, urlPagina(active, l.code)]),
+);
 const ogImage = new URL(BRAND.ogImage, siteUrl).href;
 const ogLocale = lang === 'it' ? 'it_IT' : 'en_US';
 
@@ -64,43 +71,36 @@ const jsonLd = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script define:vars={{ altUrl, lang }}>
+    <script define:vars={{ perLingua, lang }}>
       // Reindirizzamento automatico alla lingua giusta, UNA volta sola.
       //
-      // Attenzione: su hosting statico non si puo' sapere il PAESE di chi
-      // arriva (servirebbe un servizio di geolocalizzazione IP, cioe' una
-      // richiesta a terzi su ogni visita). Usiamo la lingua del browser, che
-      // e' il segnale piu' vicino e non costa privacy a nessuno.
+      // Su hosting statico non si puo' sapere il PAESE di chi arriva
+      // (servirebbe un servizio di geolocalizzazione IP, cioe' una richiesta a
+      // terzi su ogni visita). Usiamo la lingua del browser: e' il segnale piu'
+      // vicino e non costa privacy a nessuno.
       (function () {
         try {
-          // Nessuna pagina gemella, o e' questa stessa: niente da fare.
-          if (!altUrl || altUrl === location.pathname) return;
-
           // I crawler non vanno spostati: si orientano con i tag hreflang.
-          // Googlebot gira con l'inglese e finirebbe per non indicizzare mai
-          // le pagine italiane.
+          // Googlebot gira in inglese e non indicizzerebbe mai le altre lingue.
           if (/bot|crawl|spider|slurp|preview|lighthouse/i.test(navigator.userAgent)) return;
 
-          // Se l'utente ha scelto a mano dal selettore, la sua scelta vince
-          // per sempre.
-          if (localStorage.getItem('orma_lang')) return;
-
-          // Una sola volta per sessione, cosi' non si combatte con il tasto
+          // Una sola volta per sessione: cosi' non si combatte con il tasto
           // "indietro" del browser.
           if (sessionStorage.getItem('orma_lang_auto')) return;
           sessionStorage.setItem('orma_lang_auto', '1');
 
-          // navigator.languages e' l'elenco ordinato per preferenza: usarlo
-          // tutto invece del solo primo elemento evita di mandare in inglese
-          // chi ha il sistema in inglese ma l'italiano come seconda lingua.
+          // navigator.languages e' l'elenco ordinato per preferenza: scorrerlo
+          // tutto evita di mandare in inglese chi ha il sistema in inglese ma
+          // la propria lingua al secondo posto.
           var elenco = navigator.languages || [navigator.language || ''];
-          var vuole = 'en';
           for (var i = 0; i < elenco.length; i++) {
-            var l = String(elenco[i]).toLowerCase();
-            if (l.indexOf('it') === 0) { vuole = 'it'; break; }
-            if (l.indexOf('en') === 0) { vuole = 'en'; break; }
+            var codice = String(elenco[i]).toLowerCase().split('-')[0];
+            if (!perLingua[codice]) continue;      // lingua non pubblicata
+            if (codice === lang) return;           // siamo gia' quella giusta
+            if (perLingua[codice] === location.pathname) return;
+            location.replace(perLingua[codice]);
+            return;
           }
-          if (vuole !== lang) location.replace(altUrl);
         } catch (e) {}
       })();
     </script>
@@ -110,9 +110,10 @@ const jsonLd = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     {!noindex && <link rel="canonical" href={canonical} />}
-    {!noindex && <link rel="alternate" hreflang="it" href={itHref} />}
-    {!noindex && <link rel="alternate" hreflang="en" href={enHref} />}
-    {!noindex && <link rel="alternate" hreflang="x-default" href={itHref} />}
+    {!noindex && alternative.map((a) => (
+      <link rel="alternate" hreflang={a.code} href={a.href} />
+    ))}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={alternative[0].href} />}
 
     {/* Open Graph + Twitter: anteprima quando si condivide il link */}
     <meta property="og:type" content="website" />

@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import StoreButtons from './StoreButtons.astro';
 import { HOME } from '../data/site.js';
 
-// Mappa web (sola visualizzazione) delle segnalazioni vicine. props: lang, altUrl.
-const { lang = 'it', altUrl } = Astro.props;
+// Mappa web (sola visualizzazione) delle segnalazioni vicine. props: lang.
+const { lang = 'it' } = Astro.props;
 const h = HOME[lang];
 
 const STR = {
@@ -57,7 +57,7 @@ const cfg = {
   strings: t,
 };
 ---
-<Layout lang={lang} title={`Orma — ${t.title}`} description={t.lead} active="map" altUrl={altUrl}>
+<Layout lang={lang} title={`Orma — ${t.title}`} description={t.lead} active="map">
   <section class="section">
     <div class="wrap">
       <div class="section__head">

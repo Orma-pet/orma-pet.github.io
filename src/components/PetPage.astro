@@ -10,7 +10,7 @@ const { lang = 'it' } = Astro.props;
 const t = PET[lang];
 const h = HOME[lang];
 const ui = UI[lang];
-const altUrl = lang === 'it' ? ROUTES.pet.en : ROUTES.pet.it;
+
 const homeUrl = ROUTES.home[lang];
 const howUrl = ROUTES.howItWorks[lang];
 
@@ -25,7 +25,6 @@ const cfg = {
   lang={lang}
   title={t.title}
   active="pet"
-  altUrl={altUrl}
   noindex={true}
 >
   <section class="pet">

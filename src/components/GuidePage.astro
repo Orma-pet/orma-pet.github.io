@@ -4,8 +4,8 @@ import StoreButtons from './StoreButtons.astro';
 import { UI, HOME, ROUTES } from '../data/site.js';
 import { GUIDES } from '../data/guides.js';
 
-// Pagina di una singola guida. props: lang, guide (oggetto guida), altUrl.
-const { lang = 'it', guide, altUrl } = Astro.props;
+// Pagina di una singola guida. props: lang, guide (oggetto guida).
+const { lang = 'it', guide } = Astro.props;
 const ui = UI[lang];
 const h = HOME[lang];
 const d = guide[lang];
@@ -30,7 +30,6 @@ const faqLd = faqList.length
   title={`Orma — ${d.title}`}
   description={d.metaDesc}
   active="guides"
-  altUrl={altUrl}
 >
   <section class="legal">
     <div class="wrap">

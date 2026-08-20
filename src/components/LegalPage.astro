@@ -4,8 +4,8 @@ import { UI } from '../data/site.js';
 
 // Pagina legale generica (privacy, termini, cancellazione).
 // props: lang, title (titolo pagina+H1), description, html (HTML reale del corpo),
-//        active, altUrl, homeUrl
-const { lang = 'it', title, description = '', html, active, altUrl, homeUrl } = Astro.props;
+//        active, homeUrl
+const { lang = 'it', title, description = '', html, active, homeUrl } = Astro.props;
 const ui = UI[lang];
 ---
 <Layout
@@ -13,7 +13,6 @@ const ui = UI[lang];
   title={`Orma — ${title}`}
   description={description}
   active={active}
-  altUrl={altUrl}
 >
   <section class="legal">
     <div class="wrap">
