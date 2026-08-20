@@ -53,3 +53,13 @@ const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
     </label>
   </div>
 </header>
+
+<script>
+  // Cliccando IT/EN l'utente sceglie a mano: da quel momento il
+  // reindirizzamento automatico non deve piu' intervenire, mai.
+  document.querySelectorAll('.lang-switch a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('orma_lang', a.getAttribute('lang') || ''); } catch (e) {}
+    });
+  });
+</script>

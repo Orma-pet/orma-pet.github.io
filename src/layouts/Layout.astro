@@ -65,17 +65,42 @@ const jsonLd = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script define:vars={{ altUrl, lang }}>
-      // Prima visita: se la lingua del browser non combacia con la pagina,
-      // reindirizza UNA volta sola alla versione giusta. Dopo, rispetta la
-      // scelta manuale dell'utente (il flag resta impostato).
+      // Reindirizzamento automatico alla lingua giusta, UNA volta sola.
+      //
+      // Attenzione: su hosting statico non si puo' sapere il PAESE di chi
+      // arriva (servirebbe un servizio di geolocalizzazione IP, cioe' una
+      // richiesta a terzi su ogni visita). Usiamo la lingua del browser, che
+      // e' il segnale piu' vicino e non costa privacy a nessuno.
       (function () {
         try {
-          if (!altUrl) return;
-          if (localStorage.getItem('orma_lang_done')) return;
-          localStorage.setItem('orma_lang_done', '1');
-          var b = (navigator.language || navigator.userLanguage || '').toLowerCase();
-          var want = b.indexOf('it') === 0 ? 'it' : 'en';
-          if (want !== lang) location.replace(altUrl);
+          // Nessuna pagina gemella, o e' questa stessa: niente da fare.
+          if (!altUrl || altUrl === location.pathname) return;
+
+          // I crawler non vanno spostati: si orientano con i tag hreflang.
+          // Googlebot gira con l'inglese e finirebbe per non indicizzare mai
+          // le pagine italiane.
+          if (/bot|crawl|spider|slurp|preview|lighthouse/i.test(navigator.userAgent)) return;
+
+          // Se l'utente ha scelto a mano dal selettore, la sua scelta vince
+          // per sempre.
+          if (localStorage.getItem('orma_lang')) return;
+
+          // Una sola volta per sessione, cosi' non si combatte con il tasto
+          // "indietro" del browser.
+          if (sessionStorage.getItem('orma_lang_auto')) return;
+          sessionStorage.setItem('orma_lang_auto', '1');
+
+          // navigator.languages e' l'elenco ordinato per preferenza: usarlo
+          // tutto invece del solo primo elemento evita di mandare in inglese
+          // chi ha il sistema in inglese ma l'italiano come seconda lingua.
+          var elenco = navigator.languages || [navigator.language || ''];
+          var vuole = 'en';
+          for (var i = 0; i < elenco.length; i++) {
+            var l = String(elenco[i]).toLowerCase();
+            if (l.indexOf('it') === 0) { vuole = 'it'; break; }
+            if (l.indexOf('en') === 0) { vuole = 'en'; break; }
+          }
+          if (vuole !== lang) location.replace(altUrl);
         } catch (e) {}
       })();
     </script>
