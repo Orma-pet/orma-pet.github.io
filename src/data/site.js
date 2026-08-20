@@ -34,6 +34,77 @@ export const ROUTES = {
   pet:           { it: '/pet/',            en: '/en/pet/' },
 };
 
+// ============================================================================
+// REGISTRO DELLE LINGUE
+// ----------------------------------------------------------------------------
+// Aggiungere una lingua qui, non creando 12 file .astro nuovi. Le pagine
+// italiane e inglesi restano dove sono (i loro URL sono indicizzati e non si
+// toccano); tutte le altre nascono dalla rotta dinamica /[lang]/.
+//
+//   code    codice ISO, usato in <html lang> e negli URL
+//   name    nome della lingua NELLA lingua stessa (per un eventuale menu)
+//   dir     'ltr' per tutte le lingue UE
+//   base    dove vive: '' = radice (italiano), altrimenti '/<code>'
+//
+// `pronta` dice se i testi di quella lingua esistono davvero. Finche' e'
+// false la lingua non viene generata: meglio non esistere che esistere mezza
+// tradotta con l'inglese sotto.
+// ============================================================================
+export const LANGS = [
+  { code: 'it', name: 'Italiano',   base: '',    pronta: true  },
+  { code: 'en', name: 'English',    base: '/en', pronta: true  },
+  { code: 'bg', name: 'Български',  base: '/bg', pronta: false },
+  { code: 'cs', name: 'Čeština',    base: '/cs', pronta: false },
+  { code: 'da', name: 'Dansk',      base: '/da', pronta: false },
+  { code: 'de', name: 'Deutsch',    base: '/de', pronta: false },
+  { code: 'el', name: 'Ελληνικά',   base: '/el', pronta: false },
+  { code: 'es', name: 'Español',    base: '/es', pronta: false },
+  { code: 'et', name: 'Eesti',      base: '/et', pronta: false },
+  { code: 'fi', name: 'Suomi',      base: '/fi', pronta: false },
+  { code: 'fr', name: 'Français',   base: '/fr', pronta: false },
+  { code: 'ga', name: 'Gaeilge',    base: '/ga', pronta: false },
+  { code: 'hr', name: 'Hrvatski',   base: '/hr', pronta: false },
+  { code: 'hu', name: 'Magyar',     base: '/hu', pronta: false },
+  { code: 'lt', name: 'Lietuvių',   base: '/lt', pronta: false },
+  { code: 'lv', name: 'Latviešu',   base: '/lv', pronta: false },
+  { code: 'mt', name: 'Malti',      base: '/mt', pronta: false },
+  { code: 'nl', name: 'Nederlands', base: '/nl', pronta: false },
+  { code: 'pl', name: 'Polski',     base: '/pl', pronta: false },
+  { code: 'pt', name: 'Português',  base: '/pt', pronta: false },
+  { code: 'ro', name: 'Română',     base: '/ro', pronta: false },
+  { code: 'sk', name: 'Slovenčina', base: '/sk', pronta: false },
+  { code: 'sl', name: 'Slovenščina',base: '/sl', pronta: false },
+  { code: 'sv', name: 'Svenska',    base: '/sv', pronta: false },
+];
+
+/// Le lingue effettivamente pubblicate.
+export const LANGS_PRONTE = LANGS.filter((l) => l.pronta);
+
+/// Le lingue nuove: quelle servite dalla rotta dinamica /[lang]/.
+export const LANGS_DINAMICHE = LANGS_PRONTE.filter((l) => l.code !== 'it' && l.code !== 'en');
+
+/// Prende `oggetto[lang]`, e se quella lingua manca ripiega sull'inglese e
+/// poi sull'italiano. Serve durante la traduzione: una lingua a meta' mostra
+/// il pezzo tradotto e il resto in inglese, invece di rompersi.
+export function testo(oggetto, lang) {
+  if (!oggetto) return undefined;
+  return oggetto[lang] ?? oggetto.en ?? oggetto.it;
+}
+
+/// URL di una pagina in una lingua. Italiano e inglese conservano i loro
+/// percorsi storici (sono indicizzati); le lingue nuove usano gli slug
+/// inglesi sotto il proprio prefisso.
+export function urlPagina(chiave, lang) {
+  const r = ROUTES[chiave];
+  if (!r) return '/';
+  if (r[lang]) return r[lang];
+  const base = (LANGS.find((l) => l.code === lang) || {}).base || '';
+  // Lo slug inglese porta gia' il prefisso /en: va tolto, altrimenti si
+  // ottiene /de/en/terms/ invece di /de/terms/.
+  const slug = (r.en || '/').replace(/^\/en/, '') || '/';
+  return base + slug;
+}
+
 // Navigazione principale (le voci puntano alle pagine vere, non agli anchor).
 export const NAV = {
   it: [
