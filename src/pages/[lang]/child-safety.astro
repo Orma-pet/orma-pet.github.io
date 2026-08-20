@@ -1,0 +1,9 @@
+---
+import ChildSafetyPage from '../../components/ChildSafetyPage.astro';
+import { LANGS_DINAMICHE } from '../../data/site.js';
+export function getStaticPaths() {
+  return LANGS_DINAMICHE.map((l) => ({ params: { lang: l.code } }));
+}
+const { lang } = Astro.params;
+---
+<ChildSafetyPage lang={lang} />

@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import StoreButtons from './StoreButtons.astro';
-import { HOME } from '../data/site.js';
+import { HOME, testo } from '../data/site.js';
 
 // Mappa web (sola visualizzazione) delle segnalazioni vicine. props: lang.
 const { lang = 'it' } = Astro.props;
-const h = HOME[lang];
+const h = testo(HOME, lang);
 
 const STR = {
   it: {
@@ -48,7 +48,7 @@ const STR = {
   },
 };
 
-const t = STR[lang];
+const t = testo(STR, lang);
 const cfg = {
   style: 'https://tiles.openfreemap.org/styles/positron',
   supabaseUrl: 'https://lztuncwbyjeesmfwvkof.supabase.co',

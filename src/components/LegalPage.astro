@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { UI } from '../data/site.js';
+import { UI, testo } from '../data/site.js';
 
 // Pagina legale generica (privacy, termini, cancellazione).
 // props: lang, title (titolo pagina+H1), description, html (HTML reale del corpo),
 //        active, homeUrl
 const { lang = 'it', title, description = '', html, active, homeUrl } = Astro.props;
-const ui = UI[lang];
+const ui = testo(UI, lang);
 ---
 <Layout
   lang={lang}

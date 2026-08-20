@@ -1,0 +1,25 @@
+---
+import GuidePage from '../../../components/GuidePage.astro';
+import { GUIDES } from '../../../data/guides.js';
+import { LANGS_DINAMICHE, testo } from '../../../data/site.js';
+
+// Una pagina per ogni combinazione lingua x guida. Lo slug e' quello della
+// lingua se esiste, altrimenti quello inglese: cosi' una guida non ancora
+// tradotta resta raggiungibile invece di sparire dal sito.
+export function getStaticPaths() {
+  const percorsi = [];
+  for (const l of LANGS_DINAMICHE) {
+    for (const g of GUIDES) {
+      percorsi.push({
+        params: { lang: l.code, slug: testo(g.slug, l.code) },
+        props: { guide: g },
+      });
+    }
+  }
+  return percorsi;
+}
+
+const { lang } = Astro.params;
+const { guide } = Astro.props;
+---
+<GuidePage lang={lang} guide={guide} />

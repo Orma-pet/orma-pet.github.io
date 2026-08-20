@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Steps from '../../components/Steps.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { HOME, HOWITWORKS, ROUTES, LANGS_DINAMICHE, testo, urlPagina } from '../../data/site.js';
+
+export function getStaticPaths() {
+  return LANGS_DINAMICHE.map((l) => ({ params: { lang: l.code } }));
+}
+const { lang } = Astro.params;
+const t = testo(HOWITWORKS, lang);
+const h = testo(HOME, lang);
+---
+<Layout
+  lang={lang}
+  title={t.title}
+  description={t.metaDesc}
+  active="howItWorks"
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{t.eyebrow}</span>
+        <h2>{t.h1}</h2>
+        <p class="section__lead">{t.lead}</p>
+      </div>
+      <Steps steps={h.steps} />
+    </div>
+  </section>
+
+  <section class="section section--night">
+    <div class="wrap">
+      <div class="section__head" style="margin-bottom:1.4rem;">
+        <span class="eyebrow" style="color:#1AB8A0;">In short</span>
+        <h2>{t.closingTitle}</h2>
+        <p class="section__lead">{t.closingText}</p>
+      </div>
+      <a class="btn btn--primary" href={urlPagina('home', lang) + '#scarica'}>{h.heroCta1}</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>{h.downloadTitle}</h2>
+        <p>{h.downloadSub}</p>
+        <StoreButtons lang={lang} android={h.btnAndroid} ios={h.btnIos} variant="dark" />
+      </div>
+    </div>
+  </section>
+</Layout>

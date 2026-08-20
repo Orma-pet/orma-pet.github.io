@@ -71,7 +71,7 @@ export const LANGS = [
   { code: 'nl', name: 'Nederlands', base: '/nl', pronta: false },
   { code: 'pl', name: 'Polski',     base: '/pl', pronta: false },
   { code: 'pt', name: 'Português',  base: '/pt', pronta: false },
-  { code: 'ro', name: 'Română',     base: '/ro', pronta: false },
+  { code: 'ro', name: 'Română',     base: '/ro', pronta: true  },
   { code: 'sk', name: 'Slovenčina', base: '/sk', pronta: false },
   { code: 'sl', name: 'Slovenščina',base: '/sl', pronta: false },
   { code: 'sv', name: 'Svenska',    base: '/sv', pronta: false },
@@ -107,6 +107,24 @@ export function urlPagina(chiave, lang) {
 
 // Navigazione principale (le voci puntano alle pagine vere, non agli anchor).
 export const NAV = {
+  ro: [
+    {
+      "key": "howItWorks",
+      "label": "Cum funcționează"
+    },
+    {
+      "key": "features",
+      "label": "Funcții"
+    },
+    {
+      "key": "map",
+      "label": "Hartă"
+    },
+    {
+      "key": "guides",
+      "label": "Ghiduri"
+    }
+  ],
   it: [
     { key: 'howItWorks', label: 'Come funziona' },
     { key: 'features',   label: 'Funzionalità' },
@@ -122,6 +140,32 @@ export const NAV = {
 };
 
 export const UI = {
+  ro: {
+    "skipToContent": "Sari la conținut",
+    "langGroupLabel": "Limbă",
+    "navCta": "Descarcă aplicația",
+    "footerLinks": {
+      "faq": "Întrebări frecvente",
+      "forOrgs": "Pentru veterinari și adăposturi",
+      "childSafety": "Siguranța minorilor",
+      "privacy": "Confidențialitate",
+      "terms": "Termeni",
+      "deletion": "Ștergerea contului",
+      "contact": "Contact"
+    },
+    "footerTagline": "Orma — Găsește-ți prietenul. Făcut cu grijă, în Italia.",
+    "footerColophon": "Versiunea editorială a site-ului · 2026",
+    "storeSoon": "În curând pe",
+    "backHome": "Înapoi la pagina principală",
+    "allGuides": "Toate ghidurile",
+    "faqTitle": "Întrebări frecvente",
+    "homeGuidesTitle": "Ghiduri utile",
+    "homeGuidesLead": "Ce să faci când contează: ai pierdut sau ai găsit un animal? Aici sunt pașii corecți.",
+    "guidesHubTitle": "Ghiduri pentru animale pierdute și găsite",
+    "guidesHubLead": "Sfaturi practice pentru momentele care contează: ce să faci dacă ai pierdut sau ai găsit un animal, microcipul, adopțiile.",
+    "guideCtaTitle": "Publică un anunț pe Orma",
+    "guideCtaText": "Cu Orma anunți persoanele din apropiere, primești semnalări cu fotografii și îți găsești prietenul mai repede."
+  },
   it: {
     skipToContent: 'Vai al contenuto',
     langGroupLabel: 'Lingua',
@@ -164,6 +208,153 @@ export const UI = {
 // HOMEPAGE — testi (dalle stringhe fornite, adattate al taglio editoriale).
 // ----------------------------------------------------------------------------
 export const HOME = {
+  ro: {
+    "title": "Orma — Aplicație pentru animale pierdute | Găsește-ți prietenul",
+    "metaDesc": "Aplicație pentru a anunța și a găsi câini și pisici pierdute: alerte pentru persoanele din apropiere, semnalări cu fotografii, potrivire după microcip. Confidențialitatea pe primul loc.",
+    "heroEyebrow": "Aplicație pentru animale pierdute, găsite și de adoptat",
+    "heroTitle": "Găsește-ți prietenul",
+    "heroSub": "Orma îi pune în legătură pe cei care au pierdut un animal cu cei care l-au văzut sau l-au găsit. Publici un anunț din câteva atingeri, primești alerte când se întâmplă ceva lângă tine și îți păstrezi datele de contact în siguranță, în chatul aplicației.",
+    "heroCta1": "Descarcă Orma",
+    "heroCta2": "Vezi cum funcționează",
+    "heroProof": "O comunitate care întinde o labă, oraș cu oraș.",
+    "trust": [
+      "Date în Europa",
+      "Confidențialitate din construcție",
+      "Făcut în Italia"
+    ],
+    "animalsTitle": "Orma este pentru orice animal",
+    "animalsSub": "Câini și pisici, desigur, dar și iepuri, păsări, rozătoare și toate celelalte. Dacă cineva le poartă de grijă, aici au un loc: pierdute, găsite, abandonate sau în căutarea unei familii.",
+    "animals": [
+      {
+        "key": "dog",
+        "label": "Câini"
+      },
+      {
+        "key": "cat",
+        "label": "Pisici"
+      },
+      {
+        "key": "rabbit",
+        "label": "Iepuri"
+      },
+      {
+        "key": "bird",
+        "label": "Păsări"
+      },
+      {
+        "key": "rodent",
+        "label": "Rozătoare"
+      },
+      {
+        "key": "reptile",
+        "label": "Reptile"
+      },
+      {
+        "key": "horse",
+        "label": "Cai"
+      },
+      {
+        "key": "more",
+        "label": "și altele"
+      }
+    ],
+    "stepsEyebrow": "Cum funcționează",
+    "stepsTitle": "Trei pași spre casă",
+    "steps": [
+      {
+        "t": "Anunță",
+        "x": "Ți-ai pierdut animalul? Creează un anunț cu fotografii, descriere și ultima poziție cunoscută. În câteva secunde îl vede comunitatea din zona ta."
+      },
+      {
+        "t": "Semnalează",
+        "x": "Ai văzut un animal care pare pierdut sau ai găsit unul? Publică o semnalare cu o fotografie și locul unde se afla. Chiar și o singură semnalare poate face diferența."
+      },
+      {
+        "t": "Regăsește",
+        "x": "Orma te anunță când un anunț din apropiere s-ar putea potrivi. Scrii în chatul sigur, verificați detaliile împreună și organizați întoarcerea acasă."
+      }
+    ],
+    "stepsCta": "Citește povestea întreagă",
+    "featEyebrow": "Funcții",
+    "featTitle": "Tot ce trebuie, nimic în plus",
+    "featLead": "Instrumente esențiale, gândite în jurul confidențialității și al vitezei. Fără înflorituri: doar ceea ce ajută un animal să se întoarcă acasă.",
+    "feats": [
+      {
+        "t": "Anunță pierdut, găsit sau abandonat",
+        "x": "Creezi din câteva atingeri un anunț pentru un animal pierdut, găsit sau abandonat, cu fotografii, descriere și ultima poziție. Anunțul rămâne activ 90 de zile, apoi este arhivat automat."
+      },
+      {
+        "t": "Hartă care respectă confidențialitatea",
+        "x": "Vezi pierderile și semnalările din jurul tău pe o hartă. Pentru a-i proteja pe cei care anunță, pe harta publică poziția este estompată cu aproximativ 150 de metri: ajuți fără să dezvălui adrese exacte."
+      },
+      {
+        "t": "Alerte în apropierea ta",
+        "x": "Activează notificările și primești o alertă când cineva publică un anunț în zona ta. Primele minute contează, iar tu le știi deja."
+      },
+      {
+        "t": "Semnalări cu fotografii",
+        "x": "Ai văzut un animal care pare pierdut? Publică o semnalare cu fotografie și loc: cine caută își recunoaște imediat animalul, chiar și dintr-o singură semnalare."
+      },
+      {
+        "t": "Potriviri posibile și microcip",
+        "x": "Orma compară animalele pierdute cu cele găsite și îți sugerează potrivirile posibile — „o fi al tău?”. Dacă numărul microcipului este disponibil, legătura este și mai precisă."
+      },
+      {
+        "t": "Chat sigur",
+        "x": "Iei legătura cu cine a publicat un anunț direct în aplicație, fără să schimbi numărul de telefon sau adresa de e-mail până când nu decizi tu."
+      },
+      {
+        "t": "Afiș PDF cu cod QR",
+        "x": "Generezi dintr-o atingere un afiș PDF gata de tipărit, cu codul QR al anunțului. Cine îl găsește scanează codul și deschide fișa actualizată a animalului."
+      },
+      {
+        "t": "Adopții din adăposturi verificate",
+        "x": "Răsfoiești animalele care caută o casă în adăposturile verificate de Orma. Verificăm structurile cât putem de bine, ca să îți oferim repere mai de încredere când alegi să adopți."
+      },
+      {
+        "t": "Medalion QR și zgardă digitală",
+        "x": "Pui un medalion Orma la zgarda animalului tău. Cine îl găsește îl scanează și deschide imediat fișa lui ca să te anunțe — fără ca tu să fii nevoit să dezvălui telefonul sau adresa."
+      },
+      {
+        "t": "Carnet de sănătate digital",
+        "x": "Ai mereu la tine vaccinurile, greutatea și memento-urile animalului tău: un carnet digital simplu, util în fiecare zi, nu doar în situații de urgență."
+      },
+      {
+        "t": "Veterinari și adăposturi pe hartă",
+        "x": "Găsești structurile din jurul tău, afli cine este deschis non-stop pentru urgențe și unde poți duce un animal găsit. De la cabinetele veterinare poți cere și o programare."
+      },
+      {
+        "t": "Mod căutător",
+        "x": "Activezi modul căutător ca să dai o mână de ajutor la căutările din zonă și urci în clasamentul celor mai activi voluntari din comunitate."
+      }
+    ],
+    "featsCta": "Vezi toate funcțiile",
+    "adoptEyebrow": "Adopții",
+    "adoptTitle": "Nu doar regăsire: și adopție",
+    "adoptText": "Orma nu servește doar la regăsirea celor care s-au pierdut. În secțiunea de adopții găsești câini, pisici și alte animale care caută o familie, în adăposturile verificate de noi. Răsfoiești fișele, le afli povestea și contactezi structura: încă un mod de a schimba o viață.",
+    "adoptCta": "Descoperă adopțiile",
+    "adoptPoints": [
+      "Adăposturi verificate",
+      "Fișe cu fotografii și poveste",
+      "Contact direct cu structura"
+    ],
+    "reunitedEyebrow": "Final fericit",
+    "reunitedTitle": "Fiecare întoarcere acasă este o poveste",
+    "reunitedText": "Când un animal își regăsește familia, pe Orma devine o poveste cu final fericit de sărbătorit împreună. Ele sunt motivul pentru care există tot acest lucru.",
+    "vetsEyebrow": "Pentru veterinari și structuri",
+    "vetsTitle": "Ești veterinar sau ai un adăpost? Fă-te găsit.",
+    "vetsText": "Orma te arată pe hartă celor care caută ajutor: cine găsește un animal ți-l aduce, cine are o urgență te găsește imediat. Îți ia cinci minute să te activezi.",
+    "vetsPoints": [
+      "Vizibilitate pe hartă",
+      "Cereri de programare din aplicație",
+      "Punct de predare sau urgențe non-stop"
+    ],
+    "vetsCta": "Scrie-ne",
+    "downloadTitle": "Prietenul tău te așteaptă",
+    "downloadSub": "Orma ajunge întâi pe Android, apoi pe iOS. Alătură-te comunității și ajută fiecare animal să se întoarcă acasă.",
+    "btnAndroid": "Descarcă din Google Play",
+    "btnIos": "În curând pe App Store"
+  },
   it: {
     title: 'Orma — App per animali smarriti | Ritrova il tuo amico',
     metaDesc: 'App per segnalare e ritrovare cani e gatti smarriti: avvisi alle persone vicine, avvistamenti con foto, corrispondenza microchip. Privacy al primo posto.',
@@ -303,6 +494,15 @@ export const HOME = {
 // (riusano gli array steps/feats di HOME, con un cappello introduttivo proprio)
 // ----------------------------------------------------------------------------
 export const HOWITWORKS = {
+  ro: {
+    "title": "Cum găsești un animal pierdut — Cum funcționează Orma",
+    "metaDesc": "Cum găsești un câine sau o pisică pierdută: de la prima alertă până la întoarcerea acasă, cei trei pași ai Orma explicați pe îndelete.",
+    "eyebrow": "Ghid",
+    "h1": "Cum funcționează",
+    "lead": "Orma nu promite minuni: este un instrument. Dar este un instrument construit în jurul minutelor care contează, când un animal se îndepărtează și fiecare pereche de ochi în plus poate schimba finalul. Iată cum se mișcă comunitatea, pas cu pas.",
+    "closingTitle": "Nicio garanție, multă comunitate",
+    "closingText": "Orma ajută, nu garantează: nicio aplicație nu poate asigura o regăsire. Ceea ce putem face este să punem în legătură oamenii potriviți, repede și cu respect pentru confidențialitate. Restul îl face o comunitate care întinde o labă."
+  },
   it: {
     title: 'Come ritrovare un animale smarrito — Come funziona Orma',
     metaDesc: 'Come ritrovare un cane o un gatto smarrito: dal primo avviso al ritorno a casa, i tre passi di Orma spiegati con calma.',
@@ -324,6 +524,15 @@ export const HOWITWORKS = {
 };
 
 export const FEATURES = {
+  ro: {
+    "title": "Aplicație pentru animale pierdute și găsite — Funcțiile Orma",
+    "metaDesc": "Aplicație pentru animale pierdute: hartă care respectă confidențialitatea, alerte în apropierea ta, chat sigur, potrivire după microcip și adopții verificate.",
+    "eyebrow": "Funcții",
+    "h1": "Tot ce trebuie, nimic în plus",
+    "lead": "Am tăiat tot ce nu era necesar. Ce rămâne sunt instrumente esențiale, fiecare gândit pentru un moment precis al căutării — și fiecare cu confidențialitatea ca setare implicită, nu ca gând de pe urmă.",
+    "privacyTitle": "Confidențialitatea nu este o funcție: este punctul de plecare",
+    "privacyText": "Datele tale nu sunt vândute. Poziția de pe harta publică este întotdeauna estompată cu aproximativ 150 de metri. Serverele cu datele se află în Uniunea Europeană, la Stockholm."
+  },
   it: {
     title: 'App per segnalare animali smarriti e trovati — Funzioni di Orma',
     metaDesc: 'App per animali smarriti: mappa con privacy, avvisi vicino a te, chat sicura, corrispondenza microchip e adozioni verificate.',
@@ -348,6 +557,22 @@ export const FEATURES = {
 // /pet — stringhe UI della landing del QR (il rendering della scheda è client-side).
 // ----------------------------------------------------------------------------
 export const PET = {
+  ro: {
+    "title": "Orma — Anunț",
+    "loading": "Se încarcă anunțul…",
+    "noidTitle": "Anunț nespecificat",
+    "noidText": "Acest link se deschide scanând codul QR de pe un afiș Orma. Lipsește referința către anunț.",
+    "notfoundTitle": "Anunțul nu a fost găsit",
+    "notfoundText": "Acest anunț nu mai există sau a fost închis. Anunțurile de pe Orma expiră și sunt arhivate după 90 de zile.",
+    "errorTitle": "Ceva nu a mers bine",
+    "errorText": "Nu am reușit să încărcăm anunțul. Verifică conexiunea și încearcă din nou.",
+    "retry": "Încearcă din nou",
+    "discover": "Descoperă Orma",
+    "locationNote": "Pentru a proteja confidențialitatea, poziția afișată este zona aproximativă (estompată cu aproximativ 150 de metri), nu adresa exactă.",
+    "appBoxTitle": "Ai văzut acest animal?",
+    "appBoxText": "Deschide anunțul în Orma ca să îi scrii celui care l-a publicat, în chatul sigur, și să raportezi o semnalare. Aplicația vine în curând: până atunci poți descoperi cum funcționează.",
+    "locale": "ro-RO"
+  },
   it: {
     title: 'Orma — Segnalazione',
     loading: 'Sto caricando la segnalazione…',

@@ -2,17 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import StoreButtons from './StoreButtons.astro';
 import Paw from './Paw.astro';
-import { PET, HOME, ROUTES, UI } from '../data/site.js';
+import { PET, HOME, ROUTES, UI, testo, urlPagina } from '../data/site.js';
 
 // Landing del QR dei volantini. Il QR punta a https://orma.pet/pet?id=<reportId>.
 // La scheda animale è caricata client-side via RPC Supabase (report_detail).
 const { lang = 'it' } = Astro.props;
-const t = PET[lang];
-const h = HOME[lang];
-const ui = UI[lang];
+const t = testo(PET, lang);
+const h = testo(HOME, lang);
+const ui = testo(UI, lang);
 
-const homeUrl = ROUTES.home[lang];
-const howUrl = ROUTES.howItWorks[lang];
+const homeUrl = urlPagina('home', lang);
+const howUrl = urlPagina('howItWorks', lang);
 
 // Config esposta al client via data-attributi sul main (niente segreti: chiave pubblica).
 const cfg = {

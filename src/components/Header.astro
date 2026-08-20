@@ -1,14 +1,14 @@
 ---
 import Paw from './Paw.astro';
-import { ROUTES, NAV, UI } from '../data/site.js';
+import { ROUTES, NAV, UI, testo, urlPagina } from '../data/site.js';
 
 // props:
 //  lang: 'it' | 'en'
 //  active: chiave di ROUTES della pagina corrente (per aria-current)
 const { lang = 'it', active = 'home' } = Astro.props;
-const ui = UI[lang];
-const nav = NAV[lang];
-const homeUrl = ROUTES.home[lang];
+const ui = testo(UI, lang);
+const nav = testo(NAV, lang);
+const homeUrl = urlPagina('home', lang);
 
 const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
 ---
@@ -27,7 +27,7 @@ const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
         {nav.map((item) => (
           <li>
             <a
-              href={ROUTES[item.key][lang]}
+              href={urlPagina(item.key, lang)}
               aria-current={active === item.key ? 'page' : undefined}
             >{item.label}</a>
           </li>
@@ -36,7 +36,7 @@ const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
 
       <div class="nav__right">
 
-        <a class="btn btn--primary btn--small nav__cta" href={ROUTES.home[lang] + '#scarica'}>{ui.navCta}</a>
+        <a class="btn btn--primary btn--small nav__cta" href={urlPagina('home', lang) + '#scarica'}>{ui.navCta}</a>
       </div>
     </nav>
 

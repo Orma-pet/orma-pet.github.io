@@ -1,0 +1,18 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { LEGAL } from '../../data/legal.js';
+import { ROUTES, LANGS_DINAMICHE, testo, urlPagina } from '../../data/site.js';
+
+export function getStaticPaths() {
+  return LANGS_DINAMICHE.map((l) => ({ params: { lang: l.code } }));
+}
+const { lang } = Astro.params;
+const doc = LEGAL.privacy;
+---
+<LegalPage
+  lang={lang}
+  title={testo(doc.title, lang)}
+  html={testo(doc.html, lang)}
+  active="privacy"
+  homeUrl={urlPagina('home', lang)}
+/>

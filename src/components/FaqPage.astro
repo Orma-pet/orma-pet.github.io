@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { UI, ROUTES } from '../data/site.js';
+import { UI, ROUTES, testo, urlPagina } from '../data/site.js';
 import { APP_FAQ } from '../data/appfaq.js';
 
 const { lang = 'it' } = Astro.props;
-const ui = UI[lang];
-const list = APP_FAQ[lang] || [];
+const ui = testo(UI, lang);
+const list = testo(APP_FAQ, lang) || [];
 const title = lang === 'it'
   ? 'Domande frequenti su Orma'
   : 'Frequently asked questions about Orma';
@@ -26,7 +26,7 @@ const faqLd = {
   <section class="legal">
     <div class="wrap">
       <div class="legal__head">
-        <a class="legal__back" href={ROUTES.home[lang]}>← {ui.backHome}</a>
+        <a class="legal__back" href={urlPagina('home', lang)}>← {ui.backHome}</a>
         <h1>{title}</h1>
       </div>
       <div class="faq">

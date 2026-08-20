@@ -1,26 +1,26 @@
 ---
 import Paw from './Paw.astro';
-import { ROUTES, UI, BRAND } from '../data/site.js';
+import { ROUTES, UI, BRAND, testo, urlPagina } from '../data/site.js';
 
 const { lang = 'it' } = Astro.props;
-const ui = UI[lang];
+const ui = testo(UI, lang);
 const year = 2026;
 ---
 <footer class="site-footer">
   <div class="wrap">
     <div class="site-footer__inner">
-      <a class="brand" href={ROUTES.home[lang]} aria-label="Orma — home">
+      <a class="brand" href={urlPagina('home', lang)} aria-label="Orma — home">
         <Paw size={32} variant="tile" />
         <span>Orma</span>
       </a>
 
       <ul class="footer-links">
-        <li><a href={ROUTES.faq[lang]}>{ui.footerLinks.faq}</a></li>
-        <li><a href={ROUTES.forOrgs[lang]}>{ui.footerLinks.forOrgs}</a></li>
-        <li><a href={ROUTES.childSafety[lang]}>{ui.footerLinks.childSafety}</a></li>
-        <li><a href={ROUTES.privacy[lang]}>{ui.footerLinks.privacy}</a></li>
-        <li><a href={ROUTES.terms[lang]}>{ui.footerLinks.terms}</a></li>
-        <li><a href={ROUTES.deletion[lang]}>{ui.footerLinks.deletion}</a></li>
+        <li><a href={urlPagina('faq', lang)}>{ui.footerLinks.faq}</a></li>
+        <li><a href={urlPagina('forOrgs', lang)}>{ui.footerLinks.forOrgs}</a></li>
+        <li><a href={urlPagina('childSafety', lang)}>{ui.footerLinks.childSafety}</a></li>
+        <li><a href={urlPagina('privacy', lang)}>{ui.footerLinks.privacy}</a></li>
+        <li><a href={urlPagina('terms', lang)}>{ui.footerLinks.terms}</a></li>
+        <li><a href={urlPagina('deletion', lang)}>{ui.footerLinks.deletion}</a></li>
         <li><a href={`mailto:${BRAND.email}`}>{ui.footerLinks.contact}</a></li>
       </ul>
     </div>

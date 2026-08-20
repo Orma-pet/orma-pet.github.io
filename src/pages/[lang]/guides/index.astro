@@ -1,0 +1,38 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { UI, LANGS_DINAMICHE, testo, urlPagina } from '../../../data/site.js';
+import { GUIDES } from '../../../data/guides.js';
+
+export function getStaticPaths() {
+  return LANGS_DINAMICHE.map((l) => ({ params: { lang: l.code } }));
+}
+const { lang } = Astro.params;
+const ui = testo(UI, lang) ?? UI.en;
+const base = urlPagina('guides', lang);
+---
+<Layout
+  lang={lang}
+  title={`Orma — ${ui.guidesHubTitle}`}
+  description={ui.guidesHubLead}
+  active="guides"
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="eyebrow">{ui.guidesHubTitle}</span>
+        <h1>{ui.guidesHubTitle}</h1>
+        <p class="section__lead">{ui.guidesHubLead}</p>
+      </div>
+      <ul class="guide-list">
+        {GUIDES.map((g) => (
+          <li>
+            <a href={base + testo(g.slug, lang) + '/'}>
+              <strong>{testo(g, lang).title}</strong>
+              <span>{testo(g, lang).metaDesc}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>
