@@ -70,7 +70,7 @@ export const LANGS = [
   { code: 'mt', name: 'Malti',      base: '/mt', pronta: false },
   { code: 'nl', name: 'Nederlands', base: '/nl', pronta: false },
   { code: 'pl', name: 'Polski',     base: '/pl', pronta: false },
-  { code: 'pt', name: 'Português',  base: '/pt', pronta: false },
+  { code: 'pt', name: 'Português',  base: '/pt', pronta: true  },
   { code: 'ro', name: 'Română',     base: '/ro', pronta: true  },
   { code: 'sk', name: 'Slovenčina', base: '/sk', pronta: false },
   { code: 'sl', name: 'Slovenščina',base: '/sl', pronta: false },
@@ -107,6 +107,24 @@ export function urlPagina(chiave, lang) {
 
 // Navigazione principale (le voci puntano alle pagine vere, non agli anchor).
 export const NAV = {
+  pt: [
+    {
+      "key": "howItWorks",
+      "label": "Como funciona"
+    },
+    {
+      "key": "features",
+      "label": "Funcionalidades"
+    },
+    {
+      "key": "map",
+      "label": "Mapa"
+    },
+    {
+      "key": "guides",
+      "label": "Guias"
+    }
+  ],
   ro: [
     {
       "key": "howItWorks",
@@ -140,6 +158,32 @@ export const NAV = {
 };
 
 export const UI = {
+  pt: {
+    "skipToContent": "Ir para o conteúdo",
+    "langGroupLabel": "Idioma",
+    "navCta": "Descarregar a aplicação",
+    "footerLinks": {
+      "faq": "Perguntas frequentes",
+      "forOrgs": "Para veterinários e abrigos",
+      "childSafety": "Segurança de menores",
+      "privacy": "Privacidade",
+      "terms": "Termos",
+      "deletion": "Eliminação da conta",
+      "contact": "Contactos"
+    },
+    "footerTagline": "Orma — Encontra o teu amigo. Feito com cuidado, em Itália.",
+    "footerColophon": "Versão editorial do site · 2026",
+    "storeSoon": "Em breve na",
+    "backHome": "Voltar à página inicial",
+    "allGuides": "Todos os guias",
+    "faqTitle": "Perguntas frequentes",
+    "homeGuidesTitle": "Guias úteis",
+    "homeGuidesLead": "O que fazer quando conta: perdeste ou encontraste um animal? Aqui estão os passos certos.",
+    "guidesHubTitle": "Guias para animais perdidos e encontrados",
+    "guidesHubLead": "Conselhos práticos para os momentos que contam: o que fazer se perdeste ou encontraste um animal, o microchip, as adoções.",
+    "guideCtaTitle": "Publica um alerta na Orma",
+    "guideCtaText": "Com a Orma avisas as pessoas próximas, recebes avistamentos com fotografias e encontras o teu amigo mais depressa."
+  },
   ro: {
     "skipToContent": "Sari la conținut",
     "langGroupLabel": "Limbă",
@@ -208,6 +252,153 @@ export const UI = {
 // HOMEPAGE — testi (dalle stringhe fornite, adattate al taglio editoriale).
 // ----------------------------------------------------------------------------
 export const HOME = {
+  pt: {
+    "title": "Orma — Aplicação para animais perdidos | Encontra o teu amigo",
+    "metaDesc": "Aplicação para assinalar e encontrar cães e gatos perdidos: alertas às pessoas próximas, avistamentos com fotografias, correspondência por microchip. Privacidade em primeiro lugar.",
+    "heroEyebrow": "Aplicação para animais perdidos, encontrados e para adoção",
+    "heroTitle": "Encontra o teu amigo",
+    "heroSub": "A Orma liga quem perdeu um animal a quem o viu ou encontrou. Publicas um alerta em poucos toques, recebes avisos quando algo se mexe perto de ti e manténs os teus contactos protegidos no chat da aplicação.",
+    "heroCta1": "Descarregar a Orma",
+    "heroCta2": "Ver como funciona",
+    "heroProof": "Uma comunidade que dá uma pata, cidade a cidade.",
+    "trust": [
+      "Dados na Europa",
+      "Privacidade desde a conceção",
+      "Feito em Itália"
+    ],
+    "animalsTitle": "A Orma é para todos os animais",
+    "animalsSub": "Cães e gatos, claro, mas também coelhos, aves, roedores e todos os outros. Se alguém gosta deles, aqui têm um lugar: perdidos, encontrados, abandonados ou à procura de uma família.",
+    "animals": [
+      {
+        "key": "dog",
+        "label": "Cães"
+      },
+      {
+        "key": "cat",
+        "label": "Gatos"
+      },
+      {
+        "key": "rabbit",
+        "label": "Coelhos"
+      },
+      {
+        "key": "bird",
+        "label": "Aves"
+      },
+      {
+        "key": "rodent",
+        "label": "Roedores"
+      },
+      {
+        "key": "reptile",
+        "label": "Répteis"
+      },
+      {
+        "key": "horse",
+        "label": "Cavalos"
+      },
+      {
+        "key": "more",
+        "label": "e outros"
+      }
+    ],
+    "stepsEyebrow": "Como funciona",
+    "stepsTitle": "Três passos até casa",
+    "steps": [
+      {
+        "t": "Assinala",
+        "x": "Perdeste o teu animal? Cria um alerta com fotografias, descrição e última posição conhecida. Em poucos segundos a comunidade da tua zona vê-o."
+      },
+      {
+        "t": "Avista",
+        "x": "Viste um animal que parece perdido ou encontraste algum? Publica um avistamento com uma fotografia e o local onde estava. Até um único aviso pode fazer a diferença."
+      },
+      {
+        "t": "Reencontra",
+        "x": "A Orma avisa-te quando um alerta próximo pode corresponder. Escreves no chat seguro, confirmam os detalhes juntos e organizam o regresso a casa."
+      }
+    ],
+    "stepsCta": "Ler a história completa",
+    "featEyebrow": "Funcionalidades",
+    "featTitle": "Tudo o que é preciso, nada a mais",
+    "featLead": "Ferramentas essenciais, pensadas à volta da privacidade e da rapidez. Sem enfeites: apenas o que ajuda um animal a voltar para casa.",
+    "feats": [
+      {
+        "t": "Assinala perdido, encontrado ou abandonado",
+        "x": "Cria em poucos toques um alerta de animal perdido, encontrado ou abandonado, com fotografias, descrição e última posição. O alerta fica ativo 90 dias e depois é arquivado automaticamente."
+      },
+      {
+        "t": "Mapa com privacidade",
+        "x": "Vês desaparecimentos e avistamentos à tua volta num mapa. Para proteger quem assinala, no mapa público a posição é desfocada em cerca de 150 metros: ajudas sem revelar moradas exatas."
+      },
+      {
+        "t": "Alertas perto de ti",
+        "x": "Ativa as notificações e recebe um aviso quando alguém publica um alerta na tua zona. Os primeiros minutos contam, e tu já os conheces."
+      },
+      {
+        "t": "Avistamentos com fotografias",
+        "x": "Viste um animal que parece perdido? Publica um avistamento com fotografia e local: quem procura reconhece logo o seu animal, mesmo a partir de um único aviso."
+      },
+      {
+        "t": "Correspondências possíveis e microchip",
+        "x": "A Orma compara animais perdidos e encontrados e sugere-te as correspondências possíveis — «será o teu?». Se o número do microchip estiver disponível, a ligação é ainda mais precisa."
+      },
+      {
+        "t": "Chat seguro",
+        "x": "Entra em contacto com quem publicou um alerta diretamente na aplicação, sem trocar número de telefone ou e-mail enquanto não fores tu a decidir."
+      },
+      {
+        "t": "Cartaz PDF com código QR",
+        "x": "Gera num toque um cartaz em PDF pronto a imprimir, com o código QR do alerta. Quem o encontra digitaliza o código e abre a ficha atualizada do animal."
+      },
+      {
+        "t": "Adoções de abrigos verificados",
+        "x": "Percorre os animais à procura de casa nos canis e abrigos verificados pela Orma. Verificamos as instituições o melhor que podemos para te dar referências mais fiáveis quando decides adotar."
+      },
+      {
+        "t": "Medalha QR e coleira digital",
+        "x": "Coloca uma medalha Orma na coleira do teu animal. Quem o encontrar digitaliza-a e abre logo a sua ficha para te avisar — sem que tenhas de revelar telefone ou morada."
+      },
+      {
+        "t": "Boletim de saúde digital",
+        "x": "Tens sempre contigo as vacinas, o peso e os lembretes do teu animal: um boletim digital simples, útil todos os dias e não só na emergência."
+      },
+      {
+        "t": "Veterinários e abrigos no mapa",
+        "x": "Encontra as instituições à tua volta, descobre quem está aberto em urgência 24 horas e onde levar um animal encontrado. Nas clínicas veterinárias podes também pedir uma marcação."
+      },
+      {
+        "t": "Modo procurador",
+        "x": "Ativa o modo procurador para dar uma ajuda nas buscas da zona e sobe na classificação dos voluntários mais ativos da comunidade."
+      }
+    ],
+    "featsCta": "Ver todas as funcionalidades",
+    "adoptEyebrow": "Adoções",
+    "adoptTitle": "Não é só reencontrar: também adotar",
+    "adoptText": "A Orma não serve apenas para reencontrar quem se perdeu. Na secção de adoções encontras cães, gatos e outros animais à procura de uma família, nos canis e abrigos verificados por nós. Percorres as fichas, ficas a conhecer a sua história e contactas a instituição: mais uma forma de mudar uma vida.",
+    "adoptCta": "Descobrir as adoções",
+    "adoptPoints": [
+      "Canis e abrigos verificados",
+      "Fichas com fotografias e história",
+      "Contacto direto com a instituição"
+    ],
+    "reunitedEyebrow": "Finais felizes",
+    "reunitedTitle": "Cada regresso a casa é uma história",
+    "reunitedText": "Quando um animal reencontra a sua família, na Orma torna-se uma história de final feliz para celebrar em conjunto. São eles a razão pela qual tudo isto existe.",
+    "vetsEyebrow": "Para veterinários e instituições",
+    "vetsTitle": "És veterinário ou tens um abrigo? Faz-te encontrar.",
+    "vetsText": "A Orma mostra-te no mapa a quem procura ajuda: quem encontra um animal traz-to, quem tem uma urgência encontra-te logo. Ativares-te leva cinco minutos.",
+    "vetsPoints": [
+      "Visibilidade no mapa",
+      "Pedidos de marcação a partir da aplicação",
+      "Ponto de entrega ou urgência 24 horas"
+    ],
+    "vetsCta": "Escreve-nos",
+    "downloadTitle": "O teu amigo está à tua espera",
+    "downloadSub": "A Orma chega primeiro ao Android e depois ao iOS. Junta-te à comunidade e ajuda cada animal a voltar para casa.",
+    "btnAndroid": "Descarregar no Google Play",
+    "btnIos": "Em breve na App Store"
+  },
   ro: {
     "title": "Orma — Aplicație pentru animale pierdute | Găsește-ți prietenul",
     "metaDesc": "Aplicație pentru a anunța și a găsi câini și pisici pierdute: alerte pentru persoanele din apropiere, semnalări cu fotografii, potrivire după microcip. Confidențialitatea pe primul loc.",
@@ -494,6 +685,15 @@ export const HOME = {
 // (riusano gli array steps/feats di HOME, con un cappello introduttivo proprio)
 // ----------------------------------------------------------------------------
 export const HOWITWORKS = {
+  pt: {
+    "title": "Como encontrar um animal perdido — Como funciona a Orma",
+    "metaDesc": "Como encontrar um cão ou um gato perdido: do primeiro alerta ao regresso a casa, os três passos da Orma explicados com calma.",
+    "eyebrow": "Guia",
+    "h1": "Como funciona",
+    "lead": "A Orma não promete milagres: é uma ferramenta. Mas é uma ferramenta construída à volta dos minutos que contam, quando um animal se afasta e cada par de olhos a mais pode mudar o final. Eis como a comunidade se move, passo a passo.",
+    "closingTitle": "Nenhuma garantia, muita comunidade",
+    "closingText": "A Orma ajuda, não garante: nenhuma aplicação pode assegurar um reencontro. O que podemos fazer é ligar as pessoas certas, depressa e respeitando a privacidade. O resto fá-lo uma comunidade que dá uma pata."
+  },
   ro: {
     "title": "Cum găsești un animal pierdut — Cum funcționează Orma",
     "metaDesc": "Cum găsești un câine sau o pisică pierdută: de la prima alertă până la întoarcerea acasă, cei trei pași ai Orma explicați pe îndelete.",
@@ -524,6 +724,15 @@ export const HOWITWORKS = {
 };
 
 export const FEATURES = {
+  pt: {
+    "title": "Aplicação para animais perdidos e encontrados — Funções da Orma",
+    "metaDesc": "Aplicação para animais perdidos: mapa com privacidade, alertas perto de ti, chat seguro, correspondência por microchip e adoções verificadas.",
+    "eyebrow": "Funcionalidades",
+    "h1": "Tudo o que é preciso, nada a mais",
+    "lead": "Cortámos tudo o que não era necessário. O que resta são ferramentas essenciais, cada uma pensada para um momento preciso da busca — e cada uma com a privacidade como definição predefinida, não como reflexão tardia.",
+    "privacyTitle": "A privacidade não é uma funcionalidade: é o ponto de partida",
+    "privacyText": "Os teus dados não são vendidos. A posição no mapa público está sempre desfocada em cerca de 150 metros. Os servidores com os dados estão na União Europeia, em Estocolmo."
+  },
   ro: {
     "title": "Aplicație pentru animale pierdute și găsite — Funcțiile Orma",
     "metaDesc": "Aplicație pentru animale pierdute: hartă care respectă confidențialitatea, alerte în apropierea ta, chat sigur, potrivire după microcip și adopții verificate.",
@@ -557,6 +766,22 @@ export const FEATURES = {
 // /pet — stringhe UI della landing del QR (il rendering della scheda è client-side).
 // ----------------------------------------------------------------------------
 export const PET = {
+  pt: {
+    "title": "Orma — Alerta",
+    "loading": "A carregar o alerta…",
+    "noidTitle": "Alerta não especificado",
+    "noidText": "Esta ligação abre-se digitalizando o código QR de um cartaz Orma. Falta a referência ao alerta.",
+    "notfoundTitle": "Alerta não encontrado",
+    "notfoundText": "Este alerta já não existe ou foi encerrado. Os alertas na Orma expiram e são arquivados ao fim de 90 dias.",
+    "errorTitle": "Algo correu mal",
+    "errorText": "Não conseguimos carregar o alerta. Verifica a ligação e tenta novamente.",
+    "retry": "Tentar novamente",
+    "discover": "Descobrir a Orma",
+    "locationNote": "Para proteger a privacidade, a posição mostrada é a zona aproximada (desfocada em cerca de 150 metros), não a morada exata.",
+    "appBoxTitle": "Viste este animal?",
+    "appBoxText": "Abre o alerta na Orma para escrever a quem o publicou, no chat seguro, e comunicar um avistamento. A aplicação chega em breve: entretanto podes descobrir como funciona.",
+    "locale": "pt-PT"
+  },
   ro: {
     "title": "Orma — Anunț",
     "loading": "Se încarcă anunțul…",
