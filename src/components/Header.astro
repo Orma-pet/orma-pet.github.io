@@ -5,14 +5,10 @@ import { ROUTES, NAV, UI } from '../data/site.js';
 // props:
 //  lang: 'it' | 'en'
 //  active: chiave di ROUTES della pagina corrente (per aria-current)
-//  altUrl: URL della stessa pagina nell'altra lingua (per il selettore)
-const { lang = 'it', active = 'home', altUrl } = Astro.props;
+const { lang = 'it', active = 'home' } = Astro.props;
 const ui = UI[lang];
 const nav = NAV[lang];
 const homeUrl = ROUTES.home[lang];
-
-const itUrl = lang === 'it' ? (Astro.url.pathname || ROUTES[active]?.it) : altUrl;
-const enUrl = lang === 'en' ? (Astro.url.pathname || ROUTES[active]?.en) : altUrl;
 
 const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
 ---
@@ -39,10 +35,7 @@ const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
       </ul>
 
       <div class="nav__right">
-        <div class="lang-switch" role="group" aria-label={ui.langGroupLabel}>
-          <a href={itUrl} aria-current={lang === 'it' ? 'true' : 'false'} hreflang="it" lang="it">IT</a>
-          <a href={enUrl} aria-current={lang === 'en' ? 'true' : 'false'} hreflang="en" lang="en">EN</a>
-        </div>
+
         <a class="btn btn--primary btn--small nav__cta" href={ROUTES.home[lang] + '#scarica'}>{ui.navCta}</a>
       </div>
     </nav>
@@ -53,13 +46,3 @@ const menuLabel = lang === 'it' ? 'Apri il menu' : 'Open menu';
     </label>
   </div>
 </header>
-
-<script>
-  // Cliccando IT/EN l'utente sceglie a mano: da quel momento il
-  // reindirizzamento automatico non deve piu' intervenire, mai.
-  document.querySelectorAll('.lang-switch a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      try { localStorage.setItem('orma_lang', a.getAttribute('lang') || ''); } catch (e) {}
-    });
-  });
-</script>

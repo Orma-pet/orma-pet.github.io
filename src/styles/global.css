@@ -143,24 +143,9 @@ img { max-width: 100%; display: block; }
 
 .nav__right { display: flex; align-items: center; gap: 1rem; }
 
-.lang-switch {
-  display: inline-flex;
-  border: 1px solid var(--linea-forte);
-  border-radius: 999px;
-  overflow: hidden;
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-.lang-switch a {
-  padding: 6px 12px;
-  text-decoration: none;
-  color: var(--grigio);
-  line-height: 1;
-}
-.lang-switch a[aria-current="true"] {
-  background: var(--grad);
-  color: #fff;
-}
+
+
+
 
 /* Hamburger: nascosto su desktop, la checkbox di controllo è sempre off-screen */
 .nav-toggle { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
@@ -719,8 +704,8 @@ img { max-width: 100%; display: block; }
     width: 100%;
     margin-top: 1rem;
   }
-  .lang-switch { align-self: flex-start; font-size: 0.85rem; }
-  .lang-switch a { padding: 9px 16px; }
+  
+  
   .nav__cta { width: 100%; padding: 13px 22px; }
 
   /* Tipografia hero più contenuta su telefono */
