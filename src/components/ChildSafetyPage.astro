@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { CHILD_SAFETY } from '../data/pages.js';
+import { testo } from '../data/site.js';
+
+// Pagina "sicurezza dei minori", uguale in ogni lingua: il testo arriva dai
+// dati, non dal markup. props: lang.
+const { lang = 'it' } = Astro.props;
+const t = CHILD_SAFETY;
+---
+<Layout
+  lang={lang}
+  title={testo(t.title, lang)}
+  description={testo(t.description, lang)}
+  active="childSafety"
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">{testo(t.eyebrow, lang)}</span>
+        <h1>{testo(t.h1, lang)}</h1>
+        <p class="section__lead">{testo(t.lead, lang)}</p>
+      </div>
+
+      <div class="prose" set:html={testo(t.html, lang)} />
+    </div>
+  </section>
+</Layout>

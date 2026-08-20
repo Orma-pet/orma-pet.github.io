@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FOR_ORGS } from '../data/pages.js';
+import { testo, urlPagina, BRAND } from '../data/site.js';
+
+// Pagina "per strutture", uguale in ogni lingua: il testo arriva dai dati.
+// props: lang.
+const { lang = 'it' } = Astro.props;
+const t = FOR_ORGS;
+
+const badge = testo(t.badge, lang);
+// Il codice da incollare punta alla home nella lingua di chi lo copia.
+const embed = `<a href="https://orma.pet${urlPagina('home', lang)}?utm_source=partner" target="_blank" rel="noopener">
+  <img src="https://orma.pet${badge}" alt="${testo(t.badgeAlt, lang)}" width="300" height="92">
+</a>`;
+---
+<Layout
+  lang={lang}
+  title={testo(t.title, lang)}
+  description={testo(t.description, lang)}
+  active="forOrgs"
+>
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">{testo(t.eyebrow, lang)}</span>
+        <h1>{testo(t.h1, lang)}</h1>
+        <p class="section__lead">{testo(t.lead, lang)}</p>
+      </div>
+
+      <div class="prose" set:html={testo(t.htmlWhy, lang)} />
+
+      <figure class="embed">
+        <div class="embed__preview">
+          <img src={badge} alt={testo(t.previewAlt, lang)} width="300" height="92" />
+        </div>
+        <figcaption class="embed__bar">
+          <span class="embed__label">{testo(t.embedLabel, lang)}</span>
+          <button class="embed__copy" type="button" data-copied={testo(t.copiedLabel, lang)}>
+            {testo(t.copyLabel, lang)}
+          </button>
+        </figcaption>
+        <pre class="embed__code"><code>{embed}</code></pre>
+      </figure>
+
+      <div class="prose" set:html={testo(t.htmlAppear, lang)} />
+      <p style="text-align:center;">
+        <a class="btn btn--primary" href={`mailto:${BRAND.email}?subject=${testo(t.ctaSubject, lang)}`}>
+          {testo(t.ctaLabel, lang)}
+        </a>
+      </p>
+
+      <div
+        class="prose"
+        style="margin-top:2.6rem;border-top:1px solid #e6e9ee;padding-top:1.6rem;"
+        set:html={testo(t.htmlPress, lang)}
+      />
+    </div>
+  </section>
+
+  <script is:inline>
+    document.querySelectorAll('.embed').forEach(function (el) {
+      var btn = el.querySelector('.embed__copy');
+      var codeEl = el.querySelector('code');
+      if (!btn || !codeEl) return;
+      var orig = btn.textContent;
+      var done = btn.getAttribute('data-copied') || 'Copied';
+      var selectCode = function () {
+        var r = document.createRange(); r.selectNodeContents(codeEl);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      };
+      btn.addEventListener('click', function () {
+        var ok = function () {
+          btn.textContent = done; btn.classList.add('copied');
+          setTimeout(function () { btn.textContent = orig; btn.classList.remove('copied'); }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(codeEl.innerText).then(ok).catch(selectCode);
+        } else { selectCode(); }
+      });
+    });
+  </script>
+</Layout>
