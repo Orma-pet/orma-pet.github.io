@@ -1,17 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { UI, ROUTES, testo, urlPagina } from '../data/site.js';
-import { APP_FAQ } from '../data/appfaq.js';
+import { APP_FAQ, FAQ_META } from '../data/appfaq.js';
 
 const { lang = 'it' } = Astro.props;
 const ui = testo(UI, lang);
 const list = testo(APP_FAQ, lang) || [];
-const title = lang === 'it'
-  ? 'Domande frequenti su Orma'
-  : 'Frequently asked questions about Orma';
-const desc = lang === 'it'
-  ? "Come funziona la privacy e la posizione sulla mappa? Come si segnala un animale smarrito? Tutte le risposte sull'app Orma."
-  : 'How do privacy and the map location work? How do I report a lost pet? All the answers about the Orma app.';
+const meta = testo(FAQ_META, lang);
+const title = meta.title;
+const desc = meta.desc;
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',

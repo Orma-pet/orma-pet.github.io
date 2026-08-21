@@ -191,3 +191,157 @@ export const FOR_ORGS = {
   }
 };
 
+// Pagina mappa: stava scritta dentro il componente, in italiano e inglese.
+// Qui e' indicizzata per lingua come il resto, e si legge con testo(MAP, lang).
+export const MAP = {
+  "it": {
+    "eyebrow": "Mappa",
+    "title": "Animali smarriti vicino a te",
+    "lead": "Guarda sulla mappa le segnalazioni di animali smarriti, trovati o avvistati intorno a te. La posizione è approssimata per proteggere la privacy di chi segnala.",
+    "showBtn": "Mostra gli animali vicino a te",
+    "privacy": "Attivando la mappa consenti la geolocalizzazione del browser e il caricamento delle mappe da OpenStreetMap (OpenFreeMap). Nessun dato viene condiviso con altri.",
+    "locating": "Cerco la tua posizione…",
+    "loadingReports": "Carico le segnalazioni…",
+    "denied": "Non riesco a leggere la tua posizione. Attiva la geolocalizzazione nel browser e riprova.",
+    "loadError": "Qualcosa è andato storto. Riprova tra poco.",
+    "empty": "Nessuna segnalazione qui intorno adesso — ed è una buona notizia. Con l'app Orma ricevi un avviso appena qualcosa si muove vicino a te.",
+    "found": "{n} segnalazioni vicino a te",
+    "about": "a circa",
+    "openApp": "Apri la scheda",
+    "youHere": "Sei qui",
+    "types": {
+      "lost": "Smarrito",
+      "found": "Trovato",
+      "sighting": "Avvistato",
+      "abandoned": "Abbandonato",
+      "poison": "Esca avvelenata"
+    },
+    "ctaTitle": "Vuoi segnalare o ricevere avvisi?",
+    "ctaText": "Sul sito vedi la mappa; per segnalare un animale, scrivere nella chat sicura e ricevere avvisi quando qualcosa si muove vicino a te, scarica l'app Orma."
+  },
+  "en": {
+    "eyebrow": "Map",
+    "title": "Lost pets near you",
+    "lead": "See on the map the reports of lost, found or sighted animals around you. Positions are approximate to protect the privacy of whoever reports.",
+    "showBtn": "Show pets near you",
+    "privacy": "By opening the map you allow browser geolocation and loading maps from OpenStreetMap (OpenFreeMap). No data is shared with anyone.",
+    "locating": "Finding your location…",
+    "loadingReports": "Loading reports…",
+    "denied": "I can't read your location. Turn on geolocation in your browser and try again.",
+    "loadError": "Something went wrong. Please try again shortly.",
+    "empty": "No reports around here right now — which is good news. With the Orma app you get an alert as soon as something happens near you.",
+    "found": "{n} reports near you",
+    "about": "about",
+    "openApp": "Open the report",
+    "youHere": "You are here",
+    "types": {
+      "lost": "Lost",
+      "found": "Found",
+      "sighting": "Sighted",
+      "abandoned": "Abandoned",
+      "poison": "Poisoned bait"
+    },
+    "ctaTitle": "Want to report or get alerts?",
+    "ctaText": "On the website you can see the map; to report an animal, chat safely and get alerts when something happens near you, download the Orma app."
+  },
+  "ro": {
+    "eyebrow": "Hartă",
+    "title": "Animale pierdute lângă tine",
+    "lead": "Vezi pe hartă anunțurile despre animale pierdute, găsite sau văzute în jurul tău. Pozițiile sunt aproximative, ca să protejeze confidențialitatea celor care fac anunțul.",
+    "showBtn": "Arată animalele de lângă tine",
+    "privacy": "Când activezi harta, permiți geolocalizarea din browser și încărcarea hărților de la OpenStreetMap (OpenFreeMap). Nicio informație nu este împărtășită cu alții.",
+    "locating": "Îți caut poziția…",
+    "loadingReports": "Încarc anunțurile…",
+    "denied": "Nu reușesc să îți citesc poziția. Activează geolocalizarea în browser și încearcă din nou.",
+    "loadError": "Ceva nu a mers. Încearcă din nou peste puțin timp.",
+    "empty": "Niciun anunț pe aici în acest moment — și e o veste bună. Cu aplicația Orma primești o alertă de îndată ce se mișcă ceva lângă tine.",
+    "found": "{n} anunțuri lângă tine",
+    "about": "la circa",
+    "openApp": "Deschide anunțul",
+    "youHere": "Ești aici",
+    "types": {
+      "lost": "Pierdut",
+      "found": "Găsit",
+      "sighting": "Văzut",
+      "abandoned": "Abandonat",
+      "poison": "Momeală otrăvită"
+    },
+    "ctaTitle": "Vrei să faci un anunț sau să primești alerte?",
+    "ctaText": "Pe site vezi harta; ca să anunți un animal, să scrii în conversația sigură și să primești alerte când se mișcă ceva lângă tine, descarcă aplicația Orma."
+  },
+  "pt": {
+    "eyebrow": "Mapa",
+    "title": "Animais perdidos perto de ti",
+    "lead": "Vê no mapa os alertas de animais perdidos, encontrados ou avistados à tua volta. As posições são aproximadas para proteger a privacidade de quem assinala.",
+    "showBtn": "Mostrar os animais perto de ti",
+    "privacy": "Ao ativares o mapa permites a geolocalização do navegador e o carregamento dos mapas do OpenStreetMap (OpenFreeMap). Nenhum dado é partilhado com outros.",
+    "locating": "A procurar a tua posição…",
+    "loadingReports": "A carregar os alertas…",
+    "denied": "Não consigo ler a tua posição. Ativa a geolocalização no navegador e tenta de novo.",
+    "loadError": "Algo correu mal. Tenta novamente daqui a pouco.",
+    "empty": "Não há alertas aqui à volta neste momento — e isso é uma boa notícia. Com a aplicação Orma recebes um aviso assim que algo acontecer perto de ti.",
+    "found": "{n} alertas perto de ti",
+    "about": "a cerca de",
+    "openApp": "Abrir o alerta",
+    "youHere": "Estás aqui",
+    "types": {
+      "lost": "Perdido",
+      "found": "Encontrado",
+      "sighting": "Avistado",
+      "abandoned": "Abandonado",
+      "poison": "Isco envenenado"
+    },
+    "ctaTitle": "Queres assinalar ou receber avisos?",
+    "ctaText": "No site vês o mapa; para assinalar um animal, falar na conversa segura e receber avisos quando algo acontece perto de ti, descarrega a aplicação Orma."
+  },
+  "de": {
+    "eyebrow": "Karte",
+    "title": "Vermisste Tiere in deiner Nähe",
+    "lead": "Sieh auf der Karte die Meldungen zu vermissten, gefundenen oder gesichteten Tieren rund um dich. Die Standorte sind ungefähr, um die Privatsphäre der meldenden Person zu schützen.",
+    "showBtn": "Tiere in deiner Nähe anzeigen",
+    "privacy": "Wenn du die Karte aktivierst, erlaubst du die Standortbestimmung im Browser und das Laden der Karten von OpenStreetMap (OpenFreeMap). Es werden keine Daten mit anderen geteilt.",
+    "locating": "Ich suche deinen Standort…",
+    "loadingReports": "Ich lade die Meldungen…",
+    "denied": "Ich kann deinen Standort nicht auslesen. Aktiviere die Standortbestimmung im Browser und versuch es noch einmal.",
+    "loadError": "Da ist etwas schiefgelaufen. Versuch es gleich noch einmal.",
+    "empty": "Gerade gibt es hier in der Nähe keine Meldungen — und das ist eine gute Nachricht. Mit der Orma-App bekommst du eine Benachrichtigung, sobald sich in deiner Nähe etwas tut.",
+    "found": "{n} Meldungen in deiner Nähe",
+    "about": "etwa",
+    "openApp": "Meldung öffnen",
+    "youHere": "Du bist hier",
+    "types": {
+      "lost": "Vermisst",
+      "found": "Gefunden",
+      "sighting": "Gesichtet",
+      "abandoned": "Ausgesetzt",
+      "poison": "Giftköder"
+    },
+    "ctaTitle": "Willst du melden oder benachrichtigt werden?",
+    "ctaText": "Auf der Website siehst du die Karte; um ein Tier zu melden, im sicheren Chat zu schreiben und benachrichtigt zu werden, sobald sich in deiner Nähe etwas tut, lade die Orma-App herunter."
+  },
+  "fr": {
+    "eyebrow": "Carte",
+    "title": "Animaux perdus près de chez vous",
+    "lead": "Voyez sur la carte les signalements d'animaux perdus, trouvés ou aperçus autour de vous. Les positions sont approximatives afin de protéger la vie privée de celles et ceux qui signalent.",
+    "showBtn": "Afficher les animaux près de chez vous",
+    "privacy": "En activant la carte, vous autorisez la géolocalisation du navigateur et le chargement des fonds de carte depuis OpenStreetMap (OpenFreeMap). Aucune donnée n'est partagée avec des tiers.",
+    "locating": "Je recherche votre position…",
+    "loadingReports": "Je charge les signalements…",
+    "denied": "Je n'arrive pas à lire votre position. Activez la géolocalisation dans le navigateur, puis réessayez.",
+    "loadError": "Quelque chose n'a pas fonctionné. Réessayez dans un instant.",
+    "empty": "Aucun signalement dans les environs pour le moment — et c'est une bonne nouvelle. Avec l'application Orma, vous êtes prévenu dès que quelque chose bouge près de chez vous.",
+    "found": "{n} signalements près de chez vous",
+    "about": "à environ",
+    "openApp": "Ouvrir le signalement",
+    "youHere": "Vous êtes ici",
+    "types": {
+      "lost": "Perdu",
+      "found": "Trouvé",
+      "sighting": "Aperçu",
+      "abandoned": "Abandonné",
+      "poison": "Appât empoisonné"
+    },
+    "ctaTitle": "Vous voulez signaler ou recevoir des alertes ?",
+    "ctaText": "Sur le site, vous voyez la carte ; pour signaler un animal, écrire dans la messagerie sécurisée et recevoir des alertes quand quelque chose bouge près de chez vous, téléchargez l'application Orma."
+  }
+};

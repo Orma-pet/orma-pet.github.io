@@ -2,53 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import StoreButtons from './StoreButtons.astro';
 import { HOME, testo } from '../data/site.js';
+import { MAP } from '../data/pages.js';
 
 // Mappa web (sola visualizzazione) delle segnalazioni vicine. props: lang.
 const { lang = 'it' } = Astro.props;
 const h = testo(HOME, lang);
-
-const STR = {
-  it: {
-    eyebrow: 'Mappa',
-    title: 'Animali smarriti vicino a te',
-    lead: 'Guarda sulla mappa le segnalazioni di animali smarriti, trovati o avvistati intorno a te. La posizione è approssimata per proteggere la privacy di chi segnala.',
-    showBtn: 'Mostra gli animali vicino a te',
-    privacy: 'Attivando la mappa consenti la geolocalizzazione del browser e il caricamento delle mappe da OpenStreetMap (OpenFreeMap). Nessun dato viene condiviso con altri.',
-    locating: 'Cerco la tua posizione…',
-    loadingReports: 'Carico le segnalazioni…',
-    denied: 'Non riesco a leggere la tua posizione. Attiva la geolocalizzazione nel browser e riprova.',
-    loadError: 'Qualcosa è andato storto. Riprova tra poco.',
-    empty: "Nessuna segnalazione qui intorno adesso — ed è una buona notizia. Con l'app Orma ricevi un avviso appena qualcosa si muove vicino a te.",
-    found: '{n} segnalazioni vicino a te',
-    about: 'a circa',
-    openApp: 'Apri la scheda',
-    youHere: 'Sei qui',
-    types: { lost: 'Smarrito', found: 'Trovato', sighting: 'Avvistato', abandoned: 'Abbandonato', poison: 'Esca avvelenata' },
-    ctaTitle: 'Vuoi segnalare o ricevere avvisi?',
-    ctaText: "Sul sito vedi la mappa; per segnalare un animale, scrivere nella chat sicura e ricevere avvisi quando qualcosa si muove vicino a te, scarica l'app Orma.",
-  },
-  en: {
-    eyebrow: 'Map',
-    title: 'Lost pets near you',
-    lead: 'See on the map the reports of lost, found or sighted animals around you. Positions are approximate to protect the privacy of whoever reports.',
-    showBtn: 'Show pets near you',
-    privacy: 'By opening the map you allow browser geolocation and loading maps from OpenStreetMap (OpenFreeMap). No data is shared with anyone.',
-    locating: 'Finding your location…',
-    loadingReports: 'Loading reports…',
-    denied: "I can't read your location. Turn on geolocation in your browser and try again.",
-    loadError: 'Something went wrong. Please try again shortly.',
-    empty: 'No reports around here right now — which is good news. With the Orma app you get an alert as soon as something happens near you.',
-    found: '{n} reports near you',
-    about: 'about',
-    openApp: 'Open the report',
-    youHere: 'You are here',
-    types: { lost: 'Lost', found: 'Found', sighting: 'Sighted', abandoned: 'Abandoned', poison: 'Poisoned bait' },
-    ctaTitle: 'Want to report or get alerts?',
-    ctaText: 'On the website you can see the map; to report an animal, chat safely and get alerts when something happens near you, download the Orma app.',
-  },
-};
-
-const t = testo(STR, lang);
+const t = testo(MAP, lang);
 const cfg = {
   style: 'https://tiles.openfreemap.org/styles/positron',
   supabaseUrl: 'https://lztuncwbyjeesmfwvkof.supabase.co',
