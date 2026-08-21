@@ -471,7 +471,8 @@ export const GUIDES = [
   {
     "slug": {
       "it": "volantino-animale-smarrito-che-funziona",
-      "en": "lost-pet-poster-that-works"
+      "en": "lost-pet-poster-that-works",
+      "de": "suchplakat-vermisstes-tier"
     },
     "it": {
       "title": "Come fare un volantino per un animale smarrito che funziona",
@@ -519,13 +520,37 @@ export const GUIDES = [
           "q": "What else should I do besides the flyer if my pet is lost?",
           "a": "Notify your local shelter and vet services, check that the microchip is properly registered, and report the loss on Orma to alert nearby people. If an animal is in danger in Italy, call 112 or the Forestry Carabinieri on 1515."
         }
+      ],
+      "de": [
+        {
+          "q": "Was gehört auf einen Suchaushang für einen vermissten Hund?",
+          "a": "Das Wort VERMISST gut sichtbar, ein großes scharfes Foto, Gebiet und Datum des Verschwindens, eine große Telefonnummer und der Satz „bitte nicht hinterherlaufen, bitte anrufen“. Halte es kurz und klar."
+        },
+        {
+          "q": "Wo hänge ich ein Suchplakat auf?",
+          "a": "An der Stelle, an der dein Tier verschwunden ist, und in den Straßen ringsum, in Tierarztpraxen und Zoofachgeschäften, in Cafés, Kiosken und kleinen Läden sowie an Aushangtafeln, in Parks und in Schulnähe. Laminiere es, damit es den Regen übersteht."
+        },
+        {
+          "q": "Wie mache ich einen Aushang, wenn ich kein Gestaltungsprogramm bedienen kann?",
+          "a": "Die Orma-App erzeugt aus deiner Meldung ein fertiges PDF-Plakat mit großem Foto und QR-Code. Du lädst es herunter, druckst es aus und hängst es in wenigen Minuten auf."
+        },
+        {
+          "q": "Was sollte ich außer dem Aushang noch tun?",
+          "a": "Informiere das örtliche Tierheim und die Tierarztpraxen, melde den Fund beim Fundbüro, prüfe, ob der Mikrochip richtig registriert ist, und melde den Verlust auf Orma, um die Menschen in der Nähe zu erreichen. Ist ein Tier in Gefahr, wähle die 112."
+        }
       ]
+    },
+    "de": {
+      "title": "Suchplakat für ein vermisstes Tier, das wirklich funktioniert",
+      "metaDesc": "Ruhige, praktische Anleitung für den Suchaushang: was daraufgehört, das richtige Foto, wo du ihn aufhängst und welche Fehler du vermeidest. Plus fertiges PDF mit QR-Code von Orma.",
+      "html": "<p>Wenn ein Tier verschwindet, fühlt sich jede Minute endlos an und die Gedanken rasen in alle Richtungen. Ein guter Suchaushang ist eines der einfachsten und wirkungsvollsten Mittel, die du hast: Er spricht zu deinem Viertel, auch wenn du gerade woanders bist. Du brauchst keine Gestaltungskenntnisse. Du brauchst Klarheit. In dieser Anleitung gehen wir in Ruhe durch, wie ein Suchplakat aussieht, das wirklich funktioniert, was darauf gehört, wo du es aufhängst und welche Fehler du vermeidest.</p><h2>Was auf ein Suchplakat gehört</h2><p>Ein Suchaushang wird in wenigen Sekunden gelesen, oft aus der Entfernung oder aus dem vorbeifahrenden Auto. Er muss das Wesentliche sofort sagen. Das darf nicht fehlen:</p><ul><li><strong>Ein großes, scharfes Foto</strong>: Gesicht und Fell müssen klar zu erkennen sein. Ein Foto, das eine halbe Seite füllt, schlägt viele kleine.</li><li><strong>Das Wort VERMISST, groß und deutlich</strong>: weit oben und in großer Schrift, damit jeder beim Vorbeigehen sofort versteht.</li><li><strong>Gebiet und Datum</strong>: Viertel oder Straße und der Tag helfen, eine Sichtung zuzuordnen.</li><li><strong>Ein einfacher Kontakt</strong>: eine große, gut lesbare Telefonnummer. Nur eine — die, an die du immer rangehst.</li><li><strong>Der Satz „Bitte nicht hinterherlaufen, bitte anrufen“</strong>: Ein verängstigtes Tier flieht, wenn man ihm hinterherläuft. Diese Bitte erhöht deine Chancen spürbar.</li></ul><h2>Das richtige Foto macht den Unterschied</h2><p>Das Foto ist es, was den Blick anhält. Wähl eines, auf dem dein Tier leicht zu erkennen ist: bei Tageslicht, scharf, mit echten Farben. Hat es ein besonderes Merkmal (einen Fleck, ein Halsband, ein geknicktes Ohr), ist ein Foto, das es zeigt, ideal. Vermeide dunkle, verwackelte oder von hinten aufgenommene Bilder.</p><h2>Wo du den Aushang aufhängst</h2><p>Ein perfekter Aushang am falschen Ort bringt wenig. Konzentriere dich auf Stellen, an denen Menschen aus der Gegend vorbeikommen:</p><ul><li><strong>Genau die Stelle, an der dein Tier verschwunden ist</strong>, und die umliegenden Straßen: Dort hat es vielleicht jemand gesehen.</li><li><strong>Tierarztpraxen, Kliniken und Zoofachgeschäfte</strong>: Wer beruflich mit Tieren zu tun hat, bemerkt eine Sichtung am ehesten.</li><li><strong>Bäckereien, Cafés, Kioske und kleine Läden</strong>: Frag freundlich, ob du ihn an der Kasse aufhängen darfst.</li><li><strong>Schulen, Parks und Aushangtafeln</strong>: Dort kommen jeden Tag viele verschiedene Menschen vorbei.</li></ul><p>Wenn du kannst, laminiere die Blätter oder steck sie in eine Klarsichthülle, damit sie den Regen überstehen.</p><h2>Fehler, die du vermeiden solltest</h2><p>Viele Aushänge scheitern an Kleinigkeiten. Die häufigsten:</p><ul><li><strong>Zu viel Text</strong>: Lange Absätze werden nicht gelesen. Wenige große Wörter wirken besser.</li><li><strong>Ein kleines oder unklares Foto</strong>: Ist dein Tier nicht zu erkennen, verliert der Aushang seine Kraft.</li><li><strong>Kein Kontakt oder eine winzige Nummer</strong>: Ohne einfachen Weg zu dir weiß der Finder nicht, was er tun soll.</li><li><strong>Blasses Schwarzweiß</strong>: Druck das Foto in Farbe, wenn es geht.</li></ul><h2>Ein fertiges Plakat mit einem Tipp in Orma</h2><p>Alles von Hand zusammenzubauen, mit Foto und QR-Code, ist in einem ohnehin schweren Moment viel verlangt. Deshalb erzeugt <a href=\"/de/\">Orma</a> direkt aus deiner Meldung ein <strong>fertiges PDF-Plakat</strong>: großes Foto, die wichtigsten Angaben und ein <strong>QR-Code</strong>, den jeder scannen kann, um die aktuelle Meldung zu sehen und dich zu erreichen. Herunterladen, ausdrucken, aufhängen — in wenigen Minuten. In derselben <a href=\"/de/\">App</a> benachrichtigst du außerdem Menschen in der Nähe und bekommst Sichtungen mit Foto und Ort, während die Karte den Standort nur ungefähr zeigt (etwa 150 Meter), um deine Privatsphäre zu schützen.</p><p>Atme durch. Ein klarer Aushang, an den richtigen Stellen aufgehängt, setzt viele Menschen neben dir in Bewegung. Informiere in der Zwischenzeit das Tierheim und die Tierarztpraxen in der Umgebung und prüfe, ob der Mikrochip deines Tieres richtig registriert ist: kleine Schritte, die oft den Unterschied machen. Viele Tiere finden nach Hause, weil ein Nachbar im richtigen Moment den richtigen Aushang gesehen hat.</p>"
     }
   },
   {
     "slug": {
       "it": "animali-smarriti-oltre-cani-gatti-conigli-uccelli-roditori-furetti",
-      "en": "lost-pets-beyond-cats-dogs-rabbits-birds-rodents-ferrets"
+      "en": "lost-pets-beyond-cats-dogs-rabbits-birds-rodents-ferrets",
+      "de": "kaninchen-vogel-frettchen-entlaufen"
     },
     "it": {
       "title": "Animali smarriti oltre cani e gatti: come cercare conigli, uccelli, roditori e furetti",
@@ -573,13 +598,37 @@ export const GUIDES = [
           "q": "Can I use Orma for pets other than cats and dogs?",
           "a": "Yes. Orma is made for every animal: you can report a lost pet, receive sightings with photo and location, and alert people nearby, whatever the species."
         }
+      ],
+      "de": [
+        {
+          "q": "Mein Kaninchen ist weg, wo suche ich zuerst?",
+          "a": "Such in Hausnähe, in dunklen und engen Ecken wie Hecken, Holzstapeln und unter Autos. Kaninchen verstecken sich eher, als dass sie weglaufen, und kommen in der Morgen- und Abenddämmerung eher heraus."
+        },
+        {
+          "q": "Mein Papagei ist entflogen, kommt er von allein zurück?",
+          "a": "In den ersten Tagen bleibt er oft in der Gegend, hoch oben in den Bäumen. Stell den geöffneten Käfig mit Futter nach draußen und such im Morgengrauen, wenn er am aktivsten und lautesten ist."
+        },
+        {
+          "q": "Wie suche ich ein entlaufenes Frettchen?",
+          "a": "Unten und in der Nähe: Frettchen schlüpfen in Löcher, Rohre, Garagen und Keller. Bitte Nachbarn, die engen Stellen nachzusehen, an denen es sich verkrochen haben könnte."
+        },
+        {
+          "q": "Kann ich Orma auch für andere Tiere als Hund und Katze nutzen?",
+          "a": "Ja. Orma ist für jedes Tier gemacht: Du kannst ein vermisstes Tier melden, Sichtungen mit Foto und Ort bekommen und Menschen in der Nähe erreichen, egal um welche Art es geht."
+        }
       ]
+    },
+    "de": {
+      "title": "Nicht nur Hund und Katze: Kaninchen, Vögel, Nager und Frettchen wiederfinden",
+      "metaDesc": "Kaninchen entlaufen, Papagei ausgeflogen, Frettchen verschwunden? Eine ruhige, praktische Anleitung, wie du jede Art richtig suchst. Sie brauchen dich genauso.",
+      "html": "<p>Wenn ein Kaninchen, ein Papagei, ein kleiner Nager oder ein Frettchen verschwindet, ist die Leere zu Hause genau dieselbe wie bei einer Katze oder einem Hund. Trotzdem stehen viele Menschen ratlos da, weil diese Tiere sich ganz anders bewegen und verstecken. Die gute Nachricht: Wer ihre Gewohnheiten kennt, findet sie deutlich häufiger wieder. Und denk daran: <a href=\"/de/\">Orma</a> ist für jedes Tier gemacht, nicht nur für Hunde und Katzen. Atme durch, wir gehen es Schritt für Schritt an.</p><h2>Vögel und Papageien: schau nach oben und bleib in der Nähe</h2><p>Ein entflogener Papagei oder ein entwischter Ziervogel fliegt selten sofort weit weg. In den ersten Tagen bleibt er meist in derselben Gegend, oft hoch oben in Bäumen oder auf Dächern. Schau immer nach oben: Viele suchen am Boden und übersehen ihn völlig.</p><ul><li>Geh im Morgengrauen hinaus, wenn Vögel am aktivsten und lautesten sind, und horch zwischen den Bäumen nach seinen Rufen.</li><li>Stell den geöffneten Käfig nach draußen, auf den Balkon oder in den Garten, mit Futter und Wasser: Der „sichere Ort“ zieht oft an.</li><li>Hast du einen zweiten Vogel, bring ihn in die Nähe; seine Rufe können den Ausreißer zurückholen.</li><li>Spiel vertraute Geräusche ab, deine Stimme oder einen Pfiff, den er kennt, und beweg dich dabei ruhig und langsam.</li></ul><h2>Kaninchen und Nager: sie verstecken sich ganz in der Nähe, in engen dunklen Ecken</h2><p>Ein entlaufenes Kaninchen oder ein entwischter kleiner Nager kommt fast nie weit. Es sind dämmerungsaktive Fluchttiere: Ihr Instinkt sagt verstecken, nicht rennen. Such in Hausnähe, in dunklen und engen Spalten.</p><ul><li>Sieh unter Hecken, Holzstapeln, geparkten Autos, in Rohren, unter Treppen und in Schuppen nach: Such die engsten Stellen.</li><li>Such in der Morgen- und Abenddämmerung, wenn sie sich am ehesten zum Fressen bewegen.</li><li>Nutze Futter als Lockmittel: frisches Gemüse, etwas Heu oder das Lieblingsleckerli an einer ruhigen Stelle.</li><li>Beweg dich leise und vermeide hektische Gesten: Eile und Lärm lassen sie noch mehr erstarren.</li></ul><h2>Frettchen: such unten, in Löchern und Rohren</h2><p>Ein entlaufenes Frettchen folgt seiner Natur: Es schlüpft in jede Lücke, die es findet. Es klettert selten hoch und bleibt fast immer unten und nah an der Stelle, an der es verschwunden ist.</p><ul><li>Sieh in Rohren, Abflüssen, Erdlöchern, Mauerspalten, Garagen und Kellern nach.</li><li>Such auf Bodenhöhe, beweg dich langsam und prüfe jede Ritze.</li><li>Bitte Nachbarn, Garagen, Schuppen und Kellerräume nachzusehen: Ein Frettchen kommt durch erstaunlich kleine Öffnungen.</li></ul><h2>Nachbarn und Tierarztpraxen informieren, auch die für Exoten</h2><p>Bei all diesen Arten ist die Mundpropaganda im Viertel unglaublich stark. Wer sie findet, weiß oft nicht, an wen er sich wenden soll.</p><ul><li>Sprich mit Nachbarn und den Läden nebenan: Viele Sichtungen kommen genau von dort.</li><li>Informiere die Tierarztpraxen in der Nähe, auch die auf Exoten spezialisierten, wohin ein Finder das Tier bringen könnte.</li><li>Wende dich an das örtliche Tierheim und an das Fundbüro: Auch kleine Tiere landen dort.</li><li>Mit <a href=\"/de/\">Orma</a> meldest du ein vermisstes Tier in wenigen Tipps und erreichst die Menschen in der Nähe, die deine Meldung mit Foto und Ort bekommen.</li></ul><h2>Wie Orma bei jedem Tier hilft</h2><p>Orma macht keinen Unterschied nach Art: Die Community ist für dein Kaninchen, deinen Papagei oder dein Frettchen genauso da wie für einen Hund oder eine Katze.</p><ul><li>Du meldest das vermisste Tier, und Menschen in der Nähe werden benachrichtigt: mehr Augen, die für dich suchen.</li><li>Wer dein Tier sieht, kann dir über den sicheren Chat in der App eine Sichtung mit Foto und Ort schicken.</li><li>Die Karte zeigt den Standort um etwa 150 Meter unscharf, deine Privatsphäre bleibt geschützt.</li><li>Direkt aus der App kannst du einen PDF-Aushang mit QR-Code erzeugen, zum Ausdrucken und Aufhängen im Viertel.</li></ul><p>Nach einem selteneren Haustier zu suchen braucht Geduld und ein wenig Strategie, aber sehr viele Familien finden ihr Kaninchen, ihren kleinen Vogel oder ihr Frettchen genau so wieder. Lern seine Gewohnheiten kennen, hol die Nachbarschaft dazu und lass die Community ihren Teil tun. Jedes Tier zählt, und deins verdient es genauso, nach Hause zu kommen.</p>"
     }
   },
   {
     "slug": {
       "it": "come-catturare-gatto-smarrito-trappola",
-      "en": "how-to-trap-a-lost-cat"
+      "en": "how-to-trap-a-lost-cat",
+      "de": "entlaufene-katze-mit-lebendfalle-einfangen"
     },
     "it": {
       "title": "Come catturare un gatto smarrito con la trappola: guida calma",
@@ -627,13 +676,37 @@ export const GUIDES = [
           "q": "Should I chase the cat if I see it?",
           "a": "No. Chasing or calling loudly scares it and makes it run further away. It's better to mark the spot, stay calm and leave food in the same place every evening."
         }
+      ],
+      "de": [
+        {
+          "q": "Wie lange dauert es, eine entlaufene Katze einzufangen?",
+          "a": "Es kann ein paar Tage bis zwei Wochen dauern. Das hängt davon ab, wie verängstigt die Katze ist und wie beständig du Futter und Falle immer an derselben Stelle zur selben Zeit anbietest."
+        },
+        {
+          "q": "Wo bekomme ich eine Lebendfalle für Katzen?",
+          "a": "Frag bei Katzenschutzvereinen, ehrenamtlichen Gruppen, Tierheimen oder in deiner Tierarztpraxis. Viele örtliche Organisationen leihen sie kostenlos an Menschen aus, die eine Katze suchen."
+        },
+        {
+          "q": "Was mache ich, sobald ich die Katze gefangen habe?",
+          "a": "Bring sie direkt in eine Tierarztpraxis, um den Mikrochip auszulesen und sie untersuchen zu lassen. Über den Chip lässt sich die Familie im Haustierregister finden."
+        },
+        {
+          "q": "Soll ich der Katze hinterherlaufen, wenn ich sie sehe?",
+          "a": "Nein. Hinterherlaufen oder lautes Rufen verschreckt sie und treibt sie weiter weg. Merk dir lieber die Stelle, bleib ruhig und stell jeden Abend an derselben Stelle Futter hin."
+        }
       ]
+    },
+    "de": {
+      "title": "Entlaufene Katze sicher einfangen: eine ruhige, geduldige Anleitung",
+      "metaDesc": "Eine verängstigte Katze lässt sich nicht greifen und darf nicht gejagt werden. Wie du sie mit Futter, festen Zeiten und einer Lebendfalle ruhig nach Hause holst.",
+      "html": "<p>Wenn eine Katze verschwindet, rast das Herz und man möchte überall gleichzeitig suchen. Aber eine verängstigte Katze verhält sich anders, als wir erwarten: Sie versteckt sich, bleibt reglos und reagiert oft nicht einmal auf ihren Namen. Sie erkennt dich schon — die Angst lähmt sie nur. Deshalb geht es beim <strong>Einfangen einer entlaufenen Katze</strong> vor allem um Geduld und darum, sie niemals zu jagen. Diese Anleitung gibt dir behutsame, konkrete Schritte, um deine Katze nach Hause zu holen.</p><h2>Warum eine verängstigte Katze sich nicht fangen lässt</h2><p>Eine Katze in Not schaltet in den Überlebensmodus. Selbst die anhänglichste Hauskatze lässt draußen, verloren und desorientiert, niemanden an sich heran — auch dich nicht. Hinterherlaufen, lautes Rufen oder Zugreifen treibt sie nur weiter weg.</p><ul><li>Lauf nicht auf sie zu und mach keine hektischen Bewegungen.</li><li>Geh in die Hocke, sprich leise und lass die Katze zu dir kommen.</li><li>Entdeckst du ihr Versteck, merk dir die Stelle und komm in Ruhe wieder, am besten in der Dämmerung.</li></ul><h2>Feste Zeiten, festes Futter: mach dich berechenbar</h2><p>Der wirksamste Weg, eine Katze zurückzuholen, ist, für sie vorhersehbar zu werden. Stell schmackhaftes Futter (Nassfutter oder Thunfisch) jeden Tag an dieselbe <strong>Stelle</strong> zur selben <strong>Zeit</strong>, meist abends. Die Katze lernt, diesem Ort zu vertrauen, und kommt regelmäßig vorbei.</p><ul><li>Wähl eine ruhige, geschützte Stelle in der Nähe des letzten Sichtungsorts.</li><li>Leg ein getragenes T-Shirt von dir oder ihre Decke dazu: Vertraute Gerüche beruhigen.</li><li>Verschieb den Futterplatz nicht: Beständigkeit zählt mehr als Menge.</li></ul><h2>Eine Wildkamera zeigt dir, wann sie vorbeikommt</h2><p>Bevor du sie einfängst, hilft es zu wissen, ob und wann die Katze überhaupt auftaucht. Eine kleine Wildkamera oder eine auf den Napf gerichtete Kamera sagt dir, zu welcher Uhrzeit sie kommt und ob es wirklich deine Katze ist. Das erspart dir vergebliche Versuche und lässt dich im richtigen Moment handeln.</p><ul><li>Sieh die Aufnahmen morgens durch, ohne dich am Futterplatz aufzuhalten.</li><li>Notiere die Uhrzeiten: Du brauchst sie, um die Falle zu stellen.</li></ul><h2>Wie eine Lebendfalle funktioniert</h2><p>Eine <strong>Lebendfalle für Katzen</strong> ist ein Käfig, der sich sanft schließt, sobald das Tier zum Futter hineingeht, ohne es zu verletzen. Sie ist das sicherste Mittel, um eine <strong>verängstigte Katze einzufangen</strong>, ohne sie zu jagen. Man kann sie oft ausleihen.</p><ul><li>Leih dir eine Falle bei Katzenschutzvereinen, ehrenamtlichen Gruppen, Tierheimen oder in deiner Tierarztpraxis.</li><li>Stell sie erst dann an den Futterplatz, wenn du weißt, dass die Katze dort vorbeikommt.</li><li>Deck den Käfig mit einem Tuch ab: Für die Katze sieht er dann wie ein sicherer Unterschlupf aus.</li><li>Lass sie nie lange unbeaufsichtigt: Kontrollier sie oft, auch aus der Entfernung.</li></ul><h2>Geduld, Stille und der richtige Zeitpunkt</h2><p>Das Einfangen kann Tage dauern. Das ist normal. Bleib still, halt Abstand und gib nicht auf, wenn in den ersten Nächten nichts passiert: Du baust Vertrauen auf. Viele Katzen kommen genau deshalb zurück, weil jemand weiter Futter hingestellt und nicht aufgehört hat.</p><ul><li>Vermeide Lärm, Hunde und Menschen rund um die Falle.</li><li>Bei Kälte oder Regen überleg genau, wann du sie stellst und wie sie geschützt ist.</li></ul><h2>Sobald sie drin ist: in die Tierarztpraxis zum Chip auslesen</h2><p>Sobald die Katze sicher in der Falle sitzt, bring sie in eine <strong>Tierarztpraxis</strong>, um den Mikrochip auszulesen und sie durchchecken zu lassen. Ist es deine, bestätigt sich die Identität; gehört sie jemand anderem, führt der Chip über das Haustierregister zur Familie zurück. Mit <a href=\"/de/\">Orma</a> kannst du die vermisste Katze melden und Sichtungen aus der Nachbarschaft bekommen, damit du weißt, wo du Futter und Falle platzieren solltest. Du kannst außerdem einen <a href=\"/de/\">Aushang mit QR-Code</a> zum Ausdrucken erzeugen.</p><p>Eine Katze zurückzubekommen ist fast immer eine Frage der Ruhe, nicht der Geschwindigkeit. Vertrau der Routine, respektiere ihr Tempo und hol dir Menschen dazu, die helfen können: Tierschutzvereine, Ehrenamtliche und Nachbarn machen oft den Unterschied. Mit ein wenig Geduld kann dieser Napf, den du jeden Abend hinstellst, der Faden sein, der deine Freundin nach Hause führt.</p>"
     }
   },
   {
     "slug": {
       "it": "cane-scomparso-da-giorni-cosa-fare",
-      "en": "dog-missing-for-days-what-to-do"
+      "en": "dog-missing-for-days-what-to-do",
+      "de": "hund-seit-tagen-vermisst"
     },
     "it": {
       "title": "Cane scomparso da giorni: cosa fare per ritrovarlo",
@@ -681,13 +754,37 @@ export const GUIDES = [
           "q": "What can someone who finds my dog do?",
           "a": "They can take them to a vet or the local veterinary service for a free microchip scan and report them on Orma with a photo and location. If the animal is in danger or mistreatment is suspected, in Italy you can call 112 or 1515."
         }
+      ],
+      "de": [
+        {
+          "q": "Mein Hund ist seit einer Woche weg, kann ich ihn noch finden?",
+          "a": "Ja. Viele Hunde werden auch nach einer Woche oder später gefunden, manchmal weit weg von zu Hause. Such weiter, weite das Gebiet aus und melde dich regelmäßig wieder bei Tierheim und Fundbüro."
+        },
+        {
+          "q": "Wie oft soll ich beim Tierheim und beim Fundbüro anrufen?",
+          "a": "Alle paar Tage, nicht nur einmal, denn es kommen laufend neue Tiere an. Sieh auch auf ihren Webseiten und Social-Media-Profilen nach, wo oft Fotos der Neuzugänge stehen."
+        },
+        {
+          "q": "Warum ist der Mikrochip wichtig, wenn mein Hund vermisst ist?",
+          "a": "Ist der Chip mit aktuellen Kontaktdaten registriert, kann eine Tierarztpraxis oder ein Tierheim dich darüber erreichen. Auf Orma kann er außerdem einen automatischen Abgleich mit einem Fundhund auslösen."
+        },
+        {
+          "q": "Was kann jemand tun, der meinen Hund findet?",
+          "a": "Er kann ihn in einer Tierarztpraxis oder im Tierheim kostenlos auf den Mikrochip prüfen lassen und ihn auf Orma mit Foto und Ort melden. Ist das Tier in Gefahr oder besteht Verdacht auf Misshandlung, hilft die 112 oder das Veterinäramt."
+        }
       ]
+    },
+    "de": {
+      "title": "Hund seit Tagen vermisst: was du jetzt noch tun kannst",
+      "metaDesc": "Dein Hund ist seit Tagen oder sogar einer Woche nicht zurück? Eine ruhige, praktische Anleitung, um weiterzusuchen, ohne die Hoffnung zu verlieren.",
+      "html": "<p>Wenn dein Hund seit Tagen vermisst ist, wissen wir, wie schwer jede vergehende Stunde wiegt. Zuerst sollst du das hören: Es ist nicht vorbei. Viele vermisste Hunde werden auch nach einer Woche oder später gefunden, manchmal weit weg von zu Hause. Die Angst, ihn nicht wiederzufinden, ist natürlich — aber gerade jetzt zählt vor allem, mit klarer Methode und ruhiger Ausdauer weiterzusuchen. In dieser Anleitung findest du konkrete Schritte, damit nichts unversucht bleibt, in Ruhe und einer nach dem anderen.</p><h2>Verlier die Hoffnung nicht: Hunde kommen auch nach Wochen zurück</h2><p>Ein Hund, der nicht nach Hause gekommen ist, ist kein für immer verlorener Hund. Viele Tiere laufen weg, erschrecken, verstecken sich und werden Tage später gesehen oder aufgegriffen. Das Wichtigste ist, in der Suche präsent zu bleiben: Wer zu früh aufgibt, hört manchmal genau dann auf, wenn sein Hund kurz davor ist, gefunden zu werden.</p><ul><li>Bleib jederzeit telefonisch erreichbar, auch nachts.</li><li>Geh die Gegend weiter in den ruhigen Stunden ab, in der Morgen- und Abenddämmerung, wenn verängstigte Hunde sich am meisten bewegen.</li><li>Nimm etwas mit, das nach Zuhause riecht, oder sein Lieblingsfutter.</li></ul><h2>Weite das Suchgebiet nach und nach aus</h2><p>Mit den Tagen kann ein Hund weite Strecken zurücklegen. Hast du zuerst in Hausnähe gesucht, ist jetzt der Moment, das Gebiet Schritt für Schritt und geordnet auszuweiten.</p><ul><li>Vergrößere den Suchkreis jeden Tag, nimm weitere Viertel, Feldwege und Grünflächen dazu.</li><li>Frag Menschen, die dort leben oder arbeiten: Postboten, Paketfahrer, Landwirte, andere Hundehalter.</li><li>Auf <a href=\"/de/\">Orma</a> kannst du den Ort aktualisieren und, während du dich bewegst, Menschen in der Nähe benachrichtigen.</li></ul><h2>Melde dich alle paar Tage wieder bei Tierheim und Fundbüro</h2><p>Tierheime und Fundstellen nehmen laufend neue Tiere auf. Eine Runde Anrufe von letzter Woche kann schon überholt sein — deshalb ist es wichtig, regelmäßig nachzufassen.</p><ul><li>Ruf alle paar Tage beim Tierheim und beim Fundbüro oder Ordnungsamt an, nicht nur einmal.</li><li>Sieh auf ihren Webseiten und Social-Media-Profilen nach: Viele stellen Fotos neuer Tiere sofort online.</li><li>Vergewissere dich, dass der Mikrochip deines Hundes mit aktuellen Kontaktdaten registriert ist, damit ein Tierheim dich erreichen kann.</li></ul><h2>Erneuere Aushänge und Beiträge</h2><p>Mit der Zeit werden Aushänge beschädigt, überklebt oder vergessen. Sie aufzufrischen und erneut zu teilen hält die Aufmerksamkeit wach.</p><ul><li>Ersetze zerrissene oder verblasste Aushänge und häng neue in den Gebieten auf, in die du die Suche ausgeweitet hast.</li><li>Aus der App kannst du einen <a href=\"/de/\">PDF-Aushang mit QR-Code</a> erzeugen, fertig zum Ausdrucken und Teilen.</li><li>Poste deine Meldung erneut in lokalen Gruppen und bitte Läden, Cafés und Tierarztpraxen, sie wieder auszuhängen.</li></ul><h2>Halte deine Meldung auf Orma aktiv und aktuell</h2><p>Eine Meldung, die niemand mehr anfasst, geht leicht unter. Sie aktiv und aktuell zu halten erhöht die Chance, dass jemand eine Sichtung deinem Hund zuordnet.</p><ul><li>Aktualisiere die Meldung mit dem zuletzt abgesuchten Gebiet und mit klaren, aktuellen Fotos.</li><li>Sieh dir täglich die Sichtungen in der Nähe an und antworte in Ruhe im Chat.</li><li>Ist dein Hund gechippt, kann der automatische Abgleich dich benachrichtigen, sobald jemand einen passenden Fundhund meldet.</li></ul><h2>Wenn jemand ihn findet oder sieht</h2><p>Wer einem vermissten Hund begegnet, weiß nicht immer, was zu tun ist. Ein paar klare Hinweise machen den Unterschied.</p><ul><li>Wer einen Hund findet, kann ihn in einer Tierarztpraxis oder im Tierheim kostenlos auf den Mikrochip prüfen lassen.</li><li>Ist ein Tier auf der Straße in Gefahr oder besteht der Verdacht auf Misshandlung, wähle die 112 oder wende dich an das Veterinäramt.</li><li>Bitte den Finder, es auf Orma mit Foto und Ort zu melden, damit die Benachrichtigung dich sofort erreicht.</li></ul><p>Wir wissen, dass diese Tage schwer sind. Such beständig weiter, stütz dich auf die Menschen um dich herum und hör nicht auf zu glauben: Jeder vergehende Tag ist auch ein Tag mehr, an dem ihn jemand gesehen haben kann. Viele Familien hatten ihren Hund gerade dann wieder im Arm, als sie das Schlimmste befürchteten. Schritt für Schritt bist du auf dem richtigen Weg.</p>"
     }
   },
   {
     "slug": {
       "it": "animali-smarriti-in-vacanza-estate-cosa-fare",
-      "en": "pet-lost-on-holiday-summer-what-to-do"
+      "en": "pet-lost-on-holiday-summer-what-to-do",
+      "de": "tier-im-urlaub-entlaufen"
     },
     "it": {
       "title": "Animali smarriti in vacanza o d'estate: cosa fare",
@@ -735,13 +832,37 @@ export const GUIDES = [
           "q": "Does Orma work even if I'm on holiday in another region?",
           "a": "Yes. Orma works wherever you are in Italy: open a report at your current location and automatically alert the people nearby, on Android and iPhone."
         }
+      ],
+      "de": [
+        {
+          "q": "Mein Hund ist im Urlaub entlaufen: melde ich das zu Hause oder vor Ort?",
+          "a": "Melde es dort, wo du ihn verloren hast. Die Menschen, die ihn sehen oder finden können, sind in der Urlaubsregion — dorthin müssen die Benachrichtigungen und die Aushänge."
+        },
+        {
+          "q": "Hilft der Mikrochip, wenn ich mein Tier weit weg von zu Hause verliere?",
+          "a": "Ja, sehr. Wer den Chip ausliest, findet zu dir, egal wo — vorausgesetzt, deine Daten im Haustierregister sind aktuell, vor allem die Telefonnummer. Auf Auslandsreisen ist der EU-Heimtierausweis wichtig."
+        },
+        {
+          "q": "Wen rufe ich an, wenn ich an einem fremden Ort ein Tier finde oder verliere?",
+          "a": "Wende dich an das örtliche Tierheim und an das Fundbüro oder Ordnungsamt der Gemeinde und schau in nahen Tierarztpraxen vorbei, um den Chip auslesen zu lassen. Bei Notfällen oder Verdacht auf Straftaten hilft die 112 oder das Veterinäramt."
+        },
+        {
+          "q": "Funktioniert Orma auch, wenn ich in einer anderen Gegend Urlaub mache?",
+          "a": "Ja. Orma funktioniert überall, wo du bist: Du erstellst eine Meldung an deinem aktuellen Standort und benachrichtigst automatisch die Menschen in der Nähe, auf Android und iPhone."
+        }
       ]
+    },
+    "de": {
+      "title": "Tier im Urlaub oder im Sommer entlaufen: was tun",
+      "metaDesc": "Hund im Urlaub entlaufen oder Tier auf Reisen verschwunden? Was du sofort tun kannst, Schritt für Schritt, um dein Tier zu finden, wo immer du gerade bist.",
+      "html": "<p>Weit weg von zu Hause zu sein und den Hund oder die Katze plötzlich nirgends mehr zu sehen, ist einer der beängstigendsten Momente überhaupt. Das Herz rast, klar zu denken fällt schwer, und man weiß nicht, wo man anfangen soll. Atme durch: Es gibt konkrete Schritte, die du sofort gehen kannst, auch an einem Ort, den du nicht kennst. Diese Anleitung führt dich in Ruhe hindurch, einen nach dem anderen.</p><h2>Warum das Risiko im Sommer und im Urlaub steigt</h2><p>Im Urlaub ist dein Tier an einem fremden Ort, ohne die vertrauten Anhaltspunkte von zu Hause. Ein plötzliches Geräusch oder ein offenes Tor reicht, und es rennt in irgendeine Richtung los, ohne zu wissen, wie es zurückfindet.</p><ul><li><strong>Sommergewitter</strong> und <strong>Feuerwerk</strong> bei Dorffesten erschrecken viele Hunde, die dann in Panik weglaufen.</li><li>Ferienhäuser, Campingplätze und Strände sind offene, unbekannte Räume.</li><li>Am Meer oder in den Bergen fehlen die Gerüche und Wege, die dein Tier kennt — es findet kaum nach Hause.</li></ul><h2>Handle dort, wo du bist, nicht zu Hause</h2><p>Der häufigste Fehler ist, in der Nähe der eigenen Wohnung zu suchen. Ein <strong>im Urlaub entlaufener Hund</strong> ist dort, wo du ihn verloren hast: Genau dorthin müssen die Benachrichtigungen.</p><ul><li>Melde den Verlust genau an dem Ort, an dem er verschwunden ist, nicht in deiner Heimatstadt.</li><li>Mit <a href=\"/de/\">Orma</a> erstellst du in wenigen Tipps eine Meldung und benachrichtigst automatisch die Menschen, die in diesem Moment in deiner Nähe sind.</li><li>Geh zurück zu der Stelle, an der du es zuletzt gesehen hast: Tiere bleiben oft in der Nähe oder kehren dorthin zurück.</li></ul><h2>Örtliche Tierheime und Tierarztpraxen informieren</h2><p>Wer ein entlaufenes Tier findet, bringt es meist in die nächste Tierarztpraxis oder ins Tierheim. Deshalb solltest du die Einrichtungen <strong>in der Urlaubsregion</strong> kontaktieren.</p><ul><li>Ruf beim örtlichen <strong>Tierheim</strong> und beim <strong>Fundbüro</strong> oder Ordnungsamt der Gemeinde an.</li><li>Schau in den <strong>Tierarztpraxen</strong> in der Nähe vorbei: Sie können den Mikrochip jedes gebrachten Tieres auslesen.</li><li>Lass überall ein aktuelles Foto und eine Telefonnummer da, unter der du immer erreichbar bist.</li></ul><h2>Ein aktueller Mikrochip macht dich überall auffindbar</h2><p>Der Mikrochip ist dein stärkster Verbündeter, wenn ein <strong>Tier auf Reisen</strong> verloren geht, weit weg von zu Hause. Wer ihn ausliest, findet zu dir — in jedem Land.</p><ul><li>Prüf vor der Abreise, ob deine Daten im <strong>Haustierregister</strong> (TASSO, FINDEFIX) aktuell sind, vor allem die Telefonnummer.</li><li>Reist du ins Ausland, nimm den <strong>EU-Heimtierausweis</strong> mit: Er weist die Chipnummer aus.</li><li>Mit Orma verbindet der <strong>automatische Chipabgleich</strong> den Finder mit der Person, die sucht.</li><li>Eine <strong>Adressmarke mit deiner Nummer</strong> am Halsband hilft dem Finder, dich sofort anzurufen, ganz ohne Lesegerät.</li></ul><h2>Nutze Sichtungen, Karte und Aushang</h2><p>Je mehr Augen auf deiner Seite sind, desto besser. Ein auf Reisen verlorenes Tier wird oft dank einer vorbeikommenden Person gefunden, der etwas auffällt.</p><ul><li>Bitte jeden, der es sieht, dir eine <strong>Sichtung mit Foto und Ort</strong> zu schicken: So entsteht eine Spur seiner Bewegungen.</li><li>Die <strong>Karte mit dem um etwa 150 Meter unscharfen Standort</strong> zeigt das Gebiet und schützt zugleich die Privatsphäre aller.</li><li>Erzeug in der App einen <strong>PDF-Aushang mit QR-Code</strong> zum Ausdrucken und Aufhängen am Strand, in Cafés und in örtlichen Läden.</li><li>Das alles funktioniert <a href=\"/de/\">überall, wo du gerade bist</a>, auf Android und iPhone.</li></ul><h2>Wenn du Aussetzung oder Misshandlung vermutest</h2><p>Beim Suchen begegnen dir vielleicht Situationen, die dein eigenes Tier nicht betreffen, aber trotzdem Aufmerksamkeit verdienen.</p><ul><li>Bei Notfällen und Straftaten gegen Tiere kannst du die <strong>112</strong> wählen oder dich an das <strong>Veterinäramt</strong> wenden; im Ausland gilt in der gesamten EU ebenfalls die 112.</li><li>Schildere ruhig, was du tatsächlich beobachtet hast, ohne Dramatisierung.</li></ul><p>Seinen Freund an einem fremden Ort aus den Augen zu verlieren, ist beängstigend — aber du bist nicht allein, und es hängt nicht nur vom Glück ab. Wenn du schnell im richtigen Gebiet handelst, die örtlichen Einrichtungen informierst und dich auf den Mikrochip und die Menschen ringsum verlässt, verbesserst du deine Chancen wirklich. <a href=\"/de/\">Orma</a> führt dich Schritt für Schritt, wo immer du bist.</p>"
     }
   },
   {
     "slug": {
       "it": "microchip-non-aggiornato-cosa-fare",
-      "en": "update-pet-microchip-details"
+      "en": "update-pet-microchip-details",
+      "de": "mikrochip-daten-aktualisieren"
     },
     "it": {
       "title": "Il microchip non è aggiornato: cosa fare (e perché conta)",
@@ -789,7 +910,30 @@ export const GUIDES = [
           "q": "What is the microchip number used for in Orma?",
           "a": "Orma uses the microchip number for automatic matching: if you report your pet as lost and someone reports a found animal with the same code, the app connects you through a secure in-app chat."
         }
+      ],
+      "de": [
+        {
+          "q": "Wie aktualisiere ich die Mikrochipdaten meines Hundes?",
+          "a": "In Deutschland meist direkt online im Konto bei TASSO oder FINDEFIX; sonst hilft deine Tierarztpraxis. Halte die Chipnummer und einen Ausweis bereit und gib die richtige Telefonnummer, Adresse und, falls nötig, den neuen Halter an."
+        },
+        {
+          "q": "Was brauche ich für einen Halterwechsel?",
+          "a": "In der Regel die Chipnummer, einen Ausweis und die Zustimmung beider Seiten, der abgebenden und der übernehmenden Person. Frag vorher beim Register oder in deiner Tierarztpraxis nach, welche Angaben nötig sind."
+        },
+        {
+          "q": "Soll ich den Chipeintrag auch aktualisieren, wenn mein Tier gar nicht weg ist?",
+          "a": "Ja. Mach es rechtzeitig, gleich nach einem Umzug oder einem Nummernwechsel. Läuft dein Tier einmal weg, sorgen aktuelle Daten dafür, dass der Finder dich wirklich erreicht."
+        },
+        {
+          "q": "Wofür nutzt Orma die Mikrochipnummer?",
+          "a": "Orma nutzt sie für den automatischen Abgleich: Meldest du dein Tier als vermisst und meldet jemand ein Fundtier mit derselben Nummer, verbindet euch die App über den sicheren Chat."
+        }
       ]
+    },
+    "de": {
+      "title": "Die Daten zum Mikrochip sind veraltet: was tun (und warum es zählt)",
+      "metaDesc": "Ein Mikrochip mit alten Daten bringt dein Tier nicht nach Hause. So aktualisierst du Telefonnummer, Adresse und Halter im Haustierregister, in Ruhe und rechtzeitig.",
+      "html": "<p>Wenn dein Hund oder deine Katze einmal wegläuft, kann der Mikrochip den Unterschied ausmachen zwischen einem schnellen Wiedersehen und tagelanger Sorge. Aber eines übersehen viele: Der Chip funktioniert nur, wenn die damit verknüpften Daten stimmen. Eine alte Telefonnummer oder eine Adresse von vor zwei Umzügen macht einen Mikrochip fast nutzlos. Die gute Nachricht: Das lässt sich leicht in Ordnung bringen — und zwar jetzt, vor jedem Notfall.</p><h2>Warum ein Chip mit alten Daten nicht hilft</h2><p>Ein Mikrochip ist ein kleines Bauteil unter der Haut, das eine Nummer trägt. Für sich genommen sagt diese Nummer nichts: Sie verweist auf einen Eintrag im Haustierregister, in dem deine Kontaktdaten stehen. Wenn jemand dein Tier findet (eine Tierarztpraxis, ein Tierheim, ein hilfsbereiter Mensch), den Chip ausliest und dann bei einer abgeschalteten Nummer landet, reißt die Kette genau am letzten Glied.</p><ul><li>Eine geänderte Telefonnummer heißt: Niemand kann dich anrufen.</li><li>Eine alte Adresse schickt Post an den falschen Ort.</li><li>Ein veralteter Haltereintrag (nach einer Übernahme oder einem Geschenk) sorgt für Verwirrung, wen man kontaktieren soll.</li></ul><p>Kurz gesagt: Sich einen Moment Zeit zu nehmen, um die <strong>Daten zum Mikrochip zu aktualisieren</strong>, zählt genauso viel wie das Setzen des Chips selbst.</p><h2>Wann du deine Registerdaten aktualisieren solltest</h2><p>Es gibt klare Momente, in denen sich ein Blick auf den Eintrag lohnt. Aktualisiere die Daten, wenn:</p><ul><li>du Telefonnummer oder E-Mail-Adresse geändert hast;</li><li>du umgezogen bist, auch nur ins Nachbarviertel;</li><li>ein <strong>Halterwechsel</strong> stattgefunden hat (Übernahme, Geschenk, Erbschaft).</li></ul><p>Warte nicht, bis du es „brauchst“: Der richtige Zeitpunkt ist jetzt, solange alles ruhig ist. Fünf Minuten Kontrolle heute ersparen dir morgen Stunden hektischer Suche.</p><h2>Wie du den Eintrag änderst: die praktischen Schritte</h2><p>Die Register werden von Vereinen oder Organisationen geführt, der genaue Ablauf kann sich also unterscheiden; das Wesentliche ist überall gleich. So gehst du vor:</p><ul><li>Halte die <strong>Mikrochipnummer</strong> bereit (sie steht im Impfpass oder im EU-Heimtierausweis) und einen Ausweis.</li><li>In Deutschland läuft das meist direkt online im Konto bei <strong>TASSO</strong> oder <strong>FINDEFIX</strong>; deine Tierarztpraxis hilft dir, wenn du nicht weiterkommst.</li><li>Gib die richtigen Daten an: Telefon, Adresse, E-Mail und, falls nötig, den neuen Halter.</li><li>Beim <strong>Halterwechsel</strong> braucht es in der Regel die Zustimmung beider Seiten; frag vorher nach, welche Angaben nötig sind.</li><li>Heb die Bestätigung der Änderung auf.</li></ul><p>Bist du nicht sicher, ob dein Tier überhaupt registriert ist oder mit welchen Daten, kann das Register das anhand der Chipnummer prüfen.</p><h2>Wie Orma die Chipnummer für den automatischen Abgleich nutzt</h2><p>Mit <a href=\"/de/\">Orma</a>, der Community-App für vermisste Tiere, wird dein Mikrochip noch nützlicher. Wenn du dein Tier als vermisst meldest und die Chipnummer einträgst, vergleicht die App sie mit den Fundmeldungen: Hat jemand ein Tier mit derselben Nummer gefunden, verbindet euch der <strong>automatische Abgleich</strong> über den sicheren Chat in der App.</p><ul><li>Melde ein vermisstes, gefundenes oder gesichtetes Tier in wenigen Tipps.</li><li>Menschen in der Nähe werden benachrichtigt und können helfen.</li><li>Der Standort auf der Karte ist um etwa 150 Meter unscharf, zum Schutz der Privatsphäre.</li><li>Direkt aus der App kannst du einen PDF-Aushang mit QR-Code erzeugen.</li></ul><p>Die Chipnummer bleibt der rote Faden: Je aktueller die verknüpften Daten sind, desto besser arbeitet dieses Werkzeug für dich. <a href=\"/de/\">Orma</a> gibt es für Android und iPhone.</p><h2>Eine kleine Sache, die viel bedeutet</h2><p>Einen Mikrochip zu aktualisieren dauert nicht lange: ein Login im Register oder ein Besuch in der Tierarztpraxis, und der Eintrag deines Tieres ist wieder wirklich nützlich. Es ist eine dieser stillen Aufgaben, die man einmal erledigt und dann nicht mehr im Kopf hat. Nimm dir fünf Minuten, prüf deine Daten und bring sie heute in Ordnung, falls sich etwas geändert hat: Dein Freund wird es nie erfahren, aber du schläfst ruhiger.</p>"
     }
   }
 ];
