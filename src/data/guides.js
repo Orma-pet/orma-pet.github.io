@@ -3,7 +3,8 @@ export const GUIDES = [
   {
     "slug": {
       "it": "cane-smarrito-cosa-fare",
-      "en": "how-to-find-a-lost-dog"
+      "en": "how-to-find-a-lost-dog",
+      "de": "hund-entlaufen-was-tun"
     },
     "it": {
       "title": "Ho perso il cane: cosa fare subito per ritrovarlo",
@@ -51,13 +52,37 @@ export const GUIDES = [
           "q": "How can I quickly let my whole neighborhood know my dog is lost?",
           "a": "With Orma you post the missing report in a few taps and nearby people get an alert; if someone spots your dog they can send you a photo and location. The app also creates a PDF flyer with a QR code you can print or share in local groups."
         }
+      ],
+      "de": [
+        {
+          "q": "Mein Hund ist vor ein paar Stunden entlaufen: was mache ich zuerst?",
+          "a": "Geh zurück an die Stelle, an der du ihn zuletzt gesehen hast, und ruf ihn ruhig: Verängstigte Hunde bleiben oft ganz in der Nähe versteckt. Melde den Verlust sofort auf Orma mit Foto und Ort, damit die Menschen in der Umgebung eine Benachrichtigung bekommen und mitsuchen können."
+        },
+        {
+          "q": "Finden entlaufene Hunde allein nach Hause zurück?",
+          "a": "Das kommt vor, vor allem in Hausnähe und in den ersten Stunden. Verlass dich aber nicht darauf: Leg sein Körbchen oder ein getragenes Kleidungsstück von dir nach draußen, damit dein Geruch da ist, lass wenn möglich einen Zugang offen — und such in der Zwischenzeit weiter und erzähl es herum."
+        },
+        {
+          "q": "Wen muss ich informieren, wenn mein Hund weg ist?",
+          "a": "Melde dich beim Tierheim in deiner Umgebung und beim Fundbüro oder Ordnungsamt deiner Gemeinde, denn dorthin laufen Fundtiermeldungen. Hat dein Hund einen Mikrochip, kann jede Tierarztpraxis ihn auslesen und dich über das Haustierregister erreichen."
+        },
+        {
+          "q": "Wie erreiche ich schnell die ganze Nachbarschaft?",
+          "a": "Mit Orma erstellst du die Vermisstmeldung in wenigen Tipps, und Menschen in der Nähe werden benachrichtigt; wer deinen Hund sieht, kann dir Foto und Ort schicken. Die App erzeugt außerdem einen PDF-Aushang mit QR-Code zum Ausdrucken oder Teilen in lokalen Gruppen."
+        }
       ]
+    },
+    "de": {
+      "title": "Hund entlaufen: was du jetzt sofort tun kannst",
+      "metaDesc": "Dein Hund ist entlaufen? So findest du ihn Schritt für Schritt wieder: in der Nähe suchen, Tierheim und Tierarzt informieren, Mikrochip prüfen, Meldung auf Orma.",
+      "html": "<p>Wenn dein Hund gerade entlaufen ist, schlägt dir das Herz bis zum Hals. Atme einmal durch: Die ersten Stunden zählen wirklich, und Ruhe macht den Unterschied. Ein <strong>entlaufener Hund</strong> bleibt oft in der Nähe der Stelle, an der er verschwunden ist — jede gut genutzte Minute erhöht also die Chance auf ein Wiedersehen. Diese Anleitung zeigt dir Schritt für Schritt, was du jetzt tun kannst, ohne kostbare Zeit zu verlieren.</p><h2>Sofort handeln: die ersten Stunden sind die wichtigsten</h2><p>Sobald du merkst, dass dein Hund weg ist, warte nicht ab. Viele Hunde werden in den ersten Stunden gefunden, ganz in der Nähe der Stelle, an der sie sich losgerissen haben. Nimm vor dem Losgehen ein paar Dinge mit, die helfen können.</p><ul><li>Ein aktuelles, scharfes Foto, auf dem Fell, Größe und besondere Merkmale zu erkennen sind.</li><li>Die Leine, ein paar Leckerlis und vielleicht ein Lieblingsspielzeug oder eine Decke mit seinem Geruch.</li><li>Die Mikrochipnummer, falls du sie hast, und die Nummer deiner Tierarztpraxis.</li></ul><h2>In der Nähe suchen und ruhig rufen</h2><p>Geh zurück zu der Stelle, an der du deinen Hund zuletzt gesehen hast, und weite die Suche zu Fuß aus. Ruf ihn sanft, nicht in Panik: Ein aufgeregter Ton kann einen verängstigten Hund noch tiefer ins Versteck treiben.</p><ul><li>Schau in Hecken, Büschen, Gärten, offenen Garagen und schattigen Ecken nach, wo ein ängstlicher Hund Schutz sucht.</li><li>Such vor allem in der Dämmerung, morgens und abends, wenn es leiser ist und weniger Verkehr herrscht.</li><li>Frag alle, denen du begegnest — Passanten, Ladeninhaber, andere Hundehalter — und lass deine Nummer da.</li></ul><h2>Tierheim, Tierarztpraxen und Behörden informieren</h2><p>Wer einen Hund findet, bringt ihn meistens in die nächste Tierarztpraxis oder meldet ihn beim Tierheim. Erreichbar zu sein, ist auf all diesen Wegen entscheidend.</p><ul><li>Melde dich bei den Tierheimen in deiner Umgebung, mit Beschreibung und deinen Kontaktdaten.</li><li>Informiere die Tierarztpraxen in der Nähe: Wird ein Fundhund gebracht, können sie ihn deiner Meldung zuordnen.</li><li>In Deutschland ist ein gefundenes Tier rechtlich eine Fundsache: Meldungen laufen über das <strong>Fundbüro</strong> oder das <strong>Ordnungsamt</strong> der Gemeinde. Ist dein Hund in Gefahr (auf der Straße, verletzt), wähle die <strong>112</strong>.</li></ul><h2>Mikrochip und eingetragene Daten prüfen</h2><p>Der Mikrochip ist der zuverlässigste Weg, damit jemand einen Fundhund zu dir zurückverfolgen kann — aber nur, wenn deine Daten aktuell sind. Jetzt ist der Moment, das sicherzustellen.</p><ul><li>Lass deine Tierarztpraxis bestätigen, dass der Chip registriert ist und die hinterlegte Nummer stimmt.</li><li>Hat sich deine Telefonnummer oder Adresse geändert, aktualisiere sie sofort: Veraltete Daten machen den Chip wertlos.</li><li>In Deutschland läuft die Registrierung über ein Haustierregister wie <strong>TASSO</strong> oder <strong>FINDEFIX</strong> vom Deutschen Tierschutzbund. Die Eintragung ist kostenlos und dauert wenige Minuten.</li></ul><h2>Aushänge, soziale Netzwerke und lokale Gruppen</h2><p>Je mehr Menschen wissen, dass du suchst, desto mehr Augen suchen mit. Ein klarer Aushang und die richtigen Kanäle vervielfachen deine Chancen.</p><ul><li>Mach einen einfachen Aushang mit großem Foto, dem Gebiet, in dem dein Hund verschwunden ist, deiner Telefonnummer und dem Hinweis „bitte nicht hinterherlaufen, sondern anrufen“.</li><li>Häng ihn in der Nähe der Stelle auf, in Geschäften, in Tierarztpraxen und an Aushangtafeln im Viertel.</li><li>Poste in den lokalen Fundtier-Gruppen auf Facebook und bitte darum, den Beitrag zu teilen.</li></ul><h2>Meldung auf Orma: erreiche die Menschen in deiner Nähe</h2><p>Orma ist eine Community-App für vermisste Tiere, gemacht für genau diesen Moment, in dem die Suche schnell gehen und alle in deiner Umgebung erreichen muss. Du kannst <a href=\"/de/\">in wenigen Tipps eine Meldung erstellen</a> und die Menschen um dich herum sofort wissen lassen, dass du suchst.</p><ul><li>Menschen <strong>in deiner Nähe</strong> bekommen automatisch eine Benachrichtigung, sobald sich etwas tut — viele zusätzliche Augen suchen sofort mit.</li><li>Wer deinen Hund sieht, kann Foto und Ort hinzufügen: Du erkennst ihn auf einen Blick und weißt, wo du weitersuchen musst.</li><li>Wird ein Fundhund mit derselben Mikrochipnummer gemeldet, <strong>passiert der Abgleich automatisch</strong>. Der Chat bleibt in der App, deine Kontaktdaten bleiben privat, und die Standorte auf der Karte sind zur Sicherheit unscharf.</li></ul><p>Ich weiß, das ist ein harter Moment, aber du bist nicht allein und die Lage ist alles andere als aussichtslos: Sehr viele Hunde werden wiedergefunden, oft innerhalb von Stunden oder wenigen Tagen. Such ruhig weiter, halte alle Kanäle offen und lass dir von den Menschen um dich herum helfen. Die Chance ist echt, dass du deinen Freund bald wieder im Arm hältst.</p>"
     }
   },
   {
     "slug": {
       "it": "ho-perso-il-gatto-come-ritrovarlo",
-      "en": "how-to-find-a-lost-cat"
+      "en": "how-to-find-a-lost-cat",
+      "de": "katze-entlaufen-wiederfinden"
     },
     "it": {
       "title": "Ho perso il gatto: come ritrovare un gatto smarrito",
@@ -105,13 +130,37 @@ export const GUIDES = [
           "q": "What should I do if my microchipped cat is lost?",
           "a": "Report the loss to your local veterinary health authority and make sure your contact details in the pet registry are up to date, so anyone who takes your cat to a vet or shelter can trace you. With Orma you can also post the report, and the microchip enables an automatic match if someone finds your cat."
         }
+      ],
+      "de": [
+        {
+          "q": "Wie viele Tage braucht eine entlaufene Katze, um heimzukommen?",
+          "a": "Viele Katzen kommen innerhalb weniger Tage von allein zurück, oft nachts, wenn es ruhig ist. Wohnungskatzen verstecken sich meist in Hausnähe, in der Regel innerhalb einiger hundert Meter — es lohnt sich, lange in der Umgebung zu suchen."
+        },
+        {
+          "q": "Wo versteckt sich eine Katze, wenn sie wegläuft?",
+          "a": "Meistens ganz in der Nähe: unter Autos, in Kellern, Garagen, Hecken, Schuppen oder engen Ecken, in denen sie sich sicher fühlt. Schau früh am Morgen und nach Sonnenuntergang dort nach, wenn Katzen sich mehr bewegen, und ruf sie mit ruhiger Stimme."
+        },
+        {
+          "q": "Wie bringe ich meine entlaufene Katze dazu zurückzukommen?",
+          "a": "Stell ihr Katzenklo, eine Decke oder getragene Kleidung von dir nach draußen: vertraute Gerüche helfen ihr, den Weg zu finden. Stell eine Schale Futter hin, geh in den ruhigen Stunden leise rufend hinaus und bitte Nachbarn, Garagen und Keller nachzusehen."
+        },
+        {
+          "q": "Was tue ich, wenn meine gechippte Katze weg ist?",
+          "a": "Melde den Verlust dem Tierheim und dem Fundbüro und prüfe, ob deine Kontaktdaten im Haustierregister aktuell sind, damit jeder, der sie zur Tierarztpraxis bringt, dich erreicht. Auf Orma kannst du die Meldung ebenfalls veröffentlichen — der Mikrochip ermöglicht einen automatischen Abgleich, wenn jemand sie findet."
+        }
       ]
+    },
+    "de": {
+      "title": "Katze entlaufen: wie du sie findest und nach Hause holst",
+      "metaDesc": "Deine Katze ist weg? Eine ruhige, praktische Anleitung: wo und wann du suchst, welche Gerüche wirklich locken, Mikrochip und wen du informierst.",
+      "html": "<p>Wenn dir gerade klar geworden ist, dass deine Katze weg ist, atme einmal durch: Die beruhigende Wahrheit ist, dass eine <strong>entlaufene Katze</strong> meistens nicht weit kommt. Anders als Hunde verstecken sich verängstigte Katzen lautlos ganz in der Nähe, manchmal nur wenige Meter entfernt, und bleiben stundenlang oder tagelang bewegungslos. Diese Anleitung zeigt dir ruhig und Schritt für Schritt, <strong>wie du eine entlaufene Katze wiederfindest</strong>: wo du suchst, wann, welche Lockmittel wirklich funktionieren und wen du informierst.</p><h2>Warum eine entlaufene Katze sich in Hausnähe versteckt</h2><p>Wer versteht, wie Katzen sich verhalten, sucht an den richtigen Stellen. Eine verängstigte oder desorientierte Katze schaltet in den Überlebensmodus: Sie verkriecht sich an einem stillen Ort und bleibt dort, oft ohne zu antworten, wenn du rufst. Sie ignoriert dich nicht — sie hat Angst. Deshalb scheitert lautes Herumrufen so oft: Deine Katze ist näher, als du denkst, verhält sich aber still.</p><ul><li>Wohnungskatzen entfernen sich selten weiter als ein paar Gärten: Konzentriere dich auf die ersten 50 bis 100 Meter.</li><li>Freigängerkatzen streifen weiter, bleiben aber meist auf ihren vertrauten Wegen.</li><li>In den ersten 24 bis 48 Stunden verharren sie oft an einer Stelle — Geduld zählt mehr als Entfernung.</li></ul><h2>Nachts und im Morgengrauen suchen, wenn es still ist</h2><p>Die beste Zeit für die Suche ist spätnachts oder in den frühen Morgenstunden, wenn wenig Lärm und Verkehr ist. Deine Katze traut sich dann eher zu bewegen, und du hörst sie leichter.</p><ul><li>Geh langsam und leise, bleib oft stehen und horch auf ein leises Miauen oder Rascheln.</li><li>Nimm eine Taschenlampe und leuchte langsam unter Autos, in Hecken und dunkle Ecken: <strong>Katzenaugen reflektieren das Licht</strong>, du siehst sie im Dunkeln aufblitzen.</li><li>Ruf mit deiner normalen, ruhigen Stimme, dann sei still und horch eine ganze Minute lang, bevor du weitergehst.</li></ul><h2>Jedes Versteck einzeln absuchen</h2><p>Eine verängstigte Katze sucht enge, dunkle, geschützte Plätze. Geh geduldig jedes mögliche Versteck durch, auch die unwahrscheinlichen.</p><ul><li>Unter Autos, in Treppenhäusern, Garagen, Kellern und Abstellräumen.</li><li>Unter dichten Hecken, Holzstapeln, gestapeltem Material und großen Pflanzkübeln.</li><li>Bitte Nachbarn höflich, Schuppen, Garagen und Nebengebäude nachzusehen: Eine Katze wird leicht versehentlich eingesperrt.</li><li>Schau auch nach oben: Katzen klettern manchmal auf Bäume oder Dächer und kommen nicht mehr herunter.</li></ul><h2>Gerüche nutzen, die deine Katze kennt</h2><p>Der Geruchssinn von Katzen ist außergewöhnlich — nutze ihn, um sie nach Hause zu führen. Vertraute Gerüche locken viel stärker als jedes Futter.</p><ul><li>Stell das <strong>benutzte Katzenklo</strong> vor die Tür: Der eigene Geruch hilft ihr, den Weg zurückzufinden.</li><li>Stell eine Schale mit ihrem gewohnten Futter oder etwas stark Riechendem hin, dazu ihre Decke oder ihr Körbchen.</li><li>Lass nachts, wenn möglich, ein Fenster gekippt oder eine Tür offen: Viele Katzen schleichen zurück, sobald alles ruhig ist.</li><li>Leg nachts nicht zu viel Futter aus, um keine anderen Tiere anzulocken: Kleine Mengen an den richtigen Stellen reichen.</li></ul><h2>Nachbarn, Tierarztpraxen und Tierheim informieren</h2><p>Je mehr Menschen suchen, desto schneller findest du sie. Sprich dich im Viertel einfach und geordnet herum.</p><ul><li>Sag Nachbarn persönlich Bescheid oder poste in lokalen Gruppen, mit einem klaren, aktuellen Foto.</li><li>Ruf die <strong>Tierarztpraxen</strong> in der Nähe an: Wer eine Katze findet, bringt sie oft dorthin, um den Chip auslesen zu lassen.</li><li>Melde dich beim örtlichen <strong>Tierheim</strong> und beim Fundbüro oder Ordnungsamt: Dort laufen Fundtiere zusammen.</li><li>Hat deine Katze einen <strong>Mikrochip</strong>, prüfe, ob deine Kontaktdaten im Haustierregister (etwa TASSO oder FINDEFIX) aktuell sind.</li><li>Siehst du ein verletztes Tier oder eines in Gefahr, wende dich an eine Tierrettung oder wähle die 112.</li></ul><h2>Melde es auf Orma und lass dir von der Nachbarschaft helfen</h2><p>Melde deine vermisste Katze während der Suche auf <a href=\"/de/\">Orma</a>, der App für vermisste Tiere. Mit wenigen Tipps benachrichtigst du automatisch die Menschen <strong>in deiner Nähe</strong>, sodass viele Augen im Viertel im selben Moment mitsuchen. Wer eine ähnliche Katze sieht, kann eine Sichtung mit Foto und Ort melden — du erkennst deine Katze sofort. Findet jemand eine Katze mit Mikrochip, kann der <a href=\"/de/\">automatische Abgleich</a> sie mit deiner Meldung verbinden, und der Chat bleibt in der App, damit deine Kontaktdaten geschützt bleiben.</p><p>Eine Katze zu finden braucht oft Geduld: Viele kommen nach mehreren Tagen zurück, wenn die Angst nachlässt. Such in den stillen Stunden weiter, leg vertraute Gerüche vors Haus und halte deine Meldungen aktuell. Du bist mit dieser Suche nicht allein, und jeder kleine Schritt bringt den Moment näher, in dem deine Freundin zurückkommt.</p>"
     }
   },
   {
     "slug": {
       "it": "ho-trovato-un-animale-cosa-fare",
-      "en": "found-an-animal-what-to-do"
+      "en": "found-an-animal-what-to-do",
+      "de": "tier-gefunden-was-tun"
     },
     "it": {
       "title": "Ho trovato un animale: cosa fare, passo dopo passo",
@@ -159,13 +208,37 @@ export const GUIDES = [
           "q": "I found an injured animal, what should I do first?",
           "a": "If it's in danger or hurt, call the emergency number (112 in Italy), or the forest rangers for wildlife. Avoid handling it if you might get hurt or make things worse, and try to get it to a vet. Meanwhile you can report it on Orma to alert people nearby."
         }
+      ],
+      "de": [
+        {
+          "q": "Ich habe einen Hund ohne Halter gefunden, wen rufe ich an?",
+          "a": "Wirkt der Hund gesund, melde den Fund beim Ordnungsamt oder Fundbüro der Gemeinde und beim örtlichen Tierheim, das die Aufnahme organisiert. Ist er verletzt oder in Gefahr, wähle die 112 oder ruf die Tierrettung. Auf Orma kannst du ihn außerdem in wenigen Tipps als gefunden oder gesichtet melden, damit Menschen in der Nähe benachrichtigt werden."
+        },
+        {
+          "q": "Wie finde ich heraus, ob ein Fundtier einen Mikrochip hat?",
+          "a": "Ein Mikrochip wird mit einem Lesegerät ausgelesen, das Tierarztpraxen, Tierheime und Veterinärämter haben. Bring das Tier dorthin, dann lässt sich der Halter über das Haustierregister ermitteln. Auf Orma kann eine Fundmeldung außerdem einen automatischen Chipabgleich mit einer Vermisstmeldung auslösen."
+        },
+        {
+          "q": "Darf ich eine gefundene Katze oder einen Hund behalten?",
+          "a": "Nicht sofort: Das Tier hat vielleicht einen Halter, der es sucht. Melde den Fund den Behörden (Ordnungsamt, Fundbüro oder Tierheim) und lass den Chip prüfen. Meldet sich nach der gesetzlichen Frist niemand, kann über Pflege oder Übernahme gesprochen werden."
+        },
+        {
+          "q": "Ich habe ein verletztes Tier gefunden, was mache ich zuerst?",
+          "a": "Ist es in Gefahr oder verletzt, wähle die 112 oder ruf die örtliche Tierrettung; bei Wildtieren hilft die untere Naturschutzbehörde oder ein Wildtierauffangstation. Fass es nicht an, wenn du dich verletzen oder die Lage verschlimmern könntest, und versuch, es in eine Tierarztpraxis zu bringen. In der Zwischenzeit kannst du es auf Orma melden, um Menschen in der Nähe zu erreichen."
+        }
       ]
+    },
+    "de": {
+      "title": "Ich habe ein Tier gefunden: was tun, Schritt für Schritt",
+      "metaDesc": "Du hast einen Hund oder eine Katze gefunden und weißt nicht weiter? Eine ruhige, praktische Anleitung: Tier sichern, Mikrochip auslesen lassen, Halter finden.",
+      "html": "<p>Wenn du gerade <strong>ein Tier gefunden</strong> hast und nicht weißt, was zu tun ist, atme einmal durch: Das Wichtigste hast du schon getan, indem du stehen geblieben bist. Ob du einen <strong>Hund gefunden</strong> hast, der an einer Straße herumläuft, oder eine verängstigte Katze im Garten — die Schritte sind einfach und laufen alle auf ein Ziel hinaus: das Tier zu denen zurückzubringen, die es suchen. Hier ist, was zu tun ist, in der richtigen Reihenfolge, ohne Hektik und ohne etwas zu erzwingen.</p>\n\n<h2>Das gefundene Tier sichern, ohne es zu bedrängen</h2>\n<p>Ein entlaufenes Tier hat oft Angst und kann unberechenbar reagieren, auch wenn es sonst sanft ist. Wenn du <strong>ein Tier gefunden</strong> hast, gilt zuerst: ruhig herangehen, nicht hinterherlaufen, nicht in die Enge treiben.</p>\n<ul>\n<li>Sprich leise und gleichmäßig und beweg dich langsam.</li>\n<li>Ist es ein Hund, biete ihm Wasser an und, falls vorhanden, eine Leine oder ein Stück Seil, um ihn vom Verkehr fernzuhalten.</li>\n<li>Ist es eine Katze, erzwing keinen Kontakt: Lass sie zu dir kommen. Eine offene Transportbox oder ein Karton hilft.</li>\n<li>Fass kein Tier an, das aggressiv wirkt oder in echter Panik ist: Warte lieber oder hol Hilfe.</li>\n</ul>\n\n<h2>Ist es verletzt oder in Gefahr, hol sofort Hilfe</h2>\n<p>Die Gesundheit des Tieres geht vor. Findest du es verletzt, angefahren oder deutlich in Not, warte nicht.</p>\n<ul>\n<li>Wende dich so schnell wie möglich an eine <strong>Tierarztpraxis</strong> oder eine Tierklinik mit Notdienst.</li>\n<li>Ist das Tier in ernster Gefahr, wähle in Deutschland die <strong>112</strong>; in vielen Städten gibt es außerdem eine <strong>Tierrettung</strong> oder den Tiernotdienst.</li>\n<li>Beweg das Tier nur, wenn es sein muss, und dann behutsam, um Verletzungen nicht zu verschlimmern.</li>\n</ul>\n\n<h2>Mikrochip auslesen lassen: der schnellste Weg zum Halter</h2>\n<p>Fast alle Hunde und viele Katzen haben einen <strong>Mikrochip</strong>, ein winziges Bauteil unter der Haut, dessen Nummer in einem Haustierregister mit dem Halter verknüpft ist. Das ist der direkteste Weg, die Sache in wenigen Stunden zu lösen.</p>\n<ul>\n<li>Bring das Tier in eine <strong>Tierarztpraxis</strong>, ins Tierheim oder zum Veterinäramt: Das Auslesen des Chips ist kostenlos und schmerzfrei.</li>\n<li>Über die Chipnummer kann das Register (in Deutschland meist <strong>TASSO</strong> oder <strong>FINDEFIX</strong>) den eingetragenen Halter ermitteln und ihn benachrichtigen.</li>\n<li>Kein Chip? Nicht verzagen: Die nächsten Schritte zeigen andere Wege zur Zusammenführung.</li>\n</ul>\n\n<h2>Fundtier melden: in Deutschland ist es Pflicht</h2>\n<p>In Deutschland gilt ein zugelaufenes Tier rechtlich als Fundsache: Wer es an sich nimmt, muss den Fund anzeigen (§ 965 BGB). Das ist kein sinnloser Papierkram, sondern oft genau der Weg, auf dem der Halter sein Tier zurückbekommt.</p>\n<ul>\n<li>Melde den Fund beim <strong>Fundbüro</strong> oder <strong>Ordnungsamt</strong> der Gemeinde und beim örtlichen <strong>Tierheim</strong>.</li>\n<li>Eine offizielle Meldung setzt die richtigen Prüfungen in Gang und hält dich auf der sicheren Seite.</li>\n<li><strong>Behalte das Tier nicht heimlich</strong>: Das ist nicht nur rechtlich problematisch, es nimmt dem Halter auch die Chance, es über die offiziellen Wege zu finden.</li>\n</ul>\n\n<h2>Fundmeldung auf Orma, mit Foto und Ort</h2>\n<p>Offizielle Meldungen sind wichtig, aber oft macht die Nachbarschaft den Unterschied. Auf <a href=\"/de/\">Orma</a> kannst du ein <strong>gefundenes</strong> oder auch nur <strong>gesichtetes</strong> Tier in wenigen Tipps melden, sodass die vermissende Person es am Foto und am Ort sofort erkennt.</p>\n<ul>\n<li>Füg ein klares Foto hinzu und markiere, wo du es gesehen hast: Das dauert wenige Sekunden.</li>\n<li>Menschen <strong>in deiner Nähe</strong> bekommen beim Veröffentlichen automatisch eine Benachrichtigung — die Nachricht erreicht sofort das richtige Gebiet.</li>\n<li>Hatte der Halter das Tier bereits mit Mikrochipnummer gemeldet, kann Orma Vermisst- und Fundmeldung <strong>automatisch abgleichen</strong>.</li>\n<li>Der Kontakt läuft über den <strong>sicheren Chat in der App</strong>: Deine Kontaktdaten bleiben geschützt, und der Standort auf der Karte ist bewusst um etwa <strong>150 Meter unscharf</strong>.</li>\n</ul>\n\n<h2>In der Zwischenzeit: was tun (und was nicht)</h2>\n<p>Während du wartest, dass sich jemand meldet, kannst du einiges tun — immer mit Augenmaß.</p>\n<ul>\n<li>Frag in der Nachbarschaft und in den Geschäften nebenan: Oft wohnt der Halter nur wenige Schritte entfernt.</li>\n<li>Halte das Tier warm, mit Wasser und ein wenig passendem Futter, ohne es zu übertreiben.</li>\n<li>Versprich und nimm kein Geld: Es geht darum, das Tier nach Hause zu bringen.</li>\n<li>Kannst du es nicht behalten, sind Tierheim und Ordnungsamt die richtigen Anlaufstellen.</li>\n</ul>\n\n<p>Der Weg nach Hause ist fast immer eine Sache weniger Stunden und einiger Menschen, die es weitererzählen. Den schwersten Teil hast du erledigt, indem du geholfen hast: Geh diese Schritte in Ruhe durch, und du gibst diesem Tier die beste Chance, zu seiner Familie zurückzukommen. Danke, dass du da warst.</p>"
     }
   },
   {
     "slug": {
       "it": "microchip-cane-gatto-animale-smarrito",
-      "en": "pet-microchip-lost-pet"
+      "en": "pet-microchip-lost-pet",
+      "de": "mikrochip-hund-katze-vermisst"
     },
     "it": {
       "title": "Microchip cane e gatto: perché è decisivo per ritrovare un animale smarrito",
@@ -213,13 +286,37 @@ export const GUIDES = [
           "q": "Is a microchip mandatory for cats too?",
           "a": "In Italy the microchip is mandatory for dogs; for cats it depends on the region and is becoming increasingly common. Either way it's strongly recommended for every pet: it's the most reliable way to reunite a lost animal with its owner."
         }
+      ],
+      "de": [
+        {
+          "q": "Hat ein Mikrochip GPS, um einen entlaufenen Hund zu orten?",
+          "a": "Nein, ein Mikrochip hat kein GPS und verfolgt keinen Standort. Er ist ein kleiner passiver Transponder, der beim Auslesen eine Nummer zeigt, die im Haustierregister mit deinen Daten verknüpft ist: Er identifiziert das Tier und führt zu dir, er folgt ihm nicht auf einer Karte."
+        },
+        {
+          "q": "Wer kann den Mikrochip eines gefundenen Tieres auslesen?",
+          "a": "Tierarztpraxen, Tierheime und Veterinärämter haben das Lesegerät und lesen den Chip kostenlos aus. Wenn du ein Tier findest, bring es dorthin oder melde es: Über die Nummer lässt sich der Halter im Register ermitteln."
+        },
+        {
+          "q": "Was mache ich, wenn ich Telefonnummer oder Adresse geändert habe?",
+          "a": "Aktualisiere deine Kontaktdaten sofort im Haustierregister, meist direkt online bei TASSO oder FINDEFIX oder über deine Tierarztpraxis. Ein Chip mit einer alten Nummer macht es dem Finder schwer, dich zu erreichen."
+        },
+        {
+          "q": "Ist ein Mikrochip auch für Katzen Pflicht?",
+          "a": "In Deutschland ist die Kennzeichnungspflicht Ländersache und betrifft vor allem Hunde; für Katzen gibt es meist keine Pflicht. Empfohlen ist der Chip trotzdem für jedes Tier: Er ist der zuverlässigste Weg, ein vermisstes Tier seinem Halter zurückzugeben."
+        }
       ]
+    },
+    "de": {
+      "title": "Mikrochip bei Hund und Katze: warum er über das Wiedersehen entscheidet",
+      "metaDesc": "Der Mikrochip ist der sicherste Weg, ein vermisstes Tier wiederzufinden. Wie das Haustierregister funktioniert, wie du deine Daten aktuell hältst, wie Orma hilft.",
+      "html": "<p>Wenn ein Tier verschwindet, fühlen sich die ersten Stunden endlos an. In solchen Momenten macht ein <strong>Mikrochip</strong> einen echten Unterschied: Er ist ein winziges Bauteil, das deinen Hund oder deine Katze mit deinem Namen und deinen Kontaktdaten verbindet. Eine Tierarztpraxis oder ein Tierheim kann den Chip auslesen und dich finden. Deshalb ist der Mikrochip heute das zuverlässigste Werkzeug, um einen Freund nach Hause zu holen. Diese Anleitung erklärt in einfachen Worten, was er ist, wie das Haustierregister funktioniert und was du tun musst, damit im Ernstfall alles stimmt.</p>\n\n<h2>Was ein Mikrochip ist und wie das Register funktioniert</h2>\n<p>Ein Mikrochip ist ein kleiner Glaszylinder, etwa so groß wie ein Reiskorn, der seitlich am Hals unter die Haut gesetzt wird. Er hat keine Batterie und sendet kein Signal: Er trägt nur eine eindeutige Nummer. Diese Nummer wird in einem <strong>Haustierregister</strong> gespeichert — einer Datenbank, die den Code mit dir als Halter verknüpft.</p>\n<p>Entscheidend ist: Der Chip allein sagt nicht, wer du bist. Er funktioniert, weil die Nummer mit einem aktuellen Eintrag verbunden ist, der deine Kontaktdaten enthält. Stimmen deine Daten, erreicht dich, wer den Chip ausliest. Sind sie veraltet, bleibt der Code nur eine Nummer.</p>\n\n<h2>Kennzeichnungspflicht: was in Deutschland gilt</h2>\n<p>In Deutschland ist die <strong>Kennzeichnung mit Mikrochip Ländersache</strong>: In mehreren Bundesländern ist sie für Hunde vorgeschrieben, anderswo nicht. Für Reisen ins EU-Ausland ist sie ohnehin Pflicht, weil der EU-Heimtierausweis auf der Chipnummer beruht.</p>\n<p>Wichtiger als die Pflicht ist aber die <strong>Registrierung</strong>: Der Chip nützt nur, wenn die Nummer in einem Haustierregister wie <strong>TASSO</strong> oder <strong>FINDEFIX</strong> (Deutscher Tierschutzbund) auf dich eingetragen ist. Die Eintragung ist kostenlos. Für <strong>Katzen</strong> gibt es meist keine Pflicht, aber Freigängerkatzen tragen selten ein Halsband — ohne Chip sind sie kaum zurückzugeben. Wenn deine Katze nach draußen geht oder auch nur durch ein Fenster schlüpfen könnte, ist der Mikrochip dein wichtigstes Sicherheitsnetz.</p>\n\n<h2>Wie ein Mikrochip ausgelesen wird und wer das kann</h2>\n<p>Das Auslesen geht schnell und kostet nichts. Man braucht ein Lesegerät, das es normalerweise gibt bei:</p>\n<ul>\n<li>jeder <strong>Tierarztpraxis</strong> und Tierklinik;</li>\n<li><strong>Tierheimen</strong> und Tierauffangstationen;</li>\n<li>dem <strong>Veterinäramt</strong> und dem Ordnungsamt;</li>\n<li>oft auch bei Tierschutzvereinen.</li>\n</ul>\n<p>Wenn du ein Tier findest, hilfst du am meisten, indem du es an einer dieser Stellen vorbeibringst oder meldest, damit der Chip ausgelesen wird. Vermutest du, dass ein Tier in Gefahr ist oder misshandelt wird, wähle die <strong>112</strong> oder wende dich an das Veterinäramt.</p>\n\n<h2>Wie du deine Registerdaten aktuell hältst</h2>\n<p>Ein Mikrochip hilft nur wirklich, wenn die hinterlegten Daten stimmen. Genau diesen Schritt vergessen fast alle. Diese Liste hilft:</p>\n<ul>\n<li><strong>Telefonnummer und Adresse</strong>: aktualisieren, sobald du umziehst oder die Nummer wechselst.</li>\n<li><strong>Halterwechsel</strong>: Wenn du ein Tier übernimmst oder abgibst, muss der Wechsel im Register eingetragen werden — eine private Absprache reicht nicht.</li>\n<li><strong>Jährliche Kontrolle</strong>: Lass einmal im Jahr in der Tierarztpraxis den Chip auslesen und prüfen, ob die Daten stimmen.</li>\n<li><strong>Wo du änderst</strong>: direkt online im Register (TASSO, FINDEFIX) oder über deine Tierarztpraxis.</li>\n</ul>\n<p>Das kostet fünf Minuten und erspart dir den schlimmsten Fall: ein gefundenes Tier, das niemand mit dir in Verbindung bringen kann.</p>\n\n<h2>Wie Orma den Mikrochip für den automatischen Abgleich nutzt</h2>\n<p>Selbst bei perfekt registriertem Chip gibt es Stunden, in denen dein Tier draußen ist und noch niemand es zu einer Tierarztpraxis gebracht hat. Genau hier setzt <a href=\"/de/\">Orma</a> an, die Community-App für vermisste Tiere. Wenn du dein Tier als vermisst meldest und die Mikrochipnummer einträgst, vergleicht die App sie automatisch mit den Fundmeldungen: Meldet jemand ein Tier mit diesem Code, verbindet euch der <strong>automatische Chipabgleich</strong> sofort.</p>\n<p>Drumherum benachrichtigt Orma automatisch die Menschen in der Nähe des Verschwindens, sammelt Sichtungen mit Foto und Ort und schützt deine Kontaktdaten über den sicheren Chat in der App. Die Standorte auf der Karte sind um etwa 150 Meter unscharf, um die Privatsphäre zu schützen. Du kannst <a href=\"/de/\">hier anfangen</a> und die Profile deiner Tiere anlegen, bevor du sie je brauchst.</p>\n\n<p>Ein Mikrochip ist keine Garantie, aber das Solideste, was wir heute haben, um ein Tier mit seinem Halter zusammenzubringen. Ist dein Hund oder deine Katze schon registriert, nimm dir kurz Zeit und prüfe, ob deine Daten aktuell sind. Ist es noch nicht so weit, sprich mit deiner Tierarztpraxis: ein kleiner Schritt, der im schwersten Moment alles ändern kann.</p>"
     }
   },
   {
     "slug": {
       "it": "adottare-un-cane-o-gatto-dal-canile",
-      "en": "adopt-a-dog-or-cat-from-a-shelter"
+      "en": "adopt-a-dog-or-cat-from-a-shelter",
+      "de": "hund-oder-katze-aus-dem-tierheim-adoptieren"
     },
     "it": {
       "title": "Adottare un cane o un gatto dal canile: guida all'adozione",
@@ -267,13 +364,37 @@ export const GUIDES = [
           "q": "Is it better to adopt a puppy or an adult dog from a shelter?",
           "a": "A puppy needs more time for training and socialisation, while an adult often has a settled, more predictable character. There's no single right choice: weigh the time and experience you have."
         }
+      ],
+      "de": [
+        {
+          "q": "Was kostet es, einen Hund oder eine Katze aus dem Tierheim zu übernehmen?",
+          "a": "In der Regel wird eine Schutzgebühr fällig, die je nach Tier und Einrichtung unterschiedlich hoch ist. Viele Tierheime geben das Tier bereits gechippt, geimpft und kastriert ab — frag vorher nach, was enthalten ist."
+        },
+        {
+          "q": "Was brauche ich, um einen Hund aus dem Tierheim zu übernehmen?",
+          "a": "Meist reichen ein Ausweis und ein unterschriebener Schutzvertrag. Viele Tierheime führen zusätzlich ein Gespräch oder eine Vorkontrolle zu Hause durch, um sicherzugehen, dass die Umgebung zum Tier passt."
+        },
+        {
+          "q": "Kann ich einen Hund übernehmen, wenn ich den ganzen Tag arbeite?",
+          "a": "Das hängt vom Hund ab: Manche kommen mit Stunden allein gut zurecht, andere nicht. Sprich mit den Mitarbeitenden im Tierheim, sie kennen das Wesen jedes Tieres und können dir eines empfehlen, das zu deinem Alltag passt."
+        },
+        {
+          "q": "Lieber einen Welpen oder einen erwachsenen Hund aus dem Tierheim?",
+          "a": "Ein Welpe braucht mehr Zeit für Erziehung und Sozialisierung, ein erwachsener Hund hat oft einen gefestigten, besser einschätzbaren Charakter. Es gibt kein richtig oder falsch: Wäge ab, wie viel Zeit und Erfahrung du hast."
+        }
       ]
+    },
+    "de": {
+      "title": "Hund oder Katze aus dem Tierheim adoptieren: die einfache Anleitung",
+      "metaDesc": "Du denkst über einen Hund oder eine Katze aus dem Tierheim nach? Ruhige, praktische Anleitung: wie die Vermittlung abläuft, was du bedenken solltest, wo du Tierheime findest.",
+      "html": "<p>Einen Hund oder eine Katze aus dem Tierheim zu holen statt zu kaufen heißt, einem Tier ein Zuhause zu geben, das keins hat. Das ist eine schöne Entscheidung — aber eine, die man in Ruhe und mit Bedacht trifft: Ein Tier gehört viele Jahre zur Familie. Diese Anleitung zeigt dir, wie eine Vermittlung abläuft, was du vorher abwägen solltest und woran du Angebote erkennst, von denen du besser die Finger lässt.</p>\n\n<h2>Warum aus dem Tierheim und nicht gekauft</h2>\n<p>Tierheime und Tierschutzvereine sind voller Hunde und Katzen, die auf eine Familie warten. Wenn du ein Tier von dort übernimmst, hilfst du nicht nur diesem einen: Du machst einen Platz frei, sodass ein weiteres aufgenommen werden kann. In der Praxis rettest du zwei Leben auf einmal.</p>\n<ul>\n<li>Du gibst einem Tier eine zweite Chance, das oft schon einmal zurückgelassen wurde.</li>\n<li>Du unterstützt keine Vermehrerbetriebe und keinen illegalen Welpenhandel.</li>\n<li>Viele Tierheimtiere sind bereits erwachsen: Du kennst Charakter und Größe von Anfang an.</li>\n<li>Die Vermittlung kostet meist nur eine Schutzgebühr, und das Tier ist in der Regel schon tierärztlich untersucht, geimpft, gechippt und kastriert.</li>\n</ul>\n\n<h2>Wie eine Vermittlung Schritt für Schritt abläuft</h2>\n<p>Ein Tier aus dem Tierheim zu übernehmen ist unkompliziert, aber es beginnt immer mit dem Kennenlernen: Man nimmt kein Tier auf den ersten Blick mit nach Hause. Das sind die üblichen Schritte.</p>\n<ul>\n<li><strong>Besuch im Tierheim.</strong> Vereinbare einen Termin, sieh dich in Ruhe um und frag die Mitarbeitenden oder Ehrenamtlichen nach den Geschichten der Tiere.</li>\n<li><strong>Das Tier kennenlernen.</strong> Komm mehr als einmal: Beobachte, wie es auf dich, deine Familie und andere Tiere reagiert. Frag nach Wesen, Gewohnheiten und gesundheitlichen Besonderheiten.</li>\n<li><strong>Selbstauskunft ausfüllen.</strong> Das Tierheim fragt nach Wohnsituation und Alltag. Das ist normal und hilft, das passende Tier zu finden.</li>\n<li><strong>Schutzvertrag unterschreiben.</strong> Du bekommst einen Vertrag, der dich zur Versorgung des Tieres verpflichtet, und der Mikrochip wird im Haustierregister auf dich umgemeldet.</li>\n<li><strong>Ankommen vorbereiten.</strong> Viele Vereine melden sich in den Wochen danach noch einmal, oft nur telefonisch, um zu hören, ob alles gut läuft.</li>\n</ul>\n\n<h2>Was du vorher bedenken solltest</h2>\n<p>Bevor du ein Tier übernimmst, halt kurz inne und frag dich ehrlich, ob es der richtige Zeitpunkt ist. Ein Nein jetzt ist freundlicher als eine Rückgabe nach ein paar Wochen.</p>\n<ul>\n<li><strong>Zeit.</strong> Hunde brauchen täglich Auslauf und Gesellschaft, Katzen ebenfalls Aufmerksamkeit. Wer ist tagsüber da?</li>\n<li><strong>Platz und Lebensstil.</strong> Kleine Wohnung, Garten, Arbeitszeiten, Reisen: Wähl Größe und Charakter passend zu deinem echten Leben, nicht zu einem idealisierten.</li>\n<li><strong>Kosten.</strong> Futter, Tierarztbesuche, jährliche Impfungen, Parasitenschutz, gelegentliche Überraschungen — und in vielen Gemeinden die Hundesteuer. Ein Tier ist eine laufende Ausgabe.</li>\n<li><strong>Familie.</strong> Kinder, andere Tiere, mögliche Allergien: Sprecht vorher miteinander, die Entscheidung sollte gemeinsam fallen.</li>\n<li><strong>Die lange Strecke.</strong> Ein Hund oder eine Katze kann 15 Jahre und mehr leben. Das ist eine lange Bindung, keine spontane Entscheidung.</li>\n</ul>\n\n<h2>Vorsicht bei zweifelhaften Angeboten</h2>\n<p>Neben seriösen Vermittlungen gibt es Betrug und undurchsichtige Abgabeangebote, vor allem online. Ein paar Warnzeichen, die du kennen solltest.</p>\n<ul>\n<li>Es wird Geld im Voraus für „Transport“ oder „Papiere“ verlangt, bevor du das Tier überhaupt gesehen hast.</li>\n<li>Rassewelpen werden „dringend“ abgegeben, ohne Mikrochip und ohne Impfpass.</li>\n<li>Du darfst nicht sehen, wo das Tier lebt, oder ein persönliches Treffen wird vermieden.</li>\n<li>Es wird nichts unterschrieben, und nach der Übergabe ist niemand mehr erreichbar.</li>\n</ul>\n<p>Halte dich an anerkannte Tierheime und Tierschutzvereine. Lass dir Mikrochip und Papiere zeigen und lass deinen neuen Begleiter nach der Übernahme in einer Tierarztpraxis deines Vertrauens durchchecken. Wenn du illegalen Welpenhandel oder Tierquälerei vermutest, wende dich an das <strong>Veterinäramt</strong> oder die Polizei (110).</p>\n\n<h2>Wie Orma dir Vermittlungen in deiner Nähe zeigt</h2>\n<p>Das passende Tierheim zu finden ist nicht immer einfach. Mit <a href=\"/de/\">Orma</a> siehst du Vermittlungen von Tierheimen und Vereinen in deiner Nähe, mit Fotos und einer Beschreibung, sodass du dir schon vor dem Besuch ein Bild machen kannst.</p>\n<ul>\n<li>Sieh dir die Hunde und Katzen, die ein Zuhause suchen, in Ruhe an, ohne Druck.</li>\n<li>Nimm sicher aus der App Kontakt mit dem Tierheim auf, deine Daten bleiben dabei privat.</li>\n<li>Komm informiert zum Termin, mit einer klareren Vorstellung davon, wen du treffen könntest.</li>\n</ul>\n\n<p>Ein Tier aufzunehmen verändert ein Leben — und oft auch deins. Nimm dir die Zeit, die du brauchst, stell die richtigen Fragen und entscheide mit dem Herzen, aber auch mit dem Kopf: Wenn der Moment kommt, wirst du wissen, welches Tier zu dir passt.</p>"
     }
   },
   {
     "slug": {
       "it": "cane-scappato-botti-capodanno-cosa-fare",
-      "en": "dog-ran-away-fireworks-what-to-do"
+      "en": "dog-ran-away-fireworks-what-to-do",
+      "de": "hund-an-silvester-weggelaufen"
     },
     "it": {
       "title": "Cane scappato per i botti di Capodanno: cosa fare",
@@ -321,7 +442,30 @@ export const GUIDES = [
           "q": "Does a microchip help find a runaway dog?",
           "a": "Yes. If someone takes the dog to a vet or shelter, scanning the microchip traces him back to you through the pet registry, as long as your details are up to date."
         }
+      ],
+      "de": [
+        {
+          "q": "Mein Hund ist vor dem Feuerwerk geflohen, kommt er von allein zurück?",
+          "a": "Viele Hunde kommen von selbst zurück, sobald die Panik nachlässt, oft spät nachts oder im Morgengrauen. Lass das Tor offen und leg eine Decke mit seinem Geruch und seinen Napf nach draußen, damit er den Weg findet."
+        },
+        {
+          "q": "Wie weit läuft ein Hund, der Angst vor Feuerwerk hat?",
+          "a": "Ein panischer Hund kann mehrere Kilometer laufen, bevor er desorientiert stehen bleibt. Weite die Suche über die Nachbarschaft hinaus aus und sieh an ruhigen, geschützten Stellen nach."
+        },
+        {
+          "q": "Was mache ich, wenn ich meinen Hund an Silvester nicht finde?",
+          "a": "Such es in den ruhigen Stunden noch einmal, informiere am nächsten Tag Tierheime, Auffangstationen und Tierarztpraxen und melde den Verlust beim Fundbüro. Melde ihn außerdem auf Orma, um die Menschen in der Nähe zu erreichen."
+        },
+        {
+          "q": "Hilft ein Mikrochip, einen weggelaufenen Hund zu finden?",
+          "a": "Ja. Bringt jemand den Hund in eine Tierarztpraxis oder ins Tierheim, führt das Auslesen des Chips über das Haustierregister zu dir zurück — vorausgesetzt, deine Daten sind aktuell."
+        }
       ]
+    },
+    "de": {
+      "title": "Hund an Silvester weggelaufen: was du jetzt tun kannst",
+      "metaDesc": "Dein Hund ist vor dem Feuerwerk geflüchtet? Was du sofort tun kannst, wo sich ein verängstigter Hund versteckt und wie du ihn ruhig nach Hause holst.",
+      "html": "<p>Wenn dein <strong>Hund wegen des Feuerwerks weggelaufen</strong> ist, atme einmal durch: Was du gerade fühlst, haben schon sehr viele Menschen gefühlt — und die meisten Hunde kommen zurück. Ein <strong>verängstigter Hund flieht vor dem Feuerwerk</strong> nicht, weil er weg will, sondern weil der Lärm ihn in Panik versetzt und sein Instinkt nur eines sagt: weg von der Gefahr. Diese Anleitung gibt dir ruhige, konkrete Schritte, die du sofort gehen kannst, ohne dich von der Panik überrollen zu lassen.</p><h2>Warum Hunde vor lautem Knallen fliehen</h2><p>Feuerwerk ist plötzlich, sehr laut und nicht vorhersehbar. Für einen Hund sind es Explosionen ohne Erklärung: Der Körper geht in Alarm, der Fluchtinstinkt setzt ein. Ein verängstigter Hund reißt sich oft von der Leine los, springt über einen Zaun oder rennt durch eine offene Tür — und reagiert in diesen Minuten nicht mehr auf deinen Ruf. Das ist kein Ungehorsam, das ist blanke Angst. Wer das versteht, sucht richtig: nicht hinterherlaufen, nicht schreien, das würde ihn nur noch weiter treiben.</p><h2>Sofort handeln, trotz des Trubels</h2><p>Auch wenn es Nacht ist und alles unübersichtlich: Die ersten Minuten zählen. Beweg dich ruhig, aber warte nicht.</p><ul><li>Ruf seinen Namen leise und gleichmäßig, nicht schreiend: Ein ruhiger Ton beruhigt ihn.</li><li>Lauf ihm nicht hinterher. Siehst du ihn, geh in die Hocke, vermeide hektische Bewegungen und biete ihm ein Leckerli oder seinen Napf an.</li><li>Sag Familie, Nachbarn und Freunden in der Nähe Bescheid, damit viele Augen gleichzeitig suchen.</li><li>Leg ein aktuelles Foto bereit und notiere besondere Merkmale: Du brauchst beides für die Meldung.</li></ul><h2>Wo sich verängstigte Hunde verstecken</h2><p>Ein Hund in Panik läuft <strong>weit</strong>, viel weiter als man denkt, und versteckt sich an stillen Orten. Er kann mehrere Kilometer zurücklegen, bevor er stehen bleibt — desorientiert und verloren.</p><ul><li>Sieh an ruhigen, geschützten Stellen nach: Büsche, Garagen, Hinterhöfe, unter Treppen, Felder am Ortsrand.</li><li>Such entlang natürlicher Fluchtwege, weg vom Lärm der Böller.</li><li>Nimm etwas mit, das nach Zuhause riecht, und sein Geschirr.</li><li>Frag alle, denen du begegnest, ob ein verängstigter Hund vorbeigelaufen ist.</li></ul><h2>Hilf ihm, den Weg zurück zu finden</h2><p>Viele Hunde laufen zurück Richtung Zuhause, sobald die Panik nachlässt. Hilf ihm dabei über den Geruch.</p><ul><li>Lass Tor oder Tür offen, wenn du das gefahrlos kannst.</li><li>Leg eine <strong>Decke mit seinem Geruch</strong> nach draußen, sein Körbchen und Näpfe mit Wasser und Futter.</li><li>Wasch seine Decke nicht sofort: Der vertraute Geruch ist ein starker Ruf.</li><li>Lass ein kleines Licht an und bleib erreichbar, damit jeder, der ihn findet, dich erreichen kann.</li></ul><h2>Such, wenn das Feuerwerk vorbei ist</h2><p>Die beste Zeit zum Suchen ist, wenn wieder Stille einkehrt — meist <strong>spät in der Nacht oder im Morgengrauen</strong>. In der Ruhe kommen viele Hunde aus ihrem Versteck und lassen sich anfassen.</p><ul><li>Geh in den ruhigen Stunden hinaus, beweg dich langsam und sprich leise.</li><li>Informiere am nächsten Tag die <strong>Tierheime</strong>, <strong>Tierauffangstationen</strong> und <strong>Tierarztpraxen</strong> in der Umgebung: Ein Fundhund wird oft dorthin gebracht.</li><li>Melde den Verlust beim <strong>Fundbüro</strong> oder <strong>Ordnungsamt</strong>: Hat der Hund einen Mikrochip, führt das Auslesen über das Haustierregister zu dir zurück.</li><li>Ist der Hund in Gefahr (auf einer stark befahrenen Straße, verletzt oder nicht erreichbar), wähle die <strong>112</strong> oder ruf die örtliche Tierrettung.</li></ul><h2>Melde es auf Orma und erreiche deine Nachbarschaft</h2><p>In beängstigenden Momenten machen viele Suchende den Unterschied. Mit <a href=\"/de/\">Orma</a> meldest du deinen vermissten Hund in wenigen Tipps und benachrichtigst die Menschen in der Nähe. Wer ihn sieht, kann dir Foto und Ort schicken, und bringt ihn jemand in eine Tierarztpraxis, hilft der automatische <strong>Mikrochip</strong>-Abgleich beim Wiedersehen. Du kannst außerdem einen <a href=\"/de/\">Aushang mit QR-Code</a> erzeugen, zum Ausdrucken und Aufhängen im Viertel. Die Karte zeigt den Ort nur ungefähr, um deine Privatsphäre zu schützen.</p><h2>Damit es nächstes Jahr nicht wieder passiert</h2><p>Wenn alles überstanden ist, ersparen dir ein paar einfache Gewohnheiten den nächsten Schreck an Silvester.</p><ul><li>Lass deinen Hund während des Feuerwerks nicht allein: Deine Anwesenheit beruhigt ihn.</li><li>Richte zu Hause einen <strong>ruhigen Rückzugsort</strong> ein, mit seinem Körbchen und leiser Hintergrundmusik, die die Knaller abmildert.</li><li>Halte Mikrochip und Kontaktdaten im Register aktuell.</li><li>Ist er sehr geräuschempfindlich, sprich rechtzeitig vorher mit deiner Tierarztpraxis.</li></ul><p>Nachts nach einem weggelaufenen Hund zu suchen ist beängstigend, das wissen wir. Aber mach behutsam weiter: Sehr viele Vierbeiner kommen in den Stunden danach nach Hause, sobald der Lärm aufhört. Such weiter, halte die richtigen Kanäle offen und lass seinen Instinkt ihn zu dir zurückführen.</p>"
     }
   },
   {
