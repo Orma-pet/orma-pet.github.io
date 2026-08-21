@@ -7,3 +7,7 @@ dist/
 
 # Config locale anteprima (Claude Preview)
 .claude/
+
+# file di lavoro delle traduzioni (non fanno parte del sito)
+_*.json
+_*.mjs
