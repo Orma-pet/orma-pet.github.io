@@ -56,7 +56,7 @@ export const LANGS = [
   { code: 'bg', name: 'Български',  base: '/bg', pronta: false },
   { code: 'cs', name: 'Čeština',    base: '/cs', pronta: false },
   { code: 'da', name: 'Dansk',      base: '/da', pronta: false },
-  { code: 'de', name: 'Deutsch',    base: '/de', pronta: false },
+  { code: 'de', name: 'Deutsch',    base: '/de', pronta: true  },
   { code: 'el', name: 'Ελληνικά',   base: '/el', pronta: false },
   { code: 'es', name: 'Español',    base: '/es', pronta: false },
   { code: 'et', name: 'Eesti',      base: '/et', pronta: false },
@@ -107,6 +107,24 @@ export function urlPagina(chiave, lang) {
 
 // Navigazione principale (le voci puntano alle pagine vere, non agli anchor).
 export const NAV = {
+  de: [
+    {
+      "key": "howItWorks",
+      "label": "So funktioniert es"
+    },
+    {
+      "key": "features",
+      "label": "Funktionen"
+    },
+    {
+      "key": "map",
+      "label": "Karte"
+    },
+    {
+      "key": "guides",
+      "label": "Ratgeber"
+    }
+  ],
   pt: [
     {
       "key": "howItWorks",
@@ -158,6 +176,32 @@ export const NAV = {
 };
 
 export const UI = {
+  de: {
+    "skipToContent": "Zum Inhalt springen",
+    "langGroupLabel": "Sprache",
+    "navCta": "App herunterladen",
+    "footerLinks": {
+      "faq": "Häufige Fragen",
+      "forOrgs": "Für Tierärzte und Tierheime",
+      "childSafety": "Sicherheit von Minderjährigen",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "deletion": "Konto löschen",
+      "contact": "Kontakt"
+    },
+    "footerTagline": "Orma — Finde deinen Freund. Mit Sorgfalt gemacht, in Italien.",
+    "footerColophon": "Redaktionelle Fassung der Website · 2026",
+    "storeSoon": "Bald im",
+    "backHome": "Zurück zur Startseite",
+    "allGuides": "Alle Ratgeber",
+    "faqTitle": "Häufige Fragen",
+    "homeGuidesTitle": "Nützliche Ratgeber",
+    "homeGuidesLead": "Was zu tun ist, wenn es darauf ankommt: Hast du ein Tier verloren oder gefunden? Hier stehen die richtigen Schritte.",
+    "guidesHubTitle": "Ratgeber für vermisste und gefundene Tiere",
+    "guidesHubLead": "Praktische Tipps für die Momente, die zählen: was zu tun ist, wenn du ein Tier verloren oder gefunden hast, der Mikrochip, die Vermittlung.",
+    "guideCtaTitle": "Melde es auf Orma",
+    "guideCtaText": "Mit Orma benachrichtigst du die Menschen in deiner Nähe, bekommst Sichtungen mit Fotos und findest deinen Freund schneller wieder."
+  },
   pt: {
     "skipToContent": "Ir para o conteúdo",
     "langGroupLabel": "Idioma",
@@ -252,6 +296,153 @@ export const UI = {
 // HOMEPAGE — testi (dalle stringhe fornite, adattate al taglio editoriale).
 // ----------------------------------------------------------------------------
 export const HOME = {
+  de: {
+    "title": "Orma — App für vermisste Tiere | Finde deinen Freund",
+    "metaDesc": "App zum Melden und Wiederfinden vermisster Hunde und Katzen: Benachrichtigungen für Menschen in der Nähe, Sichtungen mit Fotos, Abgleich über den Mikrochip. Datenschutz an erster Stelle.",
+    "heroEyebrow": "App für vermisste, gefundene und zu vermittelnde Tiere",
+    "heroTitle": "Finde deinen Freund",
+    "heroSub": "Orma bringt Menschen zusammen, die ein Tier verloren haben, und Menschen, die eines gesehen oder gefunden haben. Du meldest es mit wenigen Fingertipps, wirst benachrichtigt, wenn sich in deiner Nähe etwas tut, und deine Kontaktdaten bleiben im Chat der App geschützt.",
+    "heroCta1": "Orma herunterladen",
+    "heroCta2": "So funktioniert es",
+    "heroProof": "Eine Gemeinschaft, die eine Pfote reicht — Stadt für Stadt.",
+    "trust": [
+      "Daten in Europa",
+      "Datenschutz von Anfang an",
+      "Made in Italy"
+    ],
+    "animalsTitle": "Orma ist für jedes Tier da",
+    "animalsSub": "Hunde und Katzen natürlich, aber auch Kaninchen, Vögel, Nagetiere und alle anderen. Wenn jemand sie liebt, haben sie hier einen Platz: vermisst, gefunden, ausgesetzt oder auf der Suche nach einer Familie.",
+    "animals": [
+      {
+        "key": "dog",
+        "label": "Hunde"
+      },
+      {
+        "key": "cat",
+        "label": "Katzen"
+      },
+      {
+        "key": "rabbit",
+        "label": "Kaninchen"
+      },
+      {
+        "key": "bird",
+        "label": "Vögel"
+      },
+      {
+        "key": "rodent",
+        "label": "Nagetiere"
+      },
+      {
+        "key": "reptile",
+        "label": "Reptilien"
+      },
+      {
+        "key": "horse",
+        "label": "Pferde"
+      },
+      {
+        "key": "more",
+        "label": "und weitere"
+      }
+    ],
+    "stepsEyebrow": "So funktioniert es",
+    "stepsTitle": "Drei Schritte nach Hause",
+    "steps": [
+      {
+        "t": "Melden",
+        "x": "Dein Tier ist weg? Erstelle eine Meldung mit Fotos, Beschreibung und dem letzten bekannten Standort. Innerhalb von Sekunden sieht sie die Gemeinschaft in deiner Gegend."
+      },
+      {
+        "t": "Sichten",
+        "x": "Du hast ein Tier gesehen, das verloren wirkt, oder eines gefunden? Veröffentliche eine Sichtung mit Foto und Ort. Schon eine einzige Meldung kann den Unterschied machen."
+      },
+      {
+        "t": "Wiederfinden",
+        "x": "Orma benachrichtigt dich, wenn eine Meldung in der Nähe passen könnte. Ihr schreibt euch im sicheren Chat, prüft gemeinsam die Details und organisiert die Rückkehr nach Hause."
+      }
+    ],
+    "stepsCta": "Die ganze Geschichte lesen",
+    "featEyebrow": "Funktionen",
+    "featTitle": "Alles, was nötig ist — und nichts darüber hinaus",
+    "featLead": "Grundlegende Werkzeuge, entworfen rund um Datenschutz und Schnelligkeit. Kein Schnickschnack: nur das, was einem Tier hilft, nach Hause zu kommen.",
+    "feats": [
+      {
+        "t": "Vermisst, gefunden oder ausgesetzt melden",
+        "x": "Erstelle mit wenigen Fingertipps eine Meldung für ein vermisstes, gefundenes oder ausgesetztes Tier, mit Fotos, Beschreibung und letztem Standort. Die Meldung bleibt 90 Tage aktiv und wird danach automatisch archiviert."
+      },
+      {
+        "t": "Karte mit Datenschutz",
+        "x": "Du siehst Vermisstenfälle und Sichtungen um dich herum auf einer Karte. Um die Meldenden zu schützen, wird der Standort auf der öffentlichen Karte um etwa 150 Meter unscharf gemacht: Du hilfst, ohne genaue Adressen preiszugeben."
+      },
+      {
+        "t": "Benachrichtigungen in deiner Nähe",
+        "x": "Aktiviere die Mitteilungen und werde benachrichtigt, wenn jemand in deiner Gegend etwas meldet. Die ersten Minuten zählen — und du kennst sie schon."
+      },
+      {
+        "t": "Sichtungen mit Fotos",
+        "x": "Du hast ein Tier gesehen, das verloren wirkt? Veröffentliche eine Sichtung mit Foto und Ort: Wer sucht, erkennt sein Tier sofort, auch anhand einer einzigen Meldung."
+      },
+      {
+        "t": "Mögliche Übereinstimmungen und Mikrochip",
+        "x": "Orma vergleicht vermisste und gefundene Tiere und schlägt dir mögliche Übereinstimmungen vor — „ist das vielleicht deins?“. Liegt die Mikrochipnummer vor, wird die Verbindung noch genauer."
+      },
+      {
+        "t": "Sicherer Chat",
+        "x": "Nimm direkt in der App Kontakt zu der Person auf, die eine Meldung veröffentlicht hat, ohne Telefonnummer oder E-Mail auszutauschen, solange du das nicht willst."
+      },
+      {
+        "t": "PDF-Aushang mit QR-Code",
+        "x": "Erstelle mit einem Fingertipp einen druckfertigen PDF-Aushang mit dem QR-Code der Meldung. Wer ihn findet, scannt den Code und öffnet die aktuelle Seite des Tieres."
+      },
+      {
+        "t": "Vermittlung aus geprüften Tierheimen",
+        "x": "Stöbere durch die Tiere, die ein Zuhause suchen, in den von Orma geprüften Tierheimen. Wir prüfen die Einrichtungen so gut wir können, um dir verlässlichere Anhaltspunkte zu geben, wenn du dich für eine Adoption entscheidest."
+      },
+      {
+        "t": "QR-Marke und digitales Halsband",
+        "x": "Bring eine Orma-Marke am Halsband deines Tieres an. Wer es findet, scannt sie und öffnet sofort seine Seite, um dich zu benachrichtigen — ohne dass du Telefonnummer oder Adresse preisgeben musst."
+      },
+      {
+        "t": "Digitaler Impfpass",
+        "x": "Hab Impfungen, Gewicht und Erinnerungen deines Tieres immer dabei: ein einfacher digitaler Pass, jeden Tag nützlich und nicht nur im Notfall."
+      },
+      {
+        "t": "Tierärzte und Tierheime auf der Karte",
+        "x": "Finde die Einrichtungen um dich herum, sieh, wer im Notfall rund um die Uhr geöffnet hat, und wohin du ein gefundenes Tier bringen kannst. Bei Tierarztpraxen kannst du auch einen Termin anfragen."
+      },
+      {
+        "t": "Suchmodus",
+        "x": "Aktiviere den Suchmodus, um bei Suchaktionen in der Gegend mitzuhelfen, und steige in der Rangliste der aktivsten Freiwilligen der Gemeinschaft auf."
+      }
+    ],
+    "featsCta": "Alle Funktionen ansehen",
+    "adoptEyebrow": "Vermittlung",
+    "adoptTitle": "Nicht nur wiederfinden: auch adoptieren",
+    "adoptText": "Orma dient nicht nur dazu, Verlorene wiederzufinden. Im Bereich Vermittlung findest du Hunde, Katzen und andere Tiere, die eine Familie suchen, in den von uns geprüften Tierheimen. Du schaust dir die Profile an, erfährst ihre Geschichte und nimmst Kontakt zur Einrichtung auf: eine weitere Möglichkeit, ein Leben zu verändern.",
+    "adoptCta": "Vermittlung entdecken",
+    "adoptPoints": [
+      "Geprüfte Tierheime",
+      "Profile mit Fotos und Geschichte",
+      "Direkter Kontakt zur Einrichtung"
+    ],
+    "reunitedEyebrow": "Glückliche Enden",
+    "reunitedTitle": "Jede Heimkehr ist eine Geschichte",
+    "reunitedText": "Wenn ein Tier seine Familie wiederfindet, wird daraus auf Orma eine Geschichte mit glücklichem Ende, die wir gemeinsam feiern. Sie sind der Grund, warum es das alles gibt.",
+    "vetsEyebrow": "Für Tierärzte und Einrichtungen",
+    "vetsTitle": "Du bist Tierarzt oder betreibst ein Tierheim? Lass dich finden.",
+    "vetsText": "Orma zeigt dich auf der Karte denen, die Hilfe suchen: Wer ein Tier findet, bringt es zu dir; wer einen Notfall hat, findet dich sofort. Dich einzutragen dauert fünf Minuten.",
+    "vetsPoints": [
+      "Sichtbarkeit auf der Karte",
+      "Terminanfragen aus der App",
+      "Abgabestelle oder Notdienst rund um die Uhr"
+    ],
+    "vetsCta": "Schreib uns",
+    "downloadTitle": "Dein Freund wartet auf dich",
+    "downloadSub": "Orma kommt zuerst für Android, dann für iOS. Werde Teil der Gemeinschaft und hilf jedem Tier, nach Hause zu finden.",
+    "btnAndroid": "Bei Google Play herunterladen",
+    "btnIos": "Bald im App Store"
+  },
   pt: {
     "title": "Orma — Aplicação para animais perdidos | Encontra o teu amigo",
     "metaDesc": "Aplicação para assinalar e encontrar cães e gatos perdidos: alertas às pessoas próximas, avistamentos com fotografias, correspondência por microchip. Privacidade em primeiro lugar.",
@@ -685,6 +876,15 @@ export const HOME = {
 // (riusano gli array steps/feats di HOME, con un cappello introduttivo proprio)
 // ----------------------------------------------------------------------------
 export const HOWITWORKS = {
+  de: {
+    "title": "Wie man ein vermisstes Tier wiederfindet — So funktioniert Orma",
+    "metaDesc": "Wie du einen vermissten Hund oder eine vermisste Katze wiederfindest: von der ersten Meldung bis zur Heimkehr, die drei Schritte von Orma in Ruhe erklärt.",
+    "eyebrow": "Ratgeber",
+    "h1": "So funktioniert es",
+    "lead": "Orma verspricht keine Wunder: Es ist ein Werkzeug. Aber ein Werkzeug, das rund um die Minuten gebaut ist, die zählen — wenn ein Tier sich entfernt und jedes zusätzliche Augenpaar das Ende verändern kann. So bewegt sich die Gemeinschaft, Schritt für Schritt.",
+    "closingTitle": "Keine Garantien, viel Gemeinschaft",
+    "closingText": "Orma hilft, garantiert aber nicht: Keine App kann ein Wiederfinden zusichern. Was wir tun können, ist die richtigen Menschen schnell und datenschutzgerecht zusammenzubringen. Den Rest macht eine Gemeinschaft, die eine Pfote reicht."
+  },
   pt: {
     "title": "Como encontrar um animal perdido — Como funciona a Orma",
     "metaDesc": "Como encontrar um cão ou um gato perdido: do primeiro alerta ao regresso a casa, os três passos da Orma explicados com calma.",
@@ -724,6 +924,15 @@ export const HOWITWORKS = {
 };
 
 export const FEATURES = {
+  de: {
+    "title": "App zum Melden vermisster und gefundener Tiere — Funktionen von Orma",
+    "metaDesc": "App für vermisste Tiere: Karte mit Datenschutz, Benachrichtigungen in deiner Nähe, sicherer Chat, Abgleich über den Mikrochip und geprüfte Vermittlung.",
+    "eyebrow": "Funktionen",
+    "h1": "Alles, was nötig ist — und nichts darüber hinaus",
+    "lead": "Wir haben alles weggelassen, was nicht gebraucht wurde. Übrig bleiben grundlegende Werkzeuge, jedes für einen bestimmten Moment der Suche gedacht — und jedes mit Datenschutz als Voreinstellung, nicht als nachträglichem Einfall.",
+    "privacyTitle": "Datenschutz ist keine Funktion: Er ist der Ausgangspunkt",
+    "privacyText": "Deine Daten werden nicht verkauft. Der Standort auf der öffentlichen Karte ist immer um etwa 150 Meter unscharf gemacht. Die Server mit den Daten stehen in der Europäischen Union, in Stockholm."
+  },
   pt: {
     "title": "Aplicação para animais perdidos e encontrados — Funções da Orma",
     "metaDesc": "Aplicação para animais perdidos: mapa com privacidade, alertas perto de ti, chat seguro, correspondência por microchip e adoções verificadas.",
@@ -766,6 +975,22 @@ export const FEATURES = {
 // /pet — stringhe UI della landing del QR (il rendering della scheda è client-side).
 // ----------------------------------------------------------------------------
 export const PET = {
+  de: {
+    "title": "Orma — Meldung",
+    "loading": "Meldung wird geladen…",
+    "noidTitle": "Meldung nicht angegeben",
+    "noidText": "Dieser Link öffnet sich, indem du den QR-Code eines Orma-Aushangs scannst. Der Verweis auf die Meldung fehlt.",
+    "notfoundTitle": "Meldung nicht gefunden",
+    "notfoundText": "Diese Meldung gibt es nicht mehr oder sie wurde geschlossen. Meldungen auf Orma laufen ab und werden nach 90 Tagen archiviert.",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorText": "Wir konnten die Meldung nicht laden. Prüfe die Verbindung und versuche es erneut.",
+    "retry": "Erneut versuchen",
+    "discover": "Orma entdecken",
+    "locationNote": "Zum Schutz der Privatsphäre wird die ungefähre Gegend angezeigt (um etwa 150 Meter unscharf gemacht), nicht die genaue Adresse.",
+    "appBoxTitle": "Hast du dieses Tier gesehen?",
+    "appBoxText": "Öffne die Meldung in Orma, um der Person, die sie veröffentlicht hat, im sicheren Chat zu schreiben und eine Sichtung zu melden. Die App kommt bald: Bis dahin kannst du entdecken, wie sie funktioniert.",
+    "locale": "de-DE"
+  },
   pt: {
     "title": "Orma — Alerta",
     "loading": "A carregar o alerta…",
