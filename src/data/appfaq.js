@@ -204,6 +204,40 @@ export const APP_FAQ = {
       "q": "Où mes données sont-elles conservées ?",
       "a": "Vos données sont conservées sur des serveurs situés dans l'Union européenne (à Stockholm, en Suède) et traitées dans le respect des règles européennes de protection des données. Elles ne sont vendues à personne."
     }
+  ],
+  "es": [
+    {
+      "q": "¿Cómo funciona la privacidad? ¿La posición en el mapa es exacta?",
+      "a": "Tu privacidad es lo primero. En el mapa público la posición del animal aparece difuminada unos 150 metros, para que nadie pueda llegar hasta tu casa. La posición exacta queda protegida y solo sirve para hacer coincidir los avisos de pérdida con los de hallazgo."
+    },
+    {
+      "q": "¿Cómo aviso de un animal perdido?",
+      "a": "Abres la app, eliges «Perdido» y en unos toques añades una foto, el lugar y algunos detalles. Las personas cercanas reciben una alerta al momento y el aviso aparece en el mapa. También puedes generar un cartel en PDF con código QR para imprimir o compartir."
+    },
+    {
+      "q": "¿Con qué animales funciona Orma?",
+      "a": "Orma nació para perros y gatos, pero puedes avisar de cualquier animal de compañía perdido, encontrado o visto. Si tu animal tiene microchip, la app ayuda a hacerlo coincidir automáticamente con los avisos de hallazgo."
+    },
+    {
+      "q": "¿Orma está disponible en iPhone y Android?",
+      "a": "Sí, Orma está disponible tanto en Android como en iPhone. Puedes descargarla desde la tienda de tu móvil y usar todas las funciones igual en ambos."
+    },
+    {
+      "q": "¿Qué son los avistamientos?",
+      "a": "Un avistamiento es cuando alguien ve un animal que podría ser el que se ha perdido y lo publica con foto y lugar, sin recogerlo necesariamente. Cada avistamiento ayuda a reconstruir por dónde se mueve el animal y estrecha la búsqueda."
+    },
+    {
+      "q": "¿Cómo contacto con quien ha encontrado a mi animal?",
+      "a": "Puedes escribirle directamente por el chat seguro dentro de la app, sin intercambiar el número de teléfono ni el correo. Así seguís en contacto de forma protegida mientras organizáis el reencuentro."
+    },
+    {
+      "q": "¿Cómo funcionan las adopciones?",
+      "a": "En la sección de adopciones encuentras animales de protectoras y refugios que buscan una familia. Puedes ver las fichas y ponerte en contacto con la entidad para saber más o proponerte como adoptante."
+    },
+    {
+      "q": "¿Dónde se guardan mis datos?",
+      "a": "Tus datos se guardan en servidores de la Unión Europea (en Estocolmo, Suecia) y se tratan conforme a las normas europeas de privacidad. No se venden a terceros."
+    }
   ]
 };
 
@@ -231,5 +265,9 @@ export const FAQ_META = {
   "fr": {
     "title": "Questions fréquentes sur Orma",
     "desc": "Comment fonctionnent la confidentialité et la position sur la carte ? Comment signaler un animal perdu ? Toutes les réponses sur l'application Orma."
+  },
+  "es": {
+    "title": "Preguntas frecuentes sobre Orma",
+    "desc": "¿Cómo funcionan la privacidad y la posición en el mapa? ¿Cómo se avisa de un animal perdido? Todas las respuestas sobre la app Orma."
   }
 };
