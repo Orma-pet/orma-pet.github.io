@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["A3XBKS34JC.pet.orma.app"],
+        "components": [
+          { "/": "/pet", "comment": "scheda segnalazione: orma.pet/pet?id=..." },
+          { "/": "/join", "comment": "invito a gestire un animale: /join?tk=..." },
+          { "/": "/i", "comment": "codice invito amici: /i?c=..." }
+        ]
+      }
+    ],
+    "apps": []
+  },
+  "webcredentials": { "apps": ["A3XBKS34JC.pet.orma.app"] }
+}

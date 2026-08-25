@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "pet.orma.app",
+      "sha256_cert_fingerprints": [
+        "66:59:DA:72:2A:57:AF:10:BA:43:6C:51:03:1E:4A:65:20:57:2D:83:25:33:4F:DF:82:F9:45:57:F8:12:65:9B",
+        "7F:20:B7:B6:10:FD:8D:58:37:C7:2B:A5:B2:71:86:7E:3C:A9:37:F0:D9:44:66:B6:A8:28:02:17:5E:71:7D:06"
+      ]
+    }
+  }
+]
