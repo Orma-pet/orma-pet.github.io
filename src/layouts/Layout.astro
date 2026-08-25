@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { UI, BRAND, LANGS_PRONTE, urlPagina } from '../data/site.js';
+import { UI, BRAND, LANGS_PRONTE, ROUTES, urlPagina } from '../data/site.js';
 import '../styles/global.css';
 // Font self-hostati (niente richiesta a Google → nessun cookie di terze parti).
 import '@fontsource/nunito/400.css';
@@ -21,6 +21,9 @@ const {
   description = '',
   active = 'home',
   noindex = false,
+  // Pagine che NON hanno una gemella nelle altre lingue: /t (medaglietta),
+  // /i (codice invito), /join. Vedi il commento sopra lo script piu' sotto.
+  autoLang = true,
 } = Astro.props;
 
 const ui = UI[lang];
@@ -36,9 +39,23 @@ const alternative = LANGS_PRONTE.map((l) => ({
   href: new URL(urlPagina(active, l.code), siteUrl).href,
 }));
 // Dove mandare chi arriva con il browser in una lingua diversa da questa.
-const perLingua = Object.fromEntries(
-  LANGS_PRONTE.map((l) => [l.code, urlPagina(active, l.code)]),
-);
+//
+// Vuoto = non si sposta nessuno. Due casi, e sono ENTRAMBI successi:
+//
+//  1. `autoLang={false}`: la pagina non esiste nelle altre lingue. Spostare
+//     uno di lingua vuol dire portarlo su un'ALTRA pagina, non sulla stessa
+//     tradotta.
+//  2. `active` non e' una chiave di ROUTES: urlPagina() in quel caso
+//     restituisce '/' senza dire niente, e la tabella diventa "tutti alla
+//     homepage". E' quello che faceva /t, che passa active="tag" mentre in
+//     ROUTES una chiave "tag" non c'e' mai stata. Qui la mancanza si nota
+//     invece di trasformarsi in un reindirizzamento sbagliato.
+const perLingua =
+  autoLang && ROUTES[active]
+    ? Object.fromEntries(
+        LANGS_PRONTE.map((l) => [l.code, urlPagina(active, l.code)]),
+      )
+    : {};
 const ogImage = new URL(BRAND.ogImage, siteUrl).href;
 const ogLocale = lang === 'it' ? 'it_IT' : 'en_US';
 
@@ -74,6 +91,14 @@ const jsonLd = {
     <script define:vars={{ perLingua, lang }}>
       // Reindirizzamento automatico alla lingua giusta, UNA volta sola.
       //
+      // NON VALE PER TUTTE LE PAGINE. Le tre pagine che ricevono un
+      // identificativo da fuori — /t (medaglietta), /i (codice invito),
+      // /join — esistono solo in italiano, e "mandare alla versione giusta"
+      // li' significava mandare alla HOMEPAGE di quella lingua. Chi trovava
+      // un cane in Germania e scansionava la medaglietta finiva sulla
+      // presentazione di Orma: non l'animale, non un errore, la vetrina.
+      // Quelle pagine passano autoLang={false} e perLingua arriva qui vuoto.
+      //
       // Su hosting statico non si puo' sapere il PAESE di chi arriva
       // (servirebbe un servizio di geolocalizzazione IP, cioe' una richiesta a
       // terzi su ogni visita). Usiamo la lingua del browser: e' il segnale piu'
@@ -89,6 +114,25 @@ const jsonLd = {
           if (sessionStorage.getItem('orma_lang_auto')) return;
           sessionStorage.setItem('orma_lang_auto', '1');
 
+          // La CODA DELL'INDIRIZZO va portata dietro, sempre.
+          //
+          // Non e' un dettaglio: e' tutto il contenuto della pagina. Su /pet
+          // l'`?id=` E' la segnalazione, su /t il `?tk=` E' la medaglietta,
+          // su /i il `?c=` E' il codice invito. Spostando qualcuno di lingua
+          // senza la coda si ottiene la pagina giusta e vuota: chi ha appena
+          // scansionato il QR di un cane smarrito vede la presentazione di
+          // Orma invece del cane, e non gli compare nessun errore che glielo
+          // spieghi. Succedeva a chiunque avesse il browser in una lingua
+          // diversa da quella della pagina — cioe', dopo il lancio globale,
+          // alla maggioranza.
+          var coda = location.search + location.hash;
+
+          // Il confronto va fatto senza la barra finale: GitHub Pages
+          // reindirizza /pet a /pet/, quindi location.pathname ha la barra e
+          // urlPagina() no. Confrontarli cosi' com'e' li darebbe sempre per
+          // diversi.
+          var nudo = function (u) { return u.replace(/\/+$/, '') || '/'; };
+
           // navigator.languages e' l'elenco ordinato per preferenza: scorrerlo
           // tutto evita di mandare in inglese chi ha il sistema in inglese ma
           // la propria lingua al secondo posto.
@@ -97,8 +141,8 @@ const jsonLd = {
             var codice = String(elenco[i]).toLowerCase().split('-')[0];
             if (!perLingua[codice]) continue;      // lingua non pubblicata
             if (codice === lang) return;           // siamo gia' quella giusta
-            if (perLingua[codice] === location.pathname) return;
-            location.replace(perLingua[codice]);
+            if (nudo(perLingua[codice]) === nudo(location.pathname)) return;
+            location.replace(perLingua[codice] + coda);
             return;
           }
         } catch (e) {}
