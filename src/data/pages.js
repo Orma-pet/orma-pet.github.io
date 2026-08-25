@@ -17,7 +17,15 @@ export const CHILD_SAFETY = {
     "pt": "Orma — Normas de segurança de menores",
     "de": "Orma — Standards zum Schutz von Minderjährigen",
     "fr": "Orma — Normes de sécurité des mineurs",
-    "es": "Orma — Normas de seguridad de los menores"
+    "es": "Orma — Normas de seguridad de los menores",
+    "cs": "Orma — Standardy ochrany dětí",
+    "da": "Orma — Standarder for børns sikkerhed",
+    "el": "Orma — Πρότυπα ασφάλειας ανηλίκων",
+    "hr": "Orma — Standardi sigurnosti djece",
+    "hu": "Orma — Gyermekvédelmi normák",
+    "nl": "Orma — Normen voor kinderveiligheid",
+    "pl": "Orma — standardy bezpieczeństwa dzieci",
+    "sv": "Orma — Standard för barns säkerhet"
   },
   "description": {
     "it": "Gli standard di Orma contro l'abuso e lo sfruttamento sessuale dei minori (CSAE): tolleranza zero, moderazione, segnalazione in-app e collaborazione con le autorità.",
@@ -26,7 +34,15 @@ export const CHILD_SAFETY = {
     "pt": "As normas da Orma contra o abuso e a exploração sexual de menores (CSAE): tolerância zero, moderação, denúncia na aplicação e cooperação com as autoridades.",
     "de": "Die Standards von Orma gegen sexuellen Missbrauch und sexuelle Ausbeutung von Kindern (CSAE): null Toleranz, Moderation, Meldung in der App und Zusammenarbeit mit den Behörden.",
     "fr": "Les normes d'Orma contre l'abus et l'exploitation sexuelle des mineurs (CSAE) : tolérance zéro, modération, signalement dans l'application et coopération avec les autorités.",
-    "es": "Las normas de Orma contra el abuso y la explotación sexual infantil (CSAE): tolerancia cero, moderación, denuncia dentro de la app y colaboración con las autoridades."
+    "es": "Las normas de Orma contra el abuso y la explotación sexual infantil (CSAE): tolerancia cero, moderación, denuncia dentro de la app y colaboración con las autoridades.",
+    "cs": "Standardy aplikace Orma proti sexuálnímu zneužívání a vykořisťování dětí (CSAE): nulová tolerance, moderování, hlášení přímo v aplikaci a spolupráce s úřady.",
+    "da": "Ormas standarder mod seksuelt misbrug og seksuel udnyttelse af børn (CSAE): nultolerance, moderation, anmeldelse i appen og samarbejde med myndighederne.",
+    "el": "Τα πρότυπα του Orma κατά της σεξουαλικής κακοποίησης και εκμετάλλευσης ανηλίκων (CSAE): μηδενική ανοχή, έλεγχος περιεχομένου, αναφορά μέσα από την εφαρμογή και συνεργασία με τις αρχές.",
+    "hr": "Ormini standardi protiv seksualnog zlostavljanja i iskorištavanja djece (CSAE): nulta tolerancija, moderiranje, prijava u aplikaciji i suradnja s nadležnim tijelima.",
+    "hu": "Az Orma normái a gyermekek szexuális bántalmazása és kizsákmányolása (CSAE) ellen: zéró tolerancia, moderálás, appon belüli bejelentés és együttműködés a hatóságokkal.",
+    "nl": "De normen van Orma tegen seksueel misbruik en seksuele uitbuiting van kinderen (CSAE): nultolerantie, moderatie, melden in de app en samenwerking met de autoriteiten.",
+    "pl": "Standardy aplikacji Orma przeciw wykorzystywaniu seksualnemu dzieci (CSAE): zero tolerancji, moderacja, zgłaszanie w aplikacji i współpraca z organami ścigania.",
+    "sv": "Ormas standarder mot sexuella övergrepp mot och sexuell exploatering av barn (CSAE): nolltolerans, moderering, anmälan i appen och samarbete med myndigheterna."
   },
   "eyebrow": {
     "it": "Sicurezza dei minori",
@@ -35,7 +51,15 @@ export const CHILD_SAFETY = {
     "pt": "Segurança de menores",
     "de": "Sicherheit von Minderjährigen",
     "fr": "Sécurité des mineurs",
-    "es": "Seguridad de los menores"
+    "es": "Seguridad de los menores",
+    "cs": "Bezpečnost dětí",
+    "da": "Børns sikkerhed",
+    "el": "Ασφάλεια ανηλίκων",
+    "hr": "Sigurnost djece",
+    "hu": "Gyermekvédelem",
+    "nl": "Kinderveiligheid",
+    "pl": "Bezpieczeństwo dzieci",
+    "sv": "Barns säkerhet"
   },
   "h1": {
     "it": "Standard di sicurezza dei minori",
@@ -44,7 +68,15 @@ export const CHILD_SAFETY = {
     "pt": "Normas de segurança de menores",
     "de": "Standards zum Schutz von Minderjährigen",
     "fr": "Normes de sécurité des mineurs",
-    "es": "Normas de seguridad de los menores"
+    "es": "Normas de seguridad de los menores",
+    "cs": "Standardy ochrany dětí",
+    "da": "Standarder for børns sikkerhed",
+    "el": "Πρότυπα ασφάλειας ανηλίκων",
+    "hr": "Standardi sigurnosti djece",
+    "hu": "Gyermekvédelmi normák",
+    "nl": "Normen voor kinderveiligheid",
+    "pl": "Standardy bezpieczeństwa dzieci",
+    "sv": "Standard för barns säkerhet"
   },
   "lead": {
     "it": "Orma tutela i minori con tolleranza zero verso qualsiasi forma di abuso o sfruttamento sessuale di minori (CSAE). Questa pagina descrive i nostri standard e come segnalare.",
@@ -53,7 +85,15 @@ export const CHILD_SAFETY = {
     "pt": "A Orma protege os menores com tolerância zero perante qualquer forma de abuso ou exploração sexual de crianças (CSAE). Esta página descreve as nossas normas e como denunciar.",
     "de": "Orma schützt Minderjährige mit null Toleranz gegenüber jeder Form von sexuellem Missbrauch und sexueller Ausbeutung von Kindern (CSAE). Diese Seite beschreibt unsere Standards und wie du etwas melden kannst.",
     "fr": "Orma protège les mineurs avec une tolérance zéro envers toute forme d'abus ou d'exploitation sexuelle d'enfants (CSAE). Cette page décrit nos normes et la manière de signaler.",
-    "es": "Orma protege a los menores con tolerancia cero ante cualquier forma de abuso o explotación sexual infantil (CSAE). Esta página describe nuestras normas y cómo denunciar."
+    "es": "Orma protege a los menores con tolerancia cero ante cualquier forma de abuso o explotación sexual infantil (CSAE). Esta página describe nuestras normas y cómo denunciar.",
+    "cs": "Orma chrání nezletilé s nulovou tolerancí vůči jakékoli formě sexuálního zneužívání nebo vykořisťování dětí (CSAE). Tahle stránka popisuje naše standardy a to, jak podat hlášení.",
+    "da": "Orma beskytter mindreårige med nultolerance over for enhver form for seksuelt misbrug eller seksuel udnyttelse af børn (CSAE). Denne side beskriver vores standarder, og hvordan du anmelder.",
+    "el": "Το Orma προστατεύει τους ανηλίκους με μηδενική ανοχή σε κάθε μορφή σεξουαλικής κακοποίησης ή εκμετάλλευσης ανηλίκων (CSAE). Αυτή η σελίδα περιγράφει τα πρότυπά μας και τον τρόπο υποβολής αναφοράς.",
+    "hr": "Orma štiti djecu uz nultu toleranciju prema svakom obliku seksualnog zlostavljanja ili iskorištavanja djece (CSAE). Ova stranica opisuje naše standarde i način prijave.",
+    "hu": "Az Orma zéró toleranciával védi a kiskorúakat a gyermekek szexuális bántalmazásának és kizsákmányolásának (CSAE) minden formájával szemben. Ez az oldal leírja a normáinkat és a bejelentés módját.",
+    "nl": "Orma beschermt minderjarigen met nultolerantie tegen elke vorm van seksueel misbruik of seksuele uitbuiting van kinderen (CSAE). Op deze pagina lees je onze normen en hoe je iets kunt melden.",
+    "pl": "Orma chroni osoby nieletnie i stosuje zero tolerancji wobec każdej formy wykorzystywania seksualnego dzieci (CSAE). Ta strona opisuje nasze standardy i sposób zgłaszania.",
+    "sv": "Orma skyddar barn med nolltolerans mot varje form av sexuella övergrepp mot eller sexuell exploatering av barn (CSAE). Den här sidan beskriver våra standarder och hur du anmäler."
   },
   "html": {
     "it": "<h2>A chi è rivolta Orma</h2>\n<p>Orma è un'app di community per animali smarriti <strong>riservata ai maggiori di 16 anni</strong>. Non è destinata ai bambini e non raccoglie intenzionalmente dati di minori di 16 anni.</p>\n\n<h2>Tolleranza zero verso i contenuti CSAE</h2>\n<p>È severamente vietato caricare, richiedere, condividere o promuovere materiale di abuso o sfruttamento sessuale di minori (CSAE) o qualsiasi contenuto che metta a rischio un minore. Questi contenuti e comportamenti non sono tollerati in nessuna forma.</p>\n\n<h2>I nostri impegni</h2>\n<ul>\n  <li><strong>Moderazione</strong>: i contenuti segnalati vengono esaminati e quelli illeciti rimossi.</li>\n  <li><strong>Segnalazione in-app</strong>: ogni contenuto e ogni chat hanno un tasto <strong>Segnala</strong>, con una categoria dedicata all'abuso sui minori.</li>\n  <li><strong>Blocco utente</strong>: puoi bloccare un altro utente dalla chat in qualsiasi momento.</li>\n  <li><strong>Sospensione e chiusura</strong>: gli account coinvolti in contenuti CSAE vengono sospesi o chiusi.</li>\n  <li><strong>Collaborazione con le autorità</strong>: collaboriamo con le forze dell'ordine e conserviamo le informazioni necessarie nei casi che lo richiedono.</li>\n</ul>\n\n<h2>Come segnalare un contenuto che riguarda un minore</h2>\n<ul>\n  <li><strong>Nell'app</strong>: usa il tasto <strong>Segnala</strong> sul contenuto o nella chat e scegli la voce relativa all'abuso o allo sfruttamento di minori.</li>\n  <li><strong>Via email</strong>: scrivi al nostro punto di contatto <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Alle autorità</strong>: in caso di pericolo immediato chiama il <strong>112</strong>; in Italia puoi segnalare alla <strong>Polizia Postale</strong> (commissariatodips.it).</li>\n</ul>\n\n<h2>Punto di contatto</h2>\n<p>Per qualsiasi segnalazione o domanda sulla sicurezza dei minori puoi scrivere a <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
@@ -62,7 +102,15 @@ export const CHILD_SAFETY = {
     "pt": "<h2>A quem se destina a Orma</h2>\n<p>A Orma é uma aplicação de comunidade para animais perdidos, <strong>destinada a pessoas com 16 anos ou mais</strong>. Não se dirige a crianças e não recolhe conscientemente dados de pessoas com menos de 16 anos.</p>\n\n<h2>Tolerância zero perante conteúdos CSAE</h2>\n<p>É estritamente proibido carregar, solicitar, partilhar ou promover material de abuso ou exploração sexual de crianças (CSAE), ou qualquer conteúdo que ponha um menor em risco. Estes conteúdos e comportamentos não são tolerados sob nenhuma forma.</p>\n\n<h2>Os nossos compromissos</h2>\n<ul>\n  <li><strong>Moderação</strong>: o conteúdo denunciado é analisado e o conteúdo ilegal é removido.</li>\n  <li><strong>Denúncia na aplicação</strong>: cada conteúdo e cada conversa têm um botão <strong>Denunciar</strong>, com uma categoria dedicada ao abuso de menores.</li>\n  <li><strong>Bloqueio de utilizadores</strong>: podes bloquear outro utilizador a partir da conversa a qualquer momento.</li>\n  <li><strong>Suspensão e encerramento</strong>: as contas envolvidas em conteúdos CSAE são suspensas ou encerradas.</li>\n  <li><strong>Cooperação com as autoridades</strong>: colaboramos com as autoridades policiais e conservamos as informações necessárias nos casos que o exijam.</li>\n</ul>\n\n<h2>Como denunciar um conteúdo que envolva um menor</h2>\n<ul>\n  <li><strong>Na aplicação</strong>: usa o botão <strong>Denunciar</strong> no conteúdo ou na conversa e escolhe a opção relativa ao abuso ou à exploração de menores.</li>\n  <li><strong>Por e-mail</strong>: escreve ao nosso ponto de contacto <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Às autoridades</strong>: em caso de perigo imediato liga para o número de emergência local (em Itália, <strong>112</strong>); em Itália podes também denunciar à <strong>Polizia Postale</strong> (commissariatodips.it).</li>\n</ul>\n\n<h2>Ponto de contacto</h2>\n<p>Para qualquer denúncia ou dúvida sobre a segurança de menores, escreve para <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
     "de": "<h2>An wen sich Orma richtet</h2>\n<p>Orma ist eine Gemeinschafts-App für vermisste Tiere, <strong>bestimmt für Personen ab 16 Jahren</strong>. Sie richtet sich nicht an Kinder und erhebt wissentlich keine Daten von Personen unter 16 Jahren.</p>\n\n<h2>Null Toleranz gegenüber CSAE-Inhalten</h2>\n<p>Das Hochladen, Anfordern, Teilen oder Bewerben von Material über sexuellen Missbrauch oder sexuelle Ausbeutung von Kindern (CSAE) oder von Inhalten, die eine minderjährige Person gefährden, ist strengstens untersagt. Solche Inhalte und Verhaltensweisen werden in keiner Form geduldet.</p>\n\n<h2>Unsere Zusagen</h2>\n<ul>\n  <li><strong>Moderation</strong>: gemeldete Inhalte werden geprüft, rechtswidrige Inhalte werden entfernt.</li>\n  <li><strong>Meldung in der App</strong>: jeder Inhalt und jeder Chat hat eine Schaltfläche <strong>Melden</strong>, mit einer eigenen Kategorie für Kindesmissbrauch.</li>\n  <li><strong>Nutzer blockieren</strong>: du kannst eine andere Person jederzeit aus dem Chat heraus blockieren.</li>\n  <li><strong>Sperrung und Schließung</strong>: Konten, die in CSAE-Inhalte verwickelt sind, werden gesperrt oder geschlossen.</li>\n  <li><strong>Zusammenarbeit mit den Behörden</strong>: wir arbeiten mit den Strafverfolgungsbehörden zusammen und bewahren die notwendigen Informationen in den Fällen auf, die es erfordern.</li>\n</ul>\n\n<h2>Wie du einen Inhalt meldest, der eine minderjährige Person betrifft</h2>\n<ul>\n  <li><strong>In der App</strong>: nutze die Schaltfläche <strong>Melden</strong> auf dem Inhalt oder im Chat und wähle den Punkt zu Missbrauch oder Ausbeutung von Minderjährigen.</li>\n  <li><strong>Per E-Mail</strong>: schreibe an unsere Kontaktstelle <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>An die Behörden</strong>: bei unmittelbarer Gefahr wähle die örtliche Notrufnummer (in Italien <strong>112</strong>); in Italien kannst du dich auch an die <strong>Polizia Postale</strong> wenden (commissariatodips.it).</li>\n</ul>\n\n<h2>Kontaktstelle</h2>\n<p>Für jede Meldung oder Frage zum Schutz von Minderjährigen schreibe an <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
     "fr": "<h2>À qui s'adresse Orma</h2>\n<p>Orma est une application communautaire pour animaux perdus, <strong>destinée aux personnes de 16 ans et plus</strong>. Elle ne s'adresse pas aux enfants et ne collecte pas sciemment de données de personnes de moins de 16 ans.</p>\n\n<h2>Tolérance zéro envers les contenus CSAE</h2>\n<p>Il est strictement interdit de téléverser, demander, partager ou promouvoir du matériel d'abus ou d'exploitation sexuelle d'enfants (CSAE), ou tout contenu mettant un mineur en danger. Ces contenus et comportements ne sont tolérés sous aucune forme.</p>\n\n<h2>Nos engagements</h2>\n<ul>\n  <li><strong>Modération</strong> : les contenus signalés sont examinés et les contenus illicites sont retirés.</li>\n  <li><strong>Signalement dans l'application</strong> : chaque contenu et chaque conversation disposent d'un bouton <strong>Signaler</strong>, avec une catégorie dédiée à l'abus sur mineur.</li>\n  <li><strong>Blocage d'utilisateur</strong> : vous pouvez bloquer une autre personne depuis la conversation à tout moment.</li>\n  <li><strong>Suspension et fermeture</strong> : les comptes impliqués dans des contenus CSAE sont suspendus ou fermés.</li>\n  <li><strong>Coopération avec les autorités</strong> : nous coopérons avec les forces de l'ordre et conservons les informations nécessaires dans les cas qui l'exigent.</li>\n</ul>\n\n<h2>Comment signaler un contenu impliquant un mineur</h2>\n<ul>\n  <li><strong>Dans l'application</strong> : utilisez le bouton <strong>Signaler</strong> sur le contenu ou dans la conversation et choisissez l'option relative à l'abus ou à l'exploitation de mineurs.</li>\n  <li><strong>Par e-mail</strong> : écrivez à notre point de contact <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Aux autorités</strong> : en cas de danger immédiat, appelez le numéro d'urgence local (en Italie, le <strong>112</strong>) ; en Italie vous pouvez aussi signaler à la <strong>Polizia Postale</strong> (commissariatodips.it).</li>\n</ul>\n\n<h2>Point de contact</h2>\n<p>Pour tout signalement ou toute question sur la sécurité des mineurs, écrivez à <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
-    "es": "<h2>A quién se dirige Orma</h2>\n<p>Orma es una app comunitaria para animales perdidos <strong>reservada a mayores de 16 años</strong>. No está pensada para niños y no recoge intencionadamente datos de menores de 16 años.</p>\n\n<h2>Tolerancia cero con los contenidos CSAE</h2>\n<p>Está terminantemente prohibido subir, solicitar, compartir o promover material de abuso o explotación sexual infantil (CSAE) o cualquier contenido que ponga en peligro a un menor. Estos contenidos y comportamientos no se toleran de ninguna forma.</p>\n\n<h2>Nuestros compromisos</h2>\n<ul>\n  <li><strong>Moderación</strong>: los contenidos denunciados se revisan y los ilícitos se retiran.</li>\n  <li><strong>Denuncia dentro de la app</strong>: cada contenido y cada conversación tienen un botón <strong>Denunciar</strong>, con una categoría dedicada al abuso de menores.</li>\n  <li><strong>Bloqueo de usuario</strong>: puedes bloquear a otro usuario desde el chat en cualquier momento.</li>\n  <li><strong>Suspensión y cierre</strong>: las cuentas implicadas en contenidos CSAE se suspenden o se cierran.</li>\n  <li><strong>Colaboración con las autoridades</strong>: colaboramos con las fuerzas de seguridad y conservamos la información necesaria en los casos que lo requieren.</li>\n</ul>\n\n<h2>Cómo denunciar un contenido que afecta a un menor</h2>\n<ul>\n  <li><strong>En la app</strong>: usa el botón <strong>Denunciar</strong> en el contenido o en el chat y elige la opción relativa al abuso o la explotación de menores.</li>\n  <li><strong>Por correo</strong>: escribe a nuestro punto de contacto <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>A las autoridades</strong>: en caso de peligro inmediato llama al número de emergencias local (en España y en Italia, el <strong>112</strong>); en Italia también puedes denunciar a la <strong>Polizia Postale</strong> (commissariatodips.it).</li>\n</ul>\n\n<h2>Punto de contacto</h2>\n<p>Para cualquier denuncia o duda sobre la seguridad de los menores puedes escribir a <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>"
+    "es": "<h2>A quién se dirige Orma</h2>\n<p>Orma es una app comunitaria para animales perdidos <strong>reservada a mayores de 16 años</strong>. No está pensada para niños y no recoge intencionadamente datos de menores de 16 años.</p>\n\n<h2>Tolerancia cero con los contenidos CSAE</h2>\n<p>Está terminantemente prohibido subir, solicitar, compartir o promover material de abuso o explotación sexual infantil (CSAE) o cualquier contenido que ponga en peligro a un menor. Estos contenidos y comportamientos no se toleran de ninguna forma.</p>\n\n<h2>Nuestros compromisos</h2>\n<ul>\n  <li><strong>Moderación</strong>: los contenidos denunciados se revisan y los ilícitos se retiran.</li>\n  <li><strong>Denuncia dentro de la app</strong>: cada contenido y cada conversación tienen un botón <strong>Denunciar</strong>, con una categoría dedicada al abuso de menores.</li>\n  <li><strong>Bloqueo de usuario</strong>: puedes bloquear a otro usuario desde el chat en cualquier momento.</li>\n  <li><strong>Suspensión y cierre</strong>: las cuentas implicadas en contenidos CSAE se suspenden o se cierran.</li>\n  <li><strong>Colaboración con las autoridades</strong>: colaboramos con las fuerzas de seguridad y conservamos la información necesaria en los casos que lo requieren.</li>\n</ul>\n\n<h2>Cómo denunciar un contenido que afecta a un menor</h2>\n<ul>\n  <li><strong>En la app</strong>: usa el botón <strong>Denunciar</strong> en el contenido o en el chat y elige la opción relativa al abuso o la explotación de menores.</li>\n  <li><strong>Por correo</strong>: escribe a nuestro punto de contacto <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>A las autoridades</strong>: en caso de peligro inmediato llama al número de emergencias local (en España y en Italia, el <strong>112</strong>); en Italia también puedes denunciar a la <strong>Polizia Postale</strong> (commissariatodips.it).</li>\n</ul>\n\n<h2>Punto de contacto</h2>\n<p>Para cualquier denuncia o duda sobre la seguridad de los menores puedes escribir a <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "cs": "<h2>Komu je Orma určená</h2>\n<p>Orma je komunitní aplikace pro ztracená zvířata <strong>určená lidem od 16 let</strong>. Není určená dětem a vědomě neshromažďuje údaje osob mladších 16 let.</p>\n\n<h2>Nulová tolerance vůči obsahu CSAE</h2>\n<p>Je přísně zakázáno nahrávat, vyžadovat, sdílet nebo propagovat materiál zobrazující sexuální zneužívání nebo vykořisťování dětí (CSAE) i jakýkoli obsah, který ohrožuje nezletilé. Takový obsah a takové chování netolerujeme v žádné podobě.</p>\n\n<h2>Naše závazky</h2>\n<ul>\n  <li><strong>Moderování</strong>: nahlášený obsah prověřujeme a nezákonný odstraňujeme.</li>\n  <li><strong>Hlášení přímo v aplikaci</strong>: u každého obsahu i v každém chatu je tlačítko <strong>Nahlásit</strong>, s vlastní kategorií pro zneužívání dětí.</li>\n  <li><strong>Zablokování uživatele</strong>: druhého uživatele můžeš z chatu kdykoli zablokovat.</li>\n  <li><strong>Pozastavení a zrušení účtu</strong>: účty spojené s obsahem CSAE pozastavujeme nebo rušíme.</li>\n  <li><strong>Spolupráce s úřady</strong>: spolupracujeme s policií a v případech, které to vyžadují, uchováváme potřebné informace.</li>\n</ul>\n\n<h2>Jak nahlásit obsah týkající se nezletilého</h2>\n<ul>\n  <li><strong>V aplikaci</strong>: použij tlačítko <strong>Nahlásit</strong> u obsahu nebo v chatu a vyber položku o zneužívání či vykořisťování nezletilých.</li>\n  <li><strong>E-mailem</strong>: napiš na náš kontaktní bod <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Úřadům</strong>: při bezprostředním ohrožení volej <strong>112</strong>; v Česku můžeš nezákonný obsah nahlásit také na horké lince <strong>STOPonline.cz</strong>, kterou provozuje sdružení CZ.NIC ve spolupráci s Policií ČR.</li>\n</ul>\n\n<h2>Kontaktní bod</h2>\n<p>S jakýmkoli hlášením nebo dotazem k bezpečnosti dětí se obrať na <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "da": "<h2>Hvem Orma er til</h2>\n<p>Orma er en fællesskabsapp til savnede kæledyr <strong>forbeholdt personer på 16 år og derover</strong>. Den er ikke rettet mod børn og indsamler ikke bevidst oplysninger om børn under 16 år.</p>\n\n<h2>Nultolerance over for CSAE-indhold</h2>\n<p>Det er strengt forbudt at uploade, efterspørge, dele eller fremme materiale med seksuelt misbrug eller seksuel udnyttelse af børn (CSAE) eller ethvert indhold, der bringer et barn i fare. Den slags indhold og adfærd tolereres ikke i nogen form.</p>\n\n<h2>Vores forpligtelser</h2>\n<ul>\n  <li><strong>Moderation</strong>: anmeldt indhold bliver gennemgået, og ulovligt indhold bliver fjernet.</li>\n  <li><strong>Anmeldelse i appen</strong>: alt indhold og alle chats har en <strong>Anmeld</strong>-knap med en særskilt kategori for overgreb mod børn.</li>\n  <li><strong>Blokering af brugere</strong>: du kan til enhver tid blokere en anden bruger fra chatten.</li>\n  <li><strong>Suspendering og lukning</strong>: konti, der er indblandet i CSAE-indhold, bliver suspenderet eller lukket.</li>\n  <li><strong>Samarbejde med myndighederne</strong>: vi samarbejder med politiet og gemmer de nødvendige oplysninger i de sager, der kræver det.</li>\n</ul>\n\n<h2>Sådan anmelder du indhold, der involverer et barn</h2>\n<ul>\n  <li><strong>I appen</strong>: brug knappen <strong>Anmeld</strong> på indholdet eller i chatten, og vælg punktet om misbrug eller udnyttelse af børn.</li>\n  <li><strong>På e-mail</strong>: skriv til vores kontaktpunkt <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Til myndighederne</strong>: er der akut fare, så ring <strong>112</strong>; i Danmark kan du anmelde til politiet på politi.dk eller til Red Barnets tjeneste <strong>AnmeldDet</strong> (redbarnet.dk/anmelddet).</li>\n</ul>\n\n<h2>Kontaktpunkt</h2>\n<p>Har du en anmeldelse eller et spørgsmål om børns sikkerhed, kan du skrive til <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "el": "<h2>Σε ποιους απευθύνεται το Orma</h2>\n<p>Το Orma είναι μια εφαρμογή κοινότητας για χαμένα ζώα, <strong>για άτομα 16 ετών και άνω</strong>. Δεν απευθύνεται σε παιδιά και δεν συλλέγει εν γνώσει της δεδομένα ατόμων κάτω των 16 ετών.</p>\n\n<h2>Μηδενική ανοχή σε περιεχόμενο CSAE</h2>\n<p>Απαγορεύεται αυστηρά η μεταφόρτωση, η αναζήτηση, η κοινοποίηση ή η προώθηση υλικού σεξουαλικής κακοποίησης ή εκμετάλλευσης ανηλίκων (CSAE), καθώς και κάθε περιεχομένου που θέτει σε κίνδυνο έναν ανήλικο. Τέτοιο περιεχόμενο και τέτοιες συμπεριφορές δεν γίνονται ανεκτά σε καμία μορφή.</p>\n\n<h2>Οι δεσμεύσεις μας</h2>\n<ul>\n  <li><strong>Έλεγχος περιεχομένου</strong>: το περιεχόμενο για το οποίο γίνεται αναφορά εξετάζεται και το παράνομο αφαιρείται.</li>\n  <li><strong>Αναφορά μέσα από την εφαρμογή</strong>: κάθε περιεχόμενο και κάθε συνομιλία έχουν ένα κουμπί <strong>Αναφορά</strong>, με ξεχωριστή κατηγορία για την κακοποίηση ανηλίκων.</li>\n  <li><strong>Αποκλεισμός χρήστη</strong>: μπορείς να αποκλείσεις έναν άλλο χρήστη από τη συνομιλία όποτε θέλεις.</li>\n  <li><strong>Αναστολή και κλείσιμο</strong>: οι λογαριασμοί που εμπλέκονται σε περιεχόμενο CSAE αναστέλλονται ή κλείνουν.</li>\n  <li><strong>Συνεργασία με τις αρχές</strong>: συνεργαζόμαστε με τις διωκτικές αρχές και διατηρούμε τις απαραίτητες πληροφορίες στις περιπτώσεις που το απαιτούν.</li>\n</ul>\n\n<h2>Πώς να αναφέρεις περιεχόμενο που αφορά ανήλικο</h2>\n<ul>\n  <li><strong>Μέσα στην εφαρμογή</strong>: χρησιμοποίησε το κουμπί <strong>Αναφορά</strong> στο περιεχόμενο ή μέσα στη συνομιλία και διάλεξε την επιλογή που αφορά την κακοποίηση ή την εκμετάλλευση ανηλίκων.</li>\n  <li><strong>Με email</strong>: γράψε στο σημείο επικοινωνίας μας <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Στις αρχές</strong>: σε περίπτωση άμεσου κινδύνου κάλεσε το <strong>112</strong>· στην Ελλάδα μπορείς επίσης να κάνεις καταγγελία στη Διεύθυνση Δίωξης Ηλεκτρονικού Εγκλήματος της Ελληνικής Αστυνομίας, στη <strong>γραμμή 11188</strong> (cyberalert.gr).</li>\n</ul>\n\n<h2>Σημείο επικοινωνίας</h2>\n<p>Για κάθε αναφορά ή ερώτηση σχετικά με την ασφάλεια των ανηλίκων μπορείς να γράψεις στο <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "hr": "<h2>Kome je Orma namijenjena</h2>\n<p>Orma je aplikacija zajednice za izgubljene ljubimce <strong>namijenjena osobama od 16 godina naviše</strong>. Nije namijenjena djeci i ne prikuplja svjesno podatke osoba mlađih od 16 godina.</p>\n\n<h2>Nulta tolerancija prema CSAE sadržaju</h2>\n<p>Strogo je zabranjeno objavljivati, tražiti, dijeliti ili promicati materijal seksualnog zlostavljanja ili iskorištavanja djece (CSAE) te bilo kakav sadržaj koji dovodi dijete u opasnost. Takvi sadržaji i ponašanja ne toleriraju se ni u kojem obliku.</p>\n\n<h2>Naše obveze</h2>\n<ul>\n  <li><strong>Moderiranje</strong>: prijavljeni sadržaj pregledava se, a nezakoniti se uklanja.</li>\n  <li><strong>Prijava u aplikaciji</strong>: svaki sadržaj i svaki razgovor imaju tipku <strong>Prijavi</strong>, s posebnom kategorijom za zlostavljanje djece.</li>\n  <li><strong>Blokiranje korisnika</strong>: drugog korisnika možeš blokirati iz razgovora u bilo kojem trenutku.</li>\n  <li><strong>Privremeno i trajno zatvaranje</strong>: računi povezani s CSAE sadržajem privremeno se blokiraju ili trajno zatvaraju.</li>\n  <li><strong>Suradnja s nadležnim tijelima</strong>: surađujemo s policijom i čuvamo potrebne podatke u slučajevima koji to zahtijevaju.</li>\n</ul>\n\n<h2>Kako prijaviti sadržaj koji se odnosi na dijete</h2>\n<ul>\n  <li><strong>U aplikaciji</strong>: upotrijebi tipku <strong>Prijavi</strong> na sadržaju ili u razgovoru i odaberi stavku koja se odnosi na zlostavljanje ili iskorištavanje djece.</li>\n  <li><strong>E-poštom</strong>: piši našoj kontaktnoj točki <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Nadležnim tijelima</strong>: u slučaju neposredne opasnosti nazovi <strong>112</strong>; u Hrvatskoj nezakonit sadržaj možeš prijaviti i <strong>Centru za sigurniji internet</strong> (csi.hr).</li>\n</ul>\n\n<h2>Kontaktna točka</h2>\n<p>Za svaku prijavu ili pitanje o sigurnosti djece piši nam na <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "hu": "<h2>Kinek szól az Orma</h2>\n<p>Az Orma közösségi app elveszett állatokhoz, <strong>16 éven felülieknek</strong>. Nem gyerekeknek készült, és tudatosan nem gyűjt adatot 16 éven aluliaktól.</p>\n\n<h2>Zéró tolerancia a CSAE-tartalmakkal szemben</h2>\n<p>Szigorúan tilos gyermekek szexuális bántalmazását vagy kizsákmányolását ábrázoló anyagot (CSAE), illetve bármilyen, kiskorút veszélyeztető tartalmat feltölteni, kérni, megosztani vagy népszerűsíteni. Ezeket a tartalmakat és viselkedéseket semmilyen formában nem tűrjük.</p>\n\n<h2>Amit vállalunk</h2>\n<ul>\n  <li><strong>Moderálás</strong>: a bejelentett tartalmakat átnézzük, a jogellenest eltávolítjuk.</li>\n  <li><strong>Bejelentés az appban</strong>: minden tartalomnál és minden csevegésben van <strong>Bejelentés</strong> gomb, külön kategóriával a gyermekbántalmazásra.</li>\n  <li><strong>Felhasználó letiltása</strong>: bármikor letilthatsz egy másik felhasználót a csevegésből.</li>\n  <li><strong>Felfüggesztés és megszüntetés</strong>: a CSAE-tartalmakban érintett fiókokat felfüggesztjük vagy megszüntetjük.</li>\n  <li><strong>Együttműködés a hatóságokkal</strong>: együttműködünk a rendőrséggel, és megőrizzük a szükséges információkat azokban az esetekben, amelyek ezt megkövetelik.</li>\n</ul>\n\n<h2>Hogyan jelents be kiskorút érintő tartalmat</h2>\n<ul>\n  <li><strong>Az appban</strong>: használd a <strong>Bejelentés</strong> gombot a tartalomnál vagy a csevegésben, és válaszd a gyermekbántalmazásra vagy kizsákmányolásra vonatkozó lehetőséget.</li>\n  <li><strong>E-mailben</strong>: írj a kapcsolattartónknak: <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>A hatóságoknak</strong>: közvetlen veszély esetén hívd a <strong>112</strong>-t; Magyarországon a rendőrségen tehetsz feljelentést, online tartalmat pedig bejelenthetsz az <strong>NMHH Internet Hotline</strong> szolgálatánál (internethotline.hu).</li>\n</ul>\n\n<h2>Kapcsolattartás</h2>\n<p>Bármilyen bejelentéssel vagy gyermekvédelmi kérdéssel írhatsz ide: <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "nl": "<h2>Voor wie Orma bedoeld is</h2>\n<p>Orma is een community-app voor vermiste dieren, <strong>alleen voor mensen van 16 jaar en ouder</strong>. De app richt zich niet op kinderen en verzamelt niet bewust gegevens van personen onder de 16 jaar.</p>\n\n<h2>Nultolerantie tegen CSAE-materiaal</h2>\n<p>Het uploaden, opvragen, delen of promoten van materiaal van seksueel misbruik of seksuele uitbuiting van kinderen (CSAE), of van welke inhoud dan ook die een minderjarige in gevaar brengt, is streng verboden. Zulke inhoud en zulk gedrag worden in geen enkele vorm getolereerd.</p>\n\n<h2>Wat wij toezeggen</h2>\n<ul>\n  <li><strong>Moderatie</strong>: gemelde inhoud wordt beoordeeld en onrechtmatige inhoud wordt verwijderd.</li>\n  <li><strong>Melden in de app</strong>: elke inhoud en elke chat heeft een knop <strong>Melden</strong>, met een aparte categorie voor kindermisbruik.</li>\n  <li><strong>Gebruiker blokkeren</strong>: je kunt een andere gebruiker op elk moment vanuit de chat blokkeren.</li>\n  <li><strong>Schorsing en sluiting</strong>: accounts die betrokken zijn bij CSAE-materiaal worden geschorst of gesloten.</li>\n  <li><strong>Samenwerking met de autoriteiten</strong>: we werken samen met politie en justitie en bewaren de noodzakelijke gegevens in de gevallen waarin dat nodig is.</li>\n</ul>\n\n<h2>Hoe je inhoud meldt waarbij een minderjarige betrokken is</h2>\n<ul>\n  <li><strong>In de app</strong>: gebruik de knop <strong>Melden</strong> op de inhoud of in de chat en kies de optie over misbruik of uitbuiting van minderjarigen.</li>\n  <li><strong>Per e-mail</strong>: schrijf naar ons contactpunt <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Bij de autoriteiten</strong>: bij direct gevaar bel je <strong>112</strong>; online beeldmateriaal meld je in Nederland bij <strong>Offlimits</strong> (offlimits.nl) en in België bij Child Focus (116 000).</li>\n</ul>\n\n<h2>Contactpunt</h2>\n<p>Voor elke melding of vraag over kinderveiligheid kun je schrijven naar <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "pl": "<h2>Dla kogo jest Orma</h2>\n<p>Orma to społecznościowa aplikacja dla zaginionych zwierząt <strong>przeznaczona dla osób od 16 roku życia</strong>. Nie jest kierowana do dzieci i nie zbiera świadomie danych osób poniżej 16 lat.</p>\n\n<h2>Zero tolerancji dla treści CSAE</h2>\n<p>Surowo zabronione jest wgrywanie, wyszukiwanie, udostępnianie i promowanie materiałów przedstawiających wykorzystywanie seksualne dzieci (CSAE) oraz wszelkich treści narażających dziecko na niebezpieczeństwo. Takie treści i zachowania nie są tolerowane w żadnej formie.</p>\n\n<h2>Nasze zobowiązania</h2>\n<ul>\n  <li><strong>Moderacja</strong>: zgłoszone treści są sprawdzane, a niezgodne z prawem usuwane.</li>\n  <li><strong>Zgłaszanie w aplikacji</strong>: przy każdej treści i w każdym czacie jest przycisk <strong>Zgłoś</strong>, z osobną kategorią dotyczącą krzywdzenia dzieci.</li>\n  <li><strong>Blokowanie użytkownika</strong>: w każdej chwili możesz zablokować innego użytkownika z poziomu czatu.</li>\n  <li><strong>Zawieszenie i zamknięcie konta</strong>: konta powiązane z treściami CSAE są zawieszane lub zamykane.</li>\n  <li><strong>Współpraca z organami ścigania</strong>: współpracujemy z policją i przechowujemy niezbędne informacje w sprawach, które tego wymagają.</li>\n</ul>\n\n<h2>Jak zgłosić treść dotyczącą dziecka</h2>\n<ul>\n  <li><strong>W aplikacji</strong>: użyj przycisku <strong>Zgłoś</strong> przy treści lub w czacie i wybierz pozycję dotyczącą krzywdzenia lub wykorzystywania dzieci.</li>\n  <li><strong>Mailem</strong>: napisz do naszego punktu kontaktowego <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Do właściwych służb</strong>: w razie bezpośredniego zagrożenia zadzwoń pod numer <strong>112</strong>; w Polsce możesz też zgłosić treść zespołowi <strong>Dyżurnet.pl</strong> (dyzurnet.pl).</li>\n</ul>\n\n<h2>Punkt kontaktowy</h2>\n<p>W sprawie każdego zgłoszenia lub pytania o bezpieczeństwo dzieci możesz napisać na <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>",
+    "sv": "<h2>Vem Orma vänder sig till</h2>\n<p>Orma är en gemenskapsapp för bortsprungna djur <strong>som vänder sig till personer över 16 år</strong>. Den är inte avsedd för barn och samlar inte medvetet in uppgifter om personer under 16 år.</p>\n\n<h2>Nolltolerans mot CSAE-innehåll</h2>\n<p>Det är strängt förbjudet att ladda upp, efterfråga, dela eller sprida material som visar sexuella övergrepp mot eller sexuell exploatering av barn (CSAE), liksom allt innehåll som utsätter ett barn för fara. Sådant innehåll och sådana beteenden tolereras inte i någon form.</p>\n\n<h2>Våra åtaganden</h2>\n<ul>\n  <li><strong>Moderering</strong>: anmält innehåll granskas och olagligt innehåll tas bort.</li>\n  <li><strong>Anmälan i appen</strong>: varje innehåll och varje chatt har en <strong>Anmäl</strong>-knapp, med en egen kategori för övergrepp mot barn.</li>\n  <li><strong>Blockera användare</strong>: du kan när som helst blockera en annan användare från chatten.</li>\n  <li><strong>Avstängning och avslut</strong>: konton som är inblandade i CSAE-innehåll stängs av eller avslutas.</li>\n  <li><strong>Samarbete med myndigheterna</strong>: vi samarbetar med brottsbekämpande myndigheter och bevarar de uppgifter som behövs i de fall där det krävs.</li>\n</ul>\n\n<h2>Så anmäler du innehåll som rör ett barn</h2>\n<ul>\n  <li><strong>I appen</strong>: använd knappen <strong>Anmäl</strong> på innehållet eller i chatten och välj alternativet om övergrepp mot eller exploatering av barn.</li>\n  <li><strong>Via e-post</strong>: skriv till vår kontaktpunkt <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</li>\n  <li><strong>Till myndigheterna</strong>: vid omedelbar fara, ring <strong>112</strong>; i Sverige kan du anmäla till <strong>Polisen</strong> (polisen.se) eller tipsa anonymt via ECPAT Hotline (ecpat.se).</li>\n</ul>\n\n<h2>Kontaktpunkt</h2>\n<p>Vid varje anmälan eller fråga om barns säkerhet kan du skriva till <strong><a href=\"mailto:info@orma.pet\">info@orma.pet</a></strong>.</p>"
   }
 };
 
@@ -74,7 +122,15 @@ export const FOR_ORGS = {
     "pt": "Orma — Para veterinários, canis e abrigos",
     "de": "Orma — Für Tierärzte, Tierheime und Vereine",
     "fr": "Orma — Pour vétérinaires, refuges et associations",
-    "es": "Orma — Para veterinarios, protectoras y refugios"
+    "es": "Orma — Para veterinarios, protectoras y refugios",
+    "cs": "Orma — Pro veterináře, útulky a spolky",
+    "da": "Orma — For dyrlæger, internater og dyreværn",
+    "el": "Orma — Για κτηνιάτρους, κυνοκομεία και καταφύγια",
+    "hr": "Orma — Za veterinare, skloništa i udruge",
+    "hu": "Orma — Állatorvosoknak, menhelyeknek és mentőszervezeteknek",
+    "nl": "Orma — Voor dierenartsen, asielen en opvangcentra",
+    "pl": "Orma — dla weterynarzy, schronisk i fundacji",
+    "sv": "Orma — För veterinärer och djurhem"
   },
   "description": {
     "it": "Sei un veterinario, un canile o un rifugio? Aiuta i tuoi clienti a ritrovare gli animali smarriti: metti Orma sul tuo sito e fatti trovare dalla community.",
@@ -83,7 +139,15 @@ export const FOR_ORGS = {
     "pt": "És veterinário, canil ou abrigo? Ajuda os teus clientes a encontrar os animais perdidos: coloca a Orma no teu site e faz-te encontrar pela comunidade.",
     "de": "Du bist Tierarzt, Tierheim oder Verein? Hilf deinen Kundinnen und Kunden, ihre vermissten Tiere wiederzufinden: bring Orma auf deine Website und lass dich von der Gemeinschaft finden.",
     "fr": "Vous êtes vétérinaire, refuge ou association ? Aidez vos clients à retrouver leurs animaux perdus : mettez Orma sur votre site et faites-vous trouver par la communauté.",
-    "es": "¿Eres veterinario, una protectora o un refugio? Ayuda a tus clientes a encontrar a sus animales perdidos: pon Orma en tu web y deja que la comunidad te encuentre."
+    "es": "¿Eres veterinario, una protectora o un refugio? Ayuda a tus clientes a encontrar a sus animales perdidos: pon Orma en tu web y deja que la comunidad te encuentre.",
+    "cs": "Jsi veterinář, útulek nebo záchranný spolek? Pomoz svým klientům najít ztracená zvířata: přidej si Ormu na web a nech se najít komunitou ve svém okolí.",
+    "da": "Er du dyrlæge, internat eller dyreværnsforening? Hjælp dine kunder med at finde deres savnede dyr: sæt Orma på dit website, og bliv fundet af fællesskabet.",
+    "el": "Είσαι κτηνίατρος, κυνοκομείο ή καταφύγιο; Βοήθησε τους πελάτες σου να ξαναβρούν τα χαμένα τους ζώα: βάλε το Orma στον ιστότοπό σου και κάνε την κοινότητα να σε βρίσκει.",
+    "hr": "Jesi li veterinar, sklonište ili udruga? Pomozi svojim klijentima da pronađu izgubljene ljubimce: stavi Ormu na svoju stranicu i neka te zajednica pronađe.",
+    "hu": "Állatorvos vagy, menhelyet vagy mentőszervezetet vezetsz? Segíts az ügyfeleidnek megtalálni az elveszett állatokat: tedd ki az Ormát a honlapodra, és találjon rád a közösség.",
+    "nl": "Ben je dierenarts, asiel of opvangcentrum? Help je klanten hun vermiste dieren terug te vinden: zet Orma op je website en laat je vinden door de community.",
+    "pl": "Jesteś weterynarzem, prowadzisz schronisko albo fundację? Pomóż swoim klientom odnaleźć zaginione zwierzęta: dodaj baner aplikacji Orma na swojej stronie i daj się znaleźć społeczności.",
+    "sv": "Är du veterinär eller driver du ett djurhem? Hjälp dina kunder att hitta sina bortsprungna djur: lägg Orma på din webbplats och bli hittad av gemenskapen."
   },
   "eyebrow": {
     "it": "Per veterinari, canili e rifugi",
@@ -92,7 +156,15 @@ export const FOR_ORGS = {
     "pt": "Para veterinários, canis e abrigos",
     "de": "Für Tierärzte, Tierheime und Vereine",
     "fr": "Pour vétérinaires, refuges et associations",
-    "es": "Para veterinarios, protectoras y refugios"
+    "es": "Para veterinarios, protectoras y refugios",
+    "cs": "Pro veterináře, útulky a spolky",
+    "da": "For dyrlæger, internater og dyreværn",
+    "el": "Για κτηνιάτρους, κυνοκομεία και καταφύγια",
+    "hr": "Za veterinare, skloništa i udruge",
+    "hu": "Állatorvosoknak, menhelyeknek és mentőszervezeteknek",
+    "nl": "Voor dierenartsen, asielen en opvangcentra",
+    "pl": "Dla weterynarzy, schronisk i fundacji",
+    "sv": "För veterinärer och djurhem"
   },
   "h1": {
     "it": "Aiuta chi ha perso un animale, dal tuo sito",
@@ -101,7 +173,15 @@ export const FOR_ORGS = {
     "pt": "Ajuda quem perdeu um animal, a partir do teu site",
     "de": "Hilf denen, die ein Tier verloren haben — direkt von deiner Website aus",
     "fr": "Aidez celles et ceux qui ont perdu un animal, depuis votre site",
-    "es": "Ayuda a quien ha perdido un animal, desde tu web"
+    "es": "Ayuda a quien ha perdido un animal, desde tu web",
+    "cs": "Pomoz těm, kdo ztratili zvíře, přímo ze svého webu",
+    "da": "Hjælp dem, der har mistet et dyr — fra dit eget website",
+    "el": "Βοήθησε όποιον έχασε ένα ζώο, μέσα από τον ιστότοπό σου",
+    "hr": "Pomozi onima koji su izgubili životinju, sa svoje stranice",
+    "hu": "Segíts a honlapodról annak, aki elvesztette az állatát",
+    "nl": "Help wie een dier kwijt is, vanaf je eigen site",
+    "pl": "Pomóż tym, którzy zgubili zwierzaka — prosto ze swojej strony",
+    "sv": "Hjälp den som tappat bort ett djur, direkt från din webbplats"
   },
   "lead": {
     "it": "Orma è l'app di community per animali smarriti. Se sei un veterinario, un canile o un rifugio, puoi dare ai tuoi clienti uno strumento in più per ritrovare i loro animali — e farti trovare da chi cerca aiuto vicino a te.",
@@ -110,7 +190,15 @@ export const FOR_ORGS = {
     "pt": "A Orma é a aplicação de comunidade para animais perdidos. Se és veterinário, canil ou abrigo, podes dar aos teus clientes mais uma ferramenta para encontrarem os seus animais — e fazer-te encontrar por quem procura ajuda perto de ti.",
     "de": "Orma ist die Gemeinschafts-App für vermisste Tiere. Wenn du Tierarzt bist oder ein Tierheim oder einen Verein betreibst, kannst du deinen Kundinnen und Kunden ein zusätzliches Werkzeug geben, um ihre Tiere wiederzufinden — und dich von denen finden lassen, die in deiner Nähe Hilfe suchen.",
     "fr": "Orma est l'application communautaire pour animaux perdus. Si vous êtes vétérinaire, refuge ou association, vous pouvez offrir à vos clients un outil de plus pour retrouver leurs animaux — et vous faire trouver par celles et ceux qui cherchent de l'aide près de chez vous.",
-    "es": "Orma es la app comunitaria para animales perdidos. Si eres veterinario, una protectora o un refugio, puedes dar a tus clientes una herramienta más para encontrar a sus animales, y que te encuentre quien busca ayuda cerca de ti."
+    "es": "Orma es la app comunitaria para animales perdidos. Si eres veterinario, una protectora o un refugio, puedes dar a tus clientes una herramienta más para encontrar a sus animales, y que te encuentre quien busca ayuda cerca de ti.",
+    "cs": "Orma je komunitní aplikace pro ztracená zvířata. Jestli jsi veterinář, útulek nebo záchranný spolek, můžeš svým klientům dát nástroj navíc, jak najít jejich zvířata — a nechat se najít těmi, kdo ve tvém okolí hledají pomoc.",
+    "da": "Orma er fællesskabsappen til savnede kæledyr. Er du dyrlæge, internat eller dyreværnsforening, kan du give dine kunder et værktøj mere til at finde deres dyr — og selv blive fundet af dem, der søger hjælp i nærheden af dig.",
+    "el": "Το Orma είναι η εφαρμογή κοινότητας για χαμένα ζώα. Αν είσαι κτηνίατρος, κυνοκομείο ή καταφύγιο, μπορείς να δώσεις στους πελάτες σου ένα ακόμη εργαλείο για να βρουν τα ζώα τους — και να σε βρίσκουν όσοι ψάχνουν βοήθεια κοντά σου.",
+    "hr": "Orma je aplikacija zajednice za izgubljene ljubimce. Ako si veterinar, sklonište ili udruga, možeš svojim klijentima dati još jedan alat za pronalaženje njihovih životinja — i učiniti da te pronađu oni koji u tvojoj blizini traže pomoć.",
+    "hu": "Az Orma az elveszett állatok közösségi appja. Ha állatorvos vagy, menhelyet vagy mentőszervezetet vezetsz, adhatsz az ügyfeleidnek még egy eszközt az állataik megtalálásához — és rád találnak azok is, akik a közeledben keresnek segítséget.",
+    "nl": "Orma is de community-app voor vermiste dieren. Ben je dierenarts of run je een asiel of opvangcentrum, dan geef je je klanten een extra hulpmiddel om hun dieren terug te vinden — en laat je je vinden door wie in jouw buurt hulp zoekt.",
+    "pl": "Orma to społecznościowa aplikacja dla zaginionych zwierząt. Jeśli jesteś weterynarzem, prowadzisz schronisko albo fundację, możesz dać swoim klientom jeszcze jedno narzędzie do odnalezienia zwierzaka — i dać się znaleźć tym, którzy szukają pomocy w twojej okolicy.",
+    "sv": "Orma är gemenskapsappen för bortsprungna djur. Är du veterinär eller driver du ett djurhem kan du ge dina kunder ett verktyg till för att hitta sina djur — och bli hittad av dem som söker hjälp nära dig."
   },
   "badge": {
     "it": "/badge-orma-it.png",
@@ -119,7 +207,15 @@ export const FOR_ORGS = {
     "pt": "/badge-orma-en.png",
     "de": "/badge-orma-en.png",
     "fr": "/badge-orma-en.png",
-    "es": "/badge-orma-en.png"
+    "es": "/badge-orma-en.png",
+    "cs": "/badge-orma-en.png",
+    "da": "/badge-orma-en.png",
+    "el": "/badge-orma-en.png",
+    "hr": "/badge-orma-en.png",
+    "hu": "/badge-orma-en.png",
+    "nl": "/badge-orma-en.png",
+    "pl": "/badge-orma-en.png",
+    "sv": "/badge-orma-en.png"
   },
   "badgeAlt": {
     "it": "Cerca animali smarriti su Orma",
@@ -128,7 +224,15 @@ export const FOR_ORGS = {
     "pt": "Procura animais perdidos na Orma",
     "de": "Vermisste Tiere auf Orma suchen",
     "fr": "Rechercher des animaux perdus sur Orma",
-    "es": "Busca animales perdidos en Orma"
+    "es": "Busca animales perdidos en Orma",
+    "cs": "Hledej ztracená zvířata v aplikaci Orma",
+    "da": "Søg efter savnede dyr på Orma",
+    "el": "Ψάξε χαμένα ζώα στο Orma",
+    "hr": "Traži izgubljene životinje na Ormi",
+    "hu": "Keress elveszett állatokat az Ormán",
+    "nl": "Zoek vermiste dieren op Orma",
+    "pl": "Szukaj zaginionych zwierząt w aplikacji Orma",
+    "sv": "Sök bortsprungna djur på Orma"
   },
   "previewAlt": {
     "it": "Anteprima del badge Orma",
@@ -137,7 +241,15 @@ export const FOR_ORGS = {
     "pt": "Pré-visualização do emblema Orma",
     "de": "Vorschau des Orma-Abzeichens",
     "fr": "Aperçu du badge Orma",
-    "es": "Vista previa del distintivo de Orma"
+    "es": "Vista previa del distintivo de Orma",
+    "cs": "Náhled odznaku Orma",
+    "da": "Forhåndsvisning af Orma-badget",
+    "el": "Προεπισκόπηση του badge Orma",
+    "hr": "Pregled Ormine oznake",
+    "hu": "Az Orma-jelvény előnézete",
+    "nl": "Voorbeeld van de Orma-badge",
+    "pl": "Podgląd banera Orma",
+    "sv": "Förhandsvisning av Orma-märket"
   },
   "embedLabel": {
     "it": "Codice da incollare sul tuo sito",
@@ -146,7 +258,15 @@ export const FOR_ORGS = {
     "pt": "Código para colar no teu site",
     "de": "Code zum Einfügen auf deiner Website",
     "fr": "Code à coller sur votre site",
-    "es": "Código para pegar en tu web"
+    "es": "Código para pegar en tu web",
+    "cs": "Kód ke vložení na tvůj web",
+    "da": "Kode, du kan sætte ind på dit website",
+    "el": "Κώδικας για επικόλληση στον ιστότοπό σου",
+    "hr": "Kod za lijepljenje na tvoju stranicu",
+    "hu": "Kód, amit beillesztesz a honlapodra",
+    "nl": "Code om op je website te plakken",
+    "pl": "Kod do wklejenia na twojej stronie",
+    "sv": "Kod att klistra in på din webbplats"
   },
   "copyLabel": {
     "it": "Copia",
@@ -155,7 +275,15 @@ export const FOR_ORGS = {
     "pt": "Copiar",
     "de": "Kopieren",
     "fr": "Copier",
-    "es": "Copiar"
+    "es": "Copiar",
+    "cs": "Kopírovat",
+    "da": "Kopiér",
+    "el": "Αντιγραφή",
+    "hr": "Kopiraj",
+    "hu": "Másolás",
+    "nl": "Kopiëren",
+    "pl": "Kopiuj",
+    "sv": "Kopiera"
   },
   "copiedLabel": {
     "it": "Copiato ✓",
@@ -164,7 +292,15 @@ export const FOR_ORGS = {
     "pt": "Copiado ✓",
     "de": "Kopiert ✓",
     "fr": "Copié ✓",
-    "es": "Copiado ✓"
+    "es": "Copiado ✓",
+    "cs": "Zkopírováno ✓",
+    "da": "Kopieret ✓",
+    "el": "Αντιγράφηκε ✓",
+    "hr": "Kopirano ✓",
+    "hu": "Másolva ✓",
+    "nl": "Gekopieerd ✓",
+    "pl": "Skopiowano ✓",
+    "sv": "Kopierat ✓"
   },
   "ctaLabel": {
     "it": "Scrivici",
@@ -173,7 +309,15 @@ export const FOR_ORGS = {
     "pt": "Escreve-nos",
     "de": "Schreib uns",
     "fr": "Écrivez-nous",
-    "es": "Escríbenos"
+    "es": "Escríbenos",
+    "cs": "Napiš nám",
+    "da": "Skriv til os",
+    "el": "Γράψε μας",
+    "hr": "Piši nam",
+    "hu": "Írj nekünk",
+    "nl": "Schrijf ons",
+    "pl": "Napisz do nas",
+    "sv": "Skriv till oss"
   },
   "ctaSubject": {
     "it": "Struttura%20su%20Orma",
@@ -182,7 +326,15 @@ export const FOR_ORGS = {
     "pt": "Instituicao%20na%20Orma",
     "de": "Einrichtung%20auf%20Orma",
     "fr": "Structure%20sur%20Orma",
-    "es": "Entidad%20en%20Orma"
+    "es": "Entidad%20en%20Orma",
+    "cs": "Za%C5%99%C3%ADzen%C3%AD%20v%20Orm%C4%9B",
+    "da": "Samarbejde%20med%20Orma",
+    "el": "%CE%94%CE%BF%CE%BC%CE%AE%20%CF%83%CF%84%CE%BF%20Orma",
+    "hr": "Ustanova%20na%20Ormi",
+    "hu": "Intezmeny%20az%20Orman",
+    "nl": "Organisatie%20op%20Orma",
+    "pl": "Placowka%20w%20aplikacji%20Orma",
+    "sv": "Verksamhet%20i%20Orma"
   },
   "htmlWhy": {
     "it": "<h2>Perché mettere Orma sul tuo sito</h2>\n<ul>\n  <li><strong>Un aiuto concreto per i tuoi clienti</strong>: chi perde o trova un animale ha subito un posto dove segnalarlo e ricevere avvistamenti dalle persone vicine.</li>\n  <li><strong>Meno telefonate a vuoto</strong>: chi trova un animale può fartene leggere il microchip e collegarlo a una segnalazione.</li>\n  <li><strong>Visibilità</strong>: canili, rifugi e veterinari possono comparire sulla mappa di Orma e ricevere richieste dalla community.</li>\n</ul>\n\n<h2>Metti il badge di Orma sul tuo sito</h2>\n<p>Copia questo codice e incollalo dove vuoi (footer, pagina contatti, sezione \"link utili\"): mostrerà un pulsante che porta i tuoi visitatori su Orma.</p>",
@@ -191,7 +343,15 @@ export const FOR_ORGS = {
     "pt": "<h2>Porquê colocar a Orma no teu site</h2>\n<ul>\n  <li><strong>Uma ajuda concreta para os teus clientes</strong>: quem perde ou encontra um animal tem logo um sítio onde o assinalar e receber avistamentos das pessoas próximas.</li>\n  <li><strong>Menos telefonemas sem resultado</strong>: quem encontra um animal pode levá-lo até ti para ler o microchip e ligá-lo a um alerta.</li>\n  <li><strong>Visibilidade</strong>: canis, abrigos e veterinários podem aparecer no mapa da Orma e receber pedidos da comunidade.</li>\n</ul>\n\n<h2>Coloca o emblema da Orma no teu site</h2>\n<p>Copia este código e cola-o onde quiseres (rodapé, página de contactos, secção «ligações úteis»): mostrará um botão que leva os teus visitantes até à Orma.</p>",
     "de": "<h2>Warum Orma auf deine Website gehört</h2>\n<ul>\n  <li><strong>Eine konkrete Hilfe für deine Kundinnen und Kunden</strong>: Wer ein Tier verliert oder findet, hat sofort einen Ort, um es zu melden und Sichtungen von Menschen aus der Nähe zu erhalten.</li>\n  <li><strong>Weniger vergebliche Anrufe</strong>: Wer ein Tier findet, kann dir den Mikrochip auslesen lassen und es mit einer Meldung verknüpfen.</li>\n  <li><strong>Sichtbarkeit</strong>: Tierheime, Vereine und Tierärzte können auf der Orma-Karte erscheinen und Anfragen aus der Gemeinschaft erhalten.</li>\n</ul>\n\n<h2>Bring das Orma-Abzeichen auf deine Website</h2>\n<p>Kopiere diesen Code und füge ihn ein, wo du möchtest (Fußzeile, Kontaktseite, Bereich „nützliche Links“): Er zeigt eine Schaltfläche, die deine Besucherinnen und Besucher zu Orma führt.</p>",
     "fr": "<h2>Pourquoi mettre Orma sur votre site</h2>\n<ul>\n  <li><strong>Une aide concrète pour vos clients</strong> : qui perd ou trouve un animal dispose aussitôt d'un endroit pour le signaler et recevoir des observations des personnes proches.</li>\n  <li><strong>Moins d'appels sans suite</strong> : qui trouve un animal peut vous en faire lire la puce et le relier à un signalement.</li>\n  <li><strong>Visibilité</strong> : refuges, associations et vétérinaires peuvent apparaître sur la carte d'Orma et recevoir des demandes de la communauté.</li>\n</ul>\n\n<h2>Mettez le badge Orma sur votre site</h2>\n<p>Copiez ce code et collez-le où vous voulez (pied de page, page contact, rubrique « liens utiles ») : il affichera un bouton qui conduit vos visiteurs vers Orma.</p>",
-    "es": "<h2>Por qué poner Orma en tu web</h2>\n<ul>\n  <li><strong>Una ayuda concreta para tus clientes</strong>: quien pierde o encuentra un animal tiene enseguida un sitio donde publicarlo y recibir avistamientos de las personas cercanas.</li>\n  <li><strong>Menos llamadas en balde</strong>: quien encuentra un animal puede pedirte que le leas el microchip y enlazarlo con un aviso.</li>\n  <li><strong>Visibilidad</strong>: protectoras, refugios y veterinarios pueden aparecer en el mapa de Orma y recibir peticiones de la comunidad.</li>\n</ul>\n\n<h2>Pon el distintivo de Orma en tu web</h2>\n<p>Copia este código y pégalo donde quieras (pie de página, página de contacto, sección de «enlaces útiles»): mostrará un botón que lleva a tus visitantes a Orma.</p>"
+    "es": "<h2>Por qué poner Orma en tu web</h2>\n<ul>\n  <li><strong>Una ayuda concreta para tus clientes</strong>: quien pierde o encuentra un animal tiene enseguida un sitio donde publicarlo y recibir avistamientos de las personas cercanas.</li>\n  <li><strong>Menos llamadas en balde</strong>: quien encuentra un animal puede pedirte que le leas el microchip y enlazarlo con un aviso.</li>\n  <li><strong>Visibilidad</strong>: protectoras, refugios y veterinarios pueden aparecer en el mapa de Orma y recibir peticiones de la comunidad.</li>\n</ul>\n\n<h2>Pon el distintivo de Orma en tu web</h2>\n<p>Copia este código y pégalo donde quieras (pie de página, página de contacto, sección de «enlaces útiles»): mostrará un botón que lleva a tus visitantes a Orma.</p>",
+    "cs": "<h2>Proč mít Ormu na svém webu</h2>\n<ul>\n  <li><strong>Konkrétní pomoc pro tvé klienty</strong>: kdo ztratí nebo najde zvíře, má hned místo, kde to nahlásit a dostávat hlášení o spatření od lidí v okolí.</li>\n  <li><strong>Méně telefonátů naprázdno</strong>: kdo najde zvíře, si u tebe může nechat načíst mikročip a spojit ho s hlášením.</li>\n  <li><strong>Viditelnost</strong>: útulky, spolky a veterináři se můžou objevit na mapě aplikace Orma a dostávat žádosti od komunity.</li>\n</ul>\n\n<h2>Přidej si odznak Orma na svůj web</h2>\n<p>Zkopíruj tenhle kód a vlož ho, kam chceš (do patičky, na stránku s kontakty, do sekce „užitečné odkazy“): zobrazí tlačítko, které tvoje návštěvníky pošle na Ormu.</p>",
+    "da": "<h2>Derfor bør du sætte Orma på dit website</h2>\n<ul>\n  <li><strong>En konkret hjælp til dine kunder</strong>: den, der mister eller finder et dyr, har med det samme et sted at efterlyse det og få observationer fra folk i nærheden.</li>\n  <li><strong>Færre forgæves opkald</strong>: den, der finder et dyr, kan få dig til at aflæse mikrochippen og koble den til en efterlysning.</li>\n  <li><strong>Synlighed</strong>: internater, dyreværnsforeninger og dyrlæger kan komme med på Ormas kort og få henvendelser fra fællesskabet.</li>\n</ul>\n\n<h2>Sæt Orma-badget på dit website</h2>\n<p>Kopiér denne kode, og sæt den ind, hvor du vil (sidefod, kontaktside, afsnittet med »nyttige links«): den viser en knap, der sender dine besøgende videre til Orma.</p>",
+    "el": "<h2>Γιατί να βάλεις το Orma στον ιστότοπό σου</h2>\n<ul>\n  <li><strong>Ουσιαστική βοήθεια για τους πελάτες σου</strong>: όποιος χάσει ή βρει ένα ζώο έχει αμέσως ένα μέρος για να το δηλώσει και να λάβει εντοπισμούς από τους ανθρώπους που είναι κοντά.</li>\n  <li><strong>Λιγότερα τηλεφωνήματα στο κενό</strong>: όποιος βρίσκει ένα ζώο μπορεί να σου ζητήσει να διαβάσεις το μικροτσίπ και να το συνδέσεις με μια αγγελία.</li>\n  <li><strong>Ορατότητα</strong>: κυνοκομεία, καταφύγια και κτηνίατροι μπορούν να εμφανίζονται στον χάρτη του Orma και να δέχονται αιτήματα από την κοινότητα.</li>\n</ul>\n\n<h2>Βάλε το badge του Orma στον ιστότοπό σου</h2>\n<p>Αντίγραψε αυτόν τον κώδικα και επικόλλησέ τον όπου θέλεις (υποσέλιδο, σελίδα επικοινωνίας, ενότητα «χρήσιμοι σύνδεσμοι»): θα εμφανίσει ένα κουμπί που οδηγεί τους επισκέπτες σου στο Orma.</p>",
+    "hr": "<h2>Zašto staviti Ormu na svoju stranicu</h2>\n<ul>\n  <li><strong>Konkretna pomoć tvojim klijentima</strong>: tko izgubi ili pronađe životinju, odmah ima mjesto gdje je može prijaviti i primati dojave od ljudi u blizini.</li>\n  <li><strong>Manje uzaludnih poziva</strong>: tko pronađe životinju, može kod tebe dati očitati mikročip i povezati ga s prijavom.</li>\n  <li><strong>Vidljivost</strong>: skloništa, azili i veterinari mogu se pojaviti na Orminoj karti i primati upite od zajednice.</li>\n</ul>\n\n<h2>Stavi Orminu oznaku na svoju stranicu</h2>\n<p>Kopiraj ovaj kod i zalijepi ga gdje želiš (podnožje, stranica s kontaktima, dio „korisne poveznice”): prikazat će gumb koji tvoje posjetitelje vodi na Ormu.</p>",
+    "hu": "<h2>Miért tedd ki az Ormát a honlapodra</h2>\n<ul>\n  <li><strong>Valódi segítség az ügyfeleidnek</strong>: aki elveszít vagy talál egy állatot, azonnal van hol bejelentenie, és észleléseket kaphat a környékbeliektől.</li>\n  <li><strong>Kevesebb hiábavaló telefon</strong>: aki talál egy állatot, leolvastathatja veled a mikrochipjét, és összekapcsolhatja egy bejelentéssel.</li>\n  <li><strong>Láthatóság</strong>: a menhelyek, mentőszervezetek és állatorvosok megjelenhetnek az Orma térképén, és megkereséseket kaphatnak a közösségtől.</li>\n</ul>\n\n<h2>Tedd ki az Orma-jelvényt a honlapodra</h2>\n<p>Másold ki ezt a kódot, és illeszd be, ahová szeretnéd (lábléc, kapcsolati oldal, „hasznos linkek” rész): egy gombot mutat, amely az Ormára viszi a látogatóidat.</p>",
+    "nl": "<h2>Waarom Orma op je website hoort</h2>\n<ul>\n  <li><strong>Concrete hulp voor je klanten</strong>: wie een dier kwijtraakt of vindt, heeft meteen een plek om het te melden en waarnemingen te ontvangen van mensen in de buurt.</li>\n  <li><strong>Minder telefoontjes voor niets</strong>: wie een dier vindt, kan bij jou de chip laten uitlezen en het dier aan een melding koppelen.</li>\n  <li><strong>Zichtbaarheid</strong>: asielen, opvangcentra en dierenartsen kunnen op de kaart van Orma verschijnen en aanvragen uit de community ontvangen.</li>\n</ul>\n\n<h2>Zet de Orma-badge op je website</h2>\n<p>Kopieer deze code en plak hem waar je wilt (footer, contactpagina, rubriek \"handige links\"): hij toont een knop die je bezoekers naar Orma brengt.</p>",
+    "pl": "<h2>Dlaczego warto dodać baner aplikacji Orma na swojej stronie</h2>\n<ul>\n  <li><strong>Realna pomoc dla twoich klientów</strong>: kto zgubi albo znajdzie zwierzę, ma od razu miejsce, w którym może to zgłosić i dostać informacje od osób z okolicy.</li>\n  <li><strong>Mniej telefonów donikąd</strong>: kto znajdzie zwierzę, może dać ci odczytać mikroczip i powiązać go ze zgłoszeniem.</li>\n  <li><strong>Widoczność</strong>: schroniska, fundacje i lecznice mogą pojawić się na mapie Orma i dostawać prośby od społeczności.</li>\n</ul>\n\n<h2>Dodaj baner Orma na swojej stronie</h2>\n<p>Skopiuj ten kod i wklej go, gdzie chcesz (stopka, strona z kontaktem, sekcja „przydatne linki”): pokaże przycisk, który zaprowadzi twoich odwiedzających do aplikacji Orma.</p>",
+    "sv": "<h2>Varför lägga Orma på din webbplats</h2>\n<ul>\n  <li><strong>Konkret hjälp till dina kunder</strong>: den som tappar bort eller hittar ett djur har genast en plats att anmäla det på och får observationer från människorna i närheten.</li>\n  <li><strong>Färre samtal som inte leder någonstans</strong>: den som hittar ett djur kan låta dig läsa av chipet och koppla det till en anmälan.</li>\n  <li><strong>Synlighet</strong>: djurhem, katthem och veterinärer kan synas på Ormas karta och ta emot förfrågningar från gemenskapen.</li>\n</ul>\n\n<h2>Lägg Orma-märket på din webbplats</h2>\n<p>Kopiera den här koden och klistra in den var du vill (sidfot, kontaktsida, avdelningen \"nyttiga länkar\"): den visar en knapp som tar dina besökare till Orma.</p>"
   },
   "htmlAppear": {
     "it": "<h2>Vuoi comparire tra le strutture?</h2>\n<p>Se gestisci un canile, un rifugio o una clinica veterinaria e vuoi essere presente (e verificato) sulla mappa di Orma, scrivici: ti aiutiamo a impostare tutto.</p>",
@@ -200,7 +360,15 @@ export const FOR_ORGS = {
     "pt": "<h2>Queres aparecer entre as instituições?</h2>\n<p>Se geres um canil, um abrigo ou uma clínica veterinária e queres estar presente (e verificado) no mapa da Orma, escreve-nos: ajudamos-te a configurar tudo.</p>",
     "de": "<h2>Möchtest du unter den Einrichtungen erscheinen?</h2>\n<p>Wenn du ein Tierheim, einen Verein oder eine Tierarztpraxis führst und auf der Orma-Karte präsent (und geprüft) sein möchtest, schreib uns: Wir helfen dir, alles einzurichten.</p>",
     "fr": "<h2>Vous voulez figurer parmi les structures ?</h2>\n<p>Si vous gérez un refuge, une association ou une clinique vétérinaire et souhaitez être présent (et vérifié) sur la carte d'Orma, écrivez-nous : nous vous aidons à tout configurer.</p>",
-    "es": "<h2>¿Quieres aparecer entre las entidades?</h2>\n<p>Si gestionas una protectora, un refugio o una clínica veterinaria y quieres estar presente (y verificado) en el mapa de Orma, escríbenos: te ayudamos a configurarlo todo.</p>"
+    "es": "<h2>¿Quieres aparecer entre las entidades?</h2>\n<p>Si gestionas una protectora, un refugio o una clínica veterinaria y quieres estar presente (y verificado) en el mapa de Orma, escríbenos: te ayudamos a configurarlo todo.</p>",
+    "cs": "<h2>Chceš se objevit mezi zařízeními?</h2>\n<p>Jestli vedeš útulek, záchranný spolek nebo veterinární kliniku a chceš být na mapě aplikace Orma (a ověřený), napiš nám: pomůžeme ti všechno nastavit.</p>",
+    "da": "<h2>Vil du med blandt stederne?</h2>\n<p>Driver du et internat, et dyrehjem eller en dyreklinik og vil være med (og godkendt) på Ormas kort, så skriv til os: vi hjælper dig med at sætte det hele op.</p>",
+    "el": "<h2>Θέλεις να εμφανίζεσαι ανάμεσα στις δομές;</h2>\n<p>Αν διαχειρίζεσαι ένα κυνοκομείο, ένα καταφύγιο ή μια κτηνιατρική κλινική και θέλεις να είσαι παρών (και επαληθευμένος) στον χάρτη του Orma, γράψε μας: σε βοηθάμε να τα ρυθμίσεις όλα.</p>",
+    "hr": "<h2>Želiš se pojaviti među ustanovama?</h2>\n<p>Ako vodiš sklonište, azil ili veterinarsku kliniku i želiš biti prisutan (i provjeren) na Orminoj karti, piši nam: pomoći ćemo ti da sve postaviš.</p>",
+    "hu": "<h2>Szeretnél megjelenni az intézmények között?</h2>\n<p>Ha menhelyet, mentőszervezetet vagy állatorvosi rendelőt vezetsz, és szeretnél szerepelni (és ellenőrzött lenni) az Orma térképén, írj nekünk: segítünk mindent beállítani.</p>",
+    "nl": "<h2>Wil je tussen de opvangplekken en praktijken staan?</h2>\n<p>Run je een asiel, een opvangcentrum of een dierenartsenpraktijk en wil je op de kaart van Orma staan (en gecontroleerd zijn), schrijf ons dan: we helpen je alles in te stellen.</p>",
+    "pl": "<h2>Chcesz znaleźć się wśród placówek?</h2>\n<p>Jeśli prowadzisz schronisko, fundację albo lecznicę weterynaryjną i chcesz być obecny (i zweryfikowany) na mapie Orma, napisz do nas: pomożemy ci wszystko ustawić.</p>",
+    "sv": "<h2>Vill du synas bland verksamheterna?</h2>\n<p>Driver du ett djurhem, ett katthem eller en veterinärklinik och vill finnas med (och vara kontrollerad) på Ormas karta? Skriv till oss, så hjälper vi dig att ställa in allt.</p>"
   },
   "htmlPress": {
     "it": "<h2>Per la stampa</h2>\n<p>Orma è un'app italiana di community per ritrovare animali smarriti, trovati o abbandonati e favorire le adozioni da canili e rifugi. Nasce con la privacy al primo posto: dati su server europei.</p>\n<ul>\n  <li><strong>Nome</strong>: Orma — \"Ritrova il tuo amico\"</li>\n  <li><strong>Dove</strong>: Italia · <a href=\"https://orma.pet\">orma.pet</a></li>\n  <li><strong>Piattaforme</strong>: Android e iPhone</li>\n  <li><strong>Contatto</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">scarica</a></li>\n</ul>",
@@ -209,7 +377,15 @@ export const FOR_ORGS = {
     "pt": "<h2>Para a imprensa</h2>\n<p>A Orma é uma aplicação italiana de comunidade para encontrar animais perdidos, encontrados ou abandonados e apoiar as adoções em canis e abrigos. Nasceu com a privacidade em primeiro lugar: dados em servidores europeus.</p>\n<ul>\n  <li><strong>Nome</strong>: Orma — «Encontra o teu amigo»</li>\n  <li><strong>Onde</strong>: Itália · <a href=\"https://orma.pet/pt/\">orma.pet</a></li>\n  <li><strong>Plataformas</strong>: Android e iPhone</li>\n  <li><strong>Contacto</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logótipo</strong>: <a href=\"/favicon.svg\">descarregar</a></li>\n</ul>",
     "de": "<h2>Für die Presse</h2>\n<p>Orma ist eine italienische Gemeinschafts-App, um vermisste, gefundene oder ausgesetzte Tiere wiederzufinden und die Vermittlung aus Tierheimen zu unterstützen. Sie ist mit Datenschutz an erster Stelle entstanden: Daten auf europäischen Servern.</p>\n<ul>\n  <li><strong>Name</strong>: Orma — „Finde deinen Freund“</li>\n  <li><strong>Wo</strong>: Italien · <a href=\"https://orma.pet/de/\">orma.pet</a></li>\n  <li><strong>Plattformen</strong>: Android und iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">herunterladen</a></li>\n</ul>",
     "fr": "<h2>Pour la presse</h2>\n<p>Orma est une application communautaire italienne permettant de retrouver des animaux perdus, trouvés ou abandonnés et de favoriser les adoptions depuis les refuges. Elle est née avec la confidentialité en premier : données sur des serveurs européens.</p>\n<ul>\n  <li><strong>Nom</strong> : Orma — « Retrouvez votre ami »</li>\n  <li><strong>Où</strong> : Italie · <a href=\"https://orma.pet/fr/\">orma.pet</a></li>\n  <li><strong>Plateformes</strong> : Android et iPhone</li>\n  <li><strong>Contact</strong> : <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong> : <a href=\"/favicon.svg\">télécharger</a></li>\n</ul>",
-    "es": "<h2>Para la prensa</h2>\n<p>Orma es una app italiana de comunidad para encontrar animales perdidos, encontrados o abandonados y favorecer las adopciones desde protectoras y refugios. Nace con la privacidad por delante: datos en servidores europeos.</p>\n<ul>\n  <li><strong>Nombre</strong>: Orma — «Encuentra a tu amigo»</li>\n  <li><strong>Dónde</strong>: Italia · <a href=\"https://orma.pet\">orma.pet</a></li>\n  <li><strong>Plataformas</strong>: Android e iPhone</li>\n  <li><strong>Contacto</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logotipo</strong>: <a href=\"/favicon.svg\">descargar</a></li>\n</ul>"
+    "es": "<h2>Para la prensa</h2>\n<p>Orma es una app italiana de comunidad para encontrar animales perdidos, encontrados o abandonados y favorecer las adopciones desde protectoras y refugios. Nace con la privacidad por delante: datos en servidores europeos.</p>\n<ul>\n  <li><strong>Nombre</strong>: Orma — «Encuentra a tu amigo»</li>\n  <li><strong>Dónde</strong>: Italia · <a href=\"https://orma.pet\">orma.pet</a></li>\n  <li><strong>Plataformas</strong>: Android e iPhone</li>\n  <li><strong>Contacto</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logotipo</strong>: <a href=\"/favicon.svg\">descargar</a></li>\n</ul>",
+    "cs": "<h2>Pro média</h2>\n<p>Orma je italská komunitní aplikace, která pomáhá najít ztracená, nalezená nebo opuštěná zvířata a podporuje adopce z útulků a spolků. Vznikla se soukromím na prvním místě: data na evropských serverech.</p>\n<ul>\n  <li><strong>Název</strong>: Orma — „Najdi svého kamaráda“</li>\n  <li><strong>Kde</strong>: Itálie · <a href=\"https://orma.pet/cs/\">orma.pet</a></li>\n  <li><strong>Platformy</strong>: Android a iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">stáhnout</a></li>\n</ul>",
+    "da": "<h2>Til pressen</h2>\n<p>Orma er en italiensk fællesskabsapp, der hjælper med at finde savnede, fundne eller efterladte dyr og fremmer adoption fra internater og dyrehjem. Den er født med privatliv i første række: data på europæiske servere.</p>\n<ul>\n  <li><strong>Navn</strong>: Orma — »Find din ven«</li>\n  <li><strong>Hvor</strong>: Italien · <a href=\"https://orma.pet/da/\">orma.pet</a></li>\n  <li><strong>Platforme</strong>: Android og iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">hent</a></li>\n</ul>",
+    "el": "<h2>Για τον Τύπο</h2>\n<p>Το Orma είναι μια ιταλική εφαρμογή κοινότητας για να ξαναβρίσκονται ζώα που χάθηκαν, βρέθηκαν ή εγκαταλείφθηκαν και για να διευκολύνονται οι υιοθεσίες από κυνοκομεία και καταφύγια. Γεννήθηκε με το απόρρητο στην πρώτη θέση: δεδομένα σε ευρωπαϊκούς διακομιστές.</p>\n<ul>\n  <li><strong>Όνομα</strong>: Orma — «Βρες ξανά τον φίλο σου»</li>\n  <li><strong>Πού</strong>: Ιταλία · <a href=\"https://orma.pet/el/\">orma.pet</a></li>\n  <li><strong>Πλατφόρμες</strong>: Android και iPhone</li>\n  <li><strong>Επικοινωνία</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Λογότυπο</strong>: <a href=\"/favicon.svg\">κατέβασέ το</a></li>\n</ul>",
+    "hr": "<h2>Za medije</h2>\n<p>Orma je talijanska aplikacija zajednice za pronalaženje izgubljenih, pronađenih ili napuštenih životinja i za poticanje udomljavanja iz skloništa i azila. Nastala je s privatnošću na prvom mjestu: podaci na europskim poslužiteljima.</p>\n<ul>\n  <li><strong>Naziv</strong>: Orma — „Pronađi svog prijatelja”</li>\n  <li><strong>Gdje</strong>: Italija · <a href=\"https://orma.pet/hr/\">orma.pet</a></li>\n  <li><strong>Platforme</strong>: Android i iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">preuzmi</a></li>\n</ul>",
+    "hu": "<h2>A sajtónak</h2>\n<p>Az Orma olasz közösségi app, amellyel megtalálhatók az elveszett, megtalált vagy kidobott állatok, és amely támogatja a menhelyi örökbefogadást. Az adatvédelem az első helyen született: az adatok európai szervereken vannak.</p>\n<ul>\n  <li><strong>Név</strong>: Orma — „Találd meg a barátodat”</li>\n  <li><strong>Hol</strong>: Olaszország · <a href=\"https://orma.pet/hu/\">orma.pet</a></li>\n  <li><strong>Platformok</strong>: Android és iPhone</li>\n  <li><strong>Kapcsolat</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logó</strong>: <a href=\"/favicon.svg\">letöltés</a></li>\n</ul>",
+    "nl": "<h2>Voor de pers</h2>\n<p>Orma is een Italiaanse community-app om vermiste, gevonden of achtergelaten dieren terug te vinden en om adoptie uit asielen en opvangcentra te bevorderen. De app is gebouwd met privacy op de eerste plaats: gegevens op Europese servers.</p>\n<ul>\n  <li><strong>Naam</strong>: Orma — \"Vind je vriend terug\"</li>\n  <li><strong>Waar</strong>: Italië · <a href=\"https://orma.pet/nl/\">orma.pet</a></li>\n  <li><strong>Platforms</strong>: Android en iPhone</li>\n  <li><strong>Contact</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">downloaden</a></li>\n</ul>",
+    "pl": "<h2>Dla mediów</h2>\n<p>Orma to włoska aplikacja społecznościowa do odnajdywania zwierząt zaginionych, znalezionych i porzuconych oraz do wspierania adopcji ze schronisk i fundacji. Powstała z prywatnością na pierwszym miejscu: dane na serwerach w Europie.</p>\n<ul>\n  <li><strong>Nazwa</strong>: Orma — „Odnajdź swojego przyjaciela”</li>\n  <li><strong>Gdzie</strong>: Włochy · <a href=\"https://orma.pet/pl/\">orma.pet</a></li>\n  <li><strong>Platformy</strong>: Android i iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logo</strong>: <a href=\"/favicon.svg\">pobierz</a></li>\n</ul>",
+    "sv": "<h2>För pressen</h2>\n<p>Orma är en italiensk gemenskapsapp för att hitta bortsprungna, upphittade eller övergivna djur och för att underlätta adoption från djurhem. Den är byggd med integriteten först: data på europeiska servrar.</p>\n<ul>\n  <li><strong>Namn</strong>: Orma — ”Hitta din vän”</li>\n  <li><strong>Var</strong>: Italien · <a href=\"https://orma.pet/sv/\">orma.pet</a></li>\n  <li><strong>Plattformar</strong>: Android och iPhone</li>\n  <li><strong>Kontakt</strong>: <a href=\"mailto:info@orma.pet\">info@orma.pet</a></li>\n  <li><strong>Logotyp</strong>: <a href=\"/favicon.svg\">ladda ner</a></li>\n</ul>"
   }
 };
 
@@ -389,5 +565,205 @@ export const MAP = {
     },
     "ctaTitle": "¿Quieres avisar o recibir alertas?",
     "ctaText": "En la web ves el mapa; para avisar de un animal, escribir en el chat seguro y recibir alertas cuando algo se mueve cerca de ti, descarga la app Orma."
+  },
+  "cs": {
+    "eyebrow": "Mapa",
+    "title": "Ztracená zvířata ve tvém okolí",
+    "lead": "Podívej se na mapě na hlášení o ztracených, nalezených nebo spatřených zvířatech kolem tebe. Polohy jsou přibližné, aby bylo chráněné soukromí toho, kdo hlásí.",
+    "showBtn": "Zobrazit zvířata ve tvém okolí",
+    "privacy": "Zapnutím mapy povolíš zjišťování polohy v prohlížeči a načítání map z OpenStreetMap (OpenFreeMap). Žádná data se s nikým nesdílejí.",
+    "locating": "Hledám tvoji polohu…",
+    "loadingReports": "Načítám hlášení…",
+    "denied": "Nedaří se mi přečíst tvoji polohu. Zapni v prohlížeči zjišťování polohy a zkus to znovu.",
+    "loadError": "Něco se pokazilo. Zkus to za chvíli znovu.",
+    "empty": "Tady v okolí teď nejsou žádná hlášení — a to je dobrá zpráva. S aplikací Orma dostaneš upozornění, jakmile se něco poblíž tebe stane.",
+    "found": "{n} hlášení ve tvém okolí",
+    "about": "asi",
+    "openApp": "Otevřít hlášení",
+    "youHere": "Jsi tady",
+    "types": {
+      "lost": "Ztraceno",
+      "found": "Nalezeno",
+      "sighting": "Spatřeno",
+      "abandoned": "Opuštěno",
+      "poison": "Otrávená návnada"
+    },
+    "ctaTitle": "Chceš nahlásit zvíře nebo dostávat upozornění?",
+    "ctaText": "Na webu vidíš mapu; pokud chceš nahlásit zvíře, psát v bezpečném chatu a dostávat upozornění, když se něco děje ve tvém okolí, stáhni si aplikaci Orma."
+  },
+  "da": {
+    "eyebrow": "Kort",
+    "title": "Savnede dyr i nærheden af dig",
+    "lead": "Se på kortet, hvilke dyr der er meldt savnede, fundne eller observerede omkring dig. Stedet er omtrentligt for at beskytte privatlivet hos den, der efterlyser.",
+    "showBtn": "Vis dyr i nærheden af dig",
+    "privacy": "Når du åbner kortet, giver du browseren lov til at bruge din placering og hente kort fra OpenStreetMap (OpenFreeMap). Ingen data deles med andre.",
+    "locating": "Finder din placering…",
+    "loadingReports": "Henter efterlysningerne…",
+    "denied": "Jeg kan ikke aflæse din placering. Slå placering til i browseren, og prøv igen.",
+    "loadError": "Noget gik galt. Prøv igen om lidt.",
+    "empty": "Ingen efterlysninger her omkring lige nu — og det er en god nyhed. Med Orma-appen får du besked, så snart der sker noget i nærheden af dig.",
+    "found": "{n} efterlysninger i nærheden af dig",
+    "about": "cirka",
+    "openApp": "Åbn siden",
+    "youHere": "Du er her",
+    "types": {
+      "lost": "Savnet",
+      "found": "Fundet",
+      "sighting": "Observeret",
+      "abandoned": "Efterladt",
+      "poison": "Forgiftet madding"
+    },
+    "ctaTitle": "Vil du efterlyse eller få beskeder?",
+    "ctaText": "På websitet kan du se kortet; vil du efterlyse et dyr, skrive i den sikre chat og få besked, når der sker noget i nærheden af dig, så hent Orma-appen."
+  },
+  "el": {
+    "eyebrow": "Χάρτης",
+    "title": "Χαμένα ζώα κοντά σου",
+    "lead": "Δες στον χάρτη τις αγγελίες για ζώα που χάθηκαν, βρέθηκαν ή εντοπίστηκαν γύρω σου. Η τοποθεσία είναι κατά προσέγγιση, για να προστατεύεται το απόρρητο όποιου κάνει τη δήλωση.",
+    "showBtn": "Δείξε μου τα ζώα κοντά μου",
+    "privacy": "Ενεργοποιώντας τον χάρτη επιτρέπεις τον γεωεντοπισμό του προγράμματος περιήγησης και τη φόρτωση των χαρτών από το OpenStreetMap (OpenFreeMap). Κανένα δεδομένο δεν κοινοποιείται σε άλλους.",
+    "locating": "Ψάχνω την τοποθεσία σου…",
+    "loadingReports": "Φορτώνω τις αγγελίες…",
+    "denied": "Δεν μπορώ να διαβάσω την τοποθεσία σου. Ενεργοποίησε τον γεωεντοπισμό στο πρόγραμμα περιήγησης και δοκίμασε ξανά.",
+    "loadError": "Κάτι πήγε στραβά. Δοκίμασε ξανά σε λίγο.",
+    "empty": "Καμία αγγελία εδώ γύρω αυτή τη στιγμή — και αυτό είναι καλό νέο. Με την εφαρμογή Orma λαμβάνεις ειδοποίηση μόλις κάτι κινηθεί κοντά σου.",
+    "found": "{n} αγγελίες κοντά σου",
+    "about": "περίπου",
+    "openApp": "Άνοιξε την καρτέλα",
+    "youHere": "Είσαι εδώ",
+    "types": {
+      "lost": "Χάθηκε",
+      "found": "Βρέθηκε",
+      "sighting": "Εντοπίστηκε",
+      "abandoned": "Εγκαταλελειμμένο",
+      "poison": "Δηλητηριασμένο δόλωμα"
+    },
+    "ctaTitle": "Θέλεις να κάνεις δήλωση ή να λαμβάνεις ειδοποιήσεις;",
+    "ctaText": "Στον ιστότοπο βλέπεις τον χάρτη· για να δηλώσεις ένα ζώο, να γράψεις στην ασφαλή συνομιλία και να λαμβάνεις ειδοποιήσεις όταν κάτι κινείται κοντά σου, κατέβασε την εφαρμογή Orma."
+  },
+  "hr": {
+    "eyebrow": "Karta",
+    "title": "Izgubljene životinje u tvojoj blizini",
+    "lead": "Pogledaj na karti prijave izgubljenih, pronađenih ili viđenih životinja oko sebe. Lokacija je približna kako bi se zaštitila privatnost onoga tko prijavljuje.",
+    "showBtn": "Prikaži životinje u tvojoj blizini",
+    "privacy": "Uključivanjem karte dopuštaš geolokaciju u pregledniku i učitavanje karata s OpenStreetMapa (OpenFreeMap). Nikakvi se podaci ne dijele s drugima.",
+    "locating": "Tražim tvoju lokaciju…",
+    "loadingReports": "Učitavam prijave…",
+    "denied": "Ne mogu očitati tvoju lokaciju. Uključi geolokaciju u pregledniku i pokušaj ponovno.",
+    "loadError": "Nešto je pošlo po zlu. Pokušaj ponovno za koji trenutak.",
+    "empty": "Trenutačno nema nijedne prijave u okolici — i to je dobra vijest. S aplikacijom Orma dobiješ obavijest čim se nešto dogodi u tvojoj blizini.",
+    "found": "{n} prijava u tvojoj blizini",
+    "about": "otprilike",
+    "openApp": "Otvori karticu",
+    "youHere": "Ti si ovdje",
+    "types": {
+      "lost": "Izgubljen",
+      "found": "Pronađen",
+      "sighting": "Viđen",
+      "abandoned": "Napušten",
+      "poison": "Otrovni mamac"
+    },
+    "ctaTitle": "Želiš prijaviti ili primati obavijesti?",
+    "ctaText": "Na stranici vidiš kartu; za prijavu životinje, pisanje u sigurnom chatu i primanje obavijesti kad se nešto dogodi u tvojoj blizini, preuzmi aplikaciju Ormu."
+  },
+  "hu": {
+    "eyebrow": "Térkép",
+    "title": "Elveszett állatok a közeledben",
+    "lead": "Nézd meg a térképen az elveszett, megtalált vagy észlelt állatok bejelentéseit a környékeden. A hely hozzávetőleges, hogy védje a bejelentők magánéletét.",
+    "showBtn": "Mutasd a közeledben lévő állatokat",
+    "privacy": "A térkép bekapcsolásával engedélyezed a böngésző helymeghatározását és a térképek betöltését az OpenStreetMapről (OpenFreeMap). Semmilyen adatot nem osztunk meg másokkal.",
+    "locating": "Keresem, hol vagy…",
+    "loadingReports": "Töltöm a bejelentéseket…",
+    "denied": "Nem tudom kiolvasni a helyzetedet. Kapcsold be a helymeghatározást a böngésződben, és próbáld újra.",
+    "loadError": "Valami elromlott. Próbáld újra kicsit később.",
+    "empty": "Most nincs bejelentés a környéken — és ez jó hír. Az Orma appal értesítést kapsz, amint történik valami a közeledben.",
+    "found": "{n} bejelentés a közeledben",
+    "about": "kb.",
+    "openApp": "Adatlap megnyitása",
+    "youHere": "Itt vagy",
+    "types": {
+      "lost": "Elveszett",
+      "found": "Megtalált",
+      "sighting": "Észlelve",
+      "abandoned": "Kidobott",
+      "poison": "Mérgezett csali"
+    },
+    "ctaTitle": "Bejelentenél vagy értesítéseket kapnál?",
+    "ctaText": "A honlapon látod a térképet; ha állatot szeretnél bejelenteni, a védett csevegésben írni és értesítést kapni, amikor történik valami a közeledben, töltsd le az Orma appot."
+  },
+  "nl": {
+    "eyebrow": "Kaart",
+    "title": "Vermiste dieren bij jou in de buurt",
+    "lead": "Bekijk op de kaart de meldingen van vermiste, gevonden of geziene dieren om je heen. De plek is bij benadering, om de privacy te beschermen van wie meldt.",
+    "showBtn": "Toon de dieren bij jou in de buurt",
+    "privacy": "Door de kaart aan te zetten geef je toestemming voor locatiebepaling in de browser en voor het laden van de kaarten van OpenStreetMap (OpenFreeMap). Er worden geen gegevens met anderen gedeeld.",
+    "locating": "Ik zoek je locatie…",
+    "loadingReports": "Ik laad de meldingen…",
+    "denied": "Ik kan je locatie niet uitlezen. Zet locatiebepaling aan in je browser en probeer het opnieuw.",
+    "loadError": "Er is iets misgegaan. Probeer het zo meteen opnieuw.",
+    "empty": "Op dit moment zijn er hier in de buurt geen meldingen — en dat is goed nieuws. Met de Orma-app krijg je bericht zodra er iets gebeurt bij jou in de buurt.",
+    "found": "{n} meldingen bij jou in de buurt",
+    "about": "ongeveer",
+    "openApp": "Open de melding",
+    "youHere": "Je bent hier",
+    "types": {
+      "lost": "Vermist",
+      "found": "Gevonden",
+      "sighting": "Gezien",
+      "abandoned": "Achtergelaten",
+      "poison": "Vergiftigd aas"
+    },
+    "ctaTitle": "Wil je melden of bericht krijgen?",
+    "ctaText": "Op de website zie je de kaart; om een dier te melden, in de veilige chat te schrijven en bericht te krijgen zodra er iets gebeurt bij jou in de buurt, download je de Orma-app."
+  },
+  "pl": {
+    "eyebrow": "Mapa",
+    "title": "Zaginione zwierzęta w twojej okolicy",
+    "lead": "Zobacz na mapie zgłoszenia zwierząt zaginionych, znalezionych i zauważonych wokół ciebie. Miejsce jest przybliżone, żeby chronić prywatność osoby zgłaszającej.",
+    "showBtn": "Pokaż zwierzęta w twojej okolicy",
+    "privacy": "Włączając mapę zgadzasz się na geolokalizację w przeglądarce i na wczytanie map z OpenStreetMap (OpenFreeMap). Żadne dane nie są przekazywane innym.",
+    "locating": "Szukam twojej lokalizacji…",
+    "loadingReports": "Wczytuję zgłoszenia…",
+    "denied": "Nie mogę odczytać twojej lokalizacji. Włącz geolokalizację w przeglądarce i spróbuj ponownie.",
+    "loadError": "Coś poszło nie tak. Spróbuj ponownie za chwilę.",
+    "empty": "W tej chwili nie ma tu żadnych zgłoszeń — i to dobra wiadomość. Z aplikacją Orma dostaniesz powiadomienie, gdy tylko coś wydarzy się w pobliżu.",
+    "found": "{n} zgłoszeń w twojej okolicy",
+    "about": "około",
+    "openApp": "Otwórz kartę",
+    "youHere": "Jesteś tutaj",
+    "types": {
+      "lost": "Zaginiony",
+      "found": "Znaleziony",
+      "sighting": "Zauważony",
+      "abandoned": "Porzucony",
+      "poison": "Zatruta przynęta"
+    },
+    "ctaTitle": "Chcesz zgłosić zwierzaka albo dostawać powiadomienia?",
+    "ctaText": "Na stronie zobaczysz mapę; żeby zgłosić zwierzę, pisać na bezpiecznym czacie i dostawać powiadomienia, gdy coś dzieje się w pobliżu, pobierz aplikację Orma."
+  },
+  "sv": {
+    "eyebrow": "Karta",
+    "title": "Bortsprungna djur nära dig",
+    "lead": "Se på kartan anmälningarna om bortsprungna, upphittade eller observerade djur runt omkring dig. Platsen är ungefärlig för att skydda integriteten hos den som anmäler.",
+    "showBtn": "Visa djuren nära dig",
+    "privacy": "När du slår på kartan tillåter du webbläsarens platstjänst och att kartorna laddas från OpenStreetMap (OpenFreeMap). Inga uppgifter delas med någon annan.",
+    "locating": "Söker din position…",
+    "loadingReports": "Laddar anmälningarna…",
+    "denied": "Jag kan inte läsa din position. Slå på platstjänsten i webbläsaren och försök igen.",
+    "loadError": "Något gick fel. Försök igen om en liten stund.",
+    "empty": "Inga anmälningar här omkring just nu — och det är goda nyheter. Med appen Orma får du en avisering så snart något rör sig nära dig.",
+    "found": "{n} anmälningar nära dig",
+    "about": "cirka",
+    "openApp": "Öppna sidan",
+    "youHere": "Du är här",
+    "types": {
+      "lost": "Bortsprunget",
+      "found": "Upphittat",
+      "sighting": "Observerat",
+      "abandoned": "Övergivet",
+      "poison": "Förgiftat bete"
+    },
+    "ctaTitle": "Vill du anmäla eller få aviseringar?",
+    "ctaText": "På webbplatsen ser du kartan; för att anmäla ett djur, skriva i den trygga chatten och få aviseringar när något rör sig nära dig laddar du ner appen Orma."
   }
 };
