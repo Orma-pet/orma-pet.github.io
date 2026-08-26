@@ -88,6 +88,42 @@ const jsonLd = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+      // Il banner di Apple in cima alla pagina, su iPhone.
+      //
+      // `is:inline` NON e' decorativo: senza, Astro impacchetta lo script come
+      // modulo differito e questo gira DOPO che Safari ha gia' deciso se
+      // mostrare il banner. Il tag finiva nel DOM e non serviva a niente.
+      //
+      // PERCHE' SERVE, visto che ci sono gia' i link universali
+      // ---------------------------------------------------------
+      // I link universali aprono l'app SOLO in certi contesti: da Messaggi,
+      // da Note, da Mail, da un'altra app. NON scattano se l'indirizzo viene
+      // digitato nella barra di Safari, ne' se si e' gia' su orma.pet e si
+      // tocca un link allo stesso dominio (iOS lo impedisce di proposito,
+      // altrimenti non si potrebbe navigare il sito di un'app installata).
+      //
+      // E soprattutto: i browser interni di WhatsApp, Facebook e Instagram si
+      // tengono l'utente dentro la propria finestra. E' esattamente li' che
+      // finisce un volantino condiviso -- cioe' il caso piu' frequente.
+      // Il banner non copre tutti quei casi (nelle WKWebView non compare), ma
+      // copre Safari, che e' dove la maggior parte delle persone atterra.
+      //
+      // app-argument porta all'app l'indirizzo COMPLETO, con la stringa di
+      // interrogazione: senza, il banner aprirebbe Orma sulla sua schermata
+      // iniziale e non sulla segnalazione. Per questo il tag si scrive da
+      // qui e non nell'HTML: il sito e' statico, e `?id=` esiste solo nel
+      // browser.
+      //
+      // Finche' l'app non e' pubblicata Safari non trova l'identificativo e
+      // semplicemente non mostra niente: nessun danno, e il giorno della
+      // pubblicazione si accende da solo.
+      document.head.insertAdjacentHTML(
+        'beforeend',
+        '<meta name="apple-itunes-app" content="app-id=6786283294, app-argument='
+          + encodeURI(location.href) + '">',
+      );
+    </script>
     <script define:vars={{ perLingua, lang }}>
       // Reindirizzamento automatico alla lingua giusta, UNA volta sola.
       //
