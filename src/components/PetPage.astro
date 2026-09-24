@@ -80,13 +80,12 @@ const cfg = {
           <div class="pet-app-box">
             <h3>{t.appBoxTitle}</h3>
             <p>{t.appBoxText}</p>
-            <div class="stores">
-              <span class="store-btn" aria-disabled="true" role="img" aria-label={h.btnAndroid}>
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.2 13 11.6l-2.3 2.3L3 6.1c-.2-.4-.3-.9-.3-1.4 0-1 .4-1.9.9-2.5zm10.8 10.8 2.9 2.9-9.8 5.7c-.6.3-1.2.5-1.8.4l8.7-9zM13 12 4.4 3.4l9.6 5.6c.7.4 1.1 1 1.1 1.7 0 .7-.4 1.3-1.1 1.7L13 12zm3.5-3.4 3.2 1.9c.7.4 1.1 1 1.1 1.7 0 .7-.4 1.3-1.1 1.7l-3.2 1.9L14.4 12l2.1-3.4z"/></svg>
-                <span><strong>{h.btnAndroid}</strong></span>
-              </span>
+            {/* Gli stessi bottoni del resto del sito: prima qui c'era una
+                copia a mano del solo bottone Android, SPENTO (senza link),
+                rimasta indietro quando il Play Store era stato acceso. */}
+            <StoreButtons lang={lang} android={h.btnAndroid} ios={h.btnIos} variant="dark">
               <a class="btn btn--ghost" href={howUrl} style="border-color:rgba(255,255,255,.7);color:#fff;">{t.discover}</a>
-            </div>
+            </StoreButtons>
           </div>
         </div>
       </article>

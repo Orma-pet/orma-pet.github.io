@@ -11,6 +11,8 @@ export const BRAND = {
   siteUrl: 'https://orma.pet',
   ogImage: '/og.jpg', // anteprima social 1200x630
   playStoreUrl: 'https://play.google.com/store/apps/details?id=pet.orma.app',
+  // Senza codice di paese: Apple manda ciascuno nel negozio del suo paese.
+  appStoreUrl: 'https://apps.apple.com/app/id6786283294',
   gradient: 'linear-gradient(90deg,#2A6BA8,#1AB8A0)',
   // Token di Cloudflare Web Analytics (senza cookie). Vuoto = beacon non
   // inserito. Da incollare quando attivato sul pannello Cloudflare.
@@ -955,9 +957,9 @@ export const HOME = {
     ],
     "vetsCta": "Escríbenos",
     "downloadTitle": "Tu amigo te está esperando",
-    "downloadSub": "Orma llega primero a Android y después a iOS. Únete a la comunidad y ayuda a cada animal a volver a casa.",
+    "downloadSub": "Orma ya está disponible en Android y iPhone. Únete a la comunidad y ayuda a cada animal a volver a casa.",
     "btnAndroid": "Descargar en Google Play",
-    "btnIos": "Pronto en la App Store"
+    "btnIos": "Descargar en el App Store"
   },
   "fr": {
     "title": "Orma — Application pour animaux perdus | Retrouvez votre ami",
@@ -1102,9 +1104,9 @@ export const HOME = {
     ],
     "vetsCta": "Écrivez-nous",
     "downloadTitle": "Votre ami vous attend",
-    "downloadSub": "Orma arrive d'abord sur Android, puis sur iOS. Rejoignez la communauté et aidez chaque animal à rentrer chez lui.",
+    "downloadSub": "Orma est disponible sur Android et iPhone. Rejoignez la communauté et aidez chaque animal à rentrer chez lui.",
     "btnAndroid": "Télécharger sur Google Play",
-    "btnIos": "Bientôt sur l'App Store"
+    "btnIos": "Télécharger dans l'App Store"
   },
   "de": {
     "title": "Orma — App für vermisste Tiere | Finde deinen Freund",
@@ -1249,9 +1251,9 @@ export const HOME = {
     ],
     "vetsCta": "Schreib uns",
     "downloadTitle": "Dein Freund wartet auf dich",
-    "downloadSub": "Orma kommt zuerst für Android, dann für iOS. Werde Teil der Gemeinschaft und hilf jedem Tier, nach Hause zu finden.",
+    "downloadSub": "Orma gibt es für Android und iPhone. Werde Teil der Gemeinschaft und hilf jedem Tier, nach Hause zu finden.",
     "btnAndroid": "Bei Google Play herunterladen",
-    "btnIos": "Bald im App Store"
+    "btnIos": "Laden im App Store"
   },
   "pt": {
     "title": "Orma — Aplicação para animais perdidos | Encontra o teu amigo",
@@ -1396,9 +1398,9 @@ export const HOME = {
     ],
     "vetsCta": "Escreve-nos",
     "downloadTitle": "O teu amigo está à tua espera",
-    "downloadSub": "A Orma chega primeiro ao Android e depois ao iOS. Junta-te à comunidade e ajuda cada animal a voltar para casa.",
+    "downloadSub": "A Orma está disponível para Android e iPhone. Junta-te à comunidade e ajuda cada animal a voltar para casa.",
     "btnAndroid": "Descarregar no Google Play",
-    "btnIos": "Em breve na App Store"
+    "btnIos": "Descarregar na App Store"
   },
   "ro": {
     "title": "Orma — Aplicație pentru animale pierdute | Găsește-ți prietenul",
@@ -1543,9 +1545,9 @@ export const HOME = {
     ],
     "vetsCta": "Scrie-ne",
     "downloadTitle": "Prietenul tău te așteaptă",
-    "downloadSub": "Orma ajunge întâi pe Android, apoi pe iOS. Alătură-te comunității și ajută fiecare animal să se întoarcă acasă.",
+    "downloadSub": "Orma este disponibilă pe Android și iPhone. Alătură-te comunității și ajută fiecare animal să se întoarcă acasă.",
     "btnAndroid": "Descarcă din Google Play",
-    "btnIos": "În curând pe App Store"
+    "btnIos": "Descarcă din App Store"
   },
   "it": {
     "title": "Orma — App per animali smarriti | Ritrova il tuo amico",
@@ -1690,9 +1692,9 @@ export const HOME = {
     ],
     "vetsCta": "Scrivici",
     "downloadTitle": "Il tuo amico ti sta aspettando",
-    "downloadSub": "Orma arriva prima su Android, poi su iOS. Unisciti alla community e aiuta ogni animale a tornare a casa.",
+    "downloadSub": "Orma è disponibile su Android e iPhone. Unisciti alla community e aiuta ogni animale a tornare a casa.",
     "btnAndroid": "Scarica su Google Play",
-    "btnIos": "Presto su App Store"
+    "btnIos": "Scarica su App Store"
   },
   "en": {
     "title": "Orma — Lost & found pets app | Find your friend",
@@ -1837,9 +1839,9 @@ export const HOME = {
     ],
     "vetsCta": "Get in touch",
     "downloadTitle": "Your friend is waiting for you",
-    "downloadSub": "Orma launches first on Android and then on iOS. Join the community and help every animal find its way home.",
+    "downloadSub": "Orma is available on Android and iPhone. Join the community and help every animal find its way home.",
     "btnAndroid": "Get it on Google Play",
-    "btnIos": "Coming soon to the App Store"
+    "btnIos": "Download on the App Store"
   },
   "cs": {
     "title": "Orma — Aplikace pro ztracená zvířata | Najdi svého kamaráda",
@@ -1984,9 +1986,9 @@ export const HOME = {
     ],
     "vetsCta": "Napiš nám",
     "downloadTitle": "Tvůj kamarád na tebe čeká",
-    "downloadSub": "Orma přichází nejdřív na Android, pak na iOS. Přidej se ke komunitě a pomoz každému zvířeti vrátit se domů.",
+    "downloadSub": "Orma je dostupná pro Android i iPhone. Přidej se ke komunitě a pomoz každému zvířeti vrátit se domů.",
     "btnAndroid": "Stáhnout na Google Play",
-    "btnIos": "Brzy v App Store"
+    "btnIos": "Stáhnout v App Storu"
   },
   "da": {
     "title": "Orma — App til savnede kæledyr | Find din ven",
@@ -2131,9 +2133,9 @@ export const HOME = {
     ],
     "vetsCta": "Skriv til os",
     "downloadTitle": "Din ven venter på dig",
-    "downloadSub": "Orma kommer først på Android og derefter på iOS. Vær med i fællesskabet, og hjælp alle dyr hjem igen.",
+    "downloadSub": "Orma fås til Android og iPhone. Vær med i fællesskabet, og hjælp alle dyr hjem igen.",
     "btnAndroid": "Hent det på Google Play",
-    "btnIos": "Snart i App Store"
+    "btnIos": "Hent i App Store"
   },
   "el": {
     "title": "Orma — Εφαρμογή για χαμένα ζώα | Βρες ξανά τον φίλο σου",
@@ -2278,9 +2280,9 @@ export const HOME = {
     ],
     "vetsCta": "Γράψε μας",
     "downloadTitle": "Ο φίλος σου σε περιμένει",
-    "downloadSub": "Το Orma έρχεται πρώτα σε Android και μετά σε iOS. Μπες στην κοινότητα και βοήθησε κάθε ζώο να γυρίσει σπίτι.",
+    "downloadSub": "Το Orma είναι διαθέσιμο για Android και iPhone. Μπες στην κοινότητα και βοήθησε κάθε ζώο να γυρίσει σπίτι.",
     "btnAndroid": "Κατέβασέ το στο Google Play",
-    "btnIos": "Σύντομα στο App Store"
+    "btnIos": "Κατέβασέ το στο App Store"
   },
   "hr": {
     "title": "Orma — Aplikacija za izgubljene ljubimce | Pronađi svog prijatelja",
@@ -2425,9 +2427,9 @@ export const HOME = {
     ],
     "vetsCta": "Piši nam",
     "downloadTitle": "Tvoj prijatelj te čeka",
-    "downloadSub": "Orma prvo stiže na Android, a zatim na iOS. Pridruži se zajednici i pomozi svakoj životinji da se vrati kući.",
+    "downloadSub": "Orma je dostupna za Android i iPhone. Pridruži se zajednici i pomozi svakoj životinji da se vrati kući.",
     "btnAndroid": "Preuzmi na Google Playu",
-    "btnIos": "Uskoro na App Storeu"
+    "btnIos": "Preuzmi na App Storeu"
   },
   "hu": {
     "title": "Orma — Elveszett kutya és macska app | Találd meg a barátodat",
@@ -2572,9 +2574,9 @@ export const HOME = {
     ],
     "vetsCta": "Írj nekünk",
     "downloadTitle": "A barátod vár rád",
-    "downloadSub": "Az Orma előbb Androidra érkezik, aztán iOS-re. Csatlakozz a közösséghez, és segíts, hogy minden állat hazataláljon.",
+    "downloadSub": "Az Orma elérhető Androidra és iPhone-ra. Csatlakozz a közösséghez, és segíts, hogy minden állat hazataláljon.",
     "btnAndroid": "Letöltés a Google Playről",
-    "btnIos": "Hamarosan az App Store-ban"
+    "btnIos": "Letöltés az App Store-ból"
   },
   "nl": {
     "title": "Orma — App voor vermiste huisdieren | Vind je vriend terug",
@@ -2719,9 +2721,9 @@ export const HOME = {
     ],
     "vetsCta": "Schrijf ons",
     "downloadTitle": "Je vriend wacht op je",
-    "downloadSub": "Orma komt eerst op Android en daarna op iOS. Sluit je aan bij de community en help elk dier om thuis te komen.",
+    "downloadSub": "Orma is beschikbaar voor Android en iPhone. Sluit je aan bij de community en help elk dier om thuis te komen.",
     "btnAndroid": "Downloaden via Google Play",
-    "btnIos": "Binnenkort in de App Store"
+    "btnIos": "Download in de App Store"
   },
   "pl": {
     "title": "Orma — aplikacja na zaginione zwierzęta | Zaginiony pies lub kot",
@@ -2866,9 +2868,9 @@ export const HOME = {
     ],
     "vetsCta": "Napisz do nas",
     "downloadTitle": "Twój przyjaciel na ciebie czeka",
-    "downloadSub": "Orma trafia najpierw na Androida, potem na iOS. Dołącz do społeczności i pomóż każdemu zwierzakowi wrócić do domu.",
+    "downloadSub": "Orma jest dostępna na Androida i iPhone'a. Dołącz do społeczności i pomóż każdemu zwierzakowi wrócić do domu.",
     "btnAndroid": "Pobierz z Google Play",
-    "btnIos": "Wkrótce w App Store"
+    "btnIos": "Pobierz w App Store"
   },
   "sv": {
     "title": "Orma — App för bortsprungna djur | Hitta din vän",
@@ -3013,9 +3015,9 @@ export const HOME = {
     ],
     "vetsCta": "Skriv till oss",
     "downloadTitle": "Din vän väntar på dig",
-    "downloadSub": "Orma kommer först till Android och sedan till iOS. Gå med i gemenskapen och hjälp varje djur hem igen.",
+    "downloadSub": "Orma finns för Android och iPhone. Gå med i gemenskapen och hjälp varje djur hem igen.",
     "btnAndroid": "Ladda ned på Google Play",
-    "btnIos": "Snart på App Store"
+    "btnIos": "Hämta i App Store"
   }
 };
 
@@ -3316,7 +3318,7 @@ export const PET = {
     "discover": "Descubre Orma",
     "locationNote": "Para proteger la privacidad, la posición que se muestra es la zona aproximada (difuminada unos 150 metros), no la dirección exacta.",
     "appBoxTitle": "¿Has visto a este animal?",
-    "appBoxText": "Abre el aviso en Orma para escribir a quien lo ha publicado en el chat seguro y comunicar un avistamiento. La app llega pronto: mientras tanto puedes descubrir cómo funciona.",
+    "appBoxText": "Abre el aviso en Orma para escribir a quien lo ha publicado en el chat seguro y comunicar un avistamiento. Descárgala en Android o iPhone.",
     "locale": "es-ES"
   },
   "fr": {
@@ -3332,7 +3334,7 @@ export const PET = {
     "discover": "Découvrir Orma",
     "locationNote": "Pour protéger la vie privée, la position affichée est la zone approximative (floutée d'environ 150 mètres), pas l'adresse exacte.",
     "appBoxTitle": "Vous avez vu cet animal ?",
-    "appBoxText": "Ouvrez le signalement dans Orma pour écrire à la personne qui l'a publié, dans la messagerie sécurisée, et signaler une observation. L'application arrive bientôt : en attendant, vous pouvez découvrir comment elle fonctionne.",
+    "appBoxText": "Ouvrez le signalement dans Orma pour écrire à la personne qui l'a publié, dans la messagerie sécurisée, et signaler une observation. Téléchargez-la sur Android ou iPhone.",
     "locale": "fr-FR"
   },
   "de": {
@@ -3348,7 +3350,7 @@ export const PET = {
     "discover": "Orma entdecken",
     "locationNote": "Zum Schutz der Privatsphäre wird die ungefähre Gegend angezeigt (um etwa 150 Meter unscharf gemacht), nicht die genaue Adresse.",
     "appBoxTitle": "Hast du dieses Tier gesehen?",
-    "appBoxText": "Öffne die Meldung in Orma, um der Person, die sie veröffentlicht hat, im sicheren Chat zu schreiben und eine Sichtung zu melden. Die App kommt bald: Bis dahin kannst du entdecken, wie sie funktioniert.",
+    "appBoxText": "Öffne die Meldung in Orma, um der Person, die sie veröffentlicht hat, im sicheren Chat zu schreiben und eine Sichtung zu melden. Lade sie für Android oder iPhone herunter.",
     "locale": "de-DE"
   },
   "pt": {
@@ -3364,7 +3366,7 @@ export const PET = {
     "discover": "Descobrir a Orma",
     "locationNote": "Para proteger a privacidade, a posição mostrada é a zona aproximada (desfocada em cerca de 150 metros), não a morada exata.",
     "appBoxTitle": "Viste este animal?",
-    "appBoxText": "Abre o alerta na Orma para escrever a quem o publicou, no chat seguro, e comunicar um avistamento. A aplicação chega em breve: entretanto podes descobrir como funciona.",
+    "appBoxText": "Abre o alerta na Orma para escrever a quem o publicou, no chat seguro, e comunicar um avistamento. Descarrega-a para Android ou iPhone.",
     "locale": "pt-PT"
   },
   "ro": {
@@ -3380,7 +3382,7 @@ export const PET = {
     "discover": "Descoperă Orma",
     "locationNote": "Pentru a proteja confidențialitatea, poziția afișată este zona aproximativă (estompată cu aproximativ 150 de metri), nu adresa exactă.",
     "appBoxTitle": "Ai văzut acest animal?",
-    "appBoxText": "Deschide anunțul în Orma ca să îi scrii celui care l-a publicat, în chatul sigur, și să raportezi o semnalare. Aplicația vine în curând: până atunci poți descoperi cum funcționează.",
+    "appBoxText": "Deschide anunțul în Orma ca să îi scrii celui care l-a publicat, în chatul sigur, și să raportezi o semnalare. Descarc-o pe Android sau iPhone.",
     "locale": "ro-RO"
   },
   "it": {
@@ -3396,7 +3398,7 @@ export const PET = {
     "discover": "Scopri Orma",
     "locationNote": "Per proteggere la privacy, la posizione mostrata è la zona approssimativa (offuscata di circa 150 metri), non l'indirizzo esatto.",
     "appBoxTitle": "Hai visto questo animale?",
-    "appBoxText": "Apri la segnalazione in Orma per scrivere a chi l'ha pubblicata nella chat sicura e segnalare un avvistamento. L'app arriva presto: intanto puoi scoprire come funziona.",
+    "appBoxText": "Apri la segnalazione in Orma per scrivere a chi l'ha pubblicata nella chat sicura e segnalare un avvistamento. Scaricala su Android o iPhone.",
     "locale": "it-IT"
   },
   "en": {
@@ -3412,7 +3414,7 @@ export const PET = {
     "discover": "Discover Orma",
     "locationNote": "To protect privacy, the location shown is the approximate area (blurred by about 150 metres), not the exact address.",
     "appBoxTitle": "Have you seen this animal?",
-    "appBoxText": "Open this report in Orma to message whoever posted it in the secure chat and report a sighting. The app is coming soon — in the meantime, see how it works.",
+    "appBoxText": "Open this report in Orma to message whoever posted it in the secure chat and report a sighting. Get it on Android or iPhone.",
     "locale": "en-GB"
   },
   "cs": {
@@ -3428,7 +3430,7 @@ export const PET = {
     "discover": "Poznej aplikaci Orma",
     "locationNote": "Kvůli ochraně soukromí se zobrazuje přibližná oblast (rozostřená zhruba o 150 metrů), ne přesná adresa.",
     "appBoxTitle": "Viděl jsi tohle zvíře?",
-    "appBoxText": "Otevři hlášení v aplikaci Orma, napiš v bezpečném chatu tomu, kdo ho zveřejnil, a nahlas spatření. Aplikace brzy přijde: zatím se můžeš podívat, jak funguje.",
+    "appBoxText": "Otevři hlášení v aplikaci Orma, napiš v bezpečném chatu tomu, kdo ho zveřejnil, a nahlas spatření. Stáhni si ji pro Android nebo iPhone.",
     "locale": "cs-CZ"
   },
   "da": {
@@ -3444,7 +3446,7 @@ export const PET = {
     "discover": "Oplev Orma",
     "locationNote": "For at beskytte privatlivet er det viste sted det omtrentlige område (sløret med cirka 150 meter), ikke den præcise adresse.",
     "appBoxTitle": "Har du set dette dyr?",
-    "appBoxText": "Åbn efterlysningen i Orma for at skrive til den, der har lagt den op, i den sikre chat og melde en observation. Appen kommer snart: indtil da kan du se, hvordan den virker.",
+    "appBoxText": "Åbn efterlysningen i Orma for at skrive til den, der har lagt den op, i den sikre chat og melde en observation. Hent den til Android eller iPhone.",
     "locale": "da-DK"
   },
   "el": {
@@ -3460,7 +3462,7 @@ export const PET = {
     "discover": "Ανακάλυψε το Orma",
     "locationNote": "Για την προστασία του απορρήτου, η τοποθεσία που εμφανίζεται είναι η κατά προσέγγιση περιοχή (θολωμένη κατά περίπου 150 μέτρα), όχι η ακριβής διεύθυνση.",
     "appBoxTitle": "Είδες αυτό το ζώο;",
-    "appBoxText": "Άνοιξε την αγγελία στο Orma για να γράψεις σε όποιον τη δημοσίευσε στην ασφαλή συνομιλία και να δηλώσεις έναν εντοπισμό. Η εφαρμογή έρχεται σύντομα: στο μεταξύ, μπορείς να δεις πώς λειτουργεί.",
+    "appBoxText": "Άνοιξε την αγγελία στο Orma για να γράψεις σε όποιον τη δημοσίευσε στην ασφαλή συνομιλία και να δηλώσεις έναν εντοπισμό. Κατέβασέ την για Android ή iPhone.",
     "locale": "el-GR"
   },
   "hr": {
@@ -3476,7 +3478,7 @@ export const PET = {
     "discover": "Otkrij Ormu",
     "locationNote": "Radi zaštite privatnosti prikazana lokacija je približno područje (zamućeno za otprilike 150 metara), a ne točna adresa.",
     "appBoxTitle": "Jesi li vidio ovu životinju?",
-    "appBoxText": "Otvori prijavu u Ormi da u sigurnom chatu pišeš onome tko ju je objavio i prijaviš dojavu. Aplikacija stiže uskoro: u međuvremenu možeš otkriti kako radi.",
+    "appBoxText": "Otvori prijavu u Ormi da u sigurnom chatu pišeš onome tko ju je objavio i prijaviš dojavu. Preuzmi je za Android ili iPhone.",
     "locale": "hr-HR"
   },
   "hu": {
@@ -3492,7 +3494,7 @@ export const PET = {
     "discover": "Ismerd meg az Ormát",
     "locationNote": "A magánélet védelmében a megjelenített hely a hozzávetőleges környék (körülbelül 150 méterrel elmosva), nem a pontos cím.",
     "appBoxTitle": "Láttad ezt az állatot?",
-    "appBoxText": "Nyisd meg a bejelentést az Ormában, hogy a védett csevegésben írhass annak, aki közzétette, és jelezhess egy észlelést. Az app hamarosan érkezik: addig megnézheted, hogyan működik.",
+    "appBoxText": "Nyisd meg a bejelentést az Ormában, hogy a védett csevegésben írhass annak, aki közzétette, és jelezhess egy észlelést. Töltsd le Androidra vagy iPhone-ra.",
     "locale": "hu-HU"
   },
   "nl": {
@@ -3508,7 +3510,7 @@ export const PET = {
     "discover": "Ontdek Orma",
     "locationNote": "Om de privacy te beschermen wordt de plek bij benadering getoond (ongeveer 150 meter vervaagd), niet het exacte adres.",
     "appBoxTitle": "Heb je dit dier gezien?",
-    "appBoxText": "Open de melding in Orma om in de veilige chat te schrijven aan wie hem geplaatst heeft en een waarneming door te geven. De app komt binnenkort: ontdek intussen hoe hij werkt.",
+    "appBoxText": "Open de melding in Orma om in de veilige chat te schrijven aan wie hem geplaatst heeft en een waarneming door te geven. Download hem voor Android of iPhone.",
     "locale": "nl-NL"
   },
   "pl": {
@@ -3524,7 +3526,7 @@ export const PET = {
     "discover": "Poznaj aplikację Orma",
     "locationNote": "Żeby chronić prywatność, pokazane miejsce to przybliżona okolica (rozmyta o około 150 metrów), a nie dokładny adres.",
     "appBoxTitle": "Widziałeś to zwierzę?",
-    "appBoxText": "Otwórz zgłoszenie w aplikacji Orma, żeby napisać na bezpiecznym czacie do osoby, która je dodała, i zgłosić, że widziałeś zwierzaka. Aplikacja pojawi się wkrótce: na razie możesz zobaczyć, jak działa.",
+    "appBoxText": "Otwórz zgłoszenie w aplikacji Orma, żeby napisać na bezpiecznym czacie do osoby, która je dodała, i zgłosić, że widziałeś zwierzaka. Pobierz ją na Androida lub iPhone'a.",
     "locale": "pl-PL"
   },
   "sv": {
@@ -3540,7 +3542,7 @@ export const PET = {
     "discover": "Upptäck Orma",
     "locationNote": "För att skydda integriteten visas det ungefärliga området (otydliggjort med omkring 150 meter), inte den exakta adressen.",
     "appBoxTitle": "Har du sett det här djuret?",
-    "appBoxText": "Öppna anmälan i Orma för att skriva till den som lagt upp den, i den trygga chatten, och rapportera en observation. Appen kommer snart: under tiden kan du se hur den fungerar.",
+    "appBoxText": "Öppna anmälan i Orma för att skriva till den som lagt upp den, i den trygga chatten, och rapportera en observation. Ladda ned den till Android eller iPhone.",
     "locale": "sv-SE"
   }
 };

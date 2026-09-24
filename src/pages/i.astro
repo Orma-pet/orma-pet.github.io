@@ -54,7 +54,8 @@ const title = 'Sei stato invitato · Orma';
       document.getElementById('codeBox').hidden = false;
       // Al tap su "Scarica" copiamo il codice TAGGATO negli appunti PRIMA di
       // aprire lo store: all'avvio l'app lo legge e precompila da solo
-      // l'iscrizione (auto su Android; su iOS quando l'app sarà sull'App Store).
+      // l'iscrizione (signup_screen.dart). Vale per entrambi i bottoni: dal
+      // 23/09/2026 anche quello dell'App Store e' un link, quindi e' preso qui.
       document.querySelectorAll('.stores a.store-btn').forEach((a) => {
         a.addEventListener('click', (e) => {
           e.preventDefault();
