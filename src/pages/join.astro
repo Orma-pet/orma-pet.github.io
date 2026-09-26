@@ -1,9 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import StoreButtons from '../components/StoreButtons.astro';
-// Pagina di atterraggio INVITO A CO-GESTIRE UN ANIMALE. Il link è
-// https://orma.pet/join?tk=<token>. L'invito viene poi abbinato in app alla
-// TUA email: basta installare e accedere con l'email a cui è arrivato l'invito.
+// Pagina di atterraggio dell'INVITO A CO-GESTIRE UN ANIMALE. Il link è
+// https://orma.pet/join?tk=<token> e lo crea il proprietario dalla scheda
+// Condivisione dell'app.
+//
+// Chi ha Orma sul telefono questa pagina di solito non la vede: /join è tra i
+// link profondi (apple-app-site-association, assetlinks.json), quindi si apre
+// l'app, che mostra animale e persona e chiede conferma. Qui arriva chi Orma
+// non ce l'ha ancora, o chi il link l'ha incollato nel browser.
+//
+// Niente email: fino al 23/09/2026 questa pagina diceva di accedere "con
+// l'email a cui è arrivato l'invito", ma l'abbinamento per email non esiste
+// più dalla migrazione 0094. Il link vale per chi lo apre con Orma, una persona
+// sola, per due settimane (migrazione 0127 dell'app).
+//
+// Per questo il secondo passo dice di RIAPRIRE lo stesso link dopo
+// l'installazione: il negozio non passa il token all'app appena installata.
+// La pagina non legge e non tocca ?tk=, e non reindirizza (autoLang spento):
+// l'indirizzo che resta nella chat è proprio quello che serve.
+//
+// PUBBLICARLA INSIEME ALL'APP, NON PRIMA. Il "tocca Accetta" e le due
+// settimane esistono solo con la migrazione 0127 applicata E la versione
+// dell'app con la schermata d'invito (pet_join_screen.dart) nei due negozi.
+// Con le versioni precedenti /join apre l'app sulla mappa e butta via il
+// token: chi seguisse questi passi non vedrebbe mai un invito. Per questo va
+// in un commit suo, separato dal lancio App Store del 23/09/2026.
 const title = 'Invito a gestire un animale · Orma';
 ---
 <Layout lang="it" title={title} active="home" noindex={true} autoLang={false}>
@@ -14,16 +36,20 @@ const title = 'Invito a gestire un animale · Orma';
       <p class="invite__sub">
         Qualcuno vuole condividere con te la scheda di un animale su Orma:
         stesso libretto, stesso codice QR, avvisi se si smarrisce.
-        <br /><span class="invite__en">You've been invited to co-manage a pet on Orma.</span>
+        <br /><span class="invite__en">You've been invited to co-manage a pet on Orma. Install the app, then open this same link again on your phone.</span>
       </p>
 
       <StoreButtons lang="it" android="Google Play" ios="App Store" variant="light" />
 
       <ol class="invite__steps">
-        <li>Scarica Orma e accedi (o iscriviti) con l'email a cui hai ricevuto l'invito.</li>
-        <li>In "I miei animali" comparirà l'invito: tocca "Accetta".</li>
-        <li>Da quel momento gestisci l'animale insieme al proprietario.</li>
+        <li>Se hai già Orma, apri questo link dal telefono toccandolo nel messaggio: si apre l'app e ti mostra l'invito.</li>
+        <li>Se non ce l'hai, scaricala qui sopra, entra o iscriviti, poi torna al messaggio e tocca di nuovo lo stesso link.</li>
+        <li>Nell'app vedi l'animale e chi ti invita: tocca "Accetta" e da quel momento lo gestite insieme.</li>
       </ol>
+      <p class="invite__note">
+        Il link vale per una persona sola e per due settimane. Se non funziona
+        più, chiedine uno nuovo a chi te l'ha mandato.
+      </p>
     </div>
   </section>
 
@@ -35,6 +61,7 @@ const title = 'Invito a gestire un animale · Orma';
     .invite__sub { color: #5B6B7A; line-height: 1.65; }
     .invite__en { color: #93A0AE; font-size: 0.92em; }
     .invite__steps { text-align: left; max-width: 400px; margin: 28px auto 0; color: #34434F; line-height: 1.7; }
+    .invite__note { max-width: 400px; margin: 16px auto 0; color: #5B6B7A; font-size: 0.92em; line-height: 1.6; }
     .invite :global(.stores) { justify-content: center; margin-top: 8px; }
   </style>
 </Layout>
