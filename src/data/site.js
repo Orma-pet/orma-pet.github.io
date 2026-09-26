@@ -69,6 +69,15 @@ export const ROUTES = {
   "pet": {
     "it": "/pet/",
     "en": "/en/pet/"
+  },
+  // Il buongiorno di Orma (SPEC diffusione, A): la storia del giorno per chi
+  // riceve l'immagine su WhatsApp. Sta qui perche' il reindirizzamento di
+  // lingua di Layout.astro costruisce la sua tabella da ROUTES: senza questa
+  // chiave chi ha il browser in tedesco resterebbe sulla pagina italiana.
+  // NON e' in PESO di sitemap.xml.js, ed e' voluto: vedi il commento li'.
+  "buongiorno": {
+    "it": "/b/",
+    "en": "/en/b/"
   }
 };
 

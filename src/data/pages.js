@@ -767,3 +767,493 @@ export const MAP = {
     "ctaText": "På webbplatsen ser du kartan; för att anmäla ett djur, skriva i den trygga chatten och få aviseringar när något rör sig nära dig laddar du ner appen Orma."
   }
 };
+
+// ============================================================================
+// /b — il buongiorno di Orma (SPEC diffusione, A e 11.7). Si legge con
+// testo(BUONGIORNO, lang), come MAP.
+// ----------------------------------------------------------------------------
+// before, now, stampOrma, stampTold e source sono COPIATI parola per parola
+// dalle chiavi giro.storia.* dell'app (prima, oggi, nataSuOrma, raccontata,
+// fonte), lingua per lingua: chi passa dall'immagine ricevuta su WhatsApp
+// alla pagina deve leggere le stesse parole che ha visto sull'immagine.
+// Se l'app le cambia, vanno cambiate anche qui.
+//
+// {date} e' la data gia' scritta da toLocaleDateString nella lingua della
+// pagina (giorno, mese per esteso, anno): la frase intorno e' costruita per
+// reggere la forma che ogni lingua le da' (in polacco e in ceco il mese e'
+// gia' al genitivo, in ungherese l'anno viene prima).
+//
+// Le 13 lingue oltre a it ed en non le ha ancora rilette un madrelingua
+// (SPEC diffusione 16.6).
+// ============================================================================
+export const BUONGIORNO = {
+  "it": {
+    "title": "Il buongiorno di Orma",
+    "description": "Una storia vera di animali, ogni mattina.",
+    "loading": "Carico la storia…",
+    "dateLine": "La storia del {date}",
+    "before": "Prima",
+    "now": "Oggi",
+    "stampOrma": "Nata su Orma",
+    "stampTold": "Raccontata da chi l'ha vissuta",
+    "source": "Raccontata da: {name}",
+    "langNoteEn": "Questa storia è scritta in inglese.",
+    "langNoteIt": "Questa storia è scritta in italiano.",
+    "noneTitle": "Nessuna storia per questo giorno",
+    "noneText": "Forse è stata tolta, o il link è incompleto.",
+    "todayLink": "Leggi la storia di oggi",
+    "errorTitle": "Non riesco a caricare la storia",
+    "errorText": "Controlla la connessione e riprova.",
+    "retry": "Riprova",
+    "appTitle": "Ogni mattina, una storia vera",
+    "appText": "Con Orma ricevi la storia del mattino, vedi i pericoli segnalati sul tuo giro e aiuti a ritrovare gli animali smarriti vicino a te. È gratuita."
+  },
+  "en": {
+    "title": "Good morning from Orma",
+    "description": "A true animal story, every morning.",
+    "loading": "Loading the story…",
+    "dateLine": "The story for {date}",
+    "before": "Before",
+    "now": "Today",
+    "stampOrma": "Born on Orma",
+    "stampTold": "Told by someone who lived it",
+    "source": "Told by: {name}",
+    "langNoteEn": "This story is written in English.",
+    "langNoteIt": "This story is written in Italian.",
+    "noneTitle": "No story for this day",
+    "noneText": "It may have been taken down, or the link is incomplete.",
+    "todayLink": "Read today's story",
+    "errorTitle": "I can't load the story",
+    "errorText": "Check your connection and try again.",
+    "retry": "Try again",
+    "appTitle": "Every morning, a true story",
+    "appText": "With Orma you get the morning story, see the dangers reported along your morning walk and help find lost animals near you. It's free."
+  },
+  "cs": {
+    "title": "Dobré ráno od Ormy",
+    "description": "Každé ráno jeden skutečný příběh o zvířatech.",
+    "loading": "Načítám příběh…",
+    "dateLine": "Příběh ze dne {date}",
+    "before": "Předtím",
+    "now": "Dnes",
+    "stampOrma": "Zrozeno na Ormě",
+    "stampTold": "Vyprávěno tím, kdo to zažil",
+    "source": "Vypráví: {name}",
+    "langNoteEn": "Tento příběh je napsaný anglicky.",
+    "langNoteIt": "Tento příběh je napsaný italsky.",
+    "noneTitle": "Pro tento den není žádný příběh",
+    "noneText": "Možná byl stažen, nebo je odkaz neúplný.",
+    "todayLink": "Přečti si dnešní příběh",
+    "errorTitle": "Příběh se nepodařilo načíst",
+    "errorText": "Zkontroluj připojení a zkus to znovu.",
+    "retry": "Zkusit znovu",
+    "appTitle": "Každé ráno jeden skutečný příběh",
+    "appText": "S aplikací Orma dostaneš ranní příběh, uvidíš nebezpečí nahlášená na své ranní procházce a pomůžeš najít ztracená zvířata ve svém okolí. Je zdarma."
+  },
+  "da": {
+    "title": "Godmorgen fra Orma",
+    "description": "En sand dyrehistorie, hver morgen.",
+    "loading": "Henter historien…",
+    "dateLine": "Historien fra {date}",
+    "before": "Før",
+    "now": "I dag",
+    "stampOrma": "Født på Orma",
+    "stampTold": "Fortalt af en, der oplevede det",
+    "source": "Fortalt af: {name}",
+    "langNoteEn": "Denne historie er skrevet på engelsk.",
+    "langNoteIt": "Denne historie er skrevet på italiensk.",
+    "noneTitle": "Ingen historie for denne dag",
+    "noneText": "Måske er den blevet fjernet, eller linket er ufuldstændigt.",
+    "todayLink": "Læs dagens historie",
+    "errorTitle": "Historien kunne ikke hentes",
+    "errorText": "Tjek forbindelsen, og prøv igen.",
+    "retry": "Prøv igen",
+    "appTitle": "Hver morgen en sand historie",
+    "appText": "Med Orma får du morgenens historie, ser de farer, der er meldt på din morgentur, og hjælper med at finde bortløbne dyr i nærheden. Den er gratis."
+  },
+  "de": {
+    "title": "Guten Morgen von Orma",
+    "description": "Jeden Morgen eine wahre Tiergeschichte.",
+    "loading": "Die Geschichte wird geladen…",
+    "dateLine": "Die Geschichte vom {date}",
+    "before": "Vorher",
+    "now": "Heute",
+    "stampOrma": "Auf Orma entstanden",
+    "stampTold": "Erzählt von jemandem, der es erlebt hat",
+    "source": "Erzählt von: {name}",
+    "langNoteEn": "Diese Geschichte ist auf Englisch geschrieben.",
+    "langNoteIt": "Diese Geschichte ist auf Italienisch geschrieben.",
+    "noneTitle": "Keine Geschichte für diesen Tag",
+    "noneText": "Vielleicht wurde sie entfernt, oder der Link ist unvollständig.",
+    "todayLink": "Die Geschichte von heute lesen",
+    "errorTitle": "Die Geschichte lässt sich nicht laden",
+    "errorText": "Prüfe die Verbindung und versuche es erneut.",
+    "retry": "Erneut versuchen",
+    "appTitle": "Jeden Morgen eine wahre Geschichte",
+    "appText": "Mit Orma bekommst du die Geschichte des Morgens, siehst die gemeldeten Gefahren auf deiner Morgenrunde und hilfst, vermisste Tiere in deiner Nähe wiederzufinden. Die App ist kostenlos."
+  },
+  "el": {
+    "title": "Καλημέρα από το Orma",
+    "description": "Μια αληθινή ιστορία με ζώα, κάθε πρωί.",
+    "loading": "Φορτώνω την ιστορία…",
+    "dateLine": "Η ιστορία της {date}",
+    "before": "Πριν",
+    "now": "Σήμερα",
+    "stampOrma": "Γεννήθηκε στο Orma",
+    "stampTold": "Την αφηγείται όποιος την έζησε",
+    "source": "Την αφηγείται: {name}",
+    "langNoteEn": "Αυτή η ιστορία είναι γραμμένη στα αγγλικά.",
+    "langNoteIt": "Αυτή η ιστορία είναι γραμμένη στα ιταλικά.",
+    "noneTitle": "Δεν υπάρχει ιστορία για αυτή την ημέρα",
+    "noneText": "Ίσως αφαιρέθηκε ή ο σύνδεσμος είναι ελλιπής.",
+    "todayLink": "Διάβασε τη σημερινή ιστορία",
+    "errorTitle": "Δεν μπορώ να φορτώσω την ιστορία",
+    "errorText": "Έλεγξε τη σύνδεσή σου και δοκίμασε ξανά.",
+    "retry": "Δοκίμασε ξανά",
+    "appTitle": "Κάθε πρωί, μια αληθινή ιστορία",
+    "appText": "Με το Orma παίρνεις την πρωινή ιστορία, βλέπεις τους κινδύνους που έχουν αναφερθεί στην πρωινή σου βόλτα και βοηθάς να βρεθούν χαμένα ζώα κοντά σου. Είναι δωρεάν."
+  },
+  "es": {
+    "title": "Los buenos días de Orma",
+    "description": "Una historia real de animales, cada mañana.",
+    "loading": "Estoy cargando la historia…",
+    "dateLine": "La historia del {date}",
+    "before": "Antes",
+    "now": "Hoy",
+    "stampOrma": "Nacida en Orma",
+    "stampTold": "Contada por quien la vivió",
+    "source": "Contada por: {name}",
+    "langNoteEn": "Esta historia está escrita en inglés.",
+    "langNoteIt": "Esta historia está escrita en italiano.",
+    "noneTitle": "No hay historia para este día",
+    "noneText": "Quizá se ha retirado, o el enlace está incompleto.",
+    "todayLink": "Lee la historia de hoy",
+    "errorTitle": "No consigo cargar la historia",
+    "errorText": "Comprueba la conexión y vuelve a intentarlo.",
+    "retry": "Reintentar",
+    "appTitle": "Cada mañana, una historia real",
+    "appText": "Con Orma recibes la historia de la mañana, ves los peligros señalados en tu paseo de la mañana y ayudas a encontrar animales perdidos cerca de ti. Es gratuita."
+  },
+  "fr": {
+    "title": "Le bonjour d'Orma",
+    "description": "Une histoire vraie d'animaux, chaque matin.",
+    "loading": "Chargement de l'histoire…",
+    "dateLine": "L'histoire du {date}",
+    "before": "Avant",
+    "now": "Aujourd'hui",
+    "stampOrma": "Née sur Orma",
+    "stampTold": "Racontée par qui l'a vécue",
+    "source": "Racontée par : {name}",
+    "langNoteEn": "Cette histoire est écrite en anglais.",
+    "langNoteIt": "Cette histoire est écrite en italien.",
+    "noneTitle": "Pas d'histoire pour ce jour",
+    "noneText": "Elle a peut-être été retirée, ou le lien est incomplet.",
+    "todayLink": "Lire l'histoire du jour",
+    "errorTitle": "Impossible de charger l'histoire",
+    "errorText": "Vérifiez la connexion et réessayez.",
+    "retry": "Réessayer",
+    "appTitle": "Chaque matin, une histoire vraie",
+    "appText": "Avec Orma, vous recevez l'histoire du matin, vous voyez les dangers signalés sur votre balade du matin et vous aidez à retrouver les animaux perdus près de chez vous. Elle est gratuite."
+  },
+  "hr": {
+    "title": "Dobro jutro od Orme",
+    "description": "Istinita priča o životinjama, svako jutro.",
+    "loading": "Učitavam priču…",
+    "dateLine": "Priča od {date}",
+    "before": "Prije",
+    "now": "Danas",
+    "stampOrma": "Nastala na Ormi",
+    "stampTold": "Ispričao onaj tko ju je proživio",
+    "source": "Pripovijeda: {name}",
+    "langNoteEn": "Ova je priča napisana na engleskom.",
+    "langNoteIt": "Ova je priča napisana na talijanskom.",
+    "noneTitle": "Nema priče za ovaj dan",
+    "noneText": "Možda je uklonjena ili je poveznica nepotpuna.",
+    "todayLink": "Pročitaj današnju priču",
+    "errorTitle": "Ne mogu učitati priču",
+    "errorText": "Provjeri vezu i pokušaj ponovno.",
+    "retry": "Pokušaj ponovno",
+    "appTitle": "Svako jutro jedna istinita priča",
+    "appText": "S Ormom dobivaš jutarnju priču, vidiš opasnosti prijavljene na svojoj jutarnjoj šetnji i pomažeš pronaći izgubljene životinje u blizini. Besplatna je."
+  },
+  "hu": {
+    "title": "Jó reggelt az Ormától",
+    "description": "Minden reggel egy igaz történet az állatokról.",
+    "loading": "Töltöm a történetet…",
+    "dateLine": "A nap története: {date}",
+    "before": "Előtte",
+    "now": "Ma",
+    "stampOrma": "Az Ormán született",
+    "stampTold": "Aki átélte, az meséli",
+    "source": "Meséli: {name}",
+    "langNoteEn": "Ez a történet angolul íródott.",
+    "langNoteIt": "Ez a történet olaszul íródott.",
+    "noneTitle": "Erre a napra nincs történet",
+    "noneText": "Lehet, hogy levették, vagy hiányos a link.",
+    "todayLink": "Olvasd el a mai történetet",
+    "errorTitle": "Nem sikerül betölteni a történetet",
+    "errorText": "Ellenőrizd a kapcsolatot, és próbáld újra.",
+    "retry": "Újra",
+    "appTitle": "Minden reggel egy igaz történet",
+    "appText": "Az Ormával megkapod a reggeli történetet, látod a reggeli sétádon jelzett veszélyeket, és segítesz megtalálni a közeledben elveszett állatokat. Ingyenes."
+  },
+  "nl": {
+    "title": "Goedemorgen van Orma",
+    "description": "Elke ochtend een waargebeurd dierenverhaal.",
+    "loading": "Het verhaal wordt geladen…",
+    "dateLine": "Het verhaal van {date}",
+    "before": "Vroeger",
+    "now": "Vandaag",
+    "stampOrma": "Ontstaan op Orma",
+    "stampTold": "Verteld door wie het meemaakte",
+    "source": "Verteld door: {name}",
+    "langNoteEn": "Dit verhaal is in het Engels geschreven.",
+    "langNoteIt": "Dit verhaal is in het Italiaans geschreven.",
+    "noneTitle": "Geen verhaal voor deze dag",
+    "noneText": "Misschien is het verwijderd, of is de link onvolledig.",
+    "todayLink": "Lees het verhaal van vandaag",
+    "errorTitle": "Het verhaal kan niet worden geladen",
+    "errorText": "Controleer je verbinding en probeer het opnieuw.",
+    "retry": "Opnieuw proberen",
+    "appTitle": "Elke ochtend een waargebeurd verhaal",
+    "appText": "Met Orma krijg je het ochtendverhaal, zie je de gemelde gevaren op je ochtendwandeling en help je vermiste dieren in de buurt terug te vinden. De app is gratis."
+  },
+  "pl": {
+    "title": "Dzień dobry od Ormy",
+    "description": "Prawdziwa historia o zwierzętach, każdego ranka.",
+    "loading": "Wczytuję historię…",
+    "dateLine": "Historia z {date}",
+    "before": "Przedtem",
+    "now": "Dziś",
+    "stampOrma": "Narodziła się w Ormie",
+    "stampTold": "Opowiedziana przez kogoś, kto ją przeżył",
+    "source": "Opowiada: {name}",
+    "langNoteEn": "Ta historia jest napisana po angielsku.",
+    "langNoteIt": "Ta historia jest napisana po włosku.",
+    "noneTitle": "Brak historii na ten dzień",
+    "noneText": "Może została usunięta albo link jest niepełny.",
+    "todayLink": "Przeczytaj dzisiejszą historię",
+    "errorTitle": "Nie udało się wczytać historii",
+    "errorText": "Sprawdź połączenie i spróbuj ponownie.",
+    "retry": "Spróbuj ponownie",
+    "appTitle": "Każdego ranka prawdziwa historia",
+    "appText": "Z aplikacją Orma dostajesz poranną historię, widzisz zagrożenia zgłoszone na trasie porannego spaceru i pomagasz odnaleźć zaginione zwierzęta w pobliżu. Jest bezpłatna."
+  },
+  "pt": {
+    "title": "O bom-dia da Orma",
+    "description": "Uma história verdadeira de animais, todas as manhãs.",
+    "loading": "A carregar a história…",
+    "dateLine": "A história de {date}",
+    "before": "Antes",
+    "now": "Hoje",
+    "stampOrma": "Nascida na Orma",
+    "stampTold": "Contada por quem a viveu",
+    "source": "Contada por: {name}",
+    "langNoteEn": "Esta história está escrita em inglês.",
+    "langNoteIt": "Esta história está escrita em italiano.",
+    "noneTitle": "Não há história para este dia",
+    "noneText": "Talvez tenha sido retirada, ou a ligação está incompleta.",
+    "todayLink": "Lê a história de hoje",
+    "errorTitle": "Não consigo carregar a história",
+    "errorText": "Verifica a ligação e tenta novamente.",
+    "retry": "Tentar novamente",
+    "appTitle": "Todas as manhãs, uma história verdadeira",
+    "appText": "Com a Orma recebes a história da manhã, vês os perigos assinalados no teu passeio da manhã e ajudas a encontrar animais perdidos perto de ti. É gratuita."
+  },
+  "ro": {
+    "title": "Bună dimineața de la Orma",
+    "description": "O poveste adevărată cu animale, în fiecare dimineață.",
+    "loading": "Se încarcă povestea…",
+    "dateLine": "Povestea din {date}",
+    "before": "Înainte",
+    "now": "Azi",
+    "stampOrma": "Născută pe Orma",
+    "stampTold": "Povestită de cine a trăit-o",
+    "source": "Povestită de: {name}",
+    "langNoteEn": "Această poveste este scrisă în engleză.",
+    "langNoteIt": "Această poveste este scrisă în italiană.",
+    "noneTitle": "Nicio poveste pentru această zi",
+    "noneText": "Poate a fost scoasă sau linkul este incomplet.",
+    "todayLink": "Citește povestea de azi",
+    "errorTitle": "Nu reușesc să încarc povestea",
+    "errorText": "Verifică conexiunea și încearcă din nou.",
+    "retry": "Încearcă din nou",
+    "appTitle": "În fiecare dimineață, o poveste adevărată",
+    "appText": "Cu Orma primești povestea de dimineață, vezi pericolele semnalate pe plimbarea ta de dimineață și ajuți la găsirea animalelor pierdute din apropiere. Este gratuită."
+  },
+  "sv": {
+    "title": "God morgon från Orma",
+    "description": "En sann djurberättelse, varje morgon.",
+    "loading": "Laddar berättelsen…",
+    "dateLine": "Berättelsen från {date}",
+    "before": "Före",
+    "now": "I dag",
+    "stampOrma": "Född på Orma",
+    "stampTold": "Berättad av någon som var med",
+    "source": "Berättad av: {name}",
+    "langNoteEn": "Den här berättelsen är skriven på engelska.",
+    "langNoteIt": "Den här berättelsen är skriven på italienska.",
+    "noneTitle": "Ingen berättelse för den här dagen",
+    "noneText": "Den kan ha tagits bort, eller så är länken ofullständig.",
+    "todayLink": "Läs dagens berättelse",
+    "errorTitle": "Berättelsen gick inte att ladda",
+    "errorText": "Kontrollera anslutningen och försök igen.",
+    "retry": "Försök igen",
+    "appTitle": "Varje morgon en sann berättelse",
+    "appText": "Med Orma får du morgonens berättelse, ser farorna som anmälts längs din morgonpromenad och hjälper till att hitta bortsprungna djur nära dig. Den är gratis."
+  }
+};
+
+// ============================================================================
+// /i — la pagina del codice invito, nella lingua di chi la legge (SPEC
+// diffusione 9.4). La pagina resta UNA, in italiano nell'HTML (per chi non
+// ha JavaScript) e con autoLang={false}: lo script di i.astro sceglie la
+// lingua da `?l=` (il QR del cartello per le aree cani porta la lingua in
+// cui e' stampato), poi dal browser, e riscrive gli elementi data-i.
+//
+// L'italiano e' il testo che la pagina aveva gia', con due correzioni del
+// 26/09: step1 nomina i bottoni che ci sono davvero («Google Play», «App
+// Store»: un bottone «Scarica» sulla pagina non c'e', e quello «Scarica
+// l'app» dell'intestazione porta alla home e perde il codice), e il titolo
+// della scheda non dice il genere di chi legge, come gia' l'h1.
+// «Codice invito» e simili sono le stesse parole dell'app
+// (cartello.pdf.codice, referral.*). Le 14 lingue oltre all'italiano non le
+// ha ancora rilette un madrelingua.
+// ============================================================================
+export const INVITO = {
+  "it": {
+    "pageTitle": "Ti hanno invitato · Orma",
+    "title": "Ti hanno invitato su Orma",
+    "sub": "Orma è l'app per ritrovare gli animali smarriti, il libretto sanitario, le adozioni e i veterinari vicino a te.",
+    "codeLabel": "Codice invito · si applica da solo",
+    "step1": "Tocca Google Play o App Store e installa Orma.",
+    "step2": "Apri l'app e crea il tuo account: il codice si applica da solo.",
+    "step3": "Usa l'app: chi ti ha invitato guadagna punti!"
+  },
+  "en": {
+    "pageTitle": "You've been invited · Orma",
+    "title": "You've been invited to Orma",
+    "sub": "Orma is the app for finding lost pets, keeping their health record, and finding adoptions and vets near you.",
+    "codeLabel": "Invite code · applied automatically",
+    "step1": "Tap your app store's button and install Orma.",
+    "step2": "Open the app and create your account: the code is applied automatically.",
+    "step3": "Use the app: whoever invited you earns points!"
+  },
+  "cs": {
+    "pageTitle": "Máš pozvánku · Orma",
+    "title": "Někdo tě zve do aplikace Orma",
+    "sub": "Orma je aplikace pro hledání ztracených zvířat, se zdravotní kartou, adopcemi a veterináři ve tvém okolí.",
+    "codeLabel": "Kód pozvánky · použije se sám",
+    "step1": "Klepni na tlačítko svého obchodu s aplikacemi a nainstaluj si Ormu.",
+    "step2": "Otevři aplikaci a vytvoř si účet: kód se použije sám.",
+    "step3": "Používej aplikaci: kdo tě pozval, získá body!"
+  },
+  "da": {
+    "pageTitle": "Du er inviteret · Orma",
+    "title": "Du er inviteret til Orma",
+    "sub": "Orma er appen til at finde bortløbne dyr, med sundhedsbog, adoptioner og dyrlæger i nærheden.",
+    "codeLabel": "Invitationskode · bruges automatisk",
+    "step1": "Tryk på knappen til din app-butik, og installér Orma.",
+    "step2": "Åbn appen, og opret din konto: koden bruges automatisk.",
+    "step3": "Brug appen: den, der inviterede dig, optjener point!"
+  },
+  "de": {
+    "pageTitle": "Du wurdest eingeladen · Orma",
+    "title": "Du wurdest zu Orma eingeladen",
+    "sub": "Orma ist die App, um vermisste Tiere wiederzufinden, mit Gesundheitspass, Adoptionen und Tierärzten in deiner Nähe.",
+    "codeLabel": "Einladungscode · wird automatisch übernommen",
+    "step1": "Tippe auf den Button deines App-Stores und installiere Orma.",
+    "step2": "Öffne die App und erstelle dein Konto: Der Code wird automatisch übernommen.",
+    "step3": "Nutze die App: Wer dich eingeladen hat, sammelt Punkte!"
+  },
+  "el": {
+    "pageTitle": "Έχεις πρόσκληση · Orma",
+    "title": "Σε προσκάλεσαν στο Orma",
+    "sub": "Το Orma είναι η εφαρμογή για να βρίσκεις χαμένα ζώα, με βιβλιάριο υγείας, υιοθεσίες και κτηνιάτρους κοντά σου.",
+    "codeLabel": "Κωδικός πρόσκλησης · εφαρμόζεται αυτόματα",
+    "step1": "Πάτα το κουμπί του καταστήματος εφαρμογών σου και εγκατάστησε το Orma.",
+    "step2": "Άνοιξε την εφαρμογή και δημιούργησε λογαριασμό: ο κωδικός εφαρμόζεται αυτόματα.",
+    "step3": "Χρησιμοποίησε την εφαρμογή: όποιος σε προσκάλεσε κερδίζει πόντους!"
+  },
+  "es": {
+    "pageTitle": "Te han invitado · Orma",
+    "title": "Te han invitado a Orma",
+    "sub": "Orma es la app para encontrar animales perdidos, con la cartilla sanitaria, las adopciones y los veterinarios cerca de ti.",
+    "codeLabel": "Código de invitación · se aplica solo",
+    "step1": "Toca el botón de tu tienda de apps e instala Orma.",
+    "step2": "Abre la app y crea tu cuenta: el código se aplica solo.",
+    "step3": "Usa la app: ¡quien te ha invitado gana puntos!"
+  },
+  "fr": {
+    "pageTitle": "Vous avez reçu une invitation · Orma",
+    "title": "Quelqu'un vous invite sur Orma",
+    "sub": "Orma est l'application pour retrouver les animaux perdus, avec le carnet de santé, les adoptions et les vétérinaires près de chez vous.",
+    "codeLabel": "Code d'invitation · appliqué automatiquement",
+    "step1": "Touchez le bouton de votre magasin d'applications et installez Orma.",
+    "step2": "Ouvrez l'application et créez votre compte : le code s'applique tout seul.",
+    "step3": "Utilisez l'application : la personne qui vous a envoyé l'invitation gagne des points !"
+  },
+  "hr": {
+    "pageTitle": "Imaš pozivnicu · Orma",
+    "title": "Netko te poziva u Ormu",
+    "sub": "Orma je aplikacija za pronalazak izgubljenih životinja, sa zdravstvenim kartonom, udomljavanjem i veterinarima u blizini.",
+    "codeLabel": "Kod pozivnice · primjenjuje se sam",
+    "step1": "Dodirni gumb svoje trgovine aplikacija i instaliraj Ormu.",
+    "step2": "Otvori aplikaciju i izradi račun: kod se primjenjuje sam.",
+    "step3": "Koristi aplikaciju: onaj tko te je pozvao skuplja bodove!"
+  },
+  "hu": {
+    "pageTitle": "Meghívót kaptál · Orma",
+    "title": "Meghívtak az Ormába",
+    "sub": "Az Orma az elveszett állatok megtalálására szolgáló app, egészségkönyvvel, örökbefogadással és a közeli állatorvosokkal.",
+    "codeLabel": "Meghívókód · magától érvényesül",
+    "step1": "Koppints az alkalmazásboltod gombjára, és telepítsd az Ormát.",
+    "step2": "Nyisd meg az appot, és hozd létre a fiókodat: a kód magától érvényesül.",
+    "step3": "Használd az appot: aki meghívott, pontokat gyűjt!"
+  },
+  "nl": {
+    "pageTitle": "Je bent uitgenodigd · Orma",
+    "title": "Je bent uitgenodigd voor Orma",
+    "sub": "Orma is de app om vermiste dieren terug te vinden, met het gezondheidsboekje, adopties en dierenartsen bij jou in de buurt.",
+    "codeLabel": "Uitnodigingscode · wordt vanzelf toegepast",
+    "step1": "Tik op de knop van je appwinkel en installeer Orma.",
+    "step2": "Open de app en maak je account aan: de code wordt vanzelf toegepast.",
+    "step3": "Gebruik de app: wie jou heeft uitgenodigd, verdient punten!"
+  },
+  "pl": {
+    "pageTitle": "Masz zaproszenie · Orma",
+    "title": "Ktoś zaprasza cię do Ormy",
+    "sub": "Orma to aplikacja do odnajdywania zaginionych zwierząt, z książeczką zdrowia, adopcjami i weterynarzami w pobliżu.",
+    "codeLabel": "Kod zaproszenia · zadziała sam",
+    "step1": "Stuknij przycisk swojego sklepu z aplikacjami i zainstaluj Ormę.",
+    "step2": "Otwórz aplikację i załóż konto: kod zadziała sam.",
+    "step3": "Korzystaj z aplikacji: osoba, która cię zaprosiła, zdobywa punkty!"
+  },
+  "pt": {
+    "pageTitle": "Recebeste um convite · Orma",
+    "title": "Convidaram-te para a Orma",
+    "sub": "A Orma é a app para encontrar animais perdidos, com o boletim de saúde, as adoções e os veterinários perto de ti.",
+    "codeLabel": "Código de convite · aplica-se sozinho",
+    "step1": "Toca no botão da tua loja de aplicações e instala a Orma.",
+    "step2": "Abre a app e cria a tua conta: o código aplica-se sozinho.",
+    "step3": "Usa a app: quem te convidou ganha pontos!"
+  },
+  "ro": {
+    "pageTitle": "Ai primit o invitație · Orma",
+    "title": "Cineva te invită pe Orma",
+    "sub": "Orma este aplicația pentru găsirea animalelor pierdute, cu carnetul de sănătate, adopții și veterinari din apropiere.",
+    "codeLabel": "Cod de invitație · se aplică singur",
+    "step1": "Atinge butonul magazinului tău de aplicații și instalează Orma.",
+    "step2": "Deschide aplicația și creează-ți contul: codul se aplică singur.",
+    "step3": "Folosește aplicația: cine te-a invitat câștigă puncte!"
+  },
+  "sv": {
+    "pageTitle": "Du har blivit inbjuden · Orma",
+    "title": "Du har blivit inbjuden till Orma",
+    "sub": "Orma är appen för att hitta bortsprungna djur, med hälsobok, adoptioner och veterinärer nära dig.",
+    "codeLabel": "Inbjudningskod · används automatiskt",
+    "step1": "Tryck på knappen för din appbutik och installera Orma.",
+    "step2": "Öppna appen och skapa ditt konto: koden används automatiskt.",
+    "step3": "Använd appen: den som bjöd in dig tjänar poäng!"
+  }
+};

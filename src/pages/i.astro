@@ -1,36 +1,76 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import StoreButtons from '../components/StoreButtons.astro';
+import { INVITO } from '../data/pages.js';
 // Pagina di atterraggio INVITO AMICI (referral). Il link è
 // https://orma.pet/i?c=<codice>. Mostriamo il codice (client-side) e i pulsanti
 // store; l'utente installa, si iscrive e inserisce il codice all'iscrizione.
-const title = 'Sei stato invitato · Orma';
+//
+// La lingua (SPEC diffusione 9.4). La pagina resta una sola, italiana
+// nell'HTML e con autoLang={false}: spostarla su /de/i/ perderebbe il senso
+// di un link che arriva da fuori. Lo script qui sotto riscrive i testi
+// data-i nella lingua di `?l=` (il QR del cartello per le aree cani la porta:
+// e' la lingua in cui il cartello e' stampato), oppure del browser.
+const it = INVITO.it;
+const title = it.pageTitle;
 ---
 <Layout lang="it" title={title} active="home" noindex={true} autoLang={false}>
   <section class="invite">
     <div class="invite__box">
       <div class="invite__icon" aria-hidden="true">🎁</div>
-      <h1>Ti hanno invitato su Orma</h1>
+      <h1 data-i="title">{it.title}</h1>
       <p class="invite__sub">
-        Orma è l'app per ritrovare gli animali smarriti, il libretto sanitario,
-        le adozioni e i veterinari vicino a te.
-        <br /><span class="invite__en">You've been invited to Orma — the app for lost pets &amp; more.</span>
+        <span data-i="sub">{it.sub}</span>
+        <span id="invite-en"><br /><span class="invite__en">You've been invited to Orma — the app for lost pets &amp; more.</span></span>
       </p>
 
       <div class="invite__code" id="codeBox" hidden>
-        <span class="invite__code-label">Codice invito · si applica da solo</span>
+        <span class="invite__code-label" data-i="codeLabel">{it.codeLabel}</span>
         <strong id="code">—</strong>
       </div>
 
       <StoreButtons lang="it" android="Google Play" ios="App Store" variant="light" />
 
       <ol class="invite__steps">
-        <li>Tocca "Scarica" e installa Orma.</li>
-        <li>Apri l'app e crea il tuo account: il codice si applica da solo.</li>
-        <li>Usa l'app: chi ti ha invitato guadagna punti!</li>
+        <li data-i="step1">{it.step1}</li>
+        <li data-i="step2">{it.step2}</li>
+        <li data-i="step3">{it.step3}</li>
       </ol>
     </div>
   </section>
+
+  <script define:vars={{ testi: INVITO }}>
+    // La lingua della pagina: prima `?l=` (la lingua del cartello), poi le
+    // lingue del browser in ordine di preferenza; nessuna delle 15 =
+    // italiano, com'era. Solo textContent: i testi sono nostri, ma non c'e'
+    // motivo di trattarli come HTML.
+    (function () {
+      try {
+        var scelta = null;
+        var l = (new URLSearchParams(location.search).get('l') || '').toLowerCase().split('-')[0];
+        if (testi[l]) scelta = l;
+        if (!scelta) {
+          var elenco = navigator.languages || [navigator.language || ''];
+          for (var i = 0; i < elenco.length && !scelta; i++) {
+            var c = String(elenco[i]).toLowerCase().split('-')[0];
+            if (testi[c]) scelta = c;
+          }
+        }
+        if (!scelta || scelta === 'it') return;
+        var t = testi[scelta];
+        document.documentElement.lang = scelta;
+        document.title = t.pageTitle;
+        document.querySelectorAll('[data-i]').forEach(function (el) {
+          var k = el.getAttribute('data-i');
+          if (t[k]) el.textContent = t[k];
+        });
+        // La riga in inglese sotto il testo italiano serve solo a chi legge
+        // la pagina in italiano senza capirlo: tradotta, e' un doppione.
+        var en = document.getElementById('invite-en');
+        if (en) en.hidden = true;
+      } catch (e) {}
+    })();
+  </script>
 
   <style>
     .invite { max-width: 560px; margin: 0 auto; padding: 48px 20px; text-align: center; }

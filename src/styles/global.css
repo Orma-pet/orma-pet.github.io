@@ -520,6 +520,9 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.01em;
 }
 .prose h2:first-of-type { border-top: none; padding-top: 0; }
+/* Le sezioni di privacy e termini hanno un id (orma.pet/privacy/#giro):
+   senza margine il titolo finirebbe sotto l'intestazione appiccicata. */
+.prose h2[id] { scroll-margin-top: 5.5rem; }
 .prose h3 { font-size: 1.12rem; font-weight: 800; margin: 1.8rem 0 0.5rem; }
 .prose p { margin: 0.7rem 0; color: #2c3e50; }
 .prose ul { margin: 0.7rem 0 1rem 1.2rem; }

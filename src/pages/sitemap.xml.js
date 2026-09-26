@@ -45,6 +45,12 @@ const PESO = {
 // Le pagine che ricevono un identificativo da fuori (/pet, /t, /i, /join) non
 // stanno qui ed e' voluto: senza il loro parametro non mostrano niente, e sono
 // gia' escluse da robots.txt e marcate noindex.
+//
+// Lo stesso vale per il buongiorno (/b/?d=aaaa-mm-gg, chiave `buongiorno` di
+// ROUTES), e li' conta ancora di piu': una storia al giorno vorrebbe dire una
+// voce nuova ogni giorno in 15 lingue, per pagine il cui contenuto arriva dal
+// parametro, e una storia tolta su richiesta non deve restare in un indice.
+// NON aggiungere `buongiorno` a PESO.
 const PAGINE = Object.keys(PESO).filter((k) => ROUTES[k]);
 
 function voce(alternative, href, peso, data) {

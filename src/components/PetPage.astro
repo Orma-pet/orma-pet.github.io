@@ -145,6 +145,13 @@ const cfg = {
       nodesc: { it: 'Nessuna descrizione fornita.', en: 'No description provided.' }
     };
 
+    // I dizionari qui sopra sono solo it/en: nelle altre 13 lingue
+    // `TYPE_LABEL[t][L]` era undefined, e la scheda mostrava etichette vuote
+    // e «3 undefined» come eta' (SPEC diffusione, difetto 19.3). Finche' non
+    // si traducono (17.9), la lingua che manca ripiega sull'inglese.
+    var L = LANG;
+    function lab(o) { return o ? (o[L] || o.en) : ''; }
+
     function getReportId() {
       var qs = new URLSearchParams(window.location.search);
       var id = qs.get('id');
@@ -168,24 +175,22 @@ const cfg = {
     }
 
     function renderReport(r) {
-      var L = LANG;
-
       // Badge tipo
       var badge = document.getElementById('pet-badge');
       var t = r.report_type;
       badge.className = 'pet-badge ' + (TYPE_BADGE_CLASS[t] || 'badge-lost');
-      badge.textContent = (TYPE_LABEL[t] ? TYPE_LABEL[t][L] : t);
+      badge.textContent = (TYPE_LABEL[t] ? lab(TYPE_LABEL[t]) : t);
 
       // Titolo (titolo o nome animale, con fallback)
       var title = r.title || r.pet_name;
       if (!title) {
-        var sp = r.species && SPECIES_LABEL[r.species] ? SPECIES_LABEL[r.species][L] : null;
-        title = sp || (TYPE_LABEL[t] ? TYPE_LABEL[t][L] : '');
+        var sp = r.species && SPECIES_LABEL[r.species] ? lab(SPECIES_LABEL[r.species]) : null;
+        title = sp || (TYPE_LABEL[t] ? lab(TYPE_LABEL[t]) : '');
       }
       document.getElementById('pet-title').textContent = title;
 
       // Descrizione
-      document.getElementById('pet-desc').textContent = r.description || FIELD.nodesc[L];
+      document.getElementById('pet-desc').textContent = r.description || lab(FIELD.nodesc);
 
       // Foto
       var photos = Array.isArray(r.photo_paths) ? r.photo_paths.filter(Boolean) : [];
@@ -228,15 +233,15 @@ const cfg = {
         if (value == null || value === '') return;
         var item = document.createElement('div');
         item.className = 'pet-meta-item';
-        item.innerHTML = '<div class="label">' + esc(FIELD[labelKey][L]) + '</div>' +
+        item.innerHTML = '<div class="label">' + esc(lab(FIELD[labelKey])) + '</div>' +
                          '<div class="value">' + esc(value) + '</div>';
         meta.appendChild(item);
       }
-      addMeta('species', r.species && SPECIES_LABEL[r.species] ? SPECIES_LABEL[r.species][L] : null);
+      addMeta('species', r.species && SPECIES_LABEL[r.species] ? lab(SPECIES_LABEL[r.species]) : null);
       addMeta('breed', r.breed);
       addMeta('color', r.color);
-      addMeta('sex', r.sex && SEX_LABEL[r.sex] ? SEX_LABEL[r.sex][L] : null);
-      if (r.approx_age_months != null) addMeta('age', r.approx_age_months + ' ' + FIELD.months[L]);
+      addMeta('sex', r.sex && SEX_LABEL[r.sex] ? lab(SEX_LABEL[r.sex]) : null);
+      if (r.approx_age_months != null) addMeta('age', r.approx_age_months + ' ' + lab(FIELD.months));
       addMeta('marks', r.distinguishing_marks);
       var when = r.occurred_at || r.created_at;
       if (when) {
@@ -250,6 +255,84 @@ const cfg = {
       document.getElementById('pet-location-note').hidden = (r.lat == null || r.lng == null);
 
       showState('state-found');
+      // Solo qui: una scheda che non si carica (non trovata, errore) non e'
+      // un'apertura vera.
+      contaApertura();
+    }
+
+    // «Lascia un'Orma» (SPEC diffusione, D5 e 9.2). Il link di chi condivide
+    // uno smarrito o un abbandonato porta `&o=<codice>`, e qui si conta UNA
+    // apertura vera, con tutte queste condizioni insieme:
+    //  - la scheda si e' caricata davvero (si arriva qui da renderReport);
+    //  - la pagina e' rimasta VISIBILE per 2 secondi di fila. Una scheda
+    //    aperta in background, una pagina prerenderizzata, o una pagina che
+    //    il reindirizzamento di lingua (Layout.astro) sta gia' sostituendo
+    //    non arrivano mai al conto; se si nasconde prima, il conto riparte;
+    //  - il browser non si dichiara un robot, e non e' pilotato
+    //    (navigator.webdriver).
+    // Le anteprime di WhatsApp, Facebook e Telegram leggono l'HTML e NON
+    // eseguono JavaScript: non arrivano mai qui, per costruzione. E senza
+    // JavaScript non si conta niente: non c'e' nessun pixel ne' <noscript>.
+    //
+    // Niente cookie (credentials: 'omit'), niente sessionStorage, niente
+    // localStorage, niente Referer: al server arriva SOLO il codice. Per
+    // questo chi ricarica la pagina conta di nuovo, e va bene cosi': il
+    // tetto di 30 al giorno per codice lo fa il server (orma_aperta, 0136),
+    // che non salva ne' IP ne' ora ne' dispositivo.
+    //
+    // Niente `keepalive`, diversamente dallo schizzo della SPEC: con una
+    // richiesta che ha bisogno del preflight CORS (le intestazioni apikey e
+    // Authorization) non tutti i browser lo accettano, e un rifiuto qui
+    // sarebbe silenzioso e sistematico. Senza, si perde al massimo chi chiude
+    // la scheda nel mezzo secondo della richiesta, dopo esserci rimasto 2.
+    var aperturaAvviata = false;
+    function contaApertura() {
+      if (aperturaAvviata) return;           // una sola volta per caricamento
+      aperturaAvviata = true;
+      var o = (new URLSearchParams(window.location.search).get('o') || '').trim().toLowerCase();
+      if (!/^[a-km-np-z2-9]{8}$/.test(o)) return;
+      if (/bot|crawl|spider|slurp|preview|lighthouse|headless|facebookexternalhit/i
+            .test(navigator.userAgent || '') || navigator.webdriver) return;
+
+      var fatto = false;
+      var timer = null;
+      function visibile() {
+        return document.visibilityState === 'visible' && !document.prerendering;
+      }
+      function manda() {
+        timer = null;
+        if (fatto || !visibile()) return;
+        fatto = true;
+        document.removeEventListener('visibilitychange', guarda);
+        document.removeEventListener('prerenderingchange', guarda);
+        try {
+          // Prima della migrazione 0136 la funzione non c'e' e risponde 404:
+          // non si guarda nemmeno la risposta, la pagina non cambia.
+          fetch(SUPABASE_URL + '/rest/v1/rpc/orma_aperta', {
+            method: 'POST',
+            credentials: 'omit',
+            referrerPolicy: 'no-referrer',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': SUPABASE_KEY,
+              'Authorization': 'Bearer ' + SUPABASE_KEY
+            },
+            body: JSON.stringify({ in_codice: o })
+          }).catch(function () {});
+        } catch (e) {}
+      }
+      function guarda() {
+        if (fatto) return;
+        if (visibile()) {
+          if (!timer) timer = setTimeout(manda, 2000);
+        } else if (timer) {
+          clearTimeout(timer);
+          timer = null;
+        }
+      }
+      document.addEventListener('visibilitychange', guarda);
+      document.addEventListener('prerenderingchange', guarda);
+      guarda();
     }
 
     function loadReport(id) {

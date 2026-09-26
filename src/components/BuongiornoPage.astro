@@ -1,0 +1,395 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StoreButtons from './StoreButtons.astro';
+import { PET, HOME, testo, urlPagina } from '../data/site.js';
+import { BUONGIORNO } from '../data/pages.js';
+
+// «Il buongiorno di Orma» (SPEC diffusione, A e 9.1): la pagina per chi
+// riceve su WhatsApp l'immagine «Manda il buongiorno» e tocca il link che
+// l'app ci mette sotto, https://orma.pet/b/?d=aaaa-mm-gg.
+//
+// Il sito e' statico e viene ricostruito solo a ogni push: la storia NON
+// puo' stare nell'HTML. Arriva dal browser, con storia_del_giorno (0134),
+// che e' chiamabile senza account e restituisce solo le storie approvate e
+// mai prima del loro giorno. Per lo stesso motivo la pagina e' noindex e
+// fuori dalla mappa del sito: il contenuto dipende dal parametro, e una
+// storia tolta su richiesta non deve restare nell'indice di Google (D12).
+//
+// La data va nel parametro `d` e non nel percorso (/b/2026-09-26): GitHub
+// Pages non sa servire una pagina per un percorso che non esiste nei file.
+const { lang = 'it' } = Astro.props;
+const t = testo(BUONGIORNO, lang);
+const p = testo(PET, lang);
+const h = testo(HOME, lang);
+
+// Senza `d`: la storia di oggi, nella stessa lingua.
+const oggiUrl = urlPagina('buongiorno', lang);
+const howUrl = urlPagina('howItWorks', lang);
+
+// Al browser va solo quello che lo script scrive DENTRO la storia: il resto
+// della cornice e' gia' nell'HTML. `locale` e' quello della scheda /pet, per
+// scrivere la data come la scrive il resto del sito in quella lingua.
+const cfg = {
+  lang,
+  locale: p.locale,
+  dateLine: t.dateLine,
+  before: t.before,
+  now: t.now,
+  stampOrma: t.stampOrma,
+  stampTold: t.stampTold,
+  source: t.source,
+  langNoteEn: t.langNoteEn,
+  langNoteIt: t.langNoteIt,
+};
+---
+<Layout
+  lang={lang}
+  title={t.title}
+  description={t.description}
+  active="buongiorno"
+  noindex={true}
+>
+  <section class="pet bg">
+    <div class="wrap pet__inner">
+
+      <!-- Stato: CARICAMENTO (anche quello che resta a chi non ha JavaScript:
+           il riquadro dell'app sotto resta comunque visibile) -->
+      <div id="bg-loading" class="pet-state">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>{t.loading}</p>
+      </div>
+
+      <!-- Stato: NESSUNA STORIA (tolta, data futura, link storto, giorno vuoto) -->
+      <div id="bg-none" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">🌅</div>
+        <h2>{t.noneTitle}</h2>
+        <p>{t.noneText}</p>
+        <a id="bg-today" class="btn btn--primary" href={oggiUrl} hidden>{t.todayLink}</a>
+      </div>
+
+      <!-- Stato: ERRORE DI RETE -->
+      <div id="bg-error" class="pet-state" hidden>
+        <div class="icon-big" aria-hidden="true">📡</div>
+        <h2>{t.errorTitle}</h2>
+        <p>{t.errorText}</p>
+        <button id="bg-retry" class="btn btn--primary" type="button">{t.retry}</button>
+      </div>
+
+      <!-- Stato: LA STORIA (riempita dallo script, sempre con textContent) -->
+      <article id="bg-story" class="pet-card bg-card" hidden>
+        <div id="bg-photos" class="bg-photos"></div>
+        <div class="pet-card-body">
+          <p id="bg-date" class="bg-date"></p>
+          <span id="bg-stamp" class="bg-stamp"></span>
+          <h1 id="bg-title" class="bg-title"></h1>
+          <p id="bg-text" class="bg-text"></p>
+          <p id="bg-langnote" class="bg-langnote" hidden></p>
+          <p id="bg-source" class="bg-source" hidden></p>
+        </div>
+      </article>
+
+      <!-- Il riquadro dell'app, come in /pet. Fuori dalla scheda, e quindi
+           visibile in OGNI stato: anche chi trova «nessuna storia» o non ha
+           rete deve poter scaricare Orma. Nessuna pubblicita', nessun link
+           a raccolte fondi (SPEC diffusione 3.1). -->
+      <div class="pet-app-box bg-app">
+        <h3>{t.appTitle}</h3>
+        <p>{t.appText}</p>
+        <StoreButtons lang={lang} android={h.btnAndroid} ios={h.btnIos} variant="dark">
+          <a class="btn btn--ghost" href={howUrl} style="border-color:rgba(255,255,255,.7);color:#fff;">{p.discover}</a>
+        </StoreButtons>
+      </div>
+
+    </div>
+  </section>
+</Layout>
+
+<style is:global>
+  /* GLOBALE di proposito: figure, immagini e didascalie le crea lo script, e
+     un elemento creato dal browser non ha la classe con cui Astro limita gli
+     stili al componente (lo stesso per className, che la toglie). Tutte le
+     classi cominciano con bg- e vivono solo in questa pagina.
+
+     `hidden` da solo non basta: .btn e le altre classi del sito dichiarano
+     un display, e un display dichiarato vince sull'attributo. Senza questa
+     riga il link «Leggi la storia di oggi» comparirebbe anche quando si sta
+     gia' guardando oggi. */
+  .bg [hidden] { display: none !important; }
+
+  .bg-card { margin-bottom: 0; }
+  .bg-photos { display: grid; gap: 0.7rem; padding: 1rem 1rem 0; }
+  .bg-photos--due { grid-template-columns: 1fr 1fr; }
+  .bg-photo { margin: 0; }
+  .bg-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+    /* Il fondo resta al posto della foto se questa non arriva. */
+    background: var(--ghiaccio);
+  }
+  .bg-photos--una .bg-photo img { aspect-ratio: 4 / 3; }
+  .bg-photo figcaption {
+    margin-top: 0.3rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--grigio);
+  }
+  .bg-date { font-size: 0.85rem; font-weight: 800; color: var(--blu); margin-bottom: 0.7rem; }
+  .bg-stamp {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 3px 11px;
+    border-radius: 999px;
+    border: 1.5px solid #13977F;
+    color: #0E7A67;
+    margin-bottom: 0.8rem;
+  }
+  .bg-title { font-size: 1.8rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 0.7rem; overflow-wrap: anywhere; }
+  /* Gli a capo del testo della storia restano: textContent non fa HTML. */
+  .bg-text { color: #2c3e50; font-size: 1.05rem; line-height: 1.65; white-space: pre-line; overflow-wrap: anywhere; }
+  .bg-langnote {
+    background: var(--ghiaccio);
+    border: 1px solid var(--linea);
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    font-size: 0.88rem;
+    color: var(--grigio);
+    margin-top: 1.2rem;
+  }
+  .bg-source { margin-top: 1rem; font-size: 0.92rem; font-style: italic; color: var(--grigio); overflow-wrap: anywhere; }
+  .bg-app { margin-top: 1.6rem; }
+
+  @media (max-width: 480px) {
+    .bg-photos { padding: 0.8rem 0.8rem 0; gap: 0.5rem; }
+    .bg-title { font-size: 1.5rem; }
+  }
+</style>
+
+<script is:inline define:vars={{ cfg }}>
+  /* ========================================================================
+     /b — il buongiorno di Orma. https://orma.pet/b/?d=aaaa-mm-gg
+     La storia arriva da storia_del_giorno (0134), senza account, con la
+     chiave pubblica del progetto (la stessa di /pet). Ogni testo della
+     storia passa da textContent, MAI da innerHTML: titolo, testo e nome li
+     scrive una persona, e la pagina non deve eseguire niente di quello che
+     c'e' dentro.
+     ======================================================================== */
+  (function () {
+    'use strict';
+
+    var LANG = cfg.lang || 'it';
+    var LOCALE = cfg.locale || 'it-IT';
+
+    // ---- Config Supabase (chiave pubblica, la stessa di PetPage.astro) ----
+    var SUPABASE_URL = 'https://lztuncwbyjeesmfwvkof.supabase.co';
+    var SUPABASE_KEY = 'sb_publishable_1Qfs6LvH3-F-1DTu0yYphg_e5XnoefZ';
+    var FOTO_BASE = SUPABASE_URL + '/storage/v1/object/public/storie/';
+
+    function $(id) { return document.getElementById(id); }
+
+    function mostra(id) {
+      ['bg-loading', 'bg-none', 'bg-error', 'bg-story'].forEach(function (s) {
+        var el = $(s);
+        if (el) el.hidden = (s !== id);
+      });
+    }
+
+    // Una sostituzione con una FUNZIONE, non con una stringa: un nome come
+    // «Anna $& Birba» con la stringa diventerebbe un pezzo del segnaposto.
+    function riempi(modello, chiave, valore) {
+      return String(modello).replace('{' + chiave + '}', function () { return valore; });
+    }
+
+    // `d` vale solo nella forma aaaa-mm-gg e se e' un giorno vero (niente
+    // 2026-02-31). Storto = come senza data: la storia di oggi (SPEC 3.1).
+    function giornoValido(s) {
+      s = String(s || '').trim();
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+      if (!m) return null;
+      var y = +m[1], mo = +m[2], g = +m[3];
+      var dt = new Date(Date.UTC(y, mo - 1, g));
+      if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== g) return null;
+      return s;
+    }
+
+    // Il giorno di oggi A ROMA, che e' quello di storia_del_giorno. Serve
+    // solo a decidere se offrire «Leggi la storia di oggi»: il server resta
+    // l'unico a decidere quale storia si vede.
+    function oggiRoma() {
+      try {
+        var parti = new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit'
+        }).formatToParts(new Date());
+        var v = {};
+        parti.forEach(function (x) { v[x.type] = x.value; });
+        return giornoValido(v.year + '-' + v.month + '-' + v.day);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // aaaa-mm-gg → «26 settembre 2026» nella lingua della pagina. In UTC da
+    // tutte e due le parti: altrimenti a ovest di Greenwich il 26 diventa 25.
+    function dataScritta(g) {
+      var p = String(g).split('-');
+      var dt = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+      try {
+        return dt.toLocaleDateString(LOCALE, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+      } catch (e) {
+        return String(g);
+      }
+    }
+
+    // La lingua della pagina, poi l'inglese, poi l'italiano: la stessa regola
+    // dell'app (testoInLingua). Restituisce anche QUALE lingua ha trovato,
+    // per la nota «Questa storia e' scritta in inglese».
+    function inLingua(m) {
+      if (!m || typeof m !== 'object') return null;
+      var ordine = [LANG, 'en', 'it'];
+      for (var i = 0; i < ordine.length; i++) {
+        var v = m[ordine[i]];
+        if (typeof v === 'string' && v.trim()) return { lingua: ordine[i], testo: v.trim() };
+      }
+      for (var k in m) {
+        if (Object.prototype.hasOwnProperty.call(m, k) && typeof m[k] === 'string' && m[k].trim()) {
+          return { lingua: k, testo: m[k].trim() };
+        }
+      }
+      return null;
+    }
+
+    // Il percorso nel bucket, con la stessa regola del vincolo storia_foto
+    // (0134). Il server la garantisce gia': qui e' solo per non costruire mai
+    // un indirizzo da un valore che non ci si aspetta.
+    function urlFoto(percorso) {
+      if (typeof percorso !== 'string') return null;
+      if (!/^[A-Za-z0-9_.\/-]{1,200}$/.test(percorso) || percorso.indexOf('..') !== -1) return null;
+      return FOTO_BASE + percorso.split('/').map(encodeURIComponent).join('/');
+    }
+
+    function figura(url, etichetta) {
+      var fig = document.createElement('figure');
+      fig.className = 'bg-photo';
+      var img = document.createElement('img');
+      img.alt = etichetta || '';
+      img.decoding = 'async';
+      // Una foto che non arriva lascia il suo fondo, non l'icona rotta.
+      img.addEventListener('error', function () { img.style.visibility = 'hidden'; });
+      img.src = url;
+      fig.appendChild(img);
+      if (etichetta) {
+        var cap = document.createElement('figcaption');
+        cap.textContent = etichetta;
+        fig.appendChild(cap);
+      }
+      return fig;
+    }
+
+    var q = new URLSearchParams(location.search);
+    var giorno = giornoValido(q.get('d'));   // null = oggi
+    var oggi = oggiRoma();
+    var titoloPagina = document.title;
+
+    function nessuna() {
+      // «Leggi la storia di oggi» solo se si chiedeva un ALTRO giorno: su
+      // oggi porterebbe alla stessa pagina vuota.
+      $('bg-today').hidden = !(giorno && oggi && giorno !== oggi);
+      mostra('bg-none');
+    }
+
+    function mostraStoria(r) {
+      var titolo = inLingua(r.titolo);
+      var testo = inLingua(r.testo);
+      var dopo = urlFoto(r.foto_dopo);
+      if (!titolo || !testo || !dopo) { nessuna(); return; }
+      var prima = r.foto_prima ? urlFoto(r.foto_prima) : null;
+
+      // Le foto: prima e oggi affiancate e quadrate; senza quella di prima,
+      // solo oggi a tutta larghezza in 4:3. Lo stesso disegno di StoriaScreen.
+      var foto = $('bg-photos');
+      foto.textContent = '';
+      if (prima) {
+        foto.className = 'bg-photos bg-photos--due';
+        foto.appendChild(figura(prima, cfg.before));
+        foto.appendChild(figura(dopo, cfg.now));
+      } else {
+        foto.className = 'bg-photos bg-photos--una';
+        foto.appendChild(figura(dopo, ''));
+      }
+
+      $('bg-date').textContent = riempi(cfg.dateLine, 'date', dataScritta(r.giorno || giorno || oggi));
+      $('bg-stamp').textContent = r.timbro === 'nata_su_orma' ? cfg.stampOrma : cfg.stampTold;
+
+      var elTitolo = $('bg-title');
+      elTitolo.textContent = titolo.testo;
+      elTitolo.lang = titolo.lingua;
+      var elTesto = $('bg-text');
+      elTesto.textContent = testo.testo;
+      // La lingua VERA del testo, non quella della pagina: un lettore di
+      // schermo tedesco che legge l'inglese con la pronuncia tedesca e'
+      // incomprensibile.
+      elTesto.lang = testo.lingua;
+
+      var nota = $('bg-langnote');
+      var testoNota = testo.lingua === LANG ? ''
+        : testo.lingua === 'en' ? cfg.langNoteEn
+        : testo.lingua === 'it' ? cfg.langNoteIt : '';
+      nota.textContent = testoNota;
+      nota.hidden = !testoNota;
+
+      var fonte = typeof r.fonte === 'string' ? r.fonte.trim() : '';
+      var elFonte = $('bg-source');
+      elFonte.textContent = fonte ? riempi(cfg.source, 'name', fonte) : '';
+      elFonte.hidden = !fonte;
+
+      document.title = titolo.testo + ' · ' + titoloPagina;
+      mostra('bg-story');
+    }
+
+    var inCorso = false;
+    function carica() {
+      if (inCorso) return;
+      inCorso = true;
+      mostra('bg-loading');
+      // Una rete che non risponde mai non deve lasciare la rotella per
+      // sempre: dopo 15 secondi si passa a «Riprova».
+      var ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 15000) : null;
+      fetch(SUPABASE_URL + '/rest/v1/rpc/storia_del_giorno', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY
+        },
+        // in_giorno null = oggi (a Roma), come lo chiama l'app. Una data
+        // futura torna vuota: storia_del_giorno non anticipa.
+        body: JSON.stringify({ in_giorno: giorno }),
+        signal: ctrl ? ctrl.signal : undefined
+      })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        var riga = Array.isArray(data) ? data[0] : data;
+        if (!riga) { nessuna(); return; }
+        mostraStoria(riga);
+      })
+      .catch(function (err) {
+        console.error('[Orma] storia_del_giorno:', err);
+        mostra('bg-error');
+      })
+      .then(function () {
+        inCorso = false;
+        if (timer) clearTimeout(timer);
+      });
+    }
+
+    $('bg-retry').addEventListener('click', carica);
+    carica();
+  })();
+</script>

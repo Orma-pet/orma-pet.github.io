@@ -109,20 +109,52 @@ const jsonLd = {
       // Il banner non copre tutti quei casi (nelle WKWebView non compare), ma
       // copre Safari, che e' dove la maggior parte delle persone atterra.
       //
-      // app-argument porta all'app l'indirizzo COMPLETO, con la stringa di
-      // interrogazione: senza, il banner aprirebbe Orma sulla sua schermata
-      // iniziale e non sulla segnalazione. Per questo il tag si scrive da
-      // qui e non nell'HTML: il sito e' statico, e `?id=` esiste solo nel
-      // browser.
+      // app-argument porta all'app l'indirizzo della pagina, con la stringa
+      // di interrogazione: senza, il banner aprirebbe Orma sulla sua
+      // schermata iniziale e non sulla segnalazione. Per questo il tag si
+      // scrive da qui e non nell'HTML: il sito e' statico, e `?id=` esiste
+      // solo nel browser.
+      //
+      // MA SOLO GLI INDIRIZZI CHE OGNI VERSIONE DELL'APP SA APRIRE (SPEC
+      // diffusione, D11 e difetto 19.2). Prima passava location.href da
+      // OGNI pagina: /guida/…, /t?tk=…, e /de/pet/?id=… (dove il
+      // reindirizzamento di lingua porta chi ha il browser in tedesco).
+      // Nessuno di questi e' una rotta dell'app, e con Orma installata
+      // «Apri» finiva sulla pagina d'errore del router. Ora:
+      //  - /pet, /join, /i, anche sotto un prefisso di lingua (/de/pet/),
+      //    diventano https://orma.pet/<pet|join|i>?<parametri>: sono le tre
+      //    rotte che la 1.0.1 pubblicata conosce (le stesse dell'AASA);
+      //  - tutto il resto, /b compreso, diventa la Home, che ogni versione
+      //    apre. Su /b la 1.1 con il giro mostra comunque la storia di oggi.
+      // Quando /b entrera' nell'AASA (SPEC 17.1, non prima che la 1.0.x sia
+      // sparita) si aggiungera' `b` all'espressione qui sotto.
+      //
+      // Senza `o`: l'apertura di un link personale l'ha gia' contata la
+      // pagina /pet, e l'app la conterebbe una seconda volta (SPEC D5).
       //
       // Finche' l'app non e' pubblicata Safari non trova l'identificativo e
       // semplicemente non mostra niente: nessun danno, e il giorno della
       // pubblicazione si accende da solo.
-      document.head.insertAdjacentHTML(
-        'beforeend',
-        '<meta name="apple-itunes-app" content="app-id=6786283294, app-argument='
-          + encodeURI(location.href) + '">',
-      );
+      //
+      // Il tag si crea con il DOM e non con una stringa di HTML: la coda
+      // arriva gia' codificata da URLSearchParams, e passarla da encodeURI
+      // (come si faceva) la codificava due volte.
+      (function () {
+        var arg = location.origin + '/';
+        try {
+          var m = location.pathname.match(/^(?:\/[a-z]{2})?\/(pet|join|i)\/?$/);
+          if (m) {
+            var q = new URLSearchParams(location.search);
+            q.delete('o');
+            var coda = q.toString();
+            arg = location.origin + '/' + m[1] + (coda ? '?' + coda : '');
+          }
+        } catch (e) {}
+        var meta = document.createElement('meta');
+        meta.name = 'apple-itunes-app';
+        meta.content = 'app-id=6786283294, app-argument=' + arg;
+        document.head.appendChild(meta);
+      })();
     </script>
     <script define:vars={{ perLingua, lang }}>
       // Reindirizzamento automatico alla lingua giusta, UNA volta sola.

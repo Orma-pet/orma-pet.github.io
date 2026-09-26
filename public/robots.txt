@@ -1,5 +1,15 @@
 User-agent: *
 Allow: /
+# Le pagine che mostrano qualcosa solo con il loro parametro (?id=, ?d=):
+# sono anche noindex e fuori dalla mappa del sito. /pet copre /pet e /pet/;
+# /*/pet/ le versioni con il prefisso di lingua (/en/pet/, /de/pet/...).
 Disallow: /pet
+Disallow: /*/pet/
+# Il buongiorno di Orma (/b/?d=...). Non "Disallow: /b" da solo: e' un
+# prefisso, e fermerebbe anche una futura /bg/ (bulgaro).
+Disallow: /b$
+Disallow: /b?
+Disallow: /b/
+Disallow: /*/b/
 
 Sitemap: https://orma.pet/sitemap.xml
